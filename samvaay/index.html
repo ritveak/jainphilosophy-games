@@ -150,26 +150,8 @@
       <section id="tab-lab" class="hide animate-fade space-y-6">
         <div class="rounded-3xl border border-slate-800 p-8 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 card-shadow">
           <h2 class="text-3xl font-semibold">The Laboratory</h2>
-          <p class="mt-3 text-slate-300 max-w-2xl">Inspect the machinery behind outcomes. Choose a mood, a scenario, and then move through a layered causal journey.</p>
+          <p class="mt-3 text-slate-300 max-w-2xl">Inspect the machinery behind outcomes. Choose a scenario and then move through a layered causal journey.</p>
           <button id="open-lab-btn" class="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Start Experiment</button>
-        </div>
-
-        <div class="grid gap-4 sm:grid-cols-3">
-          <div class="rounded-3xl border border-slate-800 p-6 glass">
-            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Minimal Jain</p>
-            <h3 class="mt-3 text-xl font-semibold">Meditative</h3>
-            <p class="mt-3 text-slate-300 text-sm leading-6">Subtle, calm, and deliberate. Fewer effects, more quiet attention.</p>
-          </div>
-          <div class="rounded-3xl border border-slate-800 p-6 glass">
-            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Premium Product</p>
-            <h3 class="mt-3 text-xl font-semibold">Modern</h3>
-            <p class="mt-3 text-slate-300 text-sm leading-6">Glass surfaces, progress bars, and refined motion.</p>
-          </div>
-          <div class="rounded-3xl border border-slate-800 p-6 glass">
-            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Narrative Experience</p>
-            <h3 class="mt-3 text-xl font-semibold">Story-led</h3>
-            <p class="mt-3 text-slate-300 text-sm leading-6">Every step begins with a scene. Immerse in the possibility space.</p>
-          </div>
         </div>
       </section>
 
@@ -326,7 +308,7 @@
       state.scenario = null;
       state.progressStep = 0;
       state.answers = { upadana: null, kala: null, effort: 0 };
-      state.hidden = { niyatiPass: Math.random() < 0.75, karmaPass: Math.random() < 0.75 };
+      state.hidden = { niyatiPass: Math.random() < 0.5, karmaPass: Math.random() < 0.5 };
       state.posture = null;
       state.revealQueue = [];
       state.revealIndex = 0;
@@ -390,44 +372,8 @@
           </div>
         `;
         document.getElementById('continue-to-style').addEventListener('click', () => {
-          state.labStage = 'style';
+          state.labStage = 'scenarios';
           renderLabScreen();
-        });
-        return;
-      }
-      if (state.labStage === 'style') {
-        const styleCards = ['minimal','premium','narrative'].map(style => {
-          const map = {
-            minimal: { label: 'Minimal Jain', mood: 'Meditation', note: 'Calm, quiet, and restrained.' },
-            premium: { label: 'Premium Product', mood: 'Modern SaaS', note: 'Glass cards, progress, subtle motion.' },
-            narrative: { label: 'Narrative Experience', mood: 'Story-led', note: 'Each step begins with a short scene.' }
-          }[style];
-          return `
-            <button data-style="${style}" class="group rounded-3xl border ${state.style===style?'border-emerald-500 bg-slate-900':'border-slate-800 bg-slate-950/70'} p-6 text-left transition hover:border-emerald-400">
-              <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">${map.label}</p>
-              <h3 class="mt-4 text-2xl font-semibold">${map.mood}</h3>
-              <p class="mt-3 text-slate-300 leading-7">${map.note}</p>
-            </button>
-          `;
-        }).join('');
-        labScreen.innerHTML = `
-          <div class="grid gap-4 sm:grid-cols-3">${styleCards}</div>
-          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <button id="style-back" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
-            <button id="style-next" class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400">Next: Scenario</button>
-          </div>
-        `;
-        document.querySelectorAll('[data-style]').forEach(button => {
-          button.addEventListener('click', () => {
-            state.style = button.dataset.style;
-            renderLabScreen();
-          });
-        });
-        document.getElementById('style-back').addEventListener('click', () => {
-          state.labStage = 'lobby'; renderLabScreen();
-        });
-        document.getElementById('style-next').addEventListener('click', () => {
-          state.labStage = 'scenarios'; renderLabScreen();
         });
         return;
       }
@@ -455,7 +401,7 @@
           });
         });
         document.getElementById('scenarios-back').addEventListener('click', () => {
-          state.labStage = 'style'; renderLabScreen();
+          state.labStage = 'lobby'; renderLabScreen();
         });
         document.getElementById('scenarios-next').addEventListener('click', () => {
           if (!state.scenario) return;
@@ -598,6 +544,12 @@
         const currentEffort = state.answers.effort;
         const target = scenario.effortTarget;
         const matrixLines = state.finalMatrix.split('\n').map(line => `<p>${line}</p>`).join('');
+        const upadanaSuccess = state.answers.upadana === correctedUpadana;
+        const kalaSuccess = state.answers.kala === correctKala;
+        const effortSuccess = currentEffort >= target;
+        const niyatiSuccess = state.roll.niyati === 'Aligned';
+        const karmaSuccess = state.roll.karma === 'Aligned';
+        const postureSuccess = state.posture === 'Knower-Seer';
         labScreen.innerHTML = `
           <div class="grid gap-6 lg:grid-cols-[1fr_360px]">
             <div class="space-y-6 rounded-3xl border border-slate-800 bg-slate-950/90 p-8">
@@ -608,54 +560,49 @@
                   <thead>
                     <tr class="border-b border-slate-800 text-slate-400">
                       <th class="px-4 py-3">Parameter</th>
-                      <th class="px-4 py-3">Chosen value</th>
-                      <th class="px-4 py-3">Correct value</th>
+                      <th class="px-4 py-3">Applied value</th>
+                      <th class="px-4 py-3">Ideal value for completion</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="border-b border-slate-800">
+                    <tr class="border-b border-slate-800 ${upadanaSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
                       <td class="px-4 py-4 text-slate-300">Upādāna</td>
                       <td class="px-4 py-4">${state.answers.upadana || '—'}</td>
                       <td class="px-4 py-4">${correctedUpadana}</td>
                     </tr>
-                    <tr class="border-b border-slate-800">
+                    <tr class="border-b border-slate-800 ${kalaSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
                       <td class="px-4 py-4 text-slate-300">Kāla</td>
                       <td class="px-4 py-4">${state.answers.kala || '—'}</td>
                       <td class="px-4 py-4">${correctKala}</td>
                     </tr>
-                    <tr>
+                    <tr class="border-b border-slate-800 ${effortSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
                       <td class="px-4 py-4 text-slate-300">Purushārtha</td>
                       <td class="px-4 py-4">${currentEffort}</td>
                       <td class="px-4 py-4">${target}</td>
                     </tr>
+                    <tr class="border-b border-slate-800 ${niyatiSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
+                      <td class="px-4 py-4 text-slate-300">Niyati <span class="ml-2 text-slate-400" title="This is not deterministic and was applied randomly">ⓘ</span></td>
+                      <td class="px-4 py-4">${state.roll.niyati}</td>
+                      <td class="px-4 py-4">Aligned</td>
+                    </tr>
+                    <tr class="border-b border-slate-800 ${karmaSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
+                      <td class="px-4 py-4 text-slate-300">Karma <span class="ml-2 text-slate-400" title="This is not deterministic and was applied randomly">ⓘ</span></td>
+                      <td class="px-4 py-4">${state.roll.karma}</td>
+                      <td class="px-4 py-4">Aligned</td>
+                    </tr>
+                    <tr class="${postureSuccess ? 'bg-emerald-500/10 text-emerald-100' : 'bg-rose-500/10 text-rose-100'}">
+                      <td class="px-4 py-4 text-slate-300">Posture</td>
+                      <td class="px-4 py-4">${state.posture}</td>
+                      <td class="px-4 py-4">Knower-Seer</td>
+                    </tr>
                   </tbody>
                 </table>
-              </div>
-              <div class="grid gap-3 sm:grid-cols-2">
-                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
-                  <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Hidden values</p>
-                  <p class="mt-4 font-semibold">Niyati: ${state.roll.niyati}</p>
-                  <p class="mt-2 font-semibold">Karma: ${state.roll.karma}</p>
-                </div>
-                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
-                  <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Posture</p>
-                  <p class="mt-4 font-semibold">${state.posture}</p>
-                  <p class="mt-2 text-slate-400">Internal success is based on your choice to observe instead of attach.</p>
-                </div>
               </div>
             </div>
             <div class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/90 p-6">
               <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
                 <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Reactive Insight</p>
                 <p class="mt-3 text-slate-300 leading-7">External success and internal success are not the same. The experiment is designed to make that felt, not just understood.</p>
-              </div>
-              <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
-                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Outcome formula</p>
-                <pre class="mt-3 rounded-2xl bg-slate-950 p-4 text-sm text-slate-300">correctUpadana && correctKala && enoughEffort && niyatiPass && karmaPass</pre>
-              </div>
-              <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
-                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Internal formula</p>
-                <pre class="mt-3 rounded-2xl bg-slate-950 p-4 text-sm text-slate-300">posture === "Knower-Seer"</pre>
               </div>
             </div>
           </div>
