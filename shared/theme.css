@@ -1,0 +1,74 @@
+/* Shared theme — all concepts use these colors and components */
+
+body {
+  min-height: 100vh;
+  background: #f4eee4;
+  color: #4a3d33;
+}
+
+.glass { background: #f4eee4; }
+.hide { display: none !important; }
+.card-shadow { box-shadow: 0 24px 60px rgba(92, 79, 66, .12); }
+.animate-fade { animation: fadeIn 0.45s ease forwards; opacity: 0; }
+
+@keyframes fadeIn { to { opacity: 1; } }
+
+.matrix-canvas {
+  display: block;
+  z-index: 0;
+}
+
+/* Concept hub cards */
+.concept-card {
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.concept-card:hover {
+  border-color: #fcd34d;
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px rgba(92, 79, 66, .16);
+}
+
+/* Red / Blue pill styles (laboratory pivot) */
+.pills { display: flex; gap: 40px; }
+.pill {
+  display: block;
+  width: 140px;
+  height: 60px;
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25);
+}
+.pill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  border-right: 2px solid rgba(255,255,255,.25);
+}
+.pill::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 45%;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.35);
+  filter: blur(2px);
+}
+.red {
+  background: linear-gradient(to right, #ff6b6b 0%, #ff4d4d 50%, #d90429 50%, #a60321 100%);
+  box-shadow: 0 0 25px rgba(255,70,70,.35), 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25);
+}
+.blue {
+  background: linear-gradient(to right, #7dd3fc 0%, #38bdf8 50%, #2563eb 50%, #1e40af 100%);
+  box-shadow: 0 0 25px rgba(59,130,246,.35), 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25);
+}
+
+/* Tab buttons */
+.tab-btn-active {
+  background-color: #fcd34d !important;
+  color: #1c1917 !important;
+}
