@@ -1,40 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Concept Laboratory</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="shared/theme.css" />
-</head>
-<body class="bg-stone-50 text-stone-900 font-sans">
-  <div class="max-w-7xl mx-auto px-4 pb-10 pt-8">
-    <header class="mb-10 animate-fade">
-      <p class="uppercase tracking-[0.35em] text-stone-500 text-xs">Concept Laboratory</p>
-      <h1 class="mt-2 text-3xl md:text-4xl font-semibold leading-tight">Play with ideas. Understand them deeply.</h1>
-      <p class="mt-4 text-stone-700 max-w-2xl leading-7">Choose a concept to explore its framework, interactive lab, and clarifying doubts.</p>
-    </header>
-
-    <main id="concept-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade"></main>
-  </div>
-
-  <script src="concepts.js"></script>
-  <script>
-    const grid = document.getElementById('concept-grid');
-
-    CONCEPTS.forEach(concept => {
-      const card = document.createElement('a');
-      card.href = concept.path;
-      card.className = 'concept-card block rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow no-underline text-inherit';
-      card.innerHTML = `
-        <div class="text-4xl">${concept.icon}</div>
-        <p class="mt-4 text-stone-500 uppercase text-xs tracking-[0.24em]">${concept.subtitle}</p>
-        <h2 class="mt-2 text-2xl font-semibold">${concept.title}</h2>
-        <p class="mt-3 text-stone-700 leading-7">${concept.summary}</p>
-        <p class="mt-6 text-sm font-medium text-amber-700">Enter concept →</p>
-      `;
-      grid.appendChild(card);
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept Laboratory</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -2,49 +2,81 @@
 
 Play with different concepts and understand them deeply.
 
-No build tools, no React — just open `index.html` in a browser.
+Built with **React**, **Vite**, and **Tailwind CSS**.
 
 ## Project structure
 
 ```
 /
-├── index.html              # Hub — cards for all concepts
-├── concepts.js             # Registry of concepts (title, summary, path)
-├── shared/
-│   ├── theme.css           # Shared colors and UI components
-│   ├── tabs.js             # Tab switching utility
-│   └── matrix.js           # Matrix animation (laboratory pivot screen only)
-└── samvaay/                # One concept per folder
-    ├── index.html          # Concept page (Concepts, Lab, FAQ tabs)
-    ├── project.md          # Design spec for this concept
-    └── lab.js              # Interactive laboratory logic
+├── index.html              # Vite entry
+├── package.json
+├── src/
+│   ├── App.jsx             # Router
+│   ├── concepts/
+│   │   ├── registry.js     # Concept metadata (title, summary, icon)
+│   │   ├── index.jsx        # Maps concept id → tab content
+│   │   └── samvaay/        # One concept per folder
+│   │       ├── SamvaayConcepts.jsx
+│   │       ├── SamvaayFaq.jsx
+│   │       ├── SamvaayLab.jsx
+│   │       ├── data.js
+│   │       └── lab/        # Lab stage components
+│   └── components/
+│       ├── layout/         # ConceptHub, ConceptPage, ConceptTabs
+│       ├── prose/          # ConceptProse, Callout, Split, DefinitionList
+│       ├── faq/            # FaqSection
+│       └── lab/            # LabEmbedded, PivotImmersive
+└── shared/                 # Legacy vanilla assets (kept for reference)
 ```
+
+## Reusable components
+
+Every concept shares the same page shell:
+
+| Component | Purpose |
+|-----------|---------|
+| `ConceptHub` | Landing page with concept cards |
+| `ConceptPage` | Header, back link, tab routing |
+| `ConceptTabs` | Concepts / Laboratory / FAQ tabs |
+| `ConceptProse` | Styled prose, callouts, splits, definition lists |
+| `FaqSection` | Accordion FAQ tab |
+| `LabEmbedded` | Laboratory wrapper with title |
+| `PivotImmersive` | Fullscreen pivot overlay with matrix animation |
 
 ## Adding a new concept
 
-1. Create a folder, e.g. `my-concept/`
-2. Add `index.html` with three tabs: **The Concepts**, **The Laboratory**, **Clarifying Doubts**
-3. Link shared assets from `../shared/theme.css`, `../shared/tabs.js` (and `../shared/matrix.js` if the lab has a pivot screen)
-4. Add concept-specific logic (e.g. `lab.js`) in the folder
-5. Register it in `concepts.js`:
+1. Register it in `src/concepts/registry.js`
+2. Create `src/concepts/my-concept/` with:
+   - `MyConceptConcepts.jsx` — Concepts tab content
+   - `MyConceptFaq.jsx` — FAQ tab
+   - `MyConceptLab.jsx` — Laboratory tab (optional)
+3. Wire it in `src/concepts/index.jsx`:
 
 ```js
-{
-  id: 'my-concept',
-  title: 'My Concept',
-  subtitle: 'Short tagline',
-  summary: 'One-line description shown on the hub card.',
-  path: 'my-concept/index.html',
-  icon: '✨'
-}
+import MyConceptConcepts from './my-concept/MyConceptConcepts';
+import MyConceptFaq from './my-concept/MyConceptFaq';
+import MyConceptLab from './my-concept/MyConceptLab';
+
+const CONTENT = {
+  // ...
+  'my-concept': {
+    concepts: <MyConceptConcepts />,
+    lab: <MyConceptLab />,
+    doubts: <MyConceptFaq />,
+  },
+};
 ```
 
 ## Running locally
 
-Double-click `index.html`, or serve the folder with any static server:
-
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-Then open http://localhost:8000
+Open http://localhost:5173
+
+```bash
+npm run build   # production build
+npm run preview # preview production build
+```
