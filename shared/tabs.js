@@ -10,10 +10,14 @@ function initTabs(tabMap, defaultTab) {
 
   function showTab(tab) {
     for (const key in panels) {
-      panels[key].classList.toggle('hide', key !== tab);
-      buttons[key].classList.toggle('tab-btn-active', key === tab);
-      buttons[key].classList.toggle('bg-stone-200', key !== tab);
-      buttons[key].classList.toggle('hover:bg-stone-300', key !== tab);
+      const isActive = key === tab;
+      panels[key].classList.toggle('hide', !isActive);
+      buttons[key].classList.toggle('tab-btn-active', isActive);
+      if (!buttons[key].classList.contains('concept-tab-btn')) {
+        buttons[key].classList.toggle('bg-stone-200', !isActive);
+        buttons[key].classList.toggle('hover:bg-stone-300', !isActive);
+      }
+      buttons[key].setAttribute('aria-selected', isActive ? 'true' : 'false');
     }
   }
 

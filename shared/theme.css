@@ -18,6 +18,71 @@ body {
   z-index: 0;
 }
 
+/* Pivot — fullscreen dark immersion */
+.pivot-immersive {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #030303;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.85s ease, visibility 0.85s ease;
+}
+.pivot-immersive.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.pivot-immersive .matrix-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 0;
+}
+.pivot-immersive-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.55) 100%);
+  animation: pivot-vignette-in 1.2s ease forwards;
+}
+.pivot-immersive-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  animation: pivot-content-in 1s ease 0.35s both;
+}
+@keyframes pivot-vignette-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pivot-content-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+body.pivot-locked {
+  overflow: hidden;
+}
+
+/* Embedded laboratory */
+.lab-embedded {
+  margin-top: 0.5rem;
+}
+
 /* Concept hub cards */
 .concept-card {
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -67,8 +132,122 @@ body {
   box-shadow: 0 0 25px rgba(59,130,246,.35), 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25);
 }
 
-/* Tab buttons */
+/* Tab buttons (legacy pill style) */
 .tab-btn-active {
   background-color: #fcd34d !important;
   color: #1c1917 !important;
+}
+
+/* Concept page — aligned underline tabs */
+.concept-tabs {
+  display: flex;
+  border-bottom: 1px solid #d6d3d1;
+  margin-bottom: 2rem;
+  gap: 0;
+}
+.concept-tab-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #78716c;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+.concept-tab-btn:hover {
+  color: #44403c;
+}
+.concept-tab-btn.tab-btn-active {
+  color: #1c1917 !important;
+  background: transparent !important;
+  border-bottom-color: #d97706;
+}
+@media (min-width: 640px) {
+  .concept-tab-btn {
+    flex: 0 1 auto;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Readable concept prose */
+.concept-prose h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #292524;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.concept-prose h2:first-child {
+  margin-top: 0;
+}
+.concept-prose p {
+  color: #57534e;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.concept-prose ul {
+  color: #57534e;
+  line-height: 1.75;
+  margin: 0.5rem 0 1rem 1.25rem;
+  list-style: disc;
+}
+.concept-prose li {
+  margin-bottom: 0.35rem;
+}
+.concept-prose dl {
+  margin: 1rem 0;
+}
+.concept-prose dt {
+  font-weight: 600;
+  color: #292524;
+  margin-top: 1rem;
+}
+.concept-prose dt:first-child {
+  margin-top: 0;
+}
+.concept-prose dd {
+  color: #57534e;
+  line-height: 1.7;
+  margin-left: 0;
+  margin-top: 0.25rem;
+}
+.concept-callout {
+  border-left: 3px solid #d97706;
+  padding: 1rem 1.25rem;
+  background: rgba(251, 191, 36, 0.08);
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 1.5rem 0;
+}
+.concept-callout p {
+  margin: 0;
+  color: #44403c;
+}
+.concept-split {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .concept-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.concept-split-item {
+  padding: 1.25rem 0;
+  border-top: 1px solid #e7e5e4;
+}
+.concept-split-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #292524;
+  margin-bottom: 0.5rem;
+}
+.concept-split-item p {
+  font-size: 0.9375rem;
+  margin: 0;
 }

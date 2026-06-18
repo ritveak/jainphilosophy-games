@@ -1,9 +1,11 @@
 function initSamvaayLab() {
-  const labOverlay = document.getElementById('lab-overlay');
   const labScreen = document.getElementById('lab-screen');
+  const pivotScreen = document.getElementById('pivot-screen');
+  const pivotImmersive = document.getElementById('pivot-immersive');
   const labMatrixCanvas = document.getElementById('lab-matrix-canvas');
-  const closeLabBtn = document.getElementById('close-lab-btn');
   const labTitle = document.getElementById('lab-title');
+  let labInitialized = false;
+  let pivotExitTimer = null;
 
   const state = {
     labStage: 'scenarios',
@@ -290,10 +292,40 @@ function initSamvaayLab() {
         <div class="flex flex-col sm:flex-row sm:justify-center gap-3 pb-4">
           <button id="try-again" class="rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400 bg-stone-50">Try Again</button>
           <button id="choose-other" class="rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white hover:bg-emerald-500">Choose Another Experiment</button>
-          <button id="exit-lab" class="rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400 bg-stone-50">Exit Laboratory</button>
+          <button id="new-experiment" class="rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400 bg-stone-50">New experiment</button>
         </div>
       </div>
     `;
+  }
+
+  function enterPivotImmersive() {
+    if (pivotExitTimer) {
+      clearTimeout(pivotExitTimer);
+      pivotExitTimer = null;
+    }
+    const wasHidden = pivotImmersive.classList.contains('hidden');
+    pivotImmersive.classList.remove('hidden');
+    pivotImmersive.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('pivot-locked');
+    if (wasHidden || !pivotImmersive.classList.contains('is-active')) {
+      requestAnimationFrame(() => {
+        pivotImmersive.classList.add('is-active');
+      });
+      startMatrix(labMatrixCanvas, { crisp: true });
+    }
+  }
+
+  function exitPivotImmersive() {
+    if (pivotImmersive.classList.contains('hidden')) return;
+    pivotImmersive.classList.remove('is-active');
+    pivotImmersive.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('pivot-locked');
+    stopMatrix();
+    pivotExitTimer = setTimeout(() => {
+      pivotImmersive.classList.add('hidden');
+      pivotScreen.innerHTML = '';
+      pivotExitTimer = null;
+    }, 850);
   }
 
   function resetLab() {
@@ -314,6 +346,15 @@ function initSamvaayLab() {
       const max = entry.effortRange[1];
       entry.effortTarget = min === max ? min : Math.floor(Math.random() * (max - min + 1) + min);
     });
+  }
+
+  function resetToScenarios() {
+    exitPivotImmersive();
+    state.labStage = 'scenarios';
+    state.scenario = null;
+    state.progressStep = 0;
+    state.answers = { upadana: null, kala: null, effort: 0 };
+    renderLabScreen();
   }
 
   function renderLabHeader() {
@@ -350,11 +391,66 @@ function initSamvaayLab() {
     state.revealIndex = 0;
   }
 
+  function renderPivotScreen() {
+    const narrative = state.style === 'narrative'
+      ? '<p class="text-stone-400 leading-7">Every condition has been chosen. What posture will meet the outcome?</p>'
+      : '';
+    pivotScreen.innerHTML = `
+      <div class="rounded-2xl border border-stone-600 bg-stone-950/95 p-8 sm:p-10 text-center space-y-6 text-stone-100 shadow-2xl">
+        <p class="text-amber-400 uppercase tracking-[0.35em] text-xs">Everything stops here</p>
+        <h3 class="text-3xl sm:text-4xl font-semibold leading-tight">The experiment is complete.</h3>
+        <p class="text-stone-300 text-lg leading-relaxed">The outcome already exists. You have not yet seen it.<br/>How will you meet it?</p>
+        ${narrative}
+        <div class="grid gap-4 sm:grid-cols-2 pt-2">
+          <button id="pick-reactive" type="button" class="rounded-2xl border border-stone-600 bg-stone-900/90 p-6 text-left transition hover:border-blue-500/70 hover:bg-stone-900">
+            <div class="flex items-center justify-between gap-3">
+              <p class="text-xs uppercase tracking-[0.24em] text-stone-500">Reactive Loop</p>
+              <div class="pill blue scale-75 origin-right"></div>
+            </div>
+            <h4 class="mt-4 text-xl font-semibold text-stone-100">My happiness depends on results.</h4>
+          </button>
+          <button id="pick-knower" type="button" class="rounded-2xl border border-stone-600 bg-stone-900/90 p-6 text-left transition hover:border-red-500/70 hover:bg-stone-900">
+            <div class="flex items-center justify-between gap-3">
+              <p class="text-xs uppercase tracking-[0.24em] text-stone-500">Knower-Seer</p>
+              <div class="pill red scale-75 origin-right"></div>
+            </div>
+            <h4 class="mt-4 text-xl font-semibold text-stone-100">I observe outcomes without becoming them.</h4>
+          </button>
+        </div>
+        <button id="pivot-back" type="button" class="mt-2 rounded-full border border-stone-600 px-5 py-2.5 text-sm text-stone-400 hover:border-stone-500 hover:text-stone-200">Back</button>
+      </div>
+    `;
+    document.getElementById('pick-reactive').addEventListener('click', () => {
+      state.posture = 'Reactive Loop';
+      state.labStage = 'reveal';
+      makeRevealQueue();
+      renderLabScreen();
+    });
+    document.getElementById('pick-knower').addEventListener('click', () => {
+      state.posture = 'Knower-Seer';
+      state.labStage = 'reveal';
+      makeRevealQueue();
+      renderLabScreen();
+    });
+    document.getElementById('pivot-back').addEventListener('click', () => {
+      state.labStage = 'step';
+      state.progressStep = stepNames.length - 1;
+      renderLabScreen();
+    });
+  }
+
   function renderLabScreen() {
     renderLabHeader();
     clearAdvanceTimer();
     clearRevealTimer();
-    if (state.labStage !== 'pivot') stopMatrix();
+
+    if (state.labStage === 'pivot') {
+      enterPivotImmersive();
+      renderPivotScreen();
+      return;
+    }
+
+    exitPivotImmersive();
     labScreen.innerHTML = '';
 
     if (state.labStage === 'scenarios') {
@@ -421,53 +517,6 @@ function initSamvaayLab() {
       return;
     }
 
-    if (state.labStage === 'pivot') {
-      startMatrix(labMatrixCanvas);
-      const narrative = state.style === 'narrative' ? `<p class="text-stone-500 leading-7">The experiment is complete. Every condition has been chosen. What posture will meet the outcome?</p>` : '';
-      labScreen.innerHTML = `
-        <div class="rounded-3xl border border-stone-200 bg-stone-50 p-10 text-center space-y-6">
-          <p class="text-stone-500 uppercase tracking-[0.25em] text-xs">Pivot Point</p>
-          <h3 class="text-4xl font-semibold">The experiment is complete.</h3>
-          <p class="text-stone-700 text-lg leading-8">The outcome already exists. You have not yet seen it. How will you meet it?</p>
-          ${narrative}
-          <div class="grid gap-4 sm:grid-cols-2">
-            <button id="pick-reactive" class="rounded-3xl border border-stone-200 bg-stone-50 p-6 text-left transition hover:bg-stone-100">
-              <div class="flex items-center justify-between">
-                <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Reactive Loop</p>
-                <div class="pill blue"></div>
-              </div>
-              <h4 class="mt-4 text-2xl font-semibold w-full">My happiness depends on results.</h4>
-            </button>
-            <button id="pick-knower" class="rounded-3xl border border-stone-200 bg-stone-50 p-6 text-left transition hover:bg-stone-100">
-              <div class="flex items-center justify-between">
-                <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Knower-Seer</p>
-                <div class="pill red"></div>
-              </div>
-              <h4 class="mt-4 text-2xl font-semibold w-full">I observe outcomes without becoming them.</h4>
-            </button>
-          </div>
-          <button id="pivot-back" class="mt-6 rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400">Back</button>
-        </div>
-      `;
-      document.getElementById('pick-reactive').addEventListener('click', () => {
-        state.posture = 'Reactive Loop';
-        state.labStage = 'reveal';
-        makeRevealQueue();
-        renderLabScreen();
-      });
-      document.getElementById('pick-knower').addEventListener('click', () => {
-        state.posture = 'Knower-Seer';
-        state.labStage = 'reveal';
-        makeRevealQueue();
-        renderLabScreen();
-      });
-      document.getElementById('pivot-back').addEventListener('click', () => {
-        state.labStage = 'step';
-        renderLabScreen();
-      });
-      return;
-    }
-
     if (state.labStage === 'reveal') {
       const revealItems = state.revealQueue.slice(0, state.revealIndex).map(item => `
         <div class="rounded-3xl p-5 border ${item.passed ? 'bg-emerald-500/15 border-emerald-500' : 'bg-rose-500/10 border-rose-500'}">
@@ -528,7 +577,7 @@ function initSamvaayLab() {
         state.answers = { upadana: null, kala: null, effort: 0 };
         renderLabScreen();
       });
-      document.getElementById('exit-lab').addEventListener('click', closeLab);
+      document.getElementById('new-experiment').addEventListener('click', resetToScenarios);
       return;
     }
   }
@@ -635,27 +684,14 @@ function initSamvaayLab() {
     }
   });
 
-  function openLab() {
-    resetLab();
-    labOverlay.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-    renderLabScreen();
-  }
-
-  function closeLab() {
-    clearAdvanceTimer();
-    clearRevealTimer();
-    stopMatrix();
-    labOverlay.classList.add('hidden');
-    document.body.style.overflow = '';
-  }
-
-  closeLabBtn.addEventListener('click', closeLab);
-
   const tabLabBtn = document.getElementById('tab-lab-btn');
   if (tabLabBtn) {
     tabLabBtn.addEventListener('click', () => {
-      if (labOverlay.classList.contains('hidden')) openLab();
+      if (!labInitialized) {
+        resetLab();
+        labInitialized = true;
+      }
+      renderLabScreen();
     });
   }
 }

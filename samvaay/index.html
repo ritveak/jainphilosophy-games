@@ -3,194 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samvāyas — Jain Cause & Effect Laboratory</title>
+  <title>Samvāyas — Cause & Effect</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../shared/theme.css" />
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans">
-  <div class="max-w-7xl mx-auto px-4 pb-10 pt-8">
-    <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
-      <div>
-        <a href="../index.html" class="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-700 mb-3 no-underline">← All concepts</a>
-        <p class="uppercase tracking-[0.35em] text-stone-500 text-xs">Jain Cause & Effect Laboratory</p>
-        <h1 class="mt-2 text-3xl md:text-4xl font-semibold leading-tight">An immersive exploration of outcomes and awareness.</h1>
-      </div>
-      <div class="flex flex-wrap gap-2 sm:justify-end">
-        <button id="tab-concepts-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-stone-200 hover:bg-stone-300 tab-btn-active">The Concepts</button>
-        <button id="tab-lab-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-stone-200 hover:bg-stone-300">The Laboratory</button>
-        <button id="tab-doubts-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-stone-200 hover:bg-stone-300">Clarifying Doubts</button>
-      </div>
+  <div class="max-w-3xl mx-auto px-4 pb-16 pt-8">
+    <header class="mb-6">
+      <a href="../index.html" class="inline-flex items-center gap-1 text-sm text-stone-500 hover:text-stone-800 no-underline mb-4">← All concepts</a>
+      <h1 class="text-3xl font-semibold tracking-tight text-stone-900">Samvāyas</h1>
+      <p class="mt-2 text-stone-600 leading-relaxed max-w-2xl">Why effort alone does not guarantee a result — and why your peace does not have to depend on whether you succeed.</p>
     </header>
 
-    <main id="main-content" class="space-y-8">
-      <section id="tab-concepts" class="space-y-6 animate-fade">
-        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <p class="text-stone-500 uppercase text-xs tracking-[0.24em]">Purpose</p>
-            <h2 class="mt-4 text-xl font-semibold">A philosophical laboratory</h2>
-            <p class="mt-3 text-stone-700 leading-7">Explore how multiple causes shape external outcomes while awareness remains free from success or failure.</p>
-          </div>
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <p class="text-stone-500 uppercase text-xs tracking-[0.24em]">Mood</p>
-            <h2 class="mt-4 text-xl font-semibold">Curious. Responsible. Reflective.</h2>
-            <p class="mt-3 text-stone-700 leading-7">This is not a quiz. It is an interactive simulation that leads to an emotional insight.</p>
-          </div>
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <p class="text-stone-500 uppercase text-xs tracking-[0.24em]">Outcome</p>
-            <h2 class="mt-4 text-xl font-semibold">Separate success from awareness</h2>
-            <p class="mt-3 text-stone-700 leading-7">The app surfaces two dimensions: external result and internal posture.</p>
-          </div>
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <p class="text-stone-500 uppercase text-xs tracking-[0.24em]">Experience</p>
-            <h2 class="mt-4 text-xl font-semibold">Guided, immersive, elegant</h2>
-            <p class="mt-3 text-stone-700 leading-7">Move through a journey of choices, hidden forces, and a reflective reveal.</p>
-          </div>
+    <nav class="concept-tabs" role="tablist" aria-label="Samvaay sections">
+      <button id="tab-concepts-btn" type="button" role="tab" aria-selected="true" class="concept-tab-btn tab-btn-active">Concepts</button>
+      <button id="tab-lab-btn" type="button" role="tab" aria-selected="false" class="concept-tab-btn">Laboratory</button>
+      <button id="tab-doubts-btn" type="button" role="tab" aria-selected="false" class="concept-tab-btn">FAQ</button>
+    </nav>
+
+    <main id="main-content">
+      <section id="tab-concepts" class="animate-fade concept-prose">
+        <p>In Jain thought, a <strong>samvāya</strong> is a condition that must be present for something to happen. No harvest comes from effort alone. Seed, soil, season, time, and countless hidden factors all participate. The laboratory walks you through this — then asks a second question: when the result finally appears, what happens inside you?</p>
+
+        <div class="concept-callout">
+          <p><strong>The split this concept teaches:</strong> external success (did the world cooperate?) and internal success (did awareness stay free?) are independent. You can have one without the other.</p>
         </div>
 
-        <div class="grid gap-6 xl:grid-cols-2">
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <div class="flex items-center gap-3 text-2xl">🌾 <span class="text-lg font-semibold">Upādāna</span></div>
-            <p class="mt-4 text-stone-700 leading-7">Material cause: the substance that makes the result possible.</p>
-            <div class="mt-5 grid gap-3">
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-                <p class="text-stone-500 text-sm">Example</p>
-                <p class="mt-1 font-medium">Seed → Plant</p>
-              </div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-                <p class="text-stone-500 text-sm">Example</p>
-                <p class="mt-1 font-medium">Clay → Pot</p>
-              </div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-                <p class="text-stone-500 text-sm">Example</p>
-                <p class="mt-1 font-medium">Bone matrix → Healing</p>
-              </div>
-            </div>
+        <h2>What has to align for a result?</h2>
+        <p>When you run an experiment in the laboratory, you work through the main conditions Jain philosophy names. Together they explain why the same effort sometimes works and sometimes does not.</p>
+        <dl>
+          <dt>Upādāna — material cause</dt>
+          <dd>The substance the result is actually made from. Rice needs a rice seed, not sand. A pot needs clay, not stone. Wrong material, wrong outcome — no matter how hard you try.</dd>
+          <dt>Purushārtha — effort</dt>
+          <dd>Your deliberate work: planting, shaping, studying, practicing. Necessary, visible, and under your control — but never the whole story.</dd>
+          <dt>Kāla — time</dt>
+          <dd>Some results cannot be rushed. A bone needs weeks to mend; rice needs a full season. The right action at the wrong time still fails.</dd>
+          <dt>Svabhāva — nature</dt>
+          <dd>The intrinsic properties of what you started with. A seed carries its own limits. Clay has its own temperament on the wheel. You work with nature; you do not override it by will alone.</dd>
+          <dt>Niyati — order</dt>
+          <dd>Background conditions that must quietly fall into place — weather, context, timing of the wider world. You prepare, but the environment must cooperate too.</dd>
+          <dt>Karma — prior momentum</dt>
+          <dd>Invisible weight from what came before: habits, history, accumulated causes. It can ease a path or block one even when everything else looks right.</dd>
+        </dl>
+
+        <h2>Material cause vs. instrumental cause</h2>
+        <p>Jain philosophy also distinguishes <em>what</em> becomes the result from <em>who or what</em> helps it along.</p>
+        <ul>
+          <li><strong>Upādāna</strong> (material): seed becomes plant, clay becomes pot, living bone tissue enables healing.</li>
+          <li><strong>Nimitta</strong> (instrumental): the farmer tends the field, the potter turns the wheel, the doctor sets the bone — they enable the change but are not the substance of the result itself.</li>
+        </ul>
+        <p>Confusing the two leads to wasted effort: polishing technique when the wrong material was chosen, or blaming the farmer when the seed was never viable.</p>
+
+        <h2>When the outcome arrives</h2>
+        <p>After all conditions play out, you still choose how to meet the result. The laboratory ends with this fork:</p>
+        <div class="concept-split">
+          <div class="concept-split-item">
+            <h3>Reactive loop</h3>
+            <p>Success inflates you; failure diminishes you. Pride, blame, anxiety, and craving follow the result — happiness becomes hostage to what happened outside.</p>
           </div>
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow">
-            <div class="flex items-center gap-3 text-2xl">🛠️ <span class="text-lg font-semibold">Nimitta</span></div>
-            <p class="mt-4 text-stone-700 leading-7">Instrumental cause: the person or condition that enables the change.</p>
-            <div class="mt-5 grid gap-3">
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Farmer</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Potter</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Translator</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Doctor</div>
-            </div>
+          <div class="concept-split-item">
+            <h3>Knower-seer</h3>
+            <p>You register the outcome clearly without fusing with it. The result is seen; awareness itself is not won or lost by it.</p>
           </div>
         </div>
+        <p class="mt-6 text-sm text-stone-500">Open the <strong>Laboratory</strong> tab to run a scenario and feel this distinction directly.</p>
+      </section>
 
-        <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/70 card-shadow">
-          <div class="flex items-center justify-between gap-4 mb-6">
-            <div>
-              <p class="text-stone-500 uppercase text-xs tracking-[0.24em]">Five Samvāyas</p>
-              <h2 class="mt-2 text-2xl font-semibold">How results emerge</h2>
-            </div>
-            <div class="rounded-full bg-stone-200 px-3 py-1 text-xs uppercase tracking-[0.20em] text-stone-500">Visual</div>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
-            <div class="col-span-6 sm:col-span-1 rounded-3xl border border-stone-200 p-4 text-center bg-stone-50">Result</div>
-            <div class="col-span-6 sm:col-span-5 rounded-3xl border border-stone-200 p-4 bg-stone-100/90">
-              <div class="grid grid-cols-2 gap-3 sm:grid-cols-5">
-                <div class="rounded-3xl bg-stone-50 p-4 text-center">Upādāna</div>
-                <div class="rounded-3xl bg-stone-50 p-4 text-center">Svabhāva</div>
-                <div class="rounded-3xl bg-stone-50 p-4 text-center">Kāla</div>
-                <div class="rounded-3xl bg-stone-50 p-4 text-center">Niyati</div>
-                <div class="rounded-3xl bg-stone-50 p-4 text-center">Karma</div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-6 grid gap-4 md:grid-cols-2">
-            <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-              <p class="text-stone-700 font-semibold">Svabhāva</p>
-              <p class="mt-2 text-stone-500 text-sm leading-6">The intrinsic nature of the thing or being.</p>
-            </div>
-            <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-              <p class="text-stone-700 font-semibold">Kāla</p>
-              <p class="mt-2 text-stone-500 text-sm leading-6">Timing and readiness. Some outcomes require the right duration.</p>
-            </div>
-            <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-              <p class="text-stone-700 font-semibold">Niyati</p>
-              <p class="mt-2 text-stone-500 text-sm leading-6">The ordered condition that makes a result possible.</p>
-            </div>
-            <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">
-              <p class="text-stone-700 font-semibold">Karma</p>
-              <p class="mt-2 text-stone-500 text-sm leading-6">Hidden momentum from prior causes that shifts success or failure.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid gap-6 xl:grid-cols-2">
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/70 card-shadow">
-            <h3 class="text-xl font-semibold mb-4">Reactive Loop</h3>
-            <div class="grid gap-3">
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Blame</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Pride</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Anxiety</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Craving</div>
-            </div>
-          </div>
-          <div class="rounded-3xl border border-stone-200 p-6 bg-stone-100/70 card-shadow">
-            <h3 class="text-xl font-semibold mb-4">Knower-Seer</h3>
-            <div class="grid gap-3">
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Awareness</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Equanimity</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Observation</div>
-              <div class="rounded-2xl bg-stone-50 p-4 border border-stone-200">Clarity</div>
-            </div>
-          </div>
+      <section id="tab-lab" class="hide animate-fade">
+        <div id="lab-embedded" class="lab-embedded">
+          <p class="text-xs uppercase tracking-widest text-stone-500 mb-1">Laboratory</p>
+          <h2 id="lab-title" class="text-xl font-semibold text-stone-900 mb-6">Choose a scenario</h2>
+          <div id="lab-screen" class="space-y-6"></div>
         </div>
       </section>
 
-      <section id="tab-lab" class="hide animate-fade space-y-6">
-        <div class="rounded-3xl border border-stone-200 p-8 bg-gradient-to-br from-stone-100 via-stone-50 to-stone-100 card-shadow">
-          <h2 class="text-3xl font-semibold">The Laboratory</h2>
-          <p class="mt-3 text-stone-700 max-w-2xl">Inspect the machinery behind outcomes. Choose a scenario and move through a layered causal journey — the experiment opens automatically when you enter this tab.</p>
-        </div>
-      </section>
-
-      <section id="tab-doubts" class="hide animate-fade space-y-6">
-        <div class="rounded-3xl border border-stone-200 p-8 bg-stone-100/80 card-shadow">
-          <h2 class="text-3xl font-semibold">Clarifying Doubts</h2>
-          <p class="mt-3 text-stone-700 max-w-2xl">Short answers that help translate the laboratory into the way you make choices.</p>
-        </div>
-        <div class="space-y-4">
-          <details class="rounded-3xl border border-stone-200 bg-stone-50/80 p-5">
-            <summary class="font-semibold">Does this mean everything is predetermined?</summary>
-            <p class="mt-3 text-stone-700 leading-7">Not exactly. The lab shows multiple conditions matter. Some outcomes depend on factors beyond effort, but inward posture remains a meaningful choice.</p>
-          </details>
-          <details class="rounded-3xl border border-stone-200 bg-stone-50/80 p-5">
-            <summary class="font-semibold">Where does free will exist?</summary>
-            <p class="mt-3 text-stone-700 leading-7">Free will appears in how you show up. You can choose effort, direction, and whether you become attached to the result.</p>
-          </details>
-          <details class="rounded-3xl border border-stone-200 bg-stone-50/80 p-5">
-            <summary class="font-semibold">Why can effort fail?</summary>
-            <p class="mt-3 text-stone-700 leading-7">Because success requires many aligned causes. Effort is vital, but it is only one part of the full causal system.</p>
-          </details>
-          <details class="rounded-3xl border border-stone-200 bg-stone-50/80 p-5">
-            <summary class="font-semibold">How is this useful today?</summary>
-            <p class="mt-3 text-stone-700 leading-7">It helps reduce attachment to outcomes, make better decisions, and notice when your inner awareness is still free even when the world is not fully aligned.</p>
-          </details>
-        </div>
+      <section id="tab-doubts" class="hide animate-fade space-y-3">
+        <p class="concept-prose text-stone-600 mb-4">Common questions after going through the lab.</p>
+        <details class="rounded-xl border border-stone-200 bg-white px-5 py-4">
+          <summary class="font-medium text-stone-900 cursor-pointer">Does this mean everything is predetermined?</summary>
+          <p class="mt-3 text-stone-600 text-sm leading-relaxed">No. Many conditions matter, and not all are visible. Some factors lie beyond your effort, but how you respond inwardly — and how much effort you bring — remains meaningful.</p>
+        </details>
+        <details class="rounded-xl border border-stone-200 bg-white px-5 py-4">
+          <summary class="font-medium text-stone-900 cursor-pointer">Where does free will exist?</summary>
+          <p class="mt-3 text-stone-600 text-sm leading-relaxed">In effort, direction, and posture toward results. You cannot command every external condition, but you can choose whether to become attached to success or failure.</p>
+        </details>
+        <details class="rounded-xl border border-stone-200 bg-white px-5 py-4">
+          <summary class="font-medium text-stone-900 cursor-pointer">Why can effort fail?</summary>
+          <p class="mt-3 text-stone-600 text-sm leading-relaxed">Because effort is one samvāya among several. Wrong material, wrong timing, unfavorable conditions, or hidden momentum can all prevent an outcome even when you tried sincerely.</p>
+        </details>
+        <details class="rounded-xl border border-stone-200 bg-white px-5 py-4">
+          <summary class="font-medium text-stone-900 cursor-pointer">How is this useful in daily life?</summary>
+          <p class="mt-3 text-stone-600 text-sm leading-relaxed">It loosens the grip of outcomes on your identity. You can plan and work fully while holding that the result depends on more than you — and that your clarity need not rise and fall with it.</p>
+        </details>
       </section>
     </main>
   </div>
 
-  <div id="lab-overlay" class="fixed inset-0 z-50 hidden bg-stone-50 text-stone-900 overflow-y-auto">
-    <canvas id="lab-matrix-canvas" class="matrix-canvas fixed inset-0 w-full h-full pointer-events-none hidden"></canvas>
-    <div class="min-h-screen flex flex-col relative z-10">
-      <div class="sticky top-0 z-20 border-b border-stone-200 bg-stone-50 px-4 py-4">
-        <div class="flex items-center justify-between gap-4 max-w-7xl mx-auto">
-          <div>
-            <p class="text-xs uppercase tracking-[0.35em] text-stone-500">Laboratory</p>
-            <h2 id="lab-title" class="text-2xl font-semibold">The Laboratory</h2>
-          </div>
-          <button id="close-lab-btn" class="rounded-full border border-stone-300 px-4 py-2 text-sm text-stone-700 hover:border-stone-400">Exit</button>
-        </div>
-      </div>
-      <div class="flex-1 px-4 py-8 sm:px-6 lg:px-8">
-        <div class="mx-auto w-full max-w-6xl">
-          <div id="lab-screen" class="space-y-6"></div>
-        </div>
-      </div>
+  <div id="pivot-immersive" class="pivot-immersive hidden" aria-hidden="true">
+    <canvas id="lab-matrix-canvas" class="matrix-canvas hidden"></canvas>
+    <div class="pivot-immersive-vignette"></div>
+    <div class="pivot-immersive-content">
+      <div id="pivot-screen" class="w-full max-w-2xl"></div>
     </div>
   </div>
 
