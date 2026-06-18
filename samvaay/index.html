@@ -11,12 +11,21 @@
     .hide { display: none !important; }
     .card-shadow { box-shadow: 0 24px 60px rgba(92, 79, 66, .12); }
     .animate-fade { animation: fadeIn 0.45s ease forwards; opacity: 0; }
+    #matrix-canvas { display: block; }
     @keyframes fadeIn { to { opacity: 1; } }
     .progress-dot { width: 10px; height: 10px; border-radius: 9999px; }
+    /* Red / Blue pill styles (from user sample) */
+    .pills { display: flex; gap: 40px; }
+    .pill { display: block; width: 140px; height: 60px; border-radius: 999px; position: relative; overflow: hidden; margin: 0 auto 12px; box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25); }
+    .pill::before { content: ""; position: absolute; inset: 0; width: 50%; border-right: 2px solid rgba(255,255,255,.25); }
+    .pill::after { content: ""; position: absolute; top: 8px; left: 15px; width: 45%; height: 14px; border-radius: 999px; background: rgba(255,255,255,.35); filter: blur(2px); }
+    .red { background: linear-gradient(to right, #ff6b6b 0%, #ff4d4d 50%, #d90429 50%, #a60321 100%); box-shadow: 0 0 25px rgba(255,70,70,.35), 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25); }
+    .blue { background: linear-gradient(to right, #7dd3fc 0%, #38bdf8 50%, #2563eb 50%, #1e40af 100%); box-shadow: 0 0 25px rgba(59,130,246,.35), 0 10px 30px rgba(0,0,0,.35), inset 0 2px 3px rgba(255,255,255,.35), inset 0 -3px 6px rgba(0,0,0,.25); }
   </style>
 </head>
-<body class="bg-stone-50 text-stone-900 font-sans">
-  <div class="max-w-7xl mx-auto px-4 pb-10 pt-8">
+  <body class="bg-stone-50 text-stone-900 font-sans">
+  <canvas id="matrix-canvas" class="fixed inset-0 w-full h-full z-0 pointer-events-none"></canvas>
+  <div class="max-w-7xl mx-auto px-4 pb-10 pt-8 relative z-10">
     <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
       <div>
         <p class="uppercase tracking-[0.35em] text-stone-500 text-xs">Jain Cause & Effect Laboratory</p>
@@ -472,15 +481,19 @@
             <p class="text-stone-700 text-lg leading-8">The outcome already exists. You have not yet seen it. How will you meet it?</p>
             ${narrative}
             <div class="grid gap-4 sm:grid-cols-2">
-              <button id="pick-reactive" class="rounded-3xl border border-stone-200 bg-stone-50 p-8 text-left transition hover:bg-stone-100">
-                <div class="text-4xl">🔴</div>
-                <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Reactive Loop</p>
-                <h4 class="mt-4 text-2xl font-semibold">My happiness depends on results.</h4>
+              <button id="pick-reactive" class="rounded-3xl border border-stone-200 bg-stone-50 p-6 text-left transition hover:bg-stone-100">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Reactive Loop</p>
+                  <div class="pill blue"></div>
+                </div>
+                <h4 class="mt-4 text-2xl font-semibold w-full">My happiness depends on results.</h4>
               </button>
-              <button id="pick-knower" class="rounded-3xl border border-stone-200 bg-stone-50 p-8 text-left transition hover:bg-stone-100">
-                <div class="text-4xl">🔵</div>
-                <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Knower-Seer</p>
-                <h4 class="mt-4 text-2xl font-semibold">I observe outcomes without becoming them.</h4>
+              <button id="pick-knower" class="rounded-3xl border border-stone-200 bg-stone-50 p-6 text-left transition hover:bg-stone-100">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm uppercase tracking-[0.24em] text-stone-500">Knower-Seer</p>
+                  <div class="pill red"></div>
+                </div>
+                <h4 class="mt-4 text-2xl font-semibold w-full">I observe outcomes without becoming them.</h4>
               </button>
             </div>
             <button id="pivot-back" class="mt-6 rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400">Back</button>
@@ -606,7 +619,6 @@
                 <button id="exit-lab" class="rounded-full border border-stone-300 px-5 py-3 text-sm hover:border-stone-400">Exit Laboratory</button>
               </div>
             </div>
-          </div>
         `;
         document.getElementById('try-again').addEventListener('click', () => {
           state.labStage = 'step';
@@ -755,6 +767,39 @@
 
     attachStepListeners();
     showTab('concepts');
+    // Matrix background animation
+    (function initMatrix(){
+      const canvas = document.getElementById('matrix-canvas');
+      if(!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width = canvas.width = window.innerWidth;
+      let height = canvas.height = window.innerHeight;
+      canvas.style.opacity = 0.22;
+      const cols = Math.floor(width / 16);
+      let drops = new Array(cols).fill(1);
+      const chars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプ0123456789';
+      function resize(){
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        const newCols = Math.floor(width / 16);
+        drops = new Array(newCols).fill(1);
+      }
+      function draw(){
+        ctx.fillStyle = 'rgba(0,0,0,0.18)';
+        ctx.fillRect(0,0,width,height);
+        ctx.fillStyle = '#39ff14';
+        ctx.font = '16px monospace';
+        for(let i=0;i<drops.length;i++){
+          const text = chars.charAt(Math.floor(Math.random()*chars.length));
+          ctx.fillText(text, i*16, drops[i]*16);
+          if(drops[i]*16 > height && Math.random() > 0.975) drops[i] = 0;
+          drops[i]++;
+        }
+        requestAnimationFrame(draw);
+      }
+      window.addEventListener('resize', resize);
+      draw();
+    })();
   </script>
 </body>
 </html>
