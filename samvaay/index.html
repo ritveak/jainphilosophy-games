@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jain Cause & Effect Laboratory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { min-height: 100vh; background: #0f172a; color: #e2e8f0; }
+    .glass { background: rgba(15, 23, 42, .72); backdrop-filter: blur(16px); }
+    .hide { display: none !important; }
+    .card-shadow { box-shadow: 0 24px 60px rgba(15, 23, 42, .25); }
+    .animate-fade { animation: fadeIn 0.45s ease forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .progress-dot { width: 10px; height: 10px; border-radius: 9999px; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <div class="max-w-7xl mx-auto px-4 pb-10 pt-8">
+    <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+      <div>
+        <p class="uppercase tracking-[0.35em] text-slate-400 text-xs">Jain Cause & Effect Laboratory</p>
+        <h1 class="mt-2 text-3xl md:text-4xl font-semibold leading-tight">An immersive exploration of outcomes and awareness.</h1>
+      </div>
+      <div class="flex flex-wrap gap-2 sm:justify-end">
+        <button id="tab-concepts-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-slate-800 hover:bg-slate-700">The Concepts</button>
+        <button id="tab-lab-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-slate-800 hover:bg-slate-700">The Laboratory</button>
+        <button id="tab-doubts-btn" class="px-4 py-2 rounded-2xl text-sm font-medium bg-slate-800 hover:bg-slate-700">Clarifying Doubts</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="space-y-8">
+      <section id="tab-concepts" class="space-y-6 animate-fade">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Purpose</p>
+            <h2 class="mt-4 text-xl font-semibold">A philosophical laboratory</h2>
+            <p class="mt-3 text-slate-300 leading-7">Explore how multiple causes shape external outcomes while awareness remains free from success or failure.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Mood</p>
+            <h2 class="mt-4 text-xl font-semibold">Curious. Responsible. Reflective.</h2>
+            <p class="mt-3 text-slate-300 leading-7">This is not a quiz. It is an interactive simulation that leads to an emotional insight.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Outcome</p>
+            <h2 class="mt-4 text-xl font-semibold">Separate success from awareness</h2>
+            <p class="mt-3 text-slate-300 leading-7">The app surfaces two dimensions: external result and internal posture.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Experience</p>
+            <h2 class="mt-4 text-xl font-semibold">Guided, immersive, elegant</h2>
+            <p class="mt-3 text-slate-300 leading-7">Move through a journey of choices, hidden forces, and a reflective reveal.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 xl:grid-cols-2">
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <div class="flex items-center gap-3 text-2xl">🌾 <span class="text-lg font-semibold">Upādāna</span></div>
+            <p class="mt-4 text-slate-300 leading-7">Material cause: the substance that makes the result possible.</p>
+            <div class="mt-5 grid gap-3">
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+                <p class="text-slate-400 text-sm">Example</p>
+                <p class="mt-1 font-medium">Seed → Plant</p>
+              </div>
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+                <p class="text-slate-400 text-sm">Example</p>
+                <p class="mt-1 font-medium">Clay → Pot</p>
+              </div>
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+                <p class="text-slate-400 text-sm">Example</p>
+                <p class="mt-1 font-medium">Bone matrix → Healing</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <div class="flex items-center gap-3 text-2xl">🛠️ <span class="text-lg font-semibold">Nimitta</span></div>
+            <p class="mt-4 text-slate-300 leading-7">Instrumental cause: the person or condition that enables the change.</p>
+            <div class="mt-5 grid gap-3">
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">Farmer</div>
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">Potter</div>
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">Translator</div>
+              <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">Doctor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+          <div class="flex items-center justify-between gap-4 mb-6">
+            <div>
+              <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Five Samvāyas</p>
+              <h2 class="mt-2 text-2xl font-semibold">How results emerge</h2>
+            </div>
+            <div class="rounded-full bg-slate-800 px-3 py-1 text-xs uppercase tracking-[0.20em] text-slate-400">Visual</div>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
+            <div class="col-span-6 sm:col-span-1 rounded-3xl border border-slate-800 p-4 text-center bg-slate-950/80">Result</div>
+            <div class="col-span-6 sm:col-span-5 rounded-3xl border border-slate-800 p-4 bg-slate-900/90">
+              <div class="grid grid-cols-2 gap-3 sm:grid-cols-5">
+                <div class="rounded-3xl bg-slate-950 p-4 text-center">Upādāna</div>
+                <div class="rounded-3xl bg-slate-950 p-4 text-center">Svabhāva</div>
+                <div class="rounded-3xl bg-slate-950 p-4 text-center">Kāla</div>
+                <div class="rounded-3xl bg-slate-950 p-4 text-center">Niyati</div>
+                <div class="rounded-3xl bg-slate-950 p-4 text-center">Karma</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+              <p class="text-slate-300 font-semibold">Svabhāva</p>
+              <p class="mt-2 text-slate-400 text-sm leading-6">The intrinsic nature of the thing or being.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+              <p class="text-slate-300 font-semibold">Kāla</p>
+              <p class="mt-2 text-slate-400 text-sm leading-6">Timing and readiness. Some outcomes require the right duration.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+              <p class="text-slate-300 font-semibold">Niyati</p>
+              <p class="mt-2 text-slate-400 text-sm leading-6">The ordered condition that makes a result possible.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-950/90 p-4 border border-slate-800">
+              <p class="text-slate-300 font-semibold">Karma</p>
+              <p class="mt-2 text-slate-400 text-sm leading-6">Hidden momentum from prior causes that shifts success or failure.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-6 xl:grid-cols-2">
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <h3 class="text-xl font-semibold mb-4">Reactive Loop</h3>
+            <div class="grid gap-3">
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Blame</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Pride</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Anxiety</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Craving</div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 bg-slate-900/70 card-shadow">
+            <h3 class="text-xl font-semibold mb-4">Knower-Seer</h3>
+            <div class="grid gap-3">
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Awareness</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Equanimity</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Observation</div>
+              <div class="rounded-2xl bg-slate-950 p-4 border border-slate-800">Clarity</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-lab" class="hide animate-fade space-y-6">
+        <div class="rounded-3xl border border-slate-800 p-8 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 card-shadow">
+          <h2 class="text-3xl font-semibold">The Laboratory</h2>
+          <p class="mt-3 text-slate-300 max-w-2xl">Inspect the machinery behind outcomes. Choose a mood, a scenario, and then move through a layered causal journey.</p>
+          <button id="open-lab-btn" class="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Start Experiment</button>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="rounded-3xl border border-slate-800 p-6 glass">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Minimal Jain</p>
+            <h3 class="mt-3 text-xl font-semibold">Meditative</h3>
+            <p class="mt-3 text-slate-300 text-sm leading-6">Subtle, calm, and deliberate. Fewer effects, more quiet attention.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 glass">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Premium Product</p>
+            <h3 class="mt-3 text-xl font-semibold">Modern</h3>
+            <p class="mt-3 text-slate-300 text-sm leading-6">Glass surfaces, progress bars, and refined motion.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-800 p-6 glass">
+            <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Narrative Experience</p>
+            <h3 class="mt-3 text-xl font-semibold">Story-led</h3>
+            <p class="mt-3 text-slate-300 text-sm leading-6">Every step begins with a scene. Immerse in the possibility space.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-doubts" class="hide animate-fade space-y-6">
+        <div class="rounded-3xl border border-slate-800 p-8 bg-slate-900/80 card-shadow">
+          <h2 class="text-3xl font-semibold">Clarifying Doubts</h2>
+          <p class="mt-3 text-slate-300 max-w-2xl">Short answers that help translate the laboratory into the way you make choices.</p>
+        </div>
+        <div class="space-y-4">
+          <details class="rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+            <summary class="font-semibold">Does this mean everything is predetermined?</summary>
+            <p class="mt-3 text-slate-300 leading-7">Not exactly. The lab shows multiple conditions matter. Some outcomes depend on factors beyond effort, but inward posture remains a meaningful choice.</p>
+          </details>
+          <details class="rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+            <summary class="font-semibold">Where does free will exist?</summary>
+            <p class="mt-3 text-slate-300 leading-7">Free will appears in how you show up. You can choose effort, direction, and whether you become attached to the result.</p>
+          </details>
+          <details class="rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+            <summary class="font-semibold">Why can effort fail?</summary>
+            <p class="mt-3 text-slate-300 leading-7">Because success requires many aligned causes. Effort is vital, but it is only one part of the full causal system.</p>
+          </details>
+          <details class="rounded-3xl border border-slate-800 bg-slate-950/80 p-5">
+            <summary class="font-semibold">How is this useful today?</summary>
+            <p class="mt-3 text-slate-300 leading-7">It helps reduce attachment to outcomes, make better decisions, and notice when your inner awareness is still free even when the world is not fully aligned.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="lab-overlay" class="fixed inset-0 z-50 hidden bg-slate-950/95 text-slate-100 overflow-y-auto">
+    <div class="min-h-screen flex flex-col">
+      <div class="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/95 px-4 py-4 backdrop-blur-xl">
+        <div class="flex items-center justify-between gap-4 max-w-7xl mx-auto">
+          <div>
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-400">Laboratory</p>
+            <h2 id="lab-title" class="text-2xl font-semibold">The Laboratory</h2>
+          </div>
+          <button id="close-lab-btn" class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 hover:border-slate-500">Exit</button>
+        </div>
+      </div>
+      <div class="flex-1 px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto w-full max-w-6xl">
+          <div id="lab-screen" class="space-y-6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tabs = { concepts: document.getElementById('tab-concepts'), lab: document.getElementById('tab-lab'), doubts: document.getElementById('tab-doubts') };
+    const tabButtons = {
+      concepts: document.getElementById('tab-concepts-btn'),
+      lab: document.getElementById('tab-lab-btn'),
+      doubts: document.getElementById('tab-doubts-btn')
+    };
+    const labOverlay = document.getElementById('lab-overlay');
+    const labScreen = document.getElementById('lab-screen');
+    const openLabBtn = document.getElementById('open-lab-btn');
+    const closeLabBtn = document.getElementById('close-lab-btn');
+    const labTitle = document.getElementById('lab-title');
+
+    const state = {
+      activeTab: 'concepts',
+      labStage: 'lobby',
+      style: 'premium',
+      scenario: null,
+      progressStep: 0,
+      answers: { upadana: null, kala: null, effort: 0 },
+      hidden: { niyatiPass: false, karmaPass: false },
+      posture: null,
+      revealQueue: [],
+      revealIndex: 0,
+      revealTimer: null,
+      externalSuccess: null,
+      internalSuccess: null,
+      finalMatrix: '',
+      roll: { niyati: '', karma: '' }
+    };
+
+    const scenarios = [
+      {
+        id: 'rice',
+        icon: '🌾',
+        title: 'Rice Farming',
+        goal: 'Grow rice.',
+        description: 'Choose the right cause, time, and effort to bring a crop to harvest.',
+        upadana: ['Rice Seed','Rice Hay','Soil','Water'],
+        correctUpadana: 'Rice Seed',
+        kala: ['10 days','90 days','3 years'],
+        correctKala: '90 days',
+        effortRange: [20, 100],
+        effortTarget: null,
+        story: 'A farmer stands before a field. Four possibilities lie before him. Only one can become rice.'
+      },
+      {
+        id: 'pottery',
+        icon: '🏺',
+        title: 'Pottery Crafting',
+        goal: 'Create a finished clay pot.',
+        description: 'Find the right clay, timing, and effort to shape a vessel that survives the kiln.',
+        upadana: ['Moist alluvial clay','Stone fragments','Dried sand','Pure water'],
+        correctUpadana: 'Moist alluvial clay',
+        kala: ['2 hours','8 hours','2 days'],
+        correctKala: '8 hours',
+        effortRange: [10, 80],
+        effortTarget: null,
+        story: 'A potter lifts wet clay. The wheel teaches patience. The right material makes the pot possible.'
+      },
+      {
+        id: 'translation',
+        icon: '📜',
+        title: 'Manuscript Translation',
+        goal: 'Produce a complete translation.',
+        description: 'Balance capacity, time, and effort to convert meaning from one language to another.',
+        upadana: ['Cognitive Capacity','Blank paper','Ink','A dictionary'],
+        correctUpadana: 'Cognitive Capacity',
+        kala: ['1 hour','4 hours','12 hours'],
+        correctKala: '4 hours',
+        effortRange: [1000000, 1000000],
+        effortTarget: null,
+        story: 'A scholar opens an ancient text. The limit of effort becomes clear when the right capacity is the true material cause.'
+      },
+      {
+        id: 'healing',
+        icon: '🦴',
+        title: 'Bone Healing',
+        goal: 'Restore structural integrity.',
+        description: 'Gather the right substance, timing, and steady effort to encourage repair.',
+        upadana: ['Living bone matrix','Hot compress','Calcium pills','Bandages'],
+        correctUpadana: 'Living bone matrix',
+        kala: ['1 week','6 weeks','6 months'],
+        correctKala: '6 weeks',
+        effortRange: [5, 30],
+        effortTarget: null,
+        story: 'A healer waits beside a broken bone. The body needs time and the right living cause to mend.'
+      }
+    ];
+
+    const stepNames = ['Upādāna','Svabhāva','Kāla','Niyati','Karma','Purushārtha'];
+
+    function showTab(tab) {
+      state.activeTab = tab;
+      for (const key in tabs) {
+        tabs[key].classList.toggle('hide', key !== tab);
+        tabButtons[key].classList.toggle('bg-emerald-500', key === tab);
+        tabButtons[key].classList.toggle('text-slate-950', key === tab);
+        tabButtons[key].classList.toggle('bg-slate-800', key !== tab);
+      }
+    }
+
+    function resetLab() {
+      state.labStage = 'lobby';
+      state.scenario = null;
+      state.progressStep = 0;
+      state.answers = { upadana: null, kala: null, effort: 0 };
+      state.hidden = { niyatiPass: Math.random() < 0.75, karmaPass: Math.random() < 0.75 };
+      state.posture = null;
+      state.revealQueue = [];
+      state.revealIndex = 0;
+      state.externalSuccess = null;
+      state.internalSuccess = null;
+      state.finalMatrix = '';
+      state.roll = { niyati: '', karma: '' };
+      scenarios.forEach(entry => {
+        const min = entry.effortRange[0];
+        const max = entry.effortRange[1];
+        entry.effortTarget = min === max ? min : Math.floor(Math.random() * (max - min + 1) + min);
+      });
+    }
+
+    function renderLabHeader() {
+      const titleMap = {
+        lobby: 'The Laboratory',
+        style: 'Choose a style',
+        scenarios: 'Choose a scenario',
+        step: stepNames[state.progressStep],
+        pivot: 'How will you meet the outcome?',
+        reveal: 'Reveal the experiment',
+        result: 'Final scorecard'
+      };
+      labTitle.textContent = titleMap[state.labStage] || 'The Laboratory';
+    }
+
+    function makeRevealQueue() {
+      const scenario = state.scenario;
+      const correctUpadana = state.answers.upadana === scenario.correctUpadana;
+      const correctKala = state.answers.kala === scenario.correctKala;
+      const enoughEffort = state.answers.effort >= scenario.effortTarget;
+      const niyatiPass = state.hidden.niyatiPass;
+      const karmaPass = state.hidden.karmaPass;
+      state.externalSuccess = correctUpadana && correctKala && enoughEffort && niyatiPass && karmaPass;
+      state.internalSuccess = state.posture === 'Knower-Seer';
+      state.finalMatrix = state.externalSuccess
+        ? (state.internalSuccess ? 'Conditions aligned.\nAwareness remained clear.' : 'The goal was achieved.\nAttachment deepened.')
+        : (state.internalSuccess ? 'The world did not cooperate.\nAwareness remained free.' : 'Neither result nor awareness was preserved.');
+      state.roll = { niyati: niyatiPass ? 'Aligned' : 'Blocked', karma: karmaPass ? 'Aligned' : 'Blocked' };
+      state.revealQueue = [
+        { label: 'Correct Upādāna', passed: correctUpadana },
+        { label: 'Correct Kāla', passed: correctKala },
+        { label: 'Sufficient Purushārtha', passed: enoughEffort },
+        { label: 'Niyati aligned', passed: niyatiPass },
+        { label: 'Karma aligned', passed: karmaPass }
+      ];
+      state.revealIndex = 0;
+    }
+
+    function renderLabScreen() {
+      renderLabHeader();
+      labScreen.innerHTML = '';
+      if (state.labStage === 'lobby') {
+        labScreen.innerHTML = `
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/90 p-10 card-shadow">
+            <p class="text-sm uppercase tracking-[0.3em] text-emerald-400">Laboratory Lobby</p>
+            <h3 class="mt-4 text-4xl font-semibold">Inspect the machinery behind outcomes.</h3>
+            <p class="mt-4 max-w-2xl text-slate-300 leading-7">Start an immersive experiment to feel how several causes shape a result while your inner posture remains a separate choice.</p>
+            <button id="continue-to-style" class="mt-8 rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">Start Experiment</button>
+          </div>
+        `;
+        document.getElementById('continue-to-style').addEventListener('click', () => {
+          state.labStage = 'style';
+          renderLabScreen();
+        });
+        return;
+      }
+      if (state.labStage === 'style') {
+        const styleCards = ['minimal','premium','narrative'].map(style => {
+          const map = {
+            minimal: { label: 'Minimal Jain', mood: 'Meditation', note: 'Calm, quiet, and restrained.' },
+            premium: { label: 'Premium Product', mood: 'Modern SaaS', note: 'Glass cards, progress, subtle motion.' },
+            narrative: { label: 'Narrative Experience', mood: 'Story-led', note: 'Each step begins with a short scene.' }
+          }[style];
+          return `
+            <button data-style="${style}" class="group rounded-3xl border ${state.style===style?'border-emerald-500 bg-slate-900':'border-slate-800 bg-slate-950/70'} p-6 text-left transition hover:border-emerald-400">
+              <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">${map.label}</p>
+              <h3 class="mt-4 text-2xl font-semibold">${map.mood}</h3>
+              <p class="mt-3 text-slate-300 leading-7">${map.note}</p>
+            </button>
+          `;
+        }).join('');
+        labScreen.innerHTML = `
+          <div class="grid gap-4 sm:grid-cols-3">${styleCards}</div>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <button id="style-back" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
+            <button id="style-next" class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400">Next: Scenario</button>
+          </div>
+        `;
+        document.querySelectorAll('[data-style]').forEach(button => {
+          button.addEventListener('click', () => {
+            state.style = button.dataset.style;
+            renderLabScreen();
+          });
+        });
+        document.getElementById('style-back').addEventListener('click', () => {
+          state.labStage = 'lobby'; renderLabScreen();
+        });
+        document.getElementById('style-next').addEventListener('click', () => {
+          state.labStage = 'scenarios'; renderLabScreen();
+        });
+        return;
+      }
+
+      if (state.labStage === 'scenarios') {
+        const scenarioCards = scenarios.map(entry => `
+          <button data-id="${entry.id}" class="group rounded-3xl border border-slate-800 p-6 text-left transition hover:border-emerald-400 ${state.scenario?.id===entry.id?'border-emerald-500 bg-slate-900':''}">
+            <div class="text-3xl">${entry.icon}</div>
+            <h3 class="mt-4 text-2xl font-semibold">${entry.title}</h3>
+            <p class="mt-3 text-slate-300 leading-7">${entry.description}</p>
+            <p class="mt-4 text-sm uppercase tracking-[0.24em] text-slate-400">Goal: ${entry.goal}</p>
+          </button>
+        `).join('');
+        labScreen.innerHTML = `
+          <div class="grid gap-4 lg:grid-cols-2">${scenarioCards}</div>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-between">
+            <button id="scenarios-back" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
+            <button id="scenarios-next" class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400" ${state.scenario?'':'disabled'}>${state.scenario ? 'Next: Begin' : 'Select a scenario'}</button>
+          </div>
+        `;
+        document.querySelectorAll('[data-id]').forEach(button => {
+          button.addEventListener('click', () => {
+            state.scenario = scenarios.find(entry => entry.id === button.dataset.id);
+            renderLabScreen();
+          });
+        });
+        document.getElementById('scenarios-back').addEventListener('click', () => {
+          state.labStage = 'style'; renderLabScreen();
+        });
+        document.getElementById('scenarios-next').addEventListener('click', () => {
+          if (!state.scenario) return;
+          state.labStage = 'step';
+          state.progressStep = 0;
+          renderLabScreen();
+        });
+        return;
+      }
+
+      if (state.labStage === 'step') {
+        const step = state.progressStep;
+        const scenario = state.scenario;
+        const progressButtons = stepNames.map((label, index) => `
+          <button data-step="${index}" class="rounded-full px-3 py-1 text-xs font-semibold ${index===step?'bg-emerald-500 text-slate-950':'bg-slate-900 text-slate-400 hover:bg-slate-800'}">${label}</button>
+        `).join('');
+        labScreen.innerHTML = `
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/90 p-5 mb-6">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Progress tracker</p>
+                <h3 class="mt-2 text-xl font-semibold">${stepNames[step]}</h3>
+              </div>
+              <div class="flex flex-wrap gap-2">${progressButtons}</div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/90 p-6 space-y-6">
+            ${renderStepScreen(step, scenario)}
+          </div>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-between">
+            <button id="step-back" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
+            <button id="step-next" class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400">${step === stepNames.length - 1 ? 'Proceed to pivot' : 'Continue'}</button>
+          </div>
+        `;
+        document.querySelectorAll('[data-step]').forEach(button => {
+          button.addEventListener('click', () => {
+            const target = Number(button.dataset.step);
+            if (target <= step || canAdvanceTo(target)) {
+              state.progressStep = target;
+              renderLabScreen();
+            }
+          });
+        });
+        document.getElementById('step-back').addEventListener('click', () => {
+          if (step > 0) state.progressStep = step - 1;
+          else state.labStage = 'scenarios';
+          renderLabScreen();
+        });
+        document.getElementById('step-next').addEventListener('click', () => {
+          if (!canAdvanceFrom(step)) return;
+          if (step < stepNames.length - 1) {
+            state.progressStep = step + 1;
+            renderLabScreen();
+          } else {
+            state.labStage = 'pivot';
+            renderLabScreen();
+          }
+        });
+        return;
+      }
+
+      if (state.labStage === 'pivot') {
+        const narrative = state.style === 'narrative' ? `<p class="text-slate-400 leading-7">The experiment is complete. Every condition has been chosen. What posture will meet the outcome?</p>` : '';
+        labScreen.innerHTML = `
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/90 p-10 text-center space-y-6">
+            <p class="text-slate-400 uppercase tracking-[0.25em] text-xs">Pivot Point</p>
+            <h3 class="text-4xl font-semibold">The experiment is complete.</h3>
+            <p class="text-slate-300 text-lg leading-8">The outcome already exists. You have not yet seen it. How will you meet it?</p>
+            ${narrative}
+            <div class="grid gap-4 sm:grid-cols-2">
+              <button id="pick-reactive" class="rounded-3xl border border-rose-500 bg-rose-500/10 p-8 text-left transition hover:bg-rose-500/20">
+                <p class="text-sm uppercase tracking-[0.24em] text-rose-300">Reactive Loop</p>
+                <h4 class="mt-4 text-2xl font-semibold">My happiness depends on results.</h4>
+              </button>
+              <button id="pick-knower" class="rounded-3xl border border-emerald-500 bg-emerald-500/10 p-8 text-left transition hover:bg-emerald-500/20">
+                <p class="text-sm uppercase tracking-[0.24em] text-emerald-300">Knower-Seer</p>
+                <h4 class="mt-4 text-2xl font-semibold">I observe outcomes without becoming them.</h4>
+              </button>
+            </div>
+            <button id="pivot-back" class="mt-6 rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
+          </div>
+        `;
+        document.getElementById('pick-reactive').addEventListener('click', () => {
+          state.posture = 'Reactive Loop';
+          state.labStage = 'reveal';
+          makeRevealQueue();
+          renderLabScreen();
+        });
+        document.getElementById('pick-knower').addEventListener('click', () => {
+          state.posture = 'Knower-Seer';
+          state.labStage = 'reveal';
+          makeRevealQueue();
+          renderLabScreen();
+        });
+        document.getElementById('pivot-back').addEventListener('click', () => {
+          state.labStage = 'step'; renderLabScreen();
+        });
+        return;
+      }
+
+      if (state.labStage === 'reveal') {
+        const revealItems = state.revealQueue.slice(0, state.revealIndex).map(item => `
+          <div class="rounded-3xl p-5 ${item.passed ? 'bg-emerald-500/10 border-emerald-500' : 'bg-rose-500/10 border-rose-500'} border"> 
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-400">${item.passed ? '✓' : '✗'} ${item.label}</p>
+          </div>
+        `).join('');
+        const inProgress = state.revealIndex < state.revealQueue.length;
+        labScreen.innerHTML = `
+          <div class="rounded-3xl border border-slate-800 bg-slate-950/90 p-10 text-center space-y-6">
+            <p class="text-slate-400 uppercase tracking-[0.25em] text-xs">Reveal Engine</p>
+            <h3 class="text-3xl font-semibold">Wait...</h3>
+            <p class="max-w-2xl mx-auto text-slate-300 leading-7">Diagnostics are unfolding. The experiment reveals the causal alignment step by step.</p>
+            <div class="grid gap-4 mt-6">${revealItems || '<div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 text-slate-400">Revealing results...</div>'}</div>
+            ${!inProgress ? '<button id="show-result" class="mt-6 rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400">View final scorecard</button>' : ''}
+            <button id="reveal-back" class="mt-2 rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Back</button>
+          </div>
+        `;
+        if (!inProgress) {
+          document.getElementById('show-result').addEventListener('click', () => {
+            state.labStage = 'result'; renderLabScreen();
+          });
+        }
+        document.getElementById('reveal-back').addEventListener('click', () => {
+          if (state.revealTimer) clearTimeout(state.revealTimer);
+          state.labStage = 'pivot'; renderLabScreen();
+        });
+        if (inProgress) {
+          state.revealTimer = setTimeout(() => {
+            state.revealIndex += 1;
+            renderLabScreen();
+          }, 600);
+        }
+        return;
+      }
+
+      if (state.labStage === 'result') {
+        const scenario = state.scenario;
+        const correctedUpadana = scenario.correctUpadana;
+        const correctKala = scenario.correctKala;
+        const currentEffort = state.answers.effort;
+        const target = scenario.effortTarget;
+        const matrixLines = state.finalMatrix.split('\n').map(line => `<p>${line}</p>`).join('');
+        labScreen.innerHTML = `
+          <div class="grid gap-6 lg:grid-cols-[1fr_360px]">
+            <div class="space-y-6 rounded-3xl border border-slate-800 bg-slate-950/90 p-8">
+              <p class="text-slate-400 uppercase tracking-[0.24em] text-xs">Final Outcome</p>
+              <h3 class="text-3xl font-semibold">${matrixLines}</h3>
+              <div class="overflow-x-auto rounded-3xl border border-slate-800 bg-slate-900 p-4">
+                <table class="min-w-full text-left text-sm text-slate-200">
+                  <thead>
+                    <tr class="border-b border-slate-800 text-slate-400">
+                      <th class="px-4 py-3">Parameter</th>
+                      <th class="px-4 py-3">Chosen value</th>
+                      <th class="px-4 py-3">Correct value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-slate-800">
+                      <td class="px-4 py-4 text-slate-300">Upādāna</td>
+                      <td class="px-4 py-4">${state.answers.upadana || '—'}</td>
+                      <td class="px-4 py-4">${correctedUpadana}</td>
+                    </tr>
+                    <tr class="border-b border-slate-800">
+                      <td class="px-4 py-4 text-slate-300">Kāla</td>
+                      <td class="px-4 py-4">${state.answers.kala || '—'}</td>
+                      <td class="px-4 py-4">${correctKala}</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-4 text-slate-300">Purushārtha</td>
+                      <td class="px-4 py-4">${currentEffort}</td>
+                      <td class="px-4 py-4">${target}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="grid gap-3 sm:grid-cols-2">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
+                  <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Hidden values</p>
+                  <p class="mt-4 font-semibold">Niyati: ${state.roll.niyati}</p>
+                  <p class="mt-2 font-semibold">Karma: ${state.roll.karma}</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
+                  <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Posture</p>
+                  <p class="mt-4 font-semibold">${state.posture}</p>
+                  <p class="mt-2 text-slate-400">Internal success is based on your choice to observe instead of attach.</p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/90 p-6">
+              <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
+                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Reactive Insight</p>
+                <p class="mt-3 text-slate-300 leading-7">External success and internal success are not the same. The experiment is designed to make that felt, not just understood.</p>
+              </div>
+              <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
+                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Outcome formula</p>
+                <pre class="mt-3 rounded-2xl bg-slate-950 p-4 text-sm text-slate-300">correctUpadana && correctKala && enoughEffort && niyatiPass && karmaPass</pre>
+              </div>
+              <div class="rounded-3xl border border-slate-800 bg-slate-900 p-5">
+                <p class="text-slate-400 uppercase text-xs tracking-[0.24em]">Internal formula</p>
+                <pre class="mt-3 rounded-2xl bg-slate-950 p-4 text-sm text-slate-300">posture === "Knower-Seer"</pre>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-between">
+            <button id="try-again" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Try Again</button>
+            <button id="choose-other" class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-emerald-400">Choose Another Experiment</button>
+            <button id="exit-lab" class="rounded-full border border-slate-700 px-5 py-3 text-sm hover:border-slate-500">Exit Laboratory</button>
+          </div>
+        `;
+        document.getElementById('try-again').addEventListener('click', () => {
+          state.labStage = 'step';
+          state.progressStep = 0;
+          state.answers.effort = 0;
+          renderLabScreen();
+        });
+        document.getElementById('choose-other').addEventListener('click', () => {
+          state.labStage = 'scenarios';
+          state.scenario = null;
+          state.answers = { upadana: null, kala: null, effort: 0 };
+          renderLabScreen();
+        });
+        document.getElementById('exit-lab').addEventListener('click', () => {
+          closeLab();
+        });
+        return;
+      }
+    }
+
+    function renderStepScreen(step, scenario) {
+      const narrative = state.style === 'narrative' ? `<p class="text-slate-400 text-sm uppercase tracking-[0.24em] mb-4">${scenario.story}</p>` : '';
+      if (step === 0) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">What is the material cause?</p>
+          <div class="grid gap-4 sm:grid-cols-2 mt-5">${scenario.upadana.map(item => `
+            <button data-upadana="${item}" class="rounded-3xl border ${state.answers.upadana===item?'border-emerald-500 bg-emerald-500/10':'border-slate-800 bg-slate-950/80'} p-5 text-left hover:border-emerald-400">${item}</button>
+          `).join('')}</div>
+          <p class="mt-4 text-slate-400">${state.answers.upadana ? '' : 'You must choose one before moving on.'}</p>
+        `;
+      }
+      if (step === 1) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">Svabhāva</p>
+          <p class="mt-4 text-slate-300 leading-7">The intrinsic nature of the chosen cause. This step reminds you that some properties belong to the material itself, not to your effort.</p>
+          <div class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6">
+            <p class="text-slate-400">Intrinsic nature is stable and present even before the result appears. It is part of the causal field, not the final result.</p>
+          </div>
+        `;
+      }
+      if (step === 2) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">How much time is required?</p>
+          <div class="grid gap-4 sm:grid-cols-2 mt-5">${scenario.kala.map(item => `
+            <button data-kala="${item}" class="rounded-3xl border ${state.answers.kala===item?'border-emerald-500 bg-emerald-500/10':'border-slate-800 bg-slate-950/80'} p-5 text-left hover:border-emerald-400">${item}</button>
+          `).join('')}</div>
+          <p class="mt-4 text-slate-400">${state.answers.kala ? '' : 'A choice is required to continue.'}</p>
+        `;
+      }
+      if (step === 3) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">Niyati</p>
+          <p class="mt-4 text-slate-300 leading-7">Order and necessity. Some conditions must align quietly in the background. You cannot see them directly, but they are part of whether the experiment succeeds.</p>
+          <div class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6">
+            <p class="text-slate-400">This is a hidden condition. You can prepare, but the world still needs to cooperate.</p>
+          </div>
+        `;
+      }
+      if (step === 4) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">Karma</p>
+          <p class="mt-4 text-slate-300 leading-7">Invisible causal weight from prior actions. It can support or hinder the experiment even if everything else looks right.</p>
+          <div class="mt-6 rounded-3xl border border-slate-800 bg-slate-900 p-6">
+            <p class="text-slate-400">Karma is unseen, but it changes the likelihood of success.</p>
+          </div>
+        `;
+      }
+      if (step === 5) {
+        return `
+          ${narrative}
+          <p class="text-lg font-semibold">Purushārtha</p>
+          <p class="mt-3 text-slate-400 leading-7">Effort is visible. Click to make effort. The final outcome still depends on other conditions.</p>
+          <div class="mt-8 rounded-[2rem] border border-slate-800 bg-slate-900 p-10 text-center">
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500">Effort</p>
+            <p class="mt-4 text-6xl font-semibold text-emerald-400">${state.answers.effort}</p>
+            <p class="mt-4 text-slate-400 leading-7 max-w-xl mx-auto">You can stop whenever you want and proceed. Sometimes the required purushārtha for the same work can vary. You never know how much of it was actually required.</p>
+            <button id="effort-button" class="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-emerald-400">MAKE EFFORT</button>
+          </div>
+        `;
+      }
+      return '';
+    }
+
+    function canAdvanceFrom(step) {
+      if (step === 0 && !state.answers.upadana) return false;
+      if (step === 2 && !state.answers.kala) return false;
+      return true;
+    }
+
+    function canAdvanceTo(target) {
+      if (target === 0) return true;
+      if (target > 0 && !state.answers.upadana) return false;
+      if (target > 2 && !state.answers.kala) return false;
+      return true;
+    }
+
+    function attachStepListeners() {
+      labScreen.addEventListener('click', (event) => {
+        const button = event.target.closest('button');
+        if (!button) return;
+        if (button.dataset.upadana) {
+          state.answers.upadana = button.dataset.upadana;
+          renderLabScreen();
+        }
+        if (button.dataset.kala) {
+          state.answers.kala = button.dataset.kala;
+          renderLabScreen();
+        }
+        if (button.id === 'effort-button') {
+          state.answers.effort += 1;
+          renderLabScreen();
+        }
+        if (button.id === 'effort-done') {
+          if (state.answers.effort === 0) {
+            state.answers.effort = 1;
+          }
+          if (state.progressStep === 5) {
+            renderLabScreen();
+          }
+        }
+      });
+    }
+
+    function openLab() {
+      resetLab();
+      labOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      renderLabScreen();
+    }
+
+    function closeLab() {
+      labOverlay.classList.add('hidden');
+      document.body.style.overflow = ''; 
+    }
+
+    tabButtons.concepts.addEventListener('click', () => showTab('concepts'));
+    tabButtons.lab.addEventListener('click', () => showTab('lab'));
+    tabButtons.doubts.addEventListener('click', () => showTab('doubts'));
+    openLabBtn.addEventListener('click', openLab);
+    closeLabBtn.addEventListener('click', closeLab);
+
+    attachStepListeners();
+    showTab('concepts');
+  </script>
+</body>
+</html>
