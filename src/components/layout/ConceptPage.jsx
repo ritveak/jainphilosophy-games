@@ -1,25 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { getConcept } from '../../concepts/registry';
+import { getConcept, getConceptContent } from '../../concepts';
 import ConceptTabs from './ConceptTabs';
-import { getConceptContent } from '../../concepts';
-
-const TABS = [
-  { id: 'concepts', label: 'Concepts' },
-  { id: 'lab', label: 'Laboratory' },
-  { id: 'doubts', label: 'FAQ' },
-];
 
 export default function ConceptPage() {
   const { conceptId } = useParams();
   const concept = getConcept(conceptId);
+  const content = getConceptContent(conceptId);
+  const availableTabs = [
+    { id: 'concepts', label: 'Concepts', exists: Boolean(content.concepts) },
+    { id: 'lab', label: 'Laboratory', exists: Boolean(content.lab) },
+    { id: 'doubts', label: 'FAQ', exists: Boolean(content.doubts) },
+  ].filter((tab) => tab.exists);
   const [activeTab, setActiveTab] = useState('concepts');
+
+  useEffect(() => {
+    if (!availableTabs.some((tab) => tab.id === activeTab)) {
+      setActiveTab(availableTabs[0]?.id ?? 'concepts');
+    }
+  }, [availableTabs, activeTab]);
 
   if (!concept) {
     return <Navigate to="/" replace />;
   }
-
-  const content = getConceptContent(conceptId);
 
   return (
     <div className="max-w-3xl mx-auto px-4 pb-16 pt-8">
@@ -35,7 +38,7 @@ export default function ConceptPage() {
       </header>
 
       <ConceptTabs
-        tabs={TABS}
+        tabs={availableTabs}
         activeTab={activeTab}
         onTabChange={setActiveTab}
         ariaLabel={`${concept.title} sections`}

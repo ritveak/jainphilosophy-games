@@ -23,7 +23,7 @@ const FAQ_ITEMS = [
   },
 ];
 
-export default function SamvaayFaq() {
+export default function FAQ() {
   return (
     <FaqSection intro="Common questions after going through the lab." items={FAQ_ITEMS} />
   );

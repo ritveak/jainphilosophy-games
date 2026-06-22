@@ -211,6 +211,16 @@ body.pivot-locked {
   margin-left: 0;
   margin-top: 0.25rem;
 }
+.concept-prose blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #d97706;
+  background: rgba(251, 191, 36, 0.1);
+  color: #4a4338;
+}
+.concept-prose blockquote p {
+  margin: 0;
+}
 .concept-callout {
   border-left: 3px solid #d97706;
   padding: 1rem 1.25rem;

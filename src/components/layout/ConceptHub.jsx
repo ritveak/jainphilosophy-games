@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CONCEPTS } from '../../concepts/registry';
+import { CONCEPTS } from '../../concepts';
 
 export default function ConceptHub() {
   return (

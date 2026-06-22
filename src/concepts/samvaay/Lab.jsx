@@ -8,7 +8,7 @@ import PivotScreen from './lab/PivotScreen';
 import RevealEngine from './lab/RevealEngine';
 import ResultScorecard from './lab/ResultScorecard';
 
-export default function SamvaayLab() {
+export default function Lab() {
   const lab = useSamvaayLab();
   const { state } = lab;
 
