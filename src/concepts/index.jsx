@@ -122,9 +122,10 @@ export function getConceptContent(conceptId) {
   const concept = conceptById[conceptId];
   if (!concept) return { content: {}, tabs: [] };
 
-  const LabComponent = labById[conceptId];
-  const faqData = faqDataById[conceptId];
-  const resourcesData = resourcesDataById[conceptId];
+  const folder = concept.folder;
+  const LabComponent = labById[folder];
+  const faqData = faqDataById[folder];
+  const resourcesData = resourcesDataById[folder];
 
   const content = {
     concepts: concept.markdown ? <ConceptMarkdown markdown={concept.markdown} /> : undefined,
