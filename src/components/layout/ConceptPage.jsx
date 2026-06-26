@@ -11,6 +11,7 @@ export default function ConceptPage() {
     { id: 'concepts', label: 'Concepts', exists: Boolean(content.concepts) },
     { id: 'lab', label: 'Laboratory', exists: Boolean(content.lab) },
     { id: 'doubts', label: 'FAQ', exists: Boolean(content.doubts) },
+    { id: 'resources', label: 'Resources', exists: Boolean(content.resources) },
   ].filter((tab) => tab.exists);
   const [activeTab, setActiveTab] = useState('concepts');
 
@@ -53,6 +54,9 @@ export default function ConceptPage() {
         )}
         {activeTab === 'doubts' && (
           <section className="animate-fade">{content.doubts}</section>
+        )}
+        {activeTab === 'resources' && (
+          <section className="animate-fade">{content.resources}</section>
         )}
       </main>
     </div>

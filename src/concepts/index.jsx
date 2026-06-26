@@ -26,6 +26,10 @@ const faqFiles = import.meta.glob('./*/Faq.jsx', {
   eager: true,
   import: 'default',
 });
+const resourcesFiles = import.meta.glob('./*/Resources.jsx', {
+  eager: true,
+  import: 'default',
+});
 
 const conceptEntries = Object.entries(markdownFiles)
   .map(([path, markdown]) => {
@@ -78,6 +82,16 @@ const faqById = Object.fromEntries(
     .filter(Boolean)
 );
 
+const resourcesById = Object.fromEntries(
+  Object.entries(resourcesFiles)
+    .map(([path, module]) => {
+      const match = path.match(/^\.\/(.*?)\/Resources\.jsx$/);
+      if (!match) return null;
+      return [match[1], module];
+    })
+    .filter(Boolean)
+);
+
 export { CONCEPTS };
 
 export function getConcept(id) {
@@ -94,10 +108,12 @@ export function getConceptContent(conceptId) {
 
   const LabComponent = labById[conceptId];
   const FaqComponent = faqById[conceptId];
+  const ResourcesComponent = resourcesById[conceptId];
 
   return {
     concepts: concept.markdown ? <ConceptMarkdown markdown={concept.markdown} /> : undefined,
     lab: LabComponent ? <LabComponent /> : undefined,
     doubts: FaqComponent ? <FaqComponent /> : undefined,
+    resources: ResourcesComponent ? <ResourcesComponent /> : undefined,
   };
 }
