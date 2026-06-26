@@ -41,6 +41,12 @@ const conceptEntries = Object.entries(markdownFiles)
     const folder = match[1];
     const { data = {}, content } = parseFrontmatter(markdown);
     const id = typeof data.id === 'string' && data.id.trim() ? data.id.trim() : folder;
+    const rawIndex = data.index;
+    const index = typeof rawIndex === 'number'
+      ? rawIndex
+      : rawIndex != null
+      ? Number(rawIndex)
+      : undefined;
 
     return [
       id,
@@ -54,6 +60,7 @@ const conceptEntries = Object.entries(markdownFiles)
           summary: data.summary ?? '',
           icon: data.icon ?? '🧠',
           tagline: data.tagline ?? '',
+          index: Number.isFinite(index) ? index : 0,
         },
         markdown: content,
       },
@@ -61,7 +68,14 @@ const conceptEntries = Object.entries(markdownFiles)
   })
   .filter(Boolean);
 
-const CONCEPTS = conceptEntries.map(([, concept]) => concept.meta);
+const CONCEPTS = [...conceptEntries]
+  .sort(([, a], [, b]) => {
+    const aIndex = a.meta.index;
+    const bIndex = b.meta.index;
+    if (aIndex !== bIndex) return aIndex - bIndex;
+    return 0;
+  })
+  .map(([, concept]) => concept.meta);
 const conceptById = Object.fromEntries(conceptEntries);
 
 const labById = Object.fromEntries(

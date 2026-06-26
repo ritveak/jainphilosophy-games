@@ -5,6 +5,7 @@ subtitle: Jain Cause & Effect Laboratory
 summary: Understand why effort alone does not guarantee results, and why your peace need not depend on success or failure.
 icon: "🌾"
 tagline: Many causes shape the world. Your freedom lies in how you participate, not in controlling every outcome.
+index: 1
 ---
 
 In everyday life we often assume a simple equation:
