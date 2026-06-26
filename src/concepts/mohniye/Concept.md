@@ -13,23 +13,16 @@ Have you ever looked back at a situation and wondered...
 > *"Why on earth did I keep making things worse?"*
 
 Perhaps it started with something trivial.
-
-A small disagreement.
-
-A harmless suggestion.
-
-A tiny mistake.
+- A small disagreement.
+- A harmless suggestion.
+- A tiny mistake.
 
 Yet somehow, instead of admitting it, you found yourself defending it.
-
-Then hiding it.
-
-Then justifying it.
-
-Then telling another lie to protect the first one.
+- Then hiding it.
+- Then justifying it.
+- Then telling another lie to protect the first one.
 
 Looking back, the entire chain feels irrational.
-
 But in that moment, it felt like there was no other choice.
 
 Jain philosophy explains this phenomenon through one of its deepest ideas:
@@ -39,82 +32,29 @@ Jain philosophy explains this phenomenon through one of its deepest ideas:
 ---
 
 ## Why Mohaniya Karma is called the King of all Karma
+While other karmas obscure knowledge, limit abilities, or dictate pleasure and pain, Mohaniya Karma is uniquely dangerous: it hijacks the decision-maker itself. Rather than simply creating a negative experience, it quietly convinces you that your distorted perception is reality.
 
-Many karmas obstruct us.
+This enchantment creates a rapid, invisible domino effect—a cascade of delusion where one hidden driver inevitably leads to the next:
+- You don't just feel **angry**; you become **convinced your anger is justified**.
+- A minor attachment to being right hardens into **pride** , which you disguise as dignity.
+- **Pride** morphs into the **fear** of losing face.
+- **Fear** triggers **deceit** , convincing you that you are simply "handling the situation".
 
-Some obscure knowledge.
-
-Some create pleasure and pain.
-
-Some limit our abilities.
-
-These are certainly significant.
-
-But Mohaniya Karma is unique.
-
-It attacks the decision-maker itself.
-
-Instead of simply creating an unpleasant experience...
-
-it quietly convinces you that your distorted perception is correct.
-
-You don't merely become angry.
-
-You become convinced your anger is justified.
-
-You don't merely become proud.
-
-You become convinced your pride is dignity.
-
-You don't merely become deceitful.
-
-You become convinced you're "handling the situation."
-
-That is why Mohaniya Karma is considered the most dangerous—it enchants the observer itself.
-
----
-
-## The Cascade of Delusion
-
-One of the fascinating aspects of Mohaniya Karma is that it rarely appears alone.
-
-It creates a domino effect.
-
-A small attachment to being right...
-
-becomes pride.
-
-Pride becomes fear of losing face.
-
-Fear becomes deceit.
-
-Deceit demands more deceit.
-
-Soon the original problem is no longer important.
-
-Protecting the ego becomes the entire mission.
-
-The external mistake was tiny.
-
-The internal bondage became enormous.
+Quickly, the original problem becomes irrelevant. 
+Deceit demands more deceit, and protecting the ego becomes the sole mission. 
+What began as a tiny external mistake cascades into enormous internal bondage. 
+> It is the ultimate trap because it enchants the observer itself.
 
 ---
 
 ## The Earliest Warning Signal
 
-The difficulty with Mohaniya Karma is that it is rarely visible while it is happening.
+> The difficulty with Mohaniya Karma is that it is rarely visible while it is happening.
 
-It is often recognized only afterwards.
-
-However, there is one surprisingly reliable signal.
-
-Notice moments when your mind suddenly loses flexibility.
-
-Before the trigger, many responses were possible.
-
-After the trigger...
-
-only one future feels acceptable.
+It is often recognized only afterwards. However, there is one surprisingly reliable signal.
+- Notice moments when your mind suddenly loses flexibility.
+- Before the trigger, many responses were possible.
+- After the trigger, only one future feels acceptable.
 
 You begin thinking:
 
@@ -125,25 +65,19 @@ You begin thinking:
 
 This shrinking of possibilities is often the first visible footprint of delusion.
 
-Awareness narrows.
-
-Attachment takes control.
-
 ---
 
-## Action and Intention Are Different Things
+## Decoupling Event into Action and Intention
 
 Most people evaluate actions.
 
 Jain philosophy evaluates both:
-
 - **Yog (Action)** — What happened externally.
 - **Bhava (Intention)** — What was happening internally.
 
 Two identical actions may create entirely different karmic consequences depending upon the intention behind them.
 
 Likewise, two different actions may arise from the same compassionate intention.
-
 Without examining intention, we only understand half the event.
 
 ---
