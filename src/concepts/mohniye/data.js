@@ -7,6 +7,76 @@ export const LAB_TITLES = {
   result: 'Reflection',
 };
 
+export function getLevelSignal(level = {}, fallback = 'neutral') {
+  if (level.signal) return level.signal;
+  const text = `${level.response || ''} ${level.hiddenDriver || ''}`.toLowerCase();
+  if (/measure together|stop and check|restart|honesty|responsibility|humility|empathy|compassion|openness|wisdom|awareness|acceptance|practicality|equanimity/i.test(text)) {
+    return 'good';
+  }
+  if (/maybe|safer|check|order|before|tell|sorry|careful|just an accident|image|protect/i.test(text)) {
+    return 'bad';
+  }
+  return fallback;
+}
+
+export function getSignalLabel(signal = 'neutral') {
+  switch (signal) {
+    case 'good': return 'Good';
+    case 'bad': return 'Needs care';
+    case 'worse': return 'Worse';
+    default: return 'Neutral';
+  }
+}
+
+export function getSignalScore(level = {}) {
+  switch (getLevelSignal(level)) {
+    case 'good': return 5;
+    case 'bad': return 2;
+    case 'worse': return 0;
+    default: return 1;
+  }
+}
+
+export function getVisibleSteps(steps = [], selections = []) {
+  return steps.filter((step, index) => {
+    if (!step?.visibleWhen) return true;
+    return step.visibleWhen({
+      selections,
+      previousSelections: selections.slice(0, index),
+      stepIndex: index,
+    });
+  });
+}
+
+export function getSignalClasses(signal = 'neutral') {
+  switch (signal) {
+    case 'good':
+      return {
+        container: 'border-emerald-400 bg-emerald-50/80',
+        pill: 'bg-emerald-100 text-emerald-700',
+        accent: 'text-emerald-700',
+      };
+    case 'bad':
+      return {
+        container: 'border-amber-400 bg-amber-50/80',
+        pill: 'bg-amber-100 text-amber-700',
+        accent: 'text-amber-700',
+      };
+    case 'worse':
+      return {
+        container: 'border-rose-400 bg-rose-50/80',
+        pill: 'bg-rose-100 text-rose-700',
+        accent: 'text-rose-700',
+      };
+    default:
+      return {
+        container: 'border-stone-200 bg-white',
+        pill: 'bg-stone-100 text-stone-600',
+        accent: 'text-stone-600',
+      };
+  }
+}
+
 export const SCENARIOS = [
   {
     id: 'khichdi',
@@ -270,7 +340,9 @@ export const SCENARIOS = [
             default: true,
             response: "I didn't know. Anyway, it was just an accident.",
             hiddenDriver: "Defensiveness",
-            consequence: "You begin protecting yourself instead of understanding their pain."
+            consequence: "You begin protecting yourself instead of understanding their pain.",
+            signal: 'worse',
+            visibleWhen: ({ selections = [] }) => (selections[2] ?? 0) < 2,
         },
         {
             unlockAfter: 5,
@@ -291,6 +363,7 @@ export const SCENARIOS = [
         id: "closure",
         timer: 8,
         prompt: "Looking back, what matters most now?",
+        visibleWhen: ({ selections = [] }) => (selections[2] ?? 0) < 2,
 
         unlockButton: "What else could I do?",
 
@@ -300,19 +373,22 @@ export const SCENARIOS = [
             default: true,
             response: "I should've hidden it better.",
             hiddenDriver: "Ego",
-            consequence: "The lesson is lost."
+            consequence: "The lesson is lost.",
+            signal: 'worse',
         },
         {
             unlockAfter: 5,
             response: "I should've admitted it sooner.",
             hiddenDriver: "Reflection",
-            consequence: "You realise the lie caused more suffering than the accident."
+            consequence: "You realise the lie caused more suffering than the accident.",
+            signal: 'bad',
         },
         {
             unlockAfter: 10,
             response: "The mug wasn't the biggest mistake. Protecting my image was.",
             hiddenDriver: "Insight",
-            consequence: "You recognise how Mohaniya Karma transformed one accident into many unnecessary decisions."
+            consequence: "You recognise how Mohaniya Karma transformed one accident into many unnecessary decisions.",
+            signal: 'good',
         }
         ]
     }

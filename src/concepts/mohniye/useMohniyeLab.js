@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { SCENARIOS, LAB_TITLES } from './data';
+import { SCENARIOS, LAB_TITLES, getLevelSignal, getSignalScore, getVisibleSteps } from './data';
 
 function createInitialState() {
   return {
@@ -24,13 +24,14 @@ export function useMohniyeLab() {
   const startScenario = useCallback((id) => {
     const scenario = SCENARIOS.find((s) => s.id === id);
     if (!scenario) return;
+    const visibleSteps = getVisibleSteps(scenario.steps, []);
     setState((s) => ({
       ...s,
       scenario,
       labStage: 'step',
       progressStep: 0,
-      reflections: scenario.steps.map(() => 0),
-      selections: scenario.steps.map(() => 0),
+      reflections: visibleSteps.map(() => 0),
+      selections: visibleSteps.map(() => 0),
       revealQueue: [],
       revealIndex: 0,
       finalMeta: null,
@@ -55,16 +56,38 @@ export function useMohniyeLab() {
 
   const submitStep = useCallback(() => {
     setState((s) => {
+      if (!s.scenario) return s;
+      const visibleSteps = getVisibleSteps(s.scenario.steps, s.selections);
       const nextStep = s.progressStep + 1;
-      if (nextStep < s.scenario.steps.length) {
+      if (nextStep < visibleSteps.length) {
         return { ...s, progressStep: nextStep };
       }
-      // build reveal queue and final meta
-      const timeline = s.scenario.reveal?.timeline || [];
-      const revealQueue = timeline.map((label) => ({ label }));
+
       const totalReflections = s.reflections.reduce((a, b) => a + b, 0);
-      const finalMeta = { totalReflections };
-      return { ...s, labStage: 'reveal', revealQueue, revealIndex: 0, finalMeta };
+      const score = visibleSteps.reduce((acc, step, index) => acc + getSignalScore(step.levels?.[s.selections[index]]), 0);
+      const maxScore = visibleSteps.length * 5;
+      const verdict = score >= maxScore * 0.6
+        ? 'Your early choices kept the damage manageable.'
+        : score >= maxScore * 0.3
+          ? 'The situation became harder than it needed to be.'
+          : 'The earlier choices made the problem much worse.';
+      const bestEarlyIntervention = visibleSteps
+        .map((step, index) => ({ step, level: step.levels?.[s.selections[index]] }))
+        .find((entry) => getLevelSignal(entry.level) === 'good');
+      const finalMeta = {
+        totalReflections,
+        score,
+        maxScore,
+        verdict,
+        visibleSteps,
+        bestEarlyIntervention: bestEarlyIntervention
+          ? {
+              prompt: bestEarlyIntervention.step.prompt,
+              response: bestEarlyIntervention.level?.response || '—',
+            }
+          : null,
+      };
+      return { ...s, labStage: 'result', finalMeta };
     });
   }, []);
 
@@ -77,7 +100,11 @@ export function useMohniyeLab() {
   const reset = useCallback(() => setState(createInitialState()), []);
 
   const tryAgain = useCallback(() => {
-    setState((s) => ({ ...s, labStage: 'step', progressStep: 0, reflections: s.scenario.steps.map(() => 0), selections: s.scenario.steps.map(() => 0) }));
+    setState((s) => {
+      if (!s.scenario) return s;
+      const visibleSteps = getVisibleSteps(s.scenario.steps, []);
+      return { ...s, labStage: 'step', progressStep: 0, reflections: visibleSteps.map(() => 0), selections: visibleSteps.map(() => 0) };
+    });
   }, []);
 
   return {
@@ -91,5 +118,6 @@ export function useMohniyeLab() {
     showResult,
     reset,
     tryAgain,
+    getVisibleSteps: (scenario, selections) => getVisibleSteps(scenario?.steps || [], selections || []),
   };
 }

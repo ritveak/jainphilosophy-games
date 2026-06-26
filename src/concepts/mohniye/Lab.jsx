@@ -3,13 +3,14 @@ import { LAB_TITLES } from './data';
 import { useMohniyeLab } from './useMohniyeLab';
 import ScenarioPicker from './lab/ScenarioPicker';
 import DecisionScreen from './lab/DecisionScreen';
-import RevealEngine from './lab/RevealEngine';
 import ResultScorecard from './lab/ResultScorecard';
 
 export default function Lab() {
   const lab = useMohniyeLab();
   const { state } = lab;
 
+  const visibleSteps = lab.getVisibleSteps(state.scenario, state.selections);
+  const currentStep = visibleSteps[state.progressStep] || null;
   const title = state.labStage === 'step' ? LAB_TITLES.step(state.progressStep) : LAB_TITLES[state.labStage] || 'Mohniye Lab';
 
   return (
@@ -39,9 +40,11 @@ export default function Lab() {
         <ScenarioPicker scenarios={state.scenarios} selectedId={state.scenario?.id} onSelect={lab.startScenario} />
       )}
 
-      {state.labStage === 'step' && state.scenario && (
+      {state.labStage === 'step' && state.scenario && currentStep && (
         <DecisionScreen
           step={state.progressStep}
+          totalSteps={visibleSteps.length}
+          stepSpec={currentStep}
           scenario={state.scenario}
           reflections={state.reflections}
           selections={state.selections}
@@ -49,10 +52,6 @@ export default function Lab() {
           onSelectLevel={lab.selectLevel}
           onSubmitStep={lab.submitStep}
         />
-      )}
-
-      {state.labStage === 'reveal' && (
-        <RevealEngine revealQueue={state.revealQueue} revealIndex={state.revealIndex} onTick={lab.advanceReveal} onShowResult={lab.showResult} />
       )}
 
       {state.labStage === 'result' && (
