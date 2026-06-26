@@ -25,8 +25,10 @@ export default function Lab() {
 
       {state.labStage === 'rules' && (
         <div>
-          <h3 className="text-lg font-semibold">How it works</h3>
-          <p className="mt-3 text-stone-600">One response is initially visible. Press "What Else?" to reflect and reveal more possibilities. A timer auto-submits the current selection.</p>
+          <p className="mt-3 text-stone-600">In real life we often instinctively think of an option, and if we actively think more, then more options become visible. </p>
+          <br/>
+            <p>Likewise in our lab, one response is initially visible.<br/> Pressing on the <span className="font-semibold">"Think harder to come up with more options"</span> button is in an indicative way of actively thinking for more options, after some clicks more options become visible. 
+            <br/><br/>Since IRL, we do not take forever to respond, we have a timer which auto-submits the current selection.</p>
           <div className="mt-6 flex gap-3">
             <button type="button" onClick={() => lab.goTo('scenarios')} className="rounded-full bg-emerald-600 px-5 py-2 text-white">Continue</button>
           </div>
