@@ -13,21 +13,33 @@ Built with **React**, **Vite**, and **Tailwind CSS**.
 ├── src/
 │   ├── App.jsx             # Router
 │   ├── concepts/
-│   │   ├── registry.js     # Concept metadata (title, summary, icon)
-│   │   ├── index.jsx        # Maps concept id → tab content
+│   │   ├── index.jsx       # Concept loader (auto-detects content via globs)
 │   │   └── samvaay/        # One concept per folder
-│   │       ├── SamvaayConcepts.jsx
-│   │       ├── SamvaayFaq.jsx
-│   │       ├── SamvaayLab.jsx
+│   │       ├── Concept.md
+│   │       ├── faq.json
+│   │       ├── resources.json
 │   │       ├── data.js
-│   │       └── lab/        # Lab stage components
+│   │       ├── Lab.jsx
+│   │       ├── useSamvaayLab.js
+│   │       └── lab/
 │   └── components/
 │       ├── layout/         # ConceptHub, ConceptPage, ConceptTabs
-│       ├── prose/          # ConceptProse, Callout, Split, DefinitionList
-│       ├── faq/            # FaqSection
-│       └── lab/            # LabEmbedded, PivotImmersive
-└── shared/                 # Legacy vanilla assets (kept for reference)
+│       ├── renderers/      # FaqRenderer, ResourcesRenderer
+│       ├── faq/            # FaqSection (accordion)
+│       ├── prose/          # ConceptMarkdown, Callout, etc.
+│       └── lab/            # Lab components
+└── shared/                 # Legacy vanilla assets
 ```
+
+## Core Architecture
+
+**Data-driven and render-agnostic**:
+
+| Layer | Purpose |
+|-------|---------|
+| **Concepts folder** | JSON + Markdown content (+ concept-specific Lab) |
+| **Generic renderers** | Display data from any concept (FaqRenderer, ResourcesRenderer) |
+| **Dynamic tabs** | Auto-detect and build tabs based on JSON files present |
 
 ## Reusable components
 
@@ -37,35 +49,30 @@ Every concept shares the same page shell:
 |-----------|---------|
 | `ConceptHub` | Landing page with concept cards |
 | `ConceptPage` | Header, back link, tab routing |
-| `ConceptTabs` | Concepts / Laboratory / FAQ tabs |
-| `ConceptProse` | Styled prose, callouts, splits, definition lists |
-| `FaqSection` | Accordion FAQ tab |
+| `ConceptTabs` | Smart tab system (only shows available tabs) |
+| `ConceptMarkdown` | Render markdown with styled prose |
+| `FaqRenderer` | Render FAQ from JSON |
+| `ResourcesRenderer` | Render resources from JSON |
 | `LabEmbedded` | Laboratory wrapper with title |
-| `PivotImmersive` | Fullscreen pivot overlay with matrix animation |
 
 ## Adding a new concept
 
-1. Register it in `src/concepts/registry.js`
-2. Create `src/concepts/my-concept/` with:
-   - `MyConceptConcepts.jsx` — Concepts tab content
-   - `MyConceptFaq.jsx` — FAQ tab
-   - `MyConceptLab.jsx` — Laboratory tab (optional)
-3. Wire it in `src/concepts/index.jsx`:
+1. Create folder: `src/concepts/my-concept/`
+2. Add required files:
+   - `Concept.md` (frontmatter + markdown)
+   - `faq.json` (optional - adds FAQ tab if present)
+   - `resources.json` (optional - adds Resources tab if present)
+3. Add Lab (optional):
+   - `Lab.jsx` (wrapper component)
+   - `lab/` folder (custom components)
 
-```js
-import MyConceptConcepts from './my-concept/MyConceptConcepts';
-import MyConceptFaq from './my-concept/MyConceptFaq';
-import MyConceptLab from './my-concept/MyConceptLab';
+That's it! The system automatically:
+- ✓ Detects the concept
+- ✓ Creates tabs based on available JSON files
+- ✓ Renders content using appropriate renderers
+- ✓ Displays in concept hub
 
-const CONTENT = {
-  // ...
-  'my-concept': {
-    concepts: <MyConceptConcepts />,
-    lab: <MyConceptLab />,
-    doubts: <MyConceptFaq />,
-  },
-};
-```
+See [structure.md](structure.md) for detailed guidelines.
 
 ## Running locally
 
@@ -80,3 +87,37 @@ Open http://localhost:5173
 npm run build   # production build
 npm run preview # preview production build
 ```
+
+## FAQ Rendering
+
+FAQ data flows through a generic renderer:
+
+```
+faq.json → FaqRenderer.jsx → Accordion UI
+```
+
+No component duplication across concepts. Just add `faq.json` to any concept folder.
+
+## Resources Rendering
+
+Resources data flows through a generic renderer:
+
+```
+resources.json → ResourcesRenderer.jsx → Card Grid UI
+```
+
+## Tab System
+
+Tabs are built dynamically in `concepts/index.jsx`:
+
+```javascript
+const tabs = [
+  { id: 'concepts', label: 'Concepts', exists: Boolean(content.concepts) },
+  { id: 'lab', label: 'Laboratory', exists: Boolean(content.lab) },
+  { id: 'doubts', label: 'FAQ', exists: Boolean(content.doubts) },
+  { id: 'resources', label: 'Resources', exists: Boolean(content.resources) },
+].filter((tab) => tab.exists);
+```
+
+Only tabs with available content appear on the page. No manual tab management needed.
+
