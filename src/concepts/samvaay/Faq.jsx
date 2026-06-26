@@ -4,7 +4,7 @@ const FAQ_ITEMS = [
   {
     question: 'Does this mean everything is predetermined?',
     answer:
-      'No. Many conditions matter, and not all are visible. Some factors lie beyond your effort, but how you respond inwardly — and how much effort you bring — remains meaningful.',
+      'No. Every outcome arises from multiple samvayas, including your present effort. Some factors lie beyond your effort, but how you respond inwardly and how much effort you bring remains meaningful.',
   },
   {
     question: 'Where does free will exist?',
@@ -12,17 +12,36 @@ const FAQ_ITEMS = [
       'In effort, direction, and posture toward results. You cannot command every external condition, but you can choose whether to become attached to success or failure.',
   },
   {
-    question: 'Why can effort fail?',
+    question: 'Why can sincere effort still fail?',
     answer:
-      'Because effort is one samvāya among several. Wrong material, wrong timing, unfavorable conditions, or hidden momentum can all prevent an outcome even when you tried sincerely.',
+      'Because effort is one samvaya among several. Wrong material, wrong timing, unfavorable conditions, or karma can all prevent an outcome even when you tried sincerely.',
   },
   {
-    question: 'How is this useful in daily life?',
+    question: 'Should I stop pursuing opportunities if nimitta is not the real cause?',
     answer:
-      'It loosens the grip of outcomes on your identity. You can plan and work fully while holding that the result depends on more than you — and that your clarity need not rise and fall with it.',
+      'No. Seek books, teachers, customers, and opportunities—but don’t mistake them for the source of success. They enable change; they do not create it.',
+  },
+  {
+    question: 'What should I do when progress stalls?',
+    answer:
+      'Sometimes the answer is better preparation, different timing, changing the approach, or focussing on shedding particular kind of Karma by tap and saadhna or knowing that it is against the swabhav or niyati !',
+  },
+  {
+    question: 'Is Niyati the same as luck or fate?',
+    answer:
+      'No. Niyati is the lawful order in which countless independent causes come together. It is neither randomness nor a force that overrides your effort.',
+  },
+  {
+    question: 'Why does Jainism distinguish Nimitta and Upadana?',
+    answer:
+      'Because only the upadana actually transforms. The nimitta provides the occasion, but the change always happens within the thing that is changing.',
+  },
+  {
+    question: 'How does this change everyday life?',
+    answer:
+      'It shifts your focus from controlling outcomes to improving what is truly yours, your preparedness, effort, and awareness. Success becomes humbler and failure becomes easier to learn from.',
   },
 ];
-
 export default function FAQ() {
   return (
     <FaqSection intro="Common questions after going through the lab." items={FAQ_ITEMS} />
