@@ -6,13 +6,7 @@ import ConceptTabs from './ConceptTabs';
 export default function ConceptPage() {
   const { conceptId } = useParams();
   const concept = getConcept(conceptId);
-  const content = getConceptContent(conceptId);
-  const availableTabs = [
-    { id: 'concepts', label: 'Concepts', exists: Boolean(content.concepts) },
-    { id: 'lab', label: 'Laboratory', exists: Boolean(content.lab) },
-    { id: 'doubts', label: 'FAQ', exists: Boolean(content.doubts) },
-    { id: 'resources', label: 'Resources', exists: Boolean(content.resources) },
-  ].filter((tab) => tab.exists);
+  const { content, tabs: availableTabs } = getConceptContent(conceptId);
   const [activeTab, setActiveTab] = useState('concepts');
 
   useEffect(() => {

@@ -1,5 +1,7 @@
 import { parse as parseYaml } from 'yaml';
 import ConceptMarkdown from '../components/layout/ConceptMarkdown';
+import FaqRenderer from '../components/renderers/FaqRenderer';
+import ResourcesRenderer from '../components/renderers/ResourcesRenderer';
 
 function parseFrontmatter(markdown) {
   const match = markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
@@ -22,11 +24,11 @@ const labFiles = import.meta.glob('./*/Lab.jsx', {
   eager: true,
   import: 'default',
 });
-const faqFiles = import.meta.glob('./*/Faq.jsx', {
+const faqJsonFiles = import.meta.glob('./*/faq.json', {
   eager: true,
   import: 'default',
 });
-const resourcesFiles = import.meta.glob('./*/Resources.jsx', {
+const resourcesJsonFiles = import.meta.glob('./*/resources.json', {
   eager: true,
   import: 'default',
 });
@@ -72,22 +74,22 @@ const labById = Object.fromEntries(
     .filter(Boolean)
 );
 
-const faqById = Object.fromEntries(
-  Object.entries(faqFiles)
-    .map(([path, module]) => {
-      const match = path.match(/^\.\/(.*?)\/Faq\.jsx$/);
+const faqDataById = Object.fromEntries(
+  Object.entries(faqJsonFiles)
+    .map(([path, data]) => {
+      const match = path.match(/^\.\/(.*?)\/faq\.json$/);
       if (!match) return null;
-      return [match[1], module];
+      return [match[1], data];
     })
     .filter(Boolean)
 );
 
-const resourcesById = Object.fromEntries(
-  Object.entries(resourcesFiles)
-    .map(([path, module]) => {
-      const match = path.match(/^\.\/(.*?)\/Resources\.jsx$/);
+const resourcesDataById = Object.fromEntries(
+  Object.entries(resourcesJsonFiles)
+    .map(([path, data]) => {
+      const match = path.match(/^\.\/(.*?)\/resources\.json$/);
       if (!match) return null;
-      return [match[1], module];
+      return [match[1], data];
     })
     .filter(Boolean)
 );
@@ -104,16 +106,26 @@ export function getConcepts() {
 
 export function getConceptContent(conceptId) {
   const concept = conceptById[conceptId];
-  if (!concept) return {};
+  if (!concept) return { content: {}, tabs: [] };
 
   const LabComponent = labById[conceptId];
-  const FaqComponent = faqById[conceptId];
-  const ResourcesComponent = resourcesById[conceptId];
+  const faqData = faqDataById[conceptId];
+  const resourcesData = resourcesDataById[conceptId];
 
-  return {
+  const content = {
     concepts: concept.markdown ? <ConceptMarkdown markdown={concept.markdown} /> : undefined,
     lab: LabComponent ? <LabComponent /> : undefined,
-    doubts: FaqComponent ? <FaqComponent /> : undefined,
-    resources: ResourcesComponent ? <ResourcesComponent /> : undefined,
+    doubts: faqData ? <FaqRenderer items={faqData} /> : undefined,
+    resources: resourcesData ? <ResourcesRenderer items={resourcesData} /> : undefined,
   };
+
+  // Build dynamic tabs based on what's available
+  const tabs = [
+    { id: 'concepts', label: 'Concepts', exists: Boolean(content.concepts) },
+    { id: 'lab', label: 'Laboratory', exists: Boolean(content.lab) },
+    { id: 'doubts', label: 'FAQ', exists: Boolean(content.doubts) },
+    { id: 'resources', label: 'Resources', exists: Boolean(content.resources) },
+  ].filter((tab) => tab.exists);
+
+  return { content, tabs };
 }

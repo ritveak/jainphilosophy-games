@@ -1,6 +1,4 @@
-import resourcesData from './resources.json';
-
-export default function Resources() {
+export default function ResourcesRenderer({ items }) {
   return (
     <div className="space-y-6">
       <div className="prose prose-stone max-w-none">
@@ -10,7 +8,7 @@ export default function Resources() {
       </div>
 
       <div className="grid gap-4">
-        {resourcesData.map((resource) => (
+        {items.map((resource) => (
           <a
             key={resource.url}
             href={resource.url}
