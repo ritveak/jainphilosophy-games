@@ -16,6 +16,41 @@ export const karmaData = {
         "uday": "uday-122",
         "udirna": "udirna-122",
         "satta": "satta"
+      },
+      "stageAnchors": {
+        "bandh": {
+          "g1": "1-mithyatva-120-0-3-117",
+          "g2": "2-saswadan-117-16-0-101",
+          "g3": "3-misra-101-25-2-74",
+          "g4": "4-avirati-samyagdrishti-74-0-3-77",
+          "g5": "5-deshvirti-samyagdrishti-77-10-0-67",
+          "g6": "6-pramatt-sarvavirti-67-4-0-63",
+          "g7": "7-apramatt-sarvavirti-63-6-1-2-58",
+          "g8": "8-apurvakaran-58-0-2-30-0-26",
+          "g9": "9-anivritti-karan-26-4-1-1-1-1-0-18",
+          "g10": "10-sukshm-sampray-18-1-0-17",
+          "g11": "11-upshant-moh-vitrag-17-16-0-1",
+          "g12": "12-kshin-moh-vitrag-1-0-0-1",
+          "g13": "13-sayog-kevali-1-0-0-1",
+          "g14": "14-ayog-kevali-1-1-0-0"
+        },
+        "uday": {
+          "g1": "1-mithyatva-122-0-5-117",
+          "g2": "2-saswadan-117-5-1-111",
+          "g3": "3-misra-111-9-2-100",
+          "g4": "4-avirati-samyagdrishti-100-1-5-104",
+          "g5": "5-deshvirti-samyagdrishti-104-17-0-87",
+          "g6": "6-pramatt-sarvavirti-87-8-2-81",
+          "g7": "7-apramatt-sarvavirti-81-5-0-76",
+          "g8": "8-apurvakaran-76-4-0-72",
+          "g9": "9-anivritti-karan-72-6-0-66",
+          "g10": "10-sukshm-sampray-66-6-0-60",
+          "g11": "11-upshant-moh-60-1-0-59",
+          "g12": "12-kshin-moh-vitrag-59-2-2-55",
+          "g13": "13-sayog-kevali-55-14-1-42",
+          "g14": "14-ayog-kevali-42-30-0-12",
+          "siddhashila": "sidhh-awastha-12-30-0-0"
+        }
       }
     }
   },
@@ -8684,6 +8719,26 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali"
+    },
+    {
+      "id": "kg2-bandh-g8-stage7-tras-dashak",
+      "subtypeId": "kg1-6-3-1-6-3-1-tras",
+      "sourceLabel": "Tras Dashak",
+      "sourceAnchor": "6.3 Tras Dashak Prakriti (त्रस दशक प्रकृति) {10} +",
+      "sourceExcerpt": "The source lists Tras among the nine remaining Tras Dashak members in the Gunasthan 8, Stage 7 Bandh Vichhed group.",
+      "gunasthanId": "g8",
+      "stageContext": null,
+      "subStage": "Stage 7",
+      "relationType": "bandh",
+      "sourceTerm": "Bandh Vichhed",
+      "state": "cessation",
+      "statement": "Binding stops for this named group from this sub-stage onward.",
+      "sourceHeading": "Bandh > Apurvakaran > Stage 7 > Bandh Vichhed (64+30 = 94)",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "verification": "source-derived-mapping",
+      "derivedFromSourceGroupId": "kg1-6-3-6-3-tras-dashak-prakriti-10",
+      "displayLocation": "Gunasthan 8 · Apurvakaran · Stage 7",
+      "displayNote": "Mapped from the named Tras Dashak group in the source row; the subtype is listed among its nine remaining members."
     }
   ],
   "annotations": [
@@ -9007,6 +9062,754 @@ export const karmaData = {
       "id": "image-only-summary",
       "title": "Image-only source material",
       "text": "KG-1 and KG-2 include embedded summary/count images. Their contents are not transcribed into this data set. KG-2 relationship records below come only from readable Markdown entries; grouped or unresolved references remain flagged."
+    }
+  ],
+  "relationshipDependencies": [
+    {
+      "id": "kg2-row-count-bandhan-audarika",
+      "subtypeId": "kg1-6-1-5-1-6-1-5-1-audarika-bandhan",
+      "derivedFromSubtypeId": "kg1-6-1-3-1-6-1-3-1-audarika-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-sanghat-audarika",
+      "subtypeId": "kg1-6-1-6-1-6-1-6-1-audarika-sanghat",
+      "derivedFromSubtypeId": "kg1-6-1-3-1-6-1-3-1-audarika-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-bandhan-vaikriya",
+      "subtypeId": "kg1-6-1-5-2-6-1-5-2-vaikriya-bandhan",
+      "derivedFromSubtypeId": "kg1-6-1-3-2-6-1-3-2-vaikriya-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-sanghat-vaikriya",
+      "subtypeId": "kg1-6-1-6-2-6-1-6-2-vaikriya-sanghat",
+      "derivedFromSubtypeId": "kg1-6-1-3-2-6-1-3-2-vaikriya-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-bandhan-aharaka",
+      "subtypeId": "kg1-6-1-5-3-6-1-5-3-aharaka-bandhan",
+      "derivedFromSubtypeId": "kg1-6-1-3-3-6-1-3-3-aharaka-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-sanghat-aharaka",
+      "subtypeId": "kg1-6-1-6-3-6-1-6-3-aharaka-sanghat",
+      "derivedFromSubtypeId": "kg1-6-1-3-3-6-1-3-3-aharaka-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-bandhan-taijasa",
+      "subtypeId": "kg1-6-1-5-4-6-1-5-4-taijasa-bandhan",
+      "derivedFromSubtypeId": "kg1-6-1-3-4-6-1-3-4-taijasa-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-sanghat-taijasa",
+      "subtypeId": "kg1-6-1-6-4-6-1-6-4-taijasa-sanghat",
+      "derivedFromSubtypeId": "kg1-6-1-3-4-6-1-3-4-taijasa-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-bandhan-karmana",
+      "subtypeId": "kg1-6-1-5-5-6-1-5-5-karmana-bandhan",
+      "derivedFromSubtypeId": "kg1-6-1-3-5-6-1-3-5-karmana-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    },
+    {
+      "id": "kg2-row-count-sanghat-karmana",
+      "subtypeId": "kg1-6-1-6-5-6-1-6-5-karmana-sanghat",
+      "derivedFromSubtypeId": "kg1-6-1-3-5-6-1-3-5-karmana-sharir",
+      "relationTypes": [
+        "bandh",
+        "uday"
+      ],
+      "derivation": "source-derived-row-count-equivalence",
+      "verification": "source-derived-mapping",
+      "sourceHeadings": {
+        "bandh": "Bandh (120) > 120 Count logic",
+        "uday": "Uday (122) > 122 Count logic"
+      }
+    }
+  ],
+  "terminalStages": [
+    {
+      "id": "siddhashila",
+      "label": "Siddhashila",
+      "displayName": "Siddhashila",
+      "order": 15,
+      "sourceTerm": "Sidhh Awastha",
+      "sourceContext": "After Gunasthan 14",
+      "relationTypes": [
+        "uday"
+      ],
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "verification": "source-extracted"
+    }
+  ],
+  "relationshipCounting": {
+    "bandh": {
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "excludedNodeIds": [
+        "kg1-6-1-5-1-6-1-5-1-audarika-bandhan",
+        "kg1-6-1-5-2-6-1-5-2-vaikriya-bandhan",
+        "kg1-6-1-5-3-6-1-5-3-aharaka-bandhan",
+        "kg1-6-1-5-4-6-1-5-4-taijasa-bandhan",
+        "kg1-6-1-5-5-6-1-5-5-karmana-bandhan",
+        "kg1-6-1-6-1-6-1-6-1-audarika-sanghat",
+        "kg1-6-1-6-2-6-1-6-2-vaikriya-sanghat",
+        "kg1-6-1-6-3-6-1-6-3-aharaka-sanghat",
+        "kg1-6-1-6-4-6-1-6-4-taijasa-sanghat",
+        "kg1-6-1-6-5-6-1-6-5-karmana-sanghat",
+        "kg1-6-1-9-1-6-1-9-1-krishna-varna",
+        "kg1-6-1-9-2-6-1-9-2-nila-varna",
+        "kg1-6-1-9-3-6-1-9-3-rakta-varna",
+        "kg1-6-1-9-4-6-1-9-4-pita-varna",
+        "kg1-6-1-9-5-6-1-9-5-shukla-varna",
+        "kg1-6-1-10-1-6-1-10-1-surabhi-gandha",
+        "kg1-6-1-10-2-6-1-10-2-durabhi-gandha",
+        "kg1-6-1-11-1-6-1-11-1-tikta-rasa",
+        "kg1-6-1-11-2-6-1-11-2-katu-rasa",
+        "kg1-6-1-11-3-6-1-11-3-kashaya-rasa",
+        "kg1-6-1-11-4-6-1-11-4-amla-rasa",
+        "kg1-6-1-11-5-6-1-11-5-madhura-rasa",
+        "kg1-6-1-12-1-6-1-12-1-guru-sparsha",
+        "kg1-6-1-12-2-6-1-12-2-laghu-sparsha",
+        "kg1-6-1-12-3-6-1-12-3-mridu-sparsha",
+        "kg1-6-1-12-4-6-1-12-4-kathina-sparsha",
+        "kg1-6-1-12-5-6-1-12-5-shita-sparsha",
+        "kg1-6-1-12-6-6-1-12-6-ushna-sparsha",
+        "kg1-6-1-12-7-6-1-12-7-snigdha-sparsha",
+        "kg1-6-1-12-8-6-1-12-8-ruksha-sparsha",
+        "kg1-4-1-2-4-1-2-misra-mohaniya",
+        "kg1-4-1-3-4-1-3-samyaktva-mohaniya"
+      ],
+      "notApplicableNodeIds": [
+        "kg1-4-1-2-4-1-2-misra-mohaniya",
+        "kg1-4-1-3-4-1-3-samyaktva-mohaniya"
+      ],
+      "aggregateNodeIds": [
+        "kg1-6-1-9-6-1-9-varna-5",
+        "kg1-6-1-10-6-1-10-gandha-2",
+        "kg1-6-1-11-6-1-11-rasa-5",
+        "kg1-6-1-12-6-1-12-sparsha-8"
+      ],
+      "note": "Bandhan and Sanghat are grouped with Sharir; Varna, Gandha, Rasa, and Sparsha each count as one category. Misra and Samyaktva are not counted as bindable types."
+    },
+    "uday": {
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "excludedNodeIds": [
+        "kg1-6-1-5-1-6-1-5-1-audarika-bandhan",
+        "kg1-6-1-5-2-6-1-5-2-vaikriya-bandhan",
+        "kg1-6-1-5-3-6-1-5-3-aharaka-bandhan",
+        "kg1-6-1-5-4-6-1-5-4-taijasa-bandhan",
+        "kg1-6-1-5-5-6-1-5-5-karmana-bandhan",
+        "kg1-6-1-6-1-6-1-6-1-audarika-sanghat",
+        "kg1-6-1-6-2-6-1-6-2-vaikriya-sanghat",
+        "kg1-6-1-6-3-6-1-6-3-aharaka-sanghat",
+        "kg1-6-1-6-4-6-1-6-4-taijasa-sanghat",
+        "kg1-6-1-6-5-6-1-6-5-karmana-sanghat",
+        "kg1-6-1-9-1-6-1-9-1-krishna-varna",
+        "kg1-6-1-9-2-6-1-9-2-nila-varna",
+        "kg1-6-1-9-3-6-1-9-3-rakta-varna",
+        "kg1-6-1-9-4-6-1-9-4-pita-varna",
+        "kg1-6-1-9-5-6-1-9-5-shukla-varna",
+        "kg1-6-1-10-1-6-1-10-1-surabhi-gandha",
+        "kg1-6-1-10-2-6-1-10-2-durabhi-gandha",
+        "kg1-6-1-11-1-6-1-11-1-tikta-rasa",
+        "kg1-6-1-11-2-6-1-11-2-katu-rasa",
+        "kg1-6-1-11-3-6-1-11-3-kashaya-rasa",
+        "kg1-6-1-11-4-6-1-11-4-amla-rasa",
+        "kg1-6-1-11-5-6-1-11-5-madhura-rasa",
+        "kg1-6-1-12-1-6-1-12-1-guru-sparsha",
+        "kg1-6-1-12-2-6-1-12-2-laghu-sparsha",
+        "kg1-6-1-12-3-6-1-12-3-mridu-sparsha",
+        "kg1-6-1-12-4-6-1-12-4-kathina-sparsha",
+        "kg1-6-1-12-5-6-1-12-5-shita-sparsha",
+        "kg1-6-1-12-6-6-1-12-6-ushna-sparsha",
+        "kg1-6-1-12-7-6-1-12-7-snigdha-sparsha",
+        "kg1-6-1-12-8-6-1-12-8-ruksha-sparsha"
+      ],
+      "notApplicableNodeIds": [],
+      "aggregateNodeIds": [
+        "kg1-6-1-9-6-1-9-varna-5",
+        "kg1-6-1-10-6-1-10-gandha-2",
+        "kg1-6-1-11-6-1-11-rasa-5",
+        "kg1-6-1-12-6-1-12-sparsha-8"
+      ],
+      "note": "Bandhan and Sanghat are grouped with Sharir; Varna, Gandha, Rasa, and Sparsha each count as one category."
+    }
+  },
+  "sourceCountRows": [
+    {
+      "id": "bandh-count-g1",
+      "relationType": "bandh",
+      "stageId": "g1",
+      "subStage": "all",
+      "active": 117,
+      "paused": 3,
+      "stopped": 0,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g2",
+      "relationType": "bandh",
+      "stageId": "g2",
+      "subStage": "all",
+      "active": 101,
+      "paused": 3,
+      "stopped": 16,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g3",
+      "relationType": "bandh",
+      "stageId": "g3",
+      "subStage": "all",
+      "active": 74,
+      "paused": 5,
+      "stopped": 41,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g4",
+      "relationType": "bandh",
+      "stageId": "g4",
+      "subStage": "all",
+      "active": 77,
+      "paused": 2,
+      "stopped": 41,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g5",
+      "relationType": "bandh",
+      "stageId": "g5",
+      "subStage": "all",
+      "active": 67,
+      "paused": 2,
+      "stopped": 51,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g6",
+      "relationType": "bandh",
+      "stageId": "g6",
+      "subStage": "all",
+      "active": 63,
+      "paused": 2,
+      "stopped": 55,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g7",
+      "relationType": "bandh",
+      "stageId": "g7",
+      "subStage": "all",
+      "active": 58,
+      "paused": 0,
+      "stopped": 62,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g8-stage-1",
+      "relationType": "bandh",
+      "stageId": "g8",
+      "subStage": "Stage 1",
+      "active": 58,
+      "paused": 0,
+      "stopped": 62,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g8-stage-2-to-6",
+      "relationType": "bandh",
+      "stageId": "g8",
+      "subStage": "Stage 2 to 6",
+      "active": 56,
+      "paused": 0,
+      "stopped": 64,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g8-stage-7",
+      "relationType": "bandh",
+      "stageId": "g8",
+      "subStage": "Stage 7",
+      "active": 26,
+      "paused": 0,
+      "stopped": 94,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g9-stage-1",
+      "relationType": "bandh",
+      "stageId": "g9",
+      "subStage": "Stage 1",
+      "active": 22,
+      "paused": 0,
+      "stopped": 98,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g9-stage-2",
+      "relationType": "bandh",
+      "stageId": "g9",
+      "subStage": "Stage 2",
+      "active": 21,
+      "paused": 0,
+      "stopped": 99,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g9-stage-3",
+      "relationType": "bandh",
+      "stageId": "g9",
+      "subStage": "Stage 3",
+      "active": 20,
+      "paused": 0,
+      "stopped": 100,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g9-stage-4",
+      "relationType": "bandh",
+      "stageId": "g9",
+      "subStage": "Stage 4",
+      "active": 19,
+      "paused": 0,
+      "stopped": 101,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g9-stage-5",
+      "relationType": "bandh",
+      "stageId": "g9",
+      "subStage": "Stage 5",
+      "active": 18,
+      "paused": 0,
+      "stopped": 102,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g10",
+      "relationType": "bandh",
+      "stageId": "g10",
+      "subStage": "all",
+      "active": 17,
+      "paused": 0,
+      "stopped": 103,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g11",
+      "relationType": "bandh",
+      "stageId": "g11",
+      "subStage": "all",
+      "active": 1,
+      "paused": 0,
+      "stopped": 119,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g12-stage-1",
+      "relationType": "bandh",
+      "stageId": "g12",
+      "subStage": "Stage 1",
+      "active": 1,
+      "paused": 0,
+      "stopped": 119,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g12-stage-2",
+      "relationType": "bandh",
+      "stageId": "g12",
+      "subStage": "Stage 2",
+      "active": 1,
+      "paused": 0,
+      "stopped": 119,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g13",
+      "relationType": "bandh",
+      "stageId": "g13",
+      "subStage": "all",
+      "active": 1,
+      "paused": 0,
+      "stopped": 119,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "bandh-count-g14",
+      "relationType": "bandh",
+      "stageId": "g14",
+      "subStage": "all",
+      "active": 0,
+      "paused": 0,
+      "stopped": 120,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g1",
+      "relationType": "uday",
+      "stageId": "g1",
+      "subStage": "all",
+      "active": 117,
+      "paused": 5,
+      "stopped": 0,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g2",
+      "relationType": "uday",
+      "stageId": "g2",
+      "subStage": "all",
+      "active": 111,
+      "paused": 6,
+      "stopped": 5,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed",
+      "reviewNote": "The image count table reports 5 stopped here; the detailed text subsection lists 16 Uday Vichhed entries. Both source values are preserved; this summary follows the count table."
+    },
+    {
+      "id": "uday-count-g3",
+      "relationType": "uday",
+      "stageId": "g3",
+      "subStage": "all",
+      "active": 100,
+      "paused": 8,
+      "stopped": 14,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g4",
+      "relationType": "uday",
+      "stageId": "g4",
+      "subStage": "all",
+      "active": 104,
+      "paused": 3,
+      "stopped": 15,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g5",
+      "relationType": "uday",
+      "stageId": "g5",
+      "subStage": "all",
+      "active": 87,
+      "paused": 3,
+      "stopped": 32,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g6",
+      "relationType": "uday",
+      "stageId": "g6",
+      "subStage": "all",
+      "active": 81,
+      "paused": 1,
+      "stopped": 40,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g7",
+      "relationType": "uday",
+      "stageId": "g7",
+      "subStage": "all",
+      "active": 76,
+      "paused": 1,
+      "stopped": 45,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g8",
+      "relationType": "uday",
+      "stageId": "g8",
+      "subStage": "all",
+      "active": 72,
+      "paused": 1,
+      "stopped": 49,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g9",
+      "relationType": "uday",
+      "stageId": "g9",
+      "subStage": "all",
+      "active": 66,
+      "paused": 1,
+      "stopped": 55,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g10",
+      "relationType": "uday",
+      "stageId": "g10",
+      "subStage": "all",
+      "active": 60,
+      "paused": 1,
+      "stopped": 61,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g11",
+      "relationType": "uday",
+      "stageId": "g11",
+      "subStage": "all",
+      "active": 59,
+      "paused": 1,
+      "stopped": 62,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g12-stage-1",
+      "relationType": "uday",
+      "stageId": "g12",
+      "subStage": "Stage 1",
+      "active": 57,
+      "paused": 1,
+      "stopped": 64,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g12-stage-2",
+      "relationType": "uday",
+      "stageId": "g12",
+      "subStage": "Stage 2",
+      "active": 55,
+      "paused": 1,
+      "stopped": 66,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g13",
+      "relationType": "uday",
+      "stageId": "g13",
+      "subStage": "all",
+      "active": 42,
+      "paused": 0,
+      "stopped": 80,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed"
+    },
+    {
+      "id": "uday-count-g14",
+      "relationType": "uday",
+      "stageId": "g14",
+      "subStage": "all",
+      "active": 12,
+      "paused": 0,
+      "stopped": 110,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed",
+      "sourceNote": "The note says either Sata or Asata remains in uday throughout Gunasthan 14; only the one present is counted as active."
+    },
+    {
+      "id": "uday-count-siddhashila",
+      "relationType": "uday",
+      "stageId": "siddhashila",
+      "subStage": "all",
+      "active": 0,
+      "paused": 0,
+      "stopped": 122,
+      "sourceCount": 122,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
+      "sourceSection": "Uday (122) count table",
+      "verification": "source-image-transcribed",
+      "sourceNote": "Whichever of Sata or Asata remains through Gunasthan 14 has its Uday Vichhed after leaving that stage."
     }
   ]
 };

@@ -30,29 +30,143 @@ function familyOf(node) {
   return current;
 }
 
+function relationshipsForSubtype(subtypeId) {
+  const direct = karmaData.relationships.filter((record) => record.subtypeId === subtypeId);
+  const inherited = (karmaData.relationshipDependencies || [])
+    .filter((dependency) => dependency.subtypeId === subtypeId)
+    .flatMap((dependency) => karmaData.relationships
+      .filter((record) => record.subtypeId === dependency.derivedFromSubtypeId && dependency.relationTypes.includes(record.relationType))
+      .map((record) => {
+        const sourceNode = nodeById[dependency.derivedFromSubtypeId];
+        return {
+          ...record,
+          id: `${record.id}--${dependency.id}`,
+          subtypeId,
+          derivedFromSubtypeId: dependency.derivedFromSubtypeId,
+          derivation: dependency.derivation,
+          verification: dependency.verification,
+          displayNote: `The notes group this ${nodeLabel(nodeById[subtypeId])} subtype with ${nodeLabel(sourceNode)} for row-count logic; this stage mapping follows the corresponding ${nodeLabel(sourceNode)} entry.`
+        };
+      }));
+  return [...direct, ...inherited];
+}
+
 function nodeLabel(node) {
   return node?.displayName || node?.name || '';
 }
 
 function stageLabel(id) {
   const stage = karmaData.gunasthans.find((item) => item.id === id);
-  return stage ? `Gunasthan ${stage.number} · ${stage.displayName || stage.name}` : 'After Gunasthan 14';
+  const terminal = (karmaData.terminalStages || []).find((item) => item.id === id);
+  return stage ? `Gunasthan ${stage.number} · ${stage.displayName || stage.name}` : terminal ? `${terminal.displayName} · ${terminal.sourceContext}` : 'Unknown stage';
 }
 
-function relationshipDescription(record) {
-  if (record.state === 'unlocked') {
-    return record.relationType === 'bandh'
-      ? 'Binding becomes possible from this Gunasthan.'
-      : 'This karma can enter uday from this Gunasthan.';
+function stageNoteUrl(relationType, stageId) {
+  const anchor = karmaData.sources.kg2.stageAnchors?.[relationType]?.[stageId];
+  return anchor ? `${karmaData.sources.kg2.url}#${anchor}` : `${karmaData.sources.kg2.url}#${karmaData.sources.kg2.sectionAnchors[relationType]}`;
+}
+
+function stageOrder(id) {
+  const stage = karmaData.gunasthans.find((item) => item.id === id);
+  if (stage) return stage.number;
+  return (karmaData.terminalStages || []).find((item) => item.id === id)?.order ?? null;
+}
+
+function recordStageOrder(record) {
+  if (record.gunasthanId) return stageOrder(record.gunasthanId);
+  if (record.stageContext?.toLowerCase().includes('after gunasthan 14')) {
+    return (karmaData.terminalStages || []).find((item) => item.sourceContext === 'After Gunasthan 14')?.order ?? null;
   }
-  if (record.state === 'non-occurrence') {
-    const action = record.relationType === 'bandh' ? 'Not bindable' : 'Not in uday';
-    return `${action}${record.displayPeriod ? ` during ${record.displayPeriod}` : ' at this Gunasthan'}.`;
+  return null;
+}
+
+function subStageRange(value) {
+  const match = value?.match(/Stage\s+(\d+)(?:\s+to\s+(\d+))?/i);
+  return match ? [Number(match[1]), Number(match[2] || match[1])] : null;
+}
+
+function selectedSubStageRange(stageId, subStage) {
+  const stage = karmaData.gunasthans.find((item) => item.id === stageId);
+  if (!stage?.subStages?.length) return [1, Number.POSITIVE_INFINITY];
+  if (subStage === 'all') {
+    const ranges = stage.subStages.map(subStageRange).filter(Boolean);
+    return [1, Math.max(...ranges.map((range) => range[1]))];
   }
-  if (record.relationType === 'bandh') return 'Bandh stops from this Gunasthan onward.';
-  if (record.stageContext?.includes('after Gunasthan 14')) return 'Uday stops upon leaving Gunasthan 14.';
-  const stageNumber = Number(record.gunasthanId?.slice(1));
-  return `Uday stops from this Gunasthan onward${stageNumber < 14 ? '; descent to a lower Gunasthan may allow it again' : ''}.`;
+  return subStageRange(subStage) || [1, Number.POSITIVE_INFINITY];
+}
+
+function relationshipAppliesAt(record, relationType, stageId, subStage) {
+  if (record.relationType !== relationType) return false;
+  const currentStage = stageOrder(stageId);
+  const recordStage = recordStageOrder(record);
+  if (currentStage == null || recordStage == null) return false;
+  const [selectedStart, selectedEnd] = selectedSubStageRange(stageId, subStage);
+  if (record.state === 'cessation') {
+    if (recordStage < currentStage) return true;
+    if (recordStage > currentStage) return false;
+    const eventRange = subStageRange(record.subStage);
+    return !eventRange || selectedEnd >= eventRange[0];
+  }
+  if (record.state !== 'non-occurrence') return false;
+  const throughStage = Number(record.throughGunasthanId?.slice(1) || recordStage);
+  if (currentStage < recordStage || currentStage > throughStage) return false;
+  if (recordStage !== currentStage) return true;
+  const eventRange = subStageRange(record.subStage);
+  if (!eventRange) return true;
+  return selectedStart <= eventRange[1] && selectedEnd >= eventRange[0];
+}
+
+function isActiveForFilter(nodeId, relationType, stageId, subStage) {
+  const countRule = karmaData.relationshipCounting?.[relationType];
+  if (countRule?.notApplicableNodeIds?.includes(nodeId)) return false;
+  const records = relationshipsForSubtype(nodeId);
+  return !records.some((record) => relationshipAppliesAt(record, relationType, stageId, subStage));
+}
+
+function countSummaryForFilter(filter) {
+  if (!filter) return null;
+  const stage = karmaData.gunasthans.find((item) => item.id === filter.gunasthanId);
+  const subStage = filter.subStage === 'all' && stage?.subStages?.length
+    ? stage.subStages.at(-1)
+    : filter.subStage || 'all';
+  const row = (karmaData.sourceCountRows || []).find((item) => item.relationType === filter.relationType && item.stageId === filter.gunasthanId && item.subStage === subStage);
+  return row ? { ...row, sum: row.active + row.paused + row.stopped } : null;
+}
+
+function collectFilteredNodeIds(roots, filter) {
+  if (!filter) return new Set(karmaData.nodes.map((node) => node.id));
+  const visible = new Set();
+  function visit(node) {
+    if (!isActiveForFilter(node.id, filter.relationType, filter.gunasthanId, filter.subStage)) return false;
+    const children = childrenById[node.id] || [];
+    const visibleChildren = children.map(visit).some(Boolean);
+    const keep = children.length ? visibleChildren : node.kind !== 'type';
+    if (keep) visible.add(node.id);
+    return keep;
+  }
+  roots.forEach(visit);
+  return visible;
+}
+
+function collectStateNodeIds(roots, filter, state) {
+  if (!filter || state === 'active') return collectFilteredNodeIds(roots, filter);
+  const targetState = state === 'paused' ? 'non-occurrence' : 'cessation';
+  const selected = new Set();
+  const notApplicableNodeIds = karmaData.relationshipCounting?.[filter.relationType]?.notApplicableNodeIds || [];
+  karmaData.nodes.filter((node) => node.kind !== 'type').forEach((node) => {
+    if (notApplicableNodeIds.includes(node.id)) return;
+    const matches = relationshipsForSubtype(node.id).some((record) => (state === 'total' || !record.derivation)
+      && (state === 'total' ? ['non-occurrence', 'cessation'].includes(record.state) : record.state === targetState)
+      && relationshipAppliesAt(record, filter.relationType, filter.gunasthanId, filter.subStage));
+    if (matches) {
+      selected.add(node.id);
+      ancestorsOf(node.id).forEach((ancestorId) => selected.add(ancestorId));
+    }
+  });
+  if (state === 'total') {
+    collectFilteredNodeIds(roots, filter).forEach((id) => selected.add(id));
+  }
+  return selected;
 }
 
 function sourceLinks() {
@@ -71,18 +185,8 @@ function ExternalNoteLinks() {
   );
 }
 
-function RelationBadge({ record }) {
-  return (
-    <span className="kg-relation-badge">
-      {record.sourceTerm}
-      {record.subStage ? ` · ${record.subStage}` : ''}
-      {record.state === 'unlocked' ? ' · unlocked' : ''}
-    </span>
-  );
-}
-
-function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect }) {
-  const children = childrenById[node.id] || [];
+function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect, visibleNodeIds }) {
+  const children = (childrenById[node.id] || []).filter((child) => visibleNodeIds.has(child.id));
   const selected = selectedId === node.id;
   const indicatorLabel = node.karmicIndicator === 'positive' ? 'perceived as punya' : node.karmicIndicator === 'negative' ? 'perceived as paap' : node.karmicIndicator === 'mixed' ? 'mixed subtypes' : '';
   return (
@@ -94,34 +198,48 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
           {children.length > 0 && node.countLabel ? <small><span className="kg-node-count">{node.countLabel} subtypes</span></small> : null}
         </button>
       </div>
-      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} />)}</ul>}
+      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} />)}</ul>}
     </li>
   );
 }
 
-function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll }) {
+function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, countSummary, displayMode, onChangeDisplayMode }) {
+  const countSum = countSummary?.sum || 0;
+  const pausedLabel = filter?.relationType === 'bandh' ? 'Paused · Abandh' : 'Paused · Anuday';
+  const stoppedLabel = filter?.relationType === 'bandh' ? 'Stopped · Bandh Vichhed' : 'Stopped · Uday Vichhed';
   return (
     <section className="kg-canvas-graph" aria-label="Karma hierarchy">
       <div className="kg-canvas-head"><div><span className="kg-kicker">Karma hierarchy</span><h3>Karma View</h3></div><div className="kg-canvas-actions"><button type="button" onClick={onCollapseToLevelOne}>Collapse to level 1</button><button type="button" onClick={onExpandAll}>Full expansion</button></div></div>
+      {countSummary && <section className="kg-count-summary" aria-label={`${filter.relationLabel} count summary for ${stageLabel(filter.gunasthanId)}`}>
+        <div className="kg-count-heading"><div><span className="kg-kicker">Source row-count</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">How this count is calculated <span aria-hidden="true">↗</span></a></div></div>
+        <div className="kg-count-grid">
+          <button type="button" className={`kg-count-tile is-active${displayMode === 'active' ? ' is-current' : ''}`} title="Show active karma" onClick={() => onChangeDisplayMode('active')} aria-pressed={displayMode === 'active'}><strong>{countSummary.active}</strong><span>Active karma</span></button>
+          <button type="button" className={`kg-count-tile is-paused${displayMode === 'paused' ? ' is-current' : ''}`} title={`Show subtype entries paused at ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('paused')} aria-label={`Show subtype entries for ${pausedLabel}: ${countSummary.paused}`} aria-pressed={displayMode === 'paused'}><strong>{countSummary.paused}</strong><span>{pausedLabel}</span></button>
+          <button type="button" className={`kg-count-tile is-stopped${displayMode === 'stopped' ? ' is-current' : ''}`} title={`Show subtype entries stopped by ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('stopped')} aria-label={`Show subtype entries for ${stoppedLabel}: ${countSummary.stopped}`} aria-pressed={displayMode === 'stopped'}><strong>{countSummary.stopped}</strong><span>{stoppedLabel}</span></button>
+          <button type="button" className={`kg-count-tile is-total${displayMode === 'total' ? ' is-current' : ''}`} title="Show all active, paused, and stopped karma" onClick={() => onChangeDisplayMode('total')} aria-pressed={displayMode === 'total'}><strong>{countSum}</strong><span>Sum · {countSummary.sourceCount} source units</span></button>
+        </div>
+        {countSummary.sourceNote && <p className="kg-count-note" role="note">Source qualification: {countSummary.sourceNote}</p>}
+        {countSummary.reviewNote && <p className="kg-count-review" role="note">Count detail to review: {countSummary.reviewNote}</p>}
+      </section>}
       <div className="kg-indicator-legend" aria-label="Color marker legend"><span><i className="is-positive" />Green: perceived as punya</span><span><i className="is-negative" />Red: perceived as paap</span><span><i className="is-mixed" />Grey: mixed subtypes</span></div>
-      <ul className="kg-tree" role="tree" aria-label="Karma types and subtypes">
-        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} />)}
-      </ul>
+      {roots.length ? <ul className="kg-tree" role="tree" aria-label="Karma types and subtypes">
+        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} />)}
+      </ul> : <p className="kg-empty-results">No karma entries remain visible for this relationship and Gunasthan.</p>}
     </section>
   );
 }
 
-function Inspector({ selectedNode, onGoToRelation, onClose, showClose = true }) {
+function Inspector({ selectedNode, onSelectFilter, onClose }) {
   if (!selectedNode) {
     return (
       <aside className="kg-inspector" aria-label="Karma detail inspector">
-        <div className="kg-empty-inspector">{showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}<span className="kg-kicker">Inspector</span><h3>Select a karma node</h3><p>Choose a node in Karma View or a result in Gunsthan View to see its source-derived details.</p><ExternalNoteLinks /></div>
+        <div className="kg-empty-inspector"><button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button><span className="kg-kicker">Inspector</span><h3>Select a karma node</h3><p>Choose a node in Karma View to see its source-derived details.</p><ExternalNoteLinks /></div>
       </aside>
     );
   }
 
   const path = [...ancestorsOf(selectedNode.id), selectedNode.id].map((id) => nodeLabel(nodeById[id])).filter(Boolean);
-  const records = karmaData.relationships.filter((record) => record.subtypeId === selectedNode.id);
+  const records = relationshipsForSubtype(selectedNode.id);
   const grouped = RELATIONS.map((relation) => ({
     ...relation,
     records: records.filter((record) => record.relationType === relation.id),
@@ -130,7 +248,7 @@ function Inspector({ selectedNode, onGoToRelation, onClose, showClose = true }) 
   return (
     <aside className="kg-inspector" aria-label="Karma detail inspector" aria-live="polite">
       <div className="kg-inspector-head">
-        {showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}
+        <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>
         <span className="kg-kicker">Source extracted</span>
         <h3>{nodeLabel(selectedNode)}</h3>
         <p className="kg-path">{path.join(' / ')}</p>
@@ -146,7 +264,7 @@ function Inspector({ selectedNode, onGoToRelation, onClose, showClose = true }) 
                 const stage = record.gunasthanId || 'g14';
                 const metaLabel = record.state === 'non-occurrence' ? 'Pause Stage' : record.state === 'cessation' ? 'Stop Stage' : 'Available Stage';
                 const stageDescription = record.displayPeriod || record.stageContext || stageLabel(stage);
-                return <button key={record.id} className="kg-record-row" type="button" onClick={() => onGoToRelation(record)} aria-label={`Open ${group.label} view at ${stageDescription} for ${nodeLabel(selectedNode)}`}>
+                return <button key={record.id} className="kg-record-row" type="button" onClick={() => onSelectFilter(record)} aria-label={`Filter Karma View to ${group.label} at ${stageDescription}`}>
                   <span className="kg-record-main"><span className="kg-record-meta-label">{metaLabel}</span><strong>{record.sourceTerm}{record.state === 'unlocked' ? ' · unlocked' : ''}</strong></span>
                   <span className="kg-record-stage">{stageDescription}{record.subStage ? ` · ${record.subStage}` : ''}</span>
                   {record.displayNote && <small>{record.displayNote}</small>}
@@ -160,132 +278,94 @@ function Inspector({ selectedNode, onGoToRelation, onClose, showClose = true }) 
   );
 }
 
-function Matrix({ stage, setStage, category, onSelectCategory, search, familyFilter, onSelectNode }) {
-  const coverage = karmaData.coverage.find((item) => item.relationType === category);
-  const stageData = karmaData.gunasthans.find((item) => item.id === stage);
-  const records = karmaData.relationships.filter((record) => record.relationType === category && (
-    record.gunasthanId === stage
-    || (record.state === 'non-occurrence' && record.throughGunasthanId && Number(stage.slice(1)) >= Number(record.gunasthanId.slice(1)) && Number(stage.slice(1)) <= Number(record.throughGunasthanId.slice(1)))
-  ));
-  const afterStageRecords = stage === 'g14' ? karmaData.relationships.filter((record) => record.relationType === category && record.stageContext?.includes('after Gunasthan 14')) : [];
-  const annotations = karmaData.annotations.filter((item) => item.displayText && item.gunasthanId === stage && item.relationType === category);
-  const needle = search.trim().toLowerCase();
-  const filterRecords = (source) => source.filter((record) => {
-    const node = record.subtypeId ? nodeById[record.subtypeId] : null;
-    const family = familyOf(node);
-    const matchesFamily = !familyFilter || family?.id === familyFilter;
-    const text = `${nodeLabel(node) || record.sourceLabel} ${node?.aliases?.join(' ') || ''} ${node?.summary || ''} ${record.sourceLabel} ${record.sourceTerm}`.toLowerCase();
-    return matchesFamily && (!needle || text.includes(needle));
-  });
-  const filtered = filterRecords(records);
-  const afterFiltered = filterRecords(afterStageRecords);
-  const groups = new Map();
-  for (const record of filtered) {
-    const node = record.subtypeId ? nodeById[record.subtypeId] : null;
-    const family = familyOf(node);
-    const key = family?.id || '__unmapped';
-    if (!groups.has(key)) groups.set(key, { name: nodeLabel(family) || 'Mapping review', records: [] });
-    groups.get(key).records.push(record);
-  }
-
-  return (
-    <section className="kg-matrix" aria-label="Gunsthan View">
-      <div className="kg-matrix-controls">
-        <label>Relationship category<select value={category} onChange={(event) => onSelectCategory(event.target.value)}>{RELATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}{karmaData.coverage.find((c) => c.relationType === item.id)?.status === 'not-yet-populated' ? ' · not yet populated' : ''}</option>)}</select></label>
-      </div>
-      <div className="kg-stage-strip" role="group" aria-label="Choose a Gunasthan">
-        {karmaData.gunasthans.map((item) => <button key={item.id} type="button" className={stage === item.id ? 'is-active' : ''} aria-pressed={stage === item.id} onClick={() => setStage(item.id)}><strong>{item.number}</strong><span>{item.displayName || item.name.replace(/^\d+\.?\s*/, '')}</span></button>)}
-      </div>
-      <div className="kg-matrix-heading"><div><span className="kg-kicker">Gunasthan {stageData.number}</span><h3>{stageData.displayName || stageData.name.replace(/\s*\([^)]*\)/, '')}</h3></div></div>
-      <div className="kg-legend"><span><b>Vichhed</b> stops from this stage onward</span><span><b>Abandh / Anuday</b> not active for the shown stage or range</span><span><b>Unlocked</b> becomes available here</span></div>
-      {annotations.length > 0 && <section className="kg-source-annotations"><h4>Notes</h4>{annotations.map((item) => <p key={item.id}>{item.displayText}</p>)}</section>}
-      {coverage.status === 'not-yet-populated' ? (
-        <div className="kg-coverage-empty"><span className="kg-status">Not yet documented in this lab</span><p>{coverage.message}</p><p>This is a source coverage gap, not a claim that the relationship is absent.</p></div>
-      ) : filtered.length ? (
-        <div className="kg-matrix-results">
-      {[...groups.entries()].map(([key, group]) => <section className="kg-family-group" key={key}><h4>{group.name}</h4>{group.records.map((record) => <article className="kg-result-item" key={record.id}><button type="button" className="kg-result-card" onClick={() => onSelectNode(record.subtypeId)}><span className="kg-result-name">{nodeLabel(nodeById[record.subtypeId])}</span><RelationBadge record={record} /><span className="kg-result-copy">{relationshipDescription(record)}</span>{record.displayNote && <small>{record.displayNote}</small>}{record.displayPeriod && <small>{record.displayPeriod}</small>}</button><a className="kg-record-link" href={record.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here ↗</a></article>)}</section>)}
-        </div>
-      ) : <p className="kg-empty-results">No {category} records for this Gunasthan match the current search and family filters.</p>}
-      {afterFiltered.length > 0 && <section className="kg-after-stage"><h3>After leaving Gunasthan 14</h3><p>These uday events stop only after the soul leaves Gunasthan 14. Sata or Asata remains through Gunasthan 14; whichever is present stops afterward.</p>{afterFiltered.map((record) => <article className="kg-result-item" key={record.id}><button type="button" className="kg-result-card" onClick={() => onSelectNode(record.subtypeId)}><span className="kg-result-name">{nodeLabel(nodeById[record.subtypeId])}</span><RelationBadge record={record} /><span className="kg-result-copy">{relationshipDescription(record)}</span>{record.displayNote && <small>{record.displayNote}</small>}</button><a className="kg-record-link" href={record.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here ↗</a></article>)}</section>}
-    </section>
-  );
-}
-
 export default function KarmaGranthLab() {
-  const [view, setView] = useState('karma');
   const [search, setSearch] = useState('');
   const [familyFilter, setFamilyFilter] = useState('');
-  const [category, setCategory] = useState('bandh');
-  const [stage, setStage] = useState('g1');
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [filterCategory, setFilterCategory] = useState('');
+  const [filterStage, setFilterStage] = useState('');
+  const [filterSubStage, setFilterSubStage] = useState('all');
   const [selectedId, setSelectedId] = useState('');
+  const [displayMode, setDisplayMode] = useState('active');
   const [expanded, setExpanded] = useState(() => new Set());
 
   const roots = karmaData.nodes.filter((node) => !node.parentId);
   const families = roots;
-  const selectedNode = nodeById[selectedId];
+  const activeFilter = filterCategory && filterStage ? { relationType: filterCategory, relationLabel: RELATIONS.find((item) => item.id === filterCategory)?.label, gunasthanId: filterStage, subStage: filterSubStage } : null;
+  const filterKey = activeFilter ? `${activeFilter.relationType}:${activeFilter.gunasthanId}:${activeFilter.subStage}` : '';
+  const visibleNodeIds = useMemo(() => collectStateNodeIds(roots, activeFilter, displayMode), [filterKey, displayMode]);
+  const visibleRoots = roots.filter((node) => visibleNodeIds.has(node.id) && (!familyFilter || node.id === familyFilter));
+  const selectedNode = visibleNodeIds.has(selectedId) && (!familyFilter || familyOf(nodeById[selectedId])?.id === familyFilter) ? nodeById[selectedId] : undefined;
   const selectedAncestors = useMemo(() => new Set(ancestorsOf(selectedId)), [selectedId]);
   const query = search.trim().toLowerCase();
   const searchResults = useMemo(() => query ? karmaData.nodes.filter((node) => {
-    const relationTerms = karmaData.relationships.filter((record) => record.subtypeId === node.id).map((record) => `${record.sourceTerm} ${record.sourceLabel} ${record.sourceExcerpt}`).join(' ');
-    return `${nodeLabel(node)} ${node.name} ${node.aliases.join(' ')} ${node.summary} ${relationTerms}`.toLowerCase().includes(query);
-  }).slice(0, 12) : [], [query]);
+    if (!visibleNodeIds.has(node.id) || (familyFilter && familyOf(node)?.id !== familyFilter)) return false;
+    const relationTerms = relationshipsForSubtype(node.id).map((record) => `${record.sourceTerm} ${record.sourceLabel} ${record.sourceExcerpt}`).join(' ');
+    return `${nodeLabel(node)} ${node.name} ${(node.aliases || []).join(' ')} ${node.summary || ''} ${relationTerms}`.toLowerCase().includes(query);
+  }).slice(0, 12) : [], [query, visibleNodeIds, familyFilter]);
 
+  useEffect(() => {
+    if (!selectedId || !visibleNodeIds.has(selectedId) || (familyFilter && familyOf(nodeById[selectedId])?.id !== familyFilter)) setSelectedId((current) => current && (!visibleNodeIds.has(current) || (familyFilter && familyOf(nodeById[current])?.id !== familyFilter)) ? '' : current);
+  }, [selectedId, visibleNodeIds, familyFilter]);
+  useEffect(() => {
+    if (!filterKey) return;
+    setExpanded(new Set(karmaData.nodes.filter((node) => visibleNodeIds.has(node.id) && childrenById[node.id]?.some((child) => visibleNodeIds.has(child.id))).map((node) => node.id)));
+  }, [filterKey, displayMode]);
+  useEffect(() => {
+    setDisplayMode('active');
+  }, [filterKey]);
   useEffect(() => {
     if (!selectedId) return;
     setExpanded((current) => new Set([...current, ...ancestorsOf(selectedId)]));
   }, [selectedId]);
 
-  function selectNode(id) {
-    setSelectedId(id);
+  function selectNode(id) { setSelectedId(id); }
+  function selectFilter(record) {
+    setFilterCategory(record.relationType);
+    const terminal = (karmaData.terminalStages || []).find((stage) => stage.relationTypes.includes(record.relationType) && record.stageContext?.toLowerCase().includes('after gunasthan 14'));
+    setFilterStage(record.gunasthanId || terminal?.id || 'g14');
+    setFilterSubStage(record.subStage || 'all');
+    setFilterOpen(true);
   }
-
-  function goToRelation(record) {
-    setCategory(record.relationType);
-    setStage(record.gunasthanId || 'g14');
-    setView('gunasthan');
-  }
-
   function toggleNode(id) {
-    setExpanded((current) => {
-      const next = new Set(current);
-      if (next.has(id)) next.delete(id); else next.add(id);
-      return next;
-    });
+    setExpanded((current) => { const next = new Set(current); if (next.has(id)) next.delete(id); else next.add(id); return next; });
   }
-
   function reset() {
-    setSearch('');
-    setFamilyFilter('');
-    setCategory('bandh');
-    setStage('g1');
-    setView('karma');
-    setSelectedId('');
-    setExpanded(new Set());
+    setSearch(''); setFamilyFilter(''); setFilterCategory(''); setFilterStage(''); setFilterSubStage('all'); setSelectedId(''); setDisplayMode('active'); setExpanded(new Set());
   }
-
   function expandAll() {
-    setExpanded(new Set(karmaData.nodes.filter((node) => childrenById[node.id]?.length).map((node) => node.id)));
+    setExpanded(new Set(karmaData.nodes.filter((node) => visibleNodeIds.has(node.id) && childrenById[node.id]?.some((child) => visibleNodeIds.has(child.id))).map((node) => node.id)));
   }
 
-  function closeInspector() {
-    setSelectedId('');
-  }
-
+  const selectedStage = karmaData.gunasthans.find((item) => item.id === filterStage);
+  const stageOptions = [...karmaData.gunasthans, ...(karmaData.terminalStages || [])];
+  const countSummary = countSummaryForFilter(activeFilter);
   return (
     <LabEmbedded title="Karma Granth explorer">
       <div className="kg-lab">
         <header className="kg-toolbar">
-          <div className="kg-toolbar-top"><label className="kg-search">Search names, aliases, note keywords, or relationship terms<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Try ‘Aharaka’, ‘Vichhed’, ‘body’…" /></label><label className="kg-family-filter">Karma family<select value={familyFilter} onChange={(event) => setFamilyFilter(event.target.value)}><option value="">All families</option>{families.map((family) => <option key={family.id} value={family.id}>{nodeLabel(family)}</option>)}</select></label><button type="button" className="kg-reset" onClick={reset}>Reset view</button></div>
-          {searchResults.length > 0 && <div className="kg-search-results" role="list" aria-label="Search results"><span>Search results · {searchResults.length}{searchResults.length === 12 ? '+' : ''}</span>{searchResults.map((node) => <button key={node.id} type="button" role="listitem" onClick={() => { selectNode(node.id); setView('karma'); }}>{nodeLabel(node)}<small>{nodeLabel(familyOf(node))}</small></button>)}</div>}
-          {query && searchResults.length === 0 && <p className="kg-search-none">No hierarchy entries match “{search}”.</p>}
-          <nav className="kg-view-switch" aria-label="Karma lab views"><button type="button" aria-pressed={view === 'karma'} className={view === 'karma' ? 'is-active' : ''} onClick={() => setView('karma')}>Karma View</button><button type="button" aria-pressed={view === 'gunasthan'} className={view === 'gunasthan' ? 'is-active' : ''} onClick={() => setView('gunasthan')}>Gunsthan View</button></nav>
+          <div className="kg-toolbar-top">
+            <label className="kg-search">Search names, aliases, note keywords, or relationship terms<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Try ‘Aharaka’, ‘Vichhed’, ‘body’…" /></label>
+            <label className="kg-family-filter">Karma family<select value={familyFilter} onChange={(event) => setFamilyFilter(event.target.value)}><option value="">All families</option>{families.map((family) => <option key={family.id} value={family.id}>{nodeLabel(family)}</option>)}</select></label>
+            <button type="button" className={`kg-filter-toggle${activeFilter ? ' is-filtered' : ''}`} aria-expanded={filterOpen} onClick={() => setFilterOpen((open) => !open)}>Filter{activeFilter ? ' · active' : ''}</button>
+            <button type="button" className="kg-reset" onClick={reset}>Reset view</button>
+          </div>
+          {filterOpen && <div className="kg-filter-panel">
+            <label>Relationship<select value={filterCategory} onChange={(event) => { const next = event.target.value; setFilterCategory(next); if (!next) setFilterStage(''); else if ((karmaData.terminalStages || []).some((stage) => stage.id === filterStage && !stage.relationTypes.includes(next))) setFilterStage('g14'); }}><option value="">Choose relationship</option><option value="bandh">Bandh</option><option value="uday">Uday</option><option value="udirna" disabled>Udirna · not yet documented</option><option value="satta" disabled>Satta · not yet documented</option></select></label>
+            <label>Gunasthan / final stage<select value={filterStage} onChange={(event) => { setFilterStage(event.target.value); setFilterSubStage('all'); }} disabled={!filterCategory}>{filterStage ? null : <option value="">Choose a stage</option>}{stageOptions.map((stage) => <option key={stage.id} value={stage.id} disabled={stage.relationTypes ? !stage.relationTypes.includes(filterCategory) : false}>{stage.number ? `${stage.number} · ` : ''}{stage.displayName || stage.name.replace(/^\d+\.?\s*/, '')}{stage.sourceContext ? ` · ${stage.sourceContext}` : ''}</option>)}</select></label>
+            {selectedStage?.subStages?.length > 0 && <label>Sub-stage<select value={filterSubStage} onChange={(event) => setFilterSubStage(event.target.value)}><option value="all">Active throughout this Gunasthan</option>{selectedStage.subStages.map((subStage) => <option key={subStage} value={subStage}>{subStage}</option>)}</select></label>}
+            {activeFilter && <button type="button" className="kg-clear-filter" onClick={() => { setFilterCategory(''); setFilterStage(''); setFilterSubStage('all'); }}>Clear filter</button>}
+            <p>Use the count cards to show Active, Paused, Stopped, or Total entries below. Empty source coverage does not indicate doctrinal absence.</p>
+          </div>}
+          {searchResults.length > 0 && <div className="kg-search-results" role="list" aria-label="Search results"><span>Search results · {searchResults.length}{searchResults.length === 12 ? '+' : ''}</span>{searchResults.map((node) => <button key={node.id} type="button" role="listitem" onClick={() => selectNode(node.id)}>{nodeLabel(node)}<small>{nodeLabel(familyOf(node))}</small></button>)}</div>}
+          {query && searchResults.length === 0 && <p className="kg-search-none">No visible hierarchy entries match “{search}”.</p>}
         </header>
 
-        <div className={`kg-workspace${view === 'karma' || selectedNode ? ' has-inspector' : ''}`}>
+        <div className="kg-workspace has-inspector">
           <main className="kg-main-view">
-            {view === 'karma' ? <KarmaTree roots={roots.filter((node) => !familyFilter || node.id === familyFilter)} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} /> : <Matrix stage={stage} setStage={setStage} category={category} onSelectCategory={setCategory} search={search} familyFilter={familyFilter} onSelectNode={selectNode} />}
+            <KarmaTree roots={visibleRoots} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} visibleNodeIds={visibleNodeIds} filter={activeFilter} countSummary={countSummary} displayMode={displayMode} onChangeDisplayMode={setDisplayMode} />
           </main>
-          {(view === 'karma' || selectedNode) && <Inspector selectedNode={selectedNode} onGoToRelation={goToRelation} onClose={closeInspector} showClose={view !== 'karma'} />}
+          <Inspector selectedNode={selectedNode} onSelectFilter={selectFilter} onClose={() => setSelectedId('')} />
         </div>
         <footer className="kg-footnote"><span>Bandh and Uday details are transcribed from the linked notes.</span><span>Udirna and Satta are not yet documented in this lab.</span><span>Source-derived; not doctrinally verified.</span></footer>
       </div>
