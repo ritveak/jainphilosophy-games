@@ -42,8 +42,8 @@ function ExternalNoteLinks() {
   return (
     <div className="kg-source-links">
       {sourceLinks().map((source) => (
-        <a key={source.label} href={source.url} target="_blank" rel="noreferrer">
-          {source.label} <span aria-hidden="true">↗</span>
+        <a key={source.url} href={source.url} target="_blank" rel="noreferrer" aria-label={`View detailed notes here: ${source.label}`}>
+          View detailed notes here <span aria-hidden="true">↗</span>
         </a>
       ))}
     </div>
@@ -67,7 +67,7 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
     <li className="kg-tree-item" role="treeitem" aria-expanded={children.length ? expanded.has(node.id) : undefined} aria-selected={selected}>
       <div className={`kg-tree-row${selected ? ' is-selected' : ''}${selectedAncestors.has(node.id) ? ' is-ancestor' : ''}`} style={{ '--kg-depth': depth }}>
         {children.length ? <button type="button" className="kg-expand" onClick={() => { onToggle(node.id); onSelect(node.id); }} aria-label={`${expanded.has(node.id) ? 'Collapse' : 'Expand'} ${nodeLabel(node)}`} aria-expanded={expanded.has(node.id)}>{expanded.has(node.id) ? '▾' : '▸'}</button> : <span className="kg-expand-spacer" />}
-        <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={node.sourcePath}>
+        <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={node.name}>
           <span>{nodeLabel(node)}</span>
           {children.length > 0 && node.countLabel ? <small><span className="kg-node-count">{node.countLabel} subtypes</span></small> : null}
         </button>
@@ -93,7 +93,7 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
   if (!selectedNode) {
     return (
       <aside className="kg-inspector" aria-label="Karma detail inspector">
-        <div className="kg-empty-inspector">{showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}<span className="kg-kicker">Inspector</span>{selectedRecord ? <><h3>{selectedRecord.sourceLabel}</h3><p><RelationBadge record={selectedRecord} /> · {selectedRecord.stageContext || `Gunasthan ${selectedRecord.gunasthanId?.slice(1) || 'unspecified'}`}</p><p>{selectedRecord.statement}</p><p className="kg-needs-review">This KG-2 reference has no confident subtype mapping yet.</p><p>{selectedRecord.sourceHeading}</p></> : <><h3>Select a karma node</h3><p>Choose a node in Karma View or a result in Gunsthan View to see its source-derived details.</p></>}<ExternalNoteLinks /></div>
+        <div className="kg-empty-inspector">{showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}<span className="kg-kicker">Inspector</span>{selectedRecord ? <><h3>{selectedRecord.sourceLabel}</h3><p><RelationBadge record={selectedRecord} /> · {selectedRecord.stageContext || `Gunasthan ${selectedRecord.gunasthanId?.slice(1) || 'unspecified'}`}</p><p>{selectedRecord.statement}</p><p className="kg-needs-review">This reference has no confident subtype mapping yet.</p><p>{selectedRecord.sourceHeading}</p></> : <><h3>Select a karma node</h3><p>Choose a node in Karma View or a result in Gunsthan View to see its source-derived details.</p></>}<ExternalNoteLinks /></div>
       </aside>
     );
   }
@@ -105,8 +105,6 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
     records: records.filter((record) => record.relationType === relation.id),
     coverage: karmaData.coverage.find((item) => item.relationType === relation.id),
   }));
-  const children = childrenById[selectedNode.id] || [];
-
   return (
     <aside className="kg-inspector" aria-label="Karma detail inspector" aria-live="polite">
       <div className="kg-inspector-head">
@@ -116,11 +114,10 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
         <p className="kg-path">{path.join(' / ')}</p>
       </div>
       <div className="kg-inspector-body">
-        <section><h4>KG-1 summary</h4><p>{selectedNode.summary || 'KG-1 lists this heading without a separate explanatory summary.'}</p><a className="kg-topic-link" href={selectedNode.sourceUrl} target="_blank" rel="noreferrer">Open this topic in KG-1 <span aria-hidden="true">↗</span></a></section>
-        <section><h4>Hierarchy</h4><p>{children.length ? `${selectedNode.countLabel ? `${selectedNode.countLabel} noted in the source; ` : ''}${children.length} child ${children.length === 1 ? 'entry' : 'entries'} shown in this lab.` : 'No karma-subtype child entries are shown for this node.'}</p></section>
-        {selectedRecord && <section className="kg-current-record"><h4>Selected KG-2 record</h4><RelationBadge record={selectedRecord} /><p>{selectedRecord.statement}</p>{selectedRecord.sourceExcerpt && <p className="kg-source-excerpt">Source wording: {selectedRecord.sourceExcerpt}</p>}{selectedRecord.qualification && <p className="kg-muted">Source count/qualification: {selectedRecord.qualification}</p>}<small>{selectedRecord.sourceHeading} · {selectedRecord.verification}</small><a className="kg-topic-link" href={selectedRecord.sourceUrl} target="_blank" rel="noreferrer">Open the KG-2 source note <span aria-hidden="true">↗</span></a></section>}
+        <section><h4>Overview</h4><p>{selectedNode.summary || 'The notes do not provide a separate explanatory summary for this heading.'}</p><a className="kg-topic-link" href={selectedNode.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a></section>
+        {selectedRecord && <section className="kg-current-record"><h4>Selected relationship</h4><RelationBadge record={selectedRecord} /><p>{selectedRecord.statement}</p>{selectedRecord.sourceExcerpt && <p className="kg-source-excerpt">Source wording: {selectedRecord.sourceExcerpt}</p>}{selectedRecord.qualification && <p className="kg-muted">Source count/qualification: {selectedRecord.qualification}</p>}<small>{selectedRecord.sourceHeading} · {selectedRecord.verification}</small><a className="kg-topic-link" href={selectedRecord.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a></section>}
         <section>
-          <h4>KG-2 relationships</h4>
+          <h4>Documented relationships</h4>
           {grouped.map((group) => (
             <div className="kg-relation-group" key={group.id}>
               <h5>{group.label} <span>{group.records.length}</span></h5>
@@ -130,11 +127,10 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
                   <span>{record.stageContext || `Gun. ${record.gunasthanId?.slice(1) || '—'}`}{record.subStage ? ` · ${record.subStage}` : ''}</span>
                   <small>{record.sourceHeading}</small>
                 </button>
-              )) : <p className="kg-muted">{group.coverage?.status === 'not-yet-populated' ? 'Not yet populated in this lab. This is source coverage, not a doctrinal absence.' : 'No mapped subtype records in the current KG-2 transcription.'}</p>}
+              )) : <p className="kg-muted">{group.coverage?.status === 'not-yet-populated' ? 'Not yet populated in this lab. This is source coverage, not a doctrinal absence.' : 'No mapped subtype records in the current transcription.'}</p>}
             </div>
           ))}
         </section>
-        <section><h4>Source and transcription</h4><p><span className="kg-status">{selectedNode.verification}</span> This indicates transcription provenance, not doctrinal verification.</p><ExternalNoteLinks /></section>
       </div>
     </aside>
   );
@@ -172,12 +168,12 @@ function Matrix({ stage, setStage, category, onSelectCategory, search, familyFil
       </div>
       <div className="kg-matrix-heading"><div><span className="kg-kicker">Gunasthan {stageData.number}</span><h3>{stageData.name}</h3></div><span className="kg-count">{filtered.length} source entries</span></div>
       <div className="kg-legend"><span><b>Vichhed</b> source term for cessation</span><span><b>Abandh / Anuday</b> source terms kept distinct</span><span><b>Mapping review</b> source reference not confidently mapped</span></div>
-      {annotations.length > 0 && <section className="kg-source-annotations"><h4>KG-2 carry-forward wording</h4>{annotations.map((item) => <p key={item.id}><RelationBadge record={item} /> <span>{item.stageContext || stageData.name}</span><br />{item.text}</p>)}</section>}
+      {annotations.length > 0 && <section className="kg-source-annotations"><h4>Notes carry-forward wording</h4>{annotations.map((item) => <p key={item.id}><RelationBadge record={item} /> <span>{item.stageContext || stageData.name}</span><br />{item.text}</p>)}</section>}
       {coverage.status === 'not-yet-populated' ? (
         <div className="kg-coverage-empty"><span className="kg-status">Not yet populated in lab</span><p>{coverage.message}</p><p>Empty lab coverage does not mean doctrinal absence. No relationship entries are inferred here.</p></div>
       ) : filtered.length ? (
         <div className="kg-matrix-results">
-      {[...groups.entries()].map(([key, group]) => <section className="kg-family-group" key={key}><h4>{group.name}</h4>{group.records.map((record) => <button key={record.id} type="button" className="kg-result-card" onClick={() => { if (record.subtypeId) onSelectNode(record.subtypeId); else onSelectNode(''); onSelectRecord(record); }}><span className="kg-result-name">{record.subtypeId ? nodeLabel(nodeById[record.subtypeId]) : record.sourceLabel}</span><RelationBadge record={record} /><span className="kg-result-copy">{record.statement}</span>{record.sourceExcerpt && <small>Source wording: {record.sourceExcerpt}</small>}{record.stageContext && <small>{record.stageContext}</small>}{record.qualification && <small>{record.qualification}</small>}<small className="kg-record-source">KG-2 source: {record.sourceHeading}</small>{!record.subtypeId && <small className="kg-needs-review">Needs subtype mapping review</small>}</button>)}</section>)}
+      {[...groups.entries()].map(([key, group]) => <section className="kg-family-group" key={key}><h4>{group.name}</h4>{group.records.map((record) => <button key={record.id} type="button" className="kg-result-card" onClick={() => { if (record.subtypeId) onSelectNode(record.subtypeId); else onSelectNode(''); onSelectRecord(record); }}><span className="kg-result-name">{record.subtypeId ? nodeLabel(nodeById[record.subtypeId]) : record.sourceLabel}</span><RelationBadge record={record} /><span className="kg-result-copy">{record.statement}</span>{record.sourceExcerpt && <small>Source wording: {record.sourceExcerpt}</small>}{record.stageContext && <small>{record.stageContext}</small>}{record.qualification && <small>{record.qualification}</small>}<small className="kg-record-source">Source note: {record.sourceHeading}</small>{!record.subtypeId && <small className="kg-needs-review">Needs subtype mapping review</small>}</button>)}</section>)}
         </div>
       ) : <p className="kg-empty-results">No {category} records for this Gunasthan match the current search and family filters.</p>}
     </section>
@@ -246,7 +242,7 @@ export default function KarmaGranthLab() {
     <LabEmbedded title="Karma Granth explorer">
       <div className="kg-lab">
         <header className="kg-toolbar">
-          <div className="kg-toolbar-top"><label className="kg-search">Search names, aliases, note keywords, or KG-2 terms<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Try ‘Aharaka’, ‘Vichhed’, ‘body’…" /></label><label className="kg-family-filter">Karma family<select value={familyFilter} onChange={(event) => setFamilyFilter(event.target.value)}><option value="">All families</option>{families.map((family) => <option key={family.id} value={family.id}>{nodeLabel(family)}</option>)}</select></label><button type="button" className="kg-reset" onClick={reset}>Reset view</button></div>
+          <div className="kg-toolbar-top"><label className="kg-search">Search names, aliases, note keywords, or relationship terms<input type="search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Try ‘Aharaka’, ‘Vichhed’, ‘body’…" /></label><label className="kg-family-filter">Karma family<select value={familyFilter} onChange={(event) => setFamilyFilter(event.target.value)}><option value="">All families</option>{families.map((family) => <option key={family.id} value={family.id}>{nodeLabel(family)}</option>)}</select></label><button type="button" className="kg-reset" onClick={reset}>Reset view</button></div>
           {searchResults.length > 0 && <div className="kg-search-results" role="list" aria-label="Search results"><span>Search results · {searchResults.length}{searchResults.length === 12 ? '+' : ''}</span>{searchResults.map((node) => <button key={node.id} type="button" role="listitem" onClick={() => { selectNode(node.id); setView('karma'); }}>{nodeLabel(node)}<small>{nodeLabel(familyOf(node))}</small></button>)}</div>}
           {query && searchResults.length === 0 && <p className="kg-search-none">No hierarchy entries match “{search}”.</p>}
           <nav className="kg-view-switch" aria-label="Karma lab views"><button type="button" aria-pressed={view === 'karma'} className={view === 'karma' ? 'is-active' : ''} onClick={() => setView('karma')}>Karma View</button><button type="button" aria-pressed={view === 'gunasthan'} className={view === 'gunasthan' ? 'is-active' : ''} onClick={() => setView('gunasthan')}>Gunsthan View</button></nav>
@@ -258,7 +254,7 @@ export default function KarmaGranthLab() {
           </main>
           {(view === 'karma' || selectedNode || selectedRecord) && <Inspector selectedNode={selectedNode} selectedRecord={selectedRecord} onSelectRelation={setSelectedRecord} onClose={closeInspector} showClose={view !== 'karma'} />}
         </div>
-        <footer className="kg-footnote"><span>{karmaData.nodes.length} hierarchy entries</span><span>{karmaData.relationships.length} explicit KG-2 references · {karmaData.unresolvedReferences.length} mapping review</span><span>Source-extracted; not doctrinally verified</span></footer>
+        <footer className="kg-footnote"><span>{karmaData.nodes.length} hierarchy entries</span><span>{karmaData.relationships.length} documented relationships · {karmaData.unresolvedReferences.length} mapping reviews</span><span>Source-extracted; not doctrinally verified</span></footer>
       </div>
     </LabEmbedded>
   );

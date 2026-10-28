@@ -2,13 +2,13 @@
 export const karmaData = {
   "sources": {
     "kg1": {
-      "label": "KG-1 · Karma Types and Subtypes",
+      "label": "Karma Types and Subtypes",
       "url": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
       "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/1. Karma Types and Subtypes.md",
       "sectionAnchorConvention": "Generated from the rendered Markdown heading with the garden headerToId slugifier; verified against source headings."
     },
     "kg2": {
-      "label": "KG-2 · Karma Bandh, Uday, Udirna and Satta based on Gunsthan",
+      "label": "Karma Bandh, Uday, Udirna and Satta based on Gunsthan",
       "url": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
       "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/2. Karma Bandh, Uday, Udirna and Satta based on Gunsthan.md",
       "sectionAnchors": {
@@ -3064,7 +3064,7 @@ export const karmaData = {
       "verification": "source-extracted",
       "displayName": "Dana",
       "countLabel": null,
-      "karmicIndicator": null
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-2-8-2-labha-antaraya-obstruction-to-gain",
@@ -3081,7 +3081,7 @@ export const karmaData = {
       "verification": "source-extracted",
       "displayName": "Labha",
       "countLabel": null,
-      "karmicIndicator": null
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-3-8-3-bhoga-antaraya-obstruction-to-enjoyment-of-consumables",
@@ -3098,7 +3098,7 @@ export const karmaData = {
       "verification": "source-extracted",
       "displayName": "Bhoga",
       "countLabel": null,
-      "karmicIndicator": null
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-4-8-4-upabhoga-antaraya-obstruction-to-enjoyment-of-reusables",
@@ -3115,7 +3115,7 @@ export const karmaData = {
       "verification": "source-extracted",
       "displayName": "Upabhoga",
       "countLabel": null,
-      "karmicIndicator": null
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-5-8-5-virya-antaraya-obstruction-to-willpower-energy",
@@ -3132,7 +3132,7 @@ export const karmaData = {
       "verification": "source-extracted",
       "displayName": "Virya",
       "countLabel": null,
-      "karmicIndicator": null
+      "karmicIndicator": "negative"
     }
   ],
   "gunasthans": [
@@ -7184,12 +7184,12 @@ export const karmaData = {
     {
       "relationType": "udirna",
       "status": "not-yet-populated",
-      "message": "KG-2 includes introductory definition/count notes, but this lab has no stage-by-stage subtype relationship records for this category yet."
+      "message": "The notes include introductory definition/count material, but stage-by-stage subtype relationship records for this category have not yet been added to this lab."
     },
     {
       "relationType": "satta",
       "status": "not-yet-populated",
-      "message": "KG-2 includes introductory definition/count notes, but this lab has no stage-by-stage subtype relationship records for this category yet."
+      "message": "The notes include introductory definition/count material, but stage-by-stage subtype relationship records for this category have not yet been added to this lab."
     }
   ],
   "unresolvedReferences": [
