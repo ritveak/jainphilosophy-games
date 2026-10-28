@@ -4,12 +4,19 @@ export const karmaData = {
     "kg1": {
       "label": "KG-1 · Karma Types and Subtypes",
       "url": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/1. Karma Types and Subtypes.md"
+      "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/1. Karma Types and Subtypes.md",
+      "sectionAnchorConvention": "Generated from the rendered Markdown heading with the garden headerToId slugifier; verified against source headings."
     },
     "kg2": {
       "label": "KG-2 · Karma Bandh, Uday, Udirna and Satta based on Gunsthan",
       "url": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
-      "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/2. Karma Bandh, Uday, Udirna and Satta based on Gunsthan.md"
+      "localPath": "/Users/ritveak/Desktop/obsidian-notes/1. Learning List/1. Jainism Core Concepts/2. Karnanuyog/Karma/2. Karma Bandh, Uday, Udirna and Satta based on Gunsthan.md",
+      "sectionAnchors": {
+        "bandh": "bandh-120",
+        "uday": "uday-122",
+        "udirna": "udirna-122",
+        "satta": "satta"
+      }
     }
   },
   "nodes": [
@@ -22,10 +29,13 @@ export const karmaData = {
       "summary": "A pure soul has perfect knowledge; karma obscures and limits the pure and perfect intelligence/ knowledge of soul. It is bound primarily through acts of disrespect towards knowledge, teachers, and learning.",
       "sourceHeading": "1. Gyanavarniya Karma ( Knowledge obscuring): {5} -",
       "sourcePath": "KG-1 heading: 1. Gyanavarniya Karma ( Knowledge obscuring): {5} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-gyanavarniya-karma-knowledge-obscuring-5",
       "aliases": [],
       "sourceLine": 48,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Gyanavarniya Karma",
+      "countLabel": "5",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-1-1-1-1-mati-gyanavaraniya-karm-340",
@@ -36,122 +46,32 @@ export const karmaData = {
       "summary": "Obscures sensory and intellectual knowledge. Observed by self",
       "sourceHeading": "1.1. Mati-Gyanavaraniya Karm: {340} -",
       "sourcePath": "KG-1 heading: 1.1. Mati-Gyanavaraniya Karm: {340} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-1-strong-mati-gyanavaraniya-karm-strong-340",
       "aliases": [],
       "sourceLine": 53,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Mati",
+      "countLabel": "340",
+      "karmicIndicator": "negative"
     },
     {
-      "id": "kg1-1-1-1-1-1-1-shrut-nishrit-mati-gyaan-28x12-336",
-      "sourceNumber": "1.1.1",
-      "name": "1.1.1. Shrut Nishrit mati gyaan : { 28x12 = 336}",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-1-1-mati-gyanavaraniya-karm-340",
-      "summary": "Sensing something which was already acquired via Shrut gyaan. Like if someone has told you what an apple is, and you see an apple and are able to understand it to be an apple, then you are using Shrut Nishrit matigyaan",
-      "sourceHeading": "1.1.1. Shrut Nishrit mati gyaan : { 28x12 = 336}",
-      "sourcePath": "KG-1 heading: 1.1.1. Shrut Nishrit mati gyaan : { 28x12 = 336}",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 63,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-1-2-1-1-2-ashrut-nishrit-mati-gyaan-4",
-      "sourceNumber": "1.1.2",
-      "name": "1.1.2. Ashrut Nishrit mati gyaan : {4}",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-1-1-mati-gyanavaraniya-karm-340",
-      "summary": "Knowledge which has never been acquired via shrut gyaan but now it is sprouted inside. This happens due to gyanavarniye karma ka Kshayupsham",
-      "sourceHeading": "1.1.2. Ashrut Nishrit mati gyaan : {4}",
-      "sourcePath": "KG-1 heading: 1.1.2. Ashrut Nishrit mati gyaan : {4}",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 164,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-1-2-1-1-1-2-1-autpattiki-buddhi",
-      "sourceNumber": "1.1.2.1",
-      "name": "1.1.2.1 Autpattiki buddhi (औत्पत्तिकी बुद्धि)",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-2-1-1-2-ashrut-nishrit-mati-gyaan-4",
-      "summary": "Spontaneous or innate intelligence. Knowledge arises naturally without prior teaching or instruction.",
-      "sourceHeading": "1.1.2.1 Autpattiki buddhi (औत्पत्तिकी बुद्धि)",
-      "sourcePath": "KG-1 heading: 1.1.2.1 Autpattiki buddhi (औत्पत्तिकी बुद्धि)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 167,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-1-2-2-1-1-2-2-vainayiki-buddhi",
-      "sourceNumber": "1.1.2.2",
-      "name": "1.1.2.2 Vainayiki buddhi (वैनयिकी बुद्धि)",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-2-1-1-2-ashrut-nishrit-mati-gyaan-4",
-      "summary": "Intelligence arising through Vinay (विनय), discipline, humility or proper receptivity. When reception is high due to vinay, one can learn things that the guru didn't even explicitly taught! Like when we decipher verses from Acharya Shri Tulsi and find many dee",
-      "sourceHeading": "1.1.2.2 Vainayiki buddhi (वैनयिकी बुद्धि)",
-      "sourcePath": "KG-1 heading: 1.1.2.2 Vainayiki buddhi (वैनयिकी बुद्धि)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 172,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-1-2-3-1-1-2-3-karmiki-buddhi",
-      "sourceNumber": "1.1.2.3",
-      "name": "1.1.2.3 Karmiki buddhi (कार्मिकी बुद्धि)",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-2-1-1-2-ashrut-nishrit-mati-gyaan-4",
-      "summary": "Intelligence arising due to Karma (कर्म), particularly the manifestation of relevant knowledge-producing karmic conditions. Kuch nahi ho rha hai but repeat kar kar ke seekh lena",
-      "sourceHeading": "1.1.2.3 Karmiki buddhi (कार्मिकी बुद्धि)",
-      "sourcePath": "KG-1 heading: 1.1.2.3 Karmiki buddhi (कार्मिकी बुद्धि)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 178,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-1-2-4-1-1-2-4-parinamiki-buddhi",
-      "sourceNumber": "1.1.2.4",
-      "name": "1.1.2.4 Parinamiki buddhi (पारिणामिकी बुद्धि)",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-2-1-1-2-ashrut-nishrit-mati-gyaan-4",
-      "summary": "Intelligence arising due to the natural transformation or Pariṇam (परिणाम) of the jiva (जीव). Causal chain, leading to reasoning and conclusion.",
-      "sourceHeading": "1.1.2.4 Parinamiki buddhi (पारिणामिकी बुद्धि)",
-      "sourcePath": "KG-1 heading: 1.1.2.4 Parinamiki buddhi (पारिणामिकी बुद्धि)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 184,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-2-1-1-2-1-14-types-on-the-basis-of-7-parameters",
-      "sourceNumber": "1.2.1",
-      "name": "1.2.1. 14 Types on the basis of 7 parameters",
-      "kind": "subtype",
+      "id": "kg1-1-2-shruta-gyanavaraniya-karm",
+      "sourceNumber": "1.2",
+      "name": "1.2. Shruta-Gyanavaraniya Karm: {14 or 20} -",
+      "kind": "group",
       "parentId": "kg1-1-1-gyanavarniya-karma-knowledge-obscuring-5",
-      "summary": "1. Akshar Shrut (अक्षर श्रुत) Knowledge that can be expressed through letters/words.",
-      "sourceHeading": "1.2.1. 14 Types on the basis of 7 parameters",
-      "sourcePath": "KG-1 heading: 1.2.1. 14 Types on the basis of 7 parameters",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 200,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-2-2-1-2-2-20-types-on-the-basis-of-degree-of-knowledge",
-      "sourceNumber": "1.2.2",
-      "name": "1.2.2. 20 Types on the basis of degree of knowledge",
-      "kind": "subtype",
-      "parentId": "kg1-1-1-gyanavarniya-karma-knowledge-obscuring-5",
-      "summary": "1. Paryaya Shrut (पर्याय श्रुत) Knowledge of one subtle, indivisible part (अविभाज्य अंश) of Shrut Gyaan.",
-      "sourceHeading": "1.2.2. 20 Types on the basis of degree of knowledge",
-      "sourcePath": "KG-1 heading: 1.2.2. 20 Types on the basis of degree of knowledge",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 261,
-      "verification": "source-extracted"
+      "summary": "Obscures symbolic and scriptural knowledge. The note explains that Shrut gyaan is communicated or explained by others and that Mati gyaan is its prerequisite.",
+      "sourceHeading": "1.2.**Shruta-Gyanavaraniya Karm: {14 or 20} -**",
+      "sourcePath": "KG-1 heading: 1.2. Shruta-Gyanavaraniya Karm: {14 or 20} -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-2-strong-shruta-gyanavaraniya-karm-14-or-20-strong",
+      "aliases": [
+        "Shrut Gyanavaraniya Karm"
+      ],
+      "sourceLine": 182,
+      "verification": "source-extracted",
+      "displayName": "Shruta",
+      "countLabel": "14 or 20",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-1-3-1-3-avadhi-gyanavaraniya-karm-1-or-6",
@@ -162,122 +82,13 @@ export const karmaData = {
       "summary": "Obscures clairvoyant knowledge of matter. ==Agyan / Viprit gyaan is also possible.==",
       "sourceHeading": "1.3. Avadhi-Gyanavaraniya Karm : {1 or 6} -",
       "sourcePath": "KG-1 heading: 1.3. Avadhi-Gyanavaraniya Karm : {1 or 6} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-3-strong-avadhi-gyanavaraniya-karm-1-or-6-strong",
       "aliases": [],
       "sourceLine": 323,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-1-1-3-1-bhav-pratyay",
-      "sourceNumber": "1.3.1",
-      "name": "1.3.1 Bhav pratyay",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-1-3-avadhi-gyanavaraniya-karm-1-or-6",
-      "summary": "Avadhi gyaan coz of bhav ie Naraki or Dev. All jeev belonging Naraki or Dev bhav have Avadhi gyaan, and avdhi gyaan coz of this is called Bhav avdhi gyaan.",
-      "sourceHeading": "1.3.1 Bhav pratyay",
-      "sourcePath": "KG-1 heading: 1.3.1 Bhav pratyay",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 330,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "sourceNumber": "1.3.2",
-      "name": "1.3.2 Gun pratyay",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-1-3-avadhi-gyanavaraniya-karm-1-or-6",
-      "summary": "Caused due sadhna of Dictionary, only possible by manushya and Tiryanch. Six types :",
-      "sourceHeading": "1.3.2 Gun pratyay",
-      "sourcePath": "KG-1 heading: 1.3.2 Gun pratyay",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 333,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-1-1-3-2-1-anugamik",
-      "sourceNumber": "1.3.2.1",
-      "name": "1.3.2.1 Anugamik",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "If the avdhi gyaan is not location bound, and moves with the jeev.",
-      "sourceHeading": "1.3.2.1 Anugamik",
-      "sourcePath": "KG-1 heading: 1.3.2.1 Anugamik",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 336,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-2-1-3-2-2-ananugamik",
-      "sourceNumber": "1.3.2.2",
-      "name": "1.3.2.2 Ananugamik",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "If the avdhigyaan does not follow the jeev. And jeev is able to tap into their avdhigyaan only in a particular place. If they leave the place they loose their ability.",
-      "sourceHeading": "1.3.2.2 Ananugamik",
-      "sourcePath": "KG-1 heading: 1.3.2.2 Ananugamik",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 338,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-3-1-3-2-3-vardhaman",
-      "sourceNumber": "1.3.2.3",
-      "name": "1.3.2.3 Vardhaman",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "Power and range increases with time.",
-      "sourceHeading": "1.3.2.3 Vardhaman",
-      "sourcePath": "KG-1 heading: 1.3.2.3 Vardhaman",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 340,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-4-1-3-2-4-hiyaman",
-      "sourceNumber": "1.3.2.4",
-      "name": "1.3.2.4 Hiyaman",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "Power and range decreases with time.",
-      "sourceHeading": "1.3.2.4 Hiyaman",
-      "sourcePath": "KG-1 heading: 1.3.2.4 Hiyaman",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 342,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-5-1-3-2-5-pratipati",
-      "sourceNumber": "1.3.2.5",
-      "name": "1.3.2.5 Pratipati",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "Avdhi gyaan that is lost instantly not with time but just stops instantly.",
-      "sourceHeading": "1.3.2.5 Pratipati",
-      "sourcePath": "KG-1 heading: 1.3.2.5 Pratipati",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 344,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-3-2-6-1-3-2-6-apraptipati",
-      "sourceNumber": "1.3.2.6",
-      "name": "1.3.2.6 Apraptipati",
-      "kind": "subtype",
-      "parentId": "kg1-1-3-2-1-3-2-gun-pratyay",
-      "summary": "Avdhi gyaan that stays forever.",
-      "sourceHeading": "1.3.2.6 Apraptipati",
-      "sourcePath": "KG-1 heading: 1.3.2.6 Apraptipati",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 346,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Avadhi",
+      "countLabel": "1 or 6",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-1-4-1-4-manahparyaya-gyanavaraniya-karm-2",
@@ -288,38 +99,13 @@ export const karmaData = {
       "summary": "Obscures telepathic knowledge of thoughts. Only possible in Manushya",
       "sourceHeading": "1.4. Manahparyaya-Gyanavaraniya Karm : {2} -",
       "sourcePath": "KG-1 heading: 1.4. Manahparyaya-Gyanavaraniya Karm : {2} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-4-strong-manahparyaya-gyanavaraniya-karm-2-strong",
       "aliases": [],
       "sourceLine": 349,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-4-1-1-4-1-rijumati",
-      "sourceNumber": "1.4.1",
-      "name": "1.4.1 Rijumati",
-      "kind": "subtype",
-      "parentId": "kg1-1-4-1-4-manahparyaya-gyanavaraniya-karm-2",
-      "summary": "Vague like being able to read if someone is thinkingv of a tree",
-      "sourceHeading": "1.4.1 Rijumati",
-      "sourcePath": "KG-1 heading: 1.4.1 Rijumati",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 353,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-1-4-2-1-4-2-vipulmati",
-      "sourceNumber": "1.4.2",
-      "name": "1.4.2 Vipulmati",
-      "kind": "subtype",
-      "parentId": "kg1-1-4-1-4-manahparyaya-gyanavaraniya-karm-2",
-      "summary": "Specific like being able to read even what kind of a tree someone is thinking.",
-      "sourceHeading": "1.4.2 Vipulmati",
-      "sourcePath": "KG-1 heading: 1.4.2 Vipulmati",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 357,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Manahparyaya",
+      "countLabel": "2",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-1-5-1-5-kevala-gyanavaraniya-karm-1",
@@ -330,10 +116,13 @@ export const karmaData = {
       "summary": "Obscures perfect, absolute omniscience. Once it is completely removed, it won't go away",
       "sourceHeading": "1.5. Kevala-Gyanavaraniya Karm : {1} -",
       "sourcePath": "KG-1 heading: 1.5. Kevala-Gyanavaraniya Karm : {1} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-5-kevala-gyanavaraniya-karm-1",
       "aliases": [],
       "sourceLine": 360,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kevala",
+      "countLabel": "1",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-2-darsanavarniya-karm-awareness-perception-obscuring-9",
@@ -344,10 +133,13 @@ export const karmaData = {
       "summary": "This karma restricts the selfawareness and perception ability of soul. Darshan is about vague detection - Apprehension of presence of something.",
       "sourceHeading": "2. Darsanavarniya Karm (Awareness / Perception obscuring): {9} -",
       "sourcePath": "KG-1 heading: 2. Darsanavarniya Karm (Awareness / Perception obscuring): {9} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-jati-smaran-gyaan",
       "aliases": [],
       "sourceLine": 467,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Darsanavarniya Karm",
+      "countLabel": "9",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-1-2-1-chakshu-darshanavaraniya-ocular-perception-obscuring",
@@ -358,10 +150,13 @@ export const karmaData = {
       "summary": "This karma specifically obstructs the general perception that occurs through the eyes. Its effect manifests as various degrees of blindness or impaired vision. Visual range limitation in everyone is basically due to this.",
       "sourceHeading": "2.1. Chakshu-Darshanavaraniya (Ocular Perception-Obscuring) -",
       "sourcePath": "KG-1 heading: 2.1. Chakshu-Darshanavaraniya (Ocular Perception-Obscuring) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-1-chakshu-darshanavaraniya-ocular-perception-obscuring",
       "aliases": [],
       "sourceLine": 485,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Chakshu",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-2-2-2-achakshu-darshanavaraniya-non-ocular-perception-obscuring",
@@ -372,10 +167,13 @@ export const karmaData = {
       "summary": "This obstructs perception through the other four senses (touch, taste, smell, hearing) and the mind (manas). Its effect can be seen in the impairment of these senses, like being deaf or having a poor sense of smell, or in a general mental dullness where one st",
       "sourceHeading": "2.2. Achakshu-Darshanavaraniya (Non-Ocular Perception-Obscuring) -",
       "sourcePath": "KG-1 heading: 2.2. Achakshu-Darshanavaraniya (Non-Ocular Perception-Obscuring) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-2-achakshu-darshanavaraniya-non-ocular-perception-obscuring",
       "aliases": [],
       "sourceLine": 488,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Achakshu",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-3-2-3-avadhi-darshanavaraniya-clairvoyant-perception-obscuring",
@@ -386,10 +184,13 @@ export const karmaData = {
       "summary": "Parallel to Avadhi Jnana, this karma obstructs the innate clairvoyant perception of material forms. It's the veil that prevents us from directly perceiving objects beyond the range of our normal senses.",
       "sourceHeading": "2.3. Avadhi-Darshanavaraniya (Clairvoyant Perception-Obscuring) -",
       "sourcePath": "KG-1 heading: 2.3. Avadhi-Darshanavaraniya (Clairvoyant Perception-Obscuring) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-3-avadhi-darshanavaraniya-clairvoyant-perception-obscuring",
       "aliases": [],
       "sourceLine": 490,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Avadhi",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-4-2-4-kevala-darshanavaraniya-absolute-perception-obscuring",
@@ -400,10 +201,13 @@ export const karmaData = {
       "summary": "This is the ultimate obscuration, veiling the soul's innate, perfect, and infinite perception. This karma is completely destroyed at the moment of enlightenment, simultaneously with Kevala-Gyanavaraniya, Mohaniya, and Antaraya karmas.",
       "sourceHeading": "2.4. Kevala-Darshanavaraniya (Absolute Perception-Obscuring) -",
       "sourcePath": "KG-1 heading: 2.4. Kevala-Darshanavaraniya (Absolute Perception-Obscuring) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-4-kevala-darshanavaraniya-absolute-perception-obscuring",
       "aliases": [],
       "sourceLine": 492,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kevala",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-5-2-5-nidra-light-sleep",
@@ -414,10 +218,13 @@ export const karmaData = {
       "summary": "This produces a light, pleasant slumber from which a person is easily awakened, even by a faint sound like the clicking of fingernails. This is the lightest form of sensory withdrawal.",
       "sourceHeading": "2.5. Nidra (Light Sleep) -",
       "sourcePath": "KG-1 heading: 2.5. Nidra (Light Sleep) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-5-nidra-light-sleep",
       "aliases": [],
       "sourceLine": 494,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Nidra",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-6-2-6-nidra-nidra-deep-sleep",
@@ -428,10 +235,13 @@ export const karmaData = {
       "summary": "This causes a profound slumber. A person experiencing the fruition of this karma cannot be easily roused and may need to be shaken violently to be awakened.",
       "sourceHeading": "2.6. Nidra-nidra (Deep Sleep) -",
       "sourcePath": "KG-1 heading: 2.6. Nidra-nidra (Deep Sleep) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-6-nidra-nidra-deep-sleep",
       "aliases": [],
       "sourceLine": 496,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Nidra-nidra",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-7-2-7-prachala-drowsiness",
@@ -442,10 +252,13 @@ export const karmaData = {
       "summary": "This is often translated as drowsiness or \"sleep in motion.\" It is the state of feeling sleepy while sitting up or standing. The body may droop or sway as consciousness fades in and out. It’s that heavy-lidded feeling you might get during a long lecture.",
       "sourceHeading": "2.7. Prachala (Drowsiness) -",
       "sourcePath": "KG-1 heading: 2.7. Prachala (Drowsiness) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-7-prachala-drowsiness",
       "aliases": [],
       "sourceLine": 498,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Prachala",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-8-2-8-prachala-prachala-heavy-drowsiness",
@@ -456,10 +269,13 @@ export const karmaData = {
       "summary": "This is an intensified version of the above, causing an overwhelming sleepiness that can overcome a person ==even while they are walking.==",
       "sourceHeading": "2.8. Prachala-prachala (Heavy Drowsiness) -",
       "sourcePath": "KG-1 heading: 2.8. Prachala-prachala (Heavy Drowsiness) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-8-prachala-prachala-heavy-drowsiness",
       "aliases": [],
       "sourceLine": 500,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Prachala-prachala",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-2-9-2-9-styanarddhi-thinaddhi-somnambulism-or-sleep-walking-with-intense-power",
@@ -470,10 +286,13 @@ export const karmaData = {
       "summary": "This is the most potent and dangerous of the sleep karmas. It induces a state where the individual is asleep but acts with immense, unconsciously directed power. In this state, a person might perform complex and physically demanding actions without any conscio",
       "sourceHeading": "2.9. Styanarddhi / Thinaddhi (थीणद्धि)(Somnambulism or Sleep-walking with Intense Power) -",
       "sourcePath": "KG-1 heading: 2.9. Styanarddhi / Thinaddhi (थीणद्धि)(Somnambulism or Sleep-walking with Intense Power) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-9-styanarddhi-thinaddhi-somnambulism-or-sleep-walking-with-intense-power",
       "aliases": [],
       "sourceLine": 502,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Styanarddhi / Thinaddhi",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-3-3-vedaniya-karma-feeling-producing-2",
@@ -484,10 +303,13 @@ export const karmaData = {
       "summary": "This karma obscures the bliss property and produces the feelings of pleasure and pain to appear depending on the situation.",
       "sourceHeading": "3. Vedaniya karma (Feeling producing ) : {2} +/-",
       "sourcePath": "KG-1 heading: 3. Vedaniya karma (Feeling producing ) : {2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#3-vedaniya-karma-feeling-producing-2",
       "aliases": [],
       "sourceLine": 550,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vedaniya karma",
+      "countLabel": "2",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-3-1-3-1-sata-vedniye-karma",
@@ -498,10 +320,13 @@ export const karmaData = {
       "summary": "Positive feelings due to external stuff Devlok has highest sources of positive feeling inducing stuff",
       "sourceHeading": "3.1 Sata vedniye karma +",
       "sourcePath": "KG-1 heading: 3.1 Sata vedniye karma +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#3-1-sata-vedniye-karma",
       "aliases": [],
       "sourceLine": 552,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sata",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-3-2-3-2-asata-vedniye-karma",
@@ -512,10 +337,13 @@ export const karmaData = {
       "summary": "Negative feelings due to external stuff",
       "sourceHeading": "3.2 Asata vedniye karma -",
       "sourcePath": "KG-1 heading: 3.2 Asata vedniye karma -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#3-2-asata-vedniye-karma",
       "aliases": [],
       "sourceLine": 555,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Asata",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-4-mohaniya-karma-deluding-28",
@@ -526,10 +354,13 @@ export const karmaData = {
       "summary": "Mohaniya Karma is considered the King of all Karmas (कर्मराज) because it is the root cause of saṃsāra. Refer to Mohniye Karm King of all karma for my personal story",
       "sourceHeading": "4. Mohaniya karma (Deluding) : {28} -",
       "sourcePath": "KG-1 heading: 4. Mohaniya karma (Deluding) : {28} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-mohaniya-karma-deluding-28",
       "aliases": [],
       "sourceLine": 588,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Mohaniya karma",
+      "countLabel": "28",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-1-4-1-darshan-mohaniya-karma-faith-worldview-deluding-3",
@@ -540,10 +371,13 @@ export const karmaData = {
       "summary": "==This karma obscures Samyak Darshan (Right Faith).== Jo sahi hai usko sahi nahi ==manna==, jo galat hai usko sahi ==manna.==",
       "sourceHeading": "4.1. Darshan Mohaniya Karma (Faith / Worldview Deluding) : {3} -",
       "sourcePath": "KG-1 heading: 4.1. Darshan Mohaniya Karma (Faith / Worldview Deluding) : {3} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-1-darshan-mohaniya-karma-faith-worldview-deluding-3",
       "aliases": [],
       "sourceLine": 605,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Darshan",
+      "countLabel": "3",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-1-1-4-1-1-mithyatva-mohaniya",
@@ -554,10 +388,13 @@ export const karmaData = {
       "summary": "Aruchi towards what is right, Aruchi here does not mean indifference, it means against the right/jin wani/ dharm. Complete false worldview.",
       "sourceHeading": "4.1.1 Mithyatva (मिथ्यात्व) Mohaniya",
       "sourcePath": "KG-1 heading: 4.1.1 Mithyatva (मिथ्यात्व) Mohaniya",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-1-1-mithyatva-mohaniya",
       "aliases": [],
       "sourceLine": 629,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Mithyatva",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-1-2-4-1-2-misra-mohaniya",
@@ -568,10 +405,13 @@ export const karmaData = {
       "summary": "Neither Ruchi nor Aruchi towards what is right. Example:",
       "sourceHeading": "4.1.2. Misra (मिश्र) Mohaniya",
       "sourcePath": "KG-1 heading: 4.1.2. Misra (मिश्र) Mohaniya",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-1-2-misra-mohaniya",
       "aliases": [],
       "sourceLine": 633,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Misra",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-1-3-4-1-3-samyaktva-mohaniya",
@@ -582,10 +422,13 @@ export const karmaData = {
       "summary": "Some Ruchi, but not enough to gain complete Kshayik Samyak Darshan Obscures stable right faith.",
       "sourceHeading": "4.1.3. Samyaktva (सम्यक्त्व) Mohaniya",
       "sourcePath": "KG-1 heading: 4.1.3. Samyaktva (सम्यक्त्व) Mohaniya",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-1-3-samyaktva-mohaniya",
       "aliases": [],
       "sourceLine": 639,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Samyaktva",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-4-2-charitra-mohaniya-karma-conduct-deluding-25",
@@ -596,10 +439,13 @@ export const karmaData = {
       "summary": "==This karma obscures Samyak Charitra (Right Conduct).== Jo galat hai wo ==karna.==",
       "sourceHeading": "4.2. Charitra Mohaniya Karma (Conduct Deluding) : {25} -",
       "sourcePath": "KG-1 heading: 4.2. Charitra Mohaniya Karma (Conduct Deluding) : {25} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-charitra-mohaniya-karma-conduct-deluding-25",
       "aliases": [],
       "sourceLine": 676,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Charitra",
+      "countLabel": "25",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
@@ -610,66 +456,365 @@ export const karmaData = {
       "summary": "These directly bind the strongest karmas.",
       "sourceHeading": "4.2.1 Kashaya Mohaniya (Passions) : {4x4 =16} -",
       "sourcePath": "KG-1 heading: 4.2.1 Kashaya Mohaniya (Passions) : {4x4 =16} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-kashaya-mohaniya-passions-4x4-16",
       "aliases": [],
       "sourceLine": 682,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kashaya",
+      "countLabel": "4x4 =16",
+      "karmicIndicator": "negative"
     },
     {
-      "id": "kg1-4-2-1-1-4-2-1-1-krodha-anger",
-      "sourceNumber": "4.2.1.1",
+      "id": "kg1-kashaya-intensity-anantanubandhi",
+      "sourceNumber": null,
+      "name": "1. Anantanubandhi (अनन्तानुबन्धी)",
+      "kind": "group",
+      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "summary": "Strongest form of Kashaya. The note says it may last up to a lifetime, prevents Samyak Darshan, and can lead to Narak Gati.",
+      "sourceHeading": "1. Anantanubandhi (अनन्तानुबन्धी)",
+      "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी)",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-anantanubandhi",
+      "aliases": [
+        "Anantānubandhi",
+        "अनन्तानुबन्धी"
+      ],
+      "sourceLine": null,
+      "verification": "source-extracted",
+      "displayName": "Anantanubandhi",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-anantanubandhi-krodha-anger",
+      "sourceNumber": null,
       "name": "4.2.1.1 Krodha (Anger) -",
       "kind": "subtype",
-      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "parentId": "kg1-kashaya-intensity-anantanubandhi",
       "summary": "Destroys forgiveness and equanimity. ==Obscures Kshama and samta== property of aatma.",
       "sourceHeading": "4.2.1.1 Krodha (Anger) -",
-      "sourcePath": "KG-1 heading: 4.2.1.1 Krodha (Anger) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी) → 4.2.1.1 Krodha (Anger) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-1-krodha-anger",
       "aliases": [],
       "sourceLine": 684,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Krodha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
-      "id": "kg1-4-2-1-2-4-2-1-2-maan-pride",
-      "sourceNumber": "4.2.1.2",
+      "id": "kg1-kashaya-anantanubandhi-maan-pride",
+      "sourceNumber": null,
       "name": "4.2.1.2. Maan (Pride) -",
       "kind": "subtype",
-      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "parentId": "kg1-kashaya-intensity-anantanubandhi",
       "summary": "Creates superiority and ego. ==Obscures Namrata== property of aatma.",
       "sourceHeading": "4.2.1.2. Maan (Pride) -",
-      "sourcePath": "KG-1 heading: 4.2.1.2. Maan (Pride) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी) → 4.2.1.2. Maan (Pride) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-2-maan-pride",
       "aliases": [],
       "sourceLine": 688,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Maan",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
-      "id": "kg1-4-2-1-3-4-2-1-3-maya-deceit",
-      "sourceNumber": "4.2.1.3",
+      "id": "kg1-kashaya-anantanubandhi-maya-deceit",
+      "sourceNumber": null,
       "name": "4.2.1.3. Maya (Deceit) -",
       "kind": "subtype",
-      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "parentId": "kg1-kashaya-intensity-anantanubandhi",
       "summary": "Creates manipulation and hypocrisy. ==Obscures Saralta== property of aatma.",
       "sourceHeading": "4.2.1.3. Maya (Deceit) -",
-      "sourcePath": "KG-1 heading: 4.2.1.3. Maya (Deceit) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी) → 4.2.1.3. Maya (Deceit) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-3-maya-deceit",
       "aliases": [],
       "sourceLine": 692,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Maya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
-      "id": "kg1-4-2-1-4-4-2-1-4-lobha-greed",
-      "sourceNumber": "4.2.1.4",
+      "id": "kg1-kashaya-anantanubandhi-lobha-greed",
+      "sourceNumber": null,
       "name": "4.2.1.4. Lobha (Greed) -",
       "kind": "subtype",
-      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "parentId": "kg1-kashaya-intensity-anantanubandhi",
       "summary": "Creates endless craving and attachment. ==Obscures Santosh== property of aatma.",
       "sourceHeading": "4.2.1.4. Lobha (Greed) -",
-      "sourcePath": "KG-1 heading: 4.2.1.4. Lobha (Greed) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी) → 4.2.1.4. Lobha (Greed) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-4-lobha-greed",
       "aliases": [],
       "sourceLine": 696,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Lobha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-intensity-apratyakhyana",
+      "sourceNumber": null,
+      "name": "2. Apratyakhyana (अप्रत्याख्यान)",
+      "kind": "group",
+      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "summary": "The note says this intensity may last up to one year and prevents Deshvirati.",
+      "sourceHeading": "2. Apratyakhyana (अप्रत्याख्यान)",
+      "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान)",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-apratyakhyana",
+      "aliases": [
+        "Apratyākhyāna",
+        "अप्रत्याख्यान"
+      ],
+      "sourceLine": null,
+      "verification": "source-extracted",
+      "displayName": "Apratyakhyana",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-apratyakhyana-krodha-anger",
+      "sourceNumber": null,
+      "name": "4.2.1.1 Krodha (Anger) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-apratyakhyana",
+      "summary": "Destroys forgiveness and equanimity. ==Obscures Kshama and samta== property of aatma.",
+      "sourceHeading": "4.2.1.1 Krodha (Anger) -",
+      "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान) → 4.2.1.1 Krodha (Anger) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-1-krodha-anger",
+      "aliases": [],
+      "sourceLine": 684,
+      "verification": "source-extracted",
+      "displayName": "Krodha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-apratyakhyana-maan-pride",
+      "sourceNumber": null,
+      "name": "4.2.1.2. Maan (Pride) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-apratyakhyana",
+      "summary": "Creates superiority and ego. ==Obscures Namrata== property of aatma.",
+      "sourceHeading": "4.2.1.2. Maan (Pride) -",
+      "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान) → 4.2.1.2. Maan (Pride) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-2-maan-pride",
+      "aliases": [],
+      "sourceLine": 688,
+      "verification": "source-extracted",
+      "displayName": "Maan",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-apratyakhyana-maya-deceit",
+      "sourceNumber": null,
+      "name": "4.2.1.3. Maya (Deceit) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-apratyakhyana",
+      "summary": "Creates manipulation and hypocrisy. ==Obscures Saralta== property of aatma.",
+      "sourceHeading": "4.2.1.3. Maya (Deceit) -",
+      "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान) → 4.2.1.3. Maya (Deceit) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-3-maya-deceit",
+      "aliases": [],
+      "sourceLine": 692,
+      "verification": "source-extracted",
+      "displayName": "Maya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-apratyakhyana-lobha-greed",
+      "sourceNumber": null,
+      "name": "4.2.1.4. Lobha (Greed) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-apratyakhyana",
+      "summary": "Creates endless craving and attachment. ==Obscures Santosh== property of aatma.",
+      "sourceHeading": "4.2.1.4. Lobha (Greed) -",
+      "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान) → 4.2.1.4. Lobha (Greed) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-4-lobha-greed",
+      "aliases": [],
+      "sourceLine": 696,
+      "verification": "source-extracted",
+      "displayName": "Lobha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-intensity-pratyakhyana",
+      "sourceNumber": null,
+      "name": "3. Pratyakhyana (प्रत्याख्यान)",
+      "kind": "group",
+      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "summary": "The note says this intensity may last up to four months and prevents Sarvavirati.",
+      "sourceHeading": "3. Pratyakhyana (प्रत्याख्यान)",
+      "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान)",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#3-pratyakhyana",
+      "aliases": [
+        "Pratyākhyāna",
+        "प्रत्याख्यान"
+      ],
+      "sourceLine": null,
+      "verification": "source-extracted",
+      "displayName": "Pratyakhyana",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-pratyakhyana-krodha-anger",
+      "sourceNumber": null,
+      "name": "4.2.1.1 Krodha (Anger) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-pratyakhyana",
+      "summary": "Destroys forgiveness and equanimity. ==Obscures Kshama and samta== property of aatma.",
+      "sourceHeading": "4.2.1.1 Krodha (Anger) -",
+      "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान) → 4.2.1.1 Krodha (Anger) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-1-krodha-anger",
+      "aliases": [],
+      "sourceLine": 684,
+      "verification": "source-extracted",
+      "displayName": "Krodha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-pratyakhyana-maan-pride",
+      "sourceNumber": null,
+      "name": "4.2.1.2. Maan (Pride) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-pratyakhyana",
+      "summary": "Creates superiority and ego. ==Obscures Namrata== property of aatma.",
+      "sourceHeading": "4.2.1.2. Maan (Pride) -",
+      "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान) → 4.2.1.2. Maan (Pride) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-2-maan-pride",
+      "aliases": [],
+      "sourceLine": 688,
+      "verification": "source-extracted",
+      "displayName": "Maan",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-pratyakhyana-maya-deceit",
+      "sourceNumber": null,
+      "name": "4.2.1.3. Maya (Deceit) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-pratyakhyana",
+      "summary": "Creates manipulation and hypocrisy. ==Obscures Saralta== property of aatma.",
+      "sourceHeading": "4.2.1.3. Maya (Deceit) -",
+      "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान) → 4.2.1.3. Maya (Deceit) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-3-maya-deceit",
+      "aliases": [],
+      "sourceLine": 692,
+      "verification": "source-extracted",
+      "displayName": "Maya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-pratyakhyana-lobha-greed",
+      "sourceNumber": null,
+      "name": "4.2.1.4. Lobha (Greed) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-pratyakhyana",
+      "summary": "Creates endless craving and attachment. ==Obscures Santosh== property of aatma.",
+      "sourceHeading": "4.2.1.4. Lobha (Greed) -",
+      "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान) → 4.2.1.4. Lobha (Greed) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-4-lobha-greed",
+      "aliases": [],
+      "sourceLine": 696,
+      "verification": "source-extracted",
+      "displayName": "Lobha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-intensity-sanjvalana",
+      "sourceNumber": null,
+      "name": "4. Sanjvalana (संज्वलन)",
+      "kind": "group",
+      "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
+      "summary": "Subtlest remaining passion. The note says this intensity may last up to 15 days and prevents perfect conduct.",
+      "sourceHeading": "4. Sanjvalana (संज्वलन)",
+      "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन)",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-sanjvalana",
+      "aliases": [
+        "Sañjvalana",
+        "संज्वलन"
+      ],
+      "sourceLine": null,
+      "verification": "source-extracted",
+      "displayName": "Sanjvalana",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-sanjvalana-krodha-anger",
+      "sourceNumber": null,
+      "name": "4.2.1.1 Krodha (Anger) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-sanjvalana",
+      "summary": "Destroys forgiveness and equanimity. ==Obscures Kshama and samta== property of aatma.",
+      "sourceHeading": "4.2.1.1 Krodha (Anger) -",
+      "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन) → 4.2.1.1 Krodha (Anger) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-1-krodha-anger",
+      "aliases": [],
+      "sourceLine": 684,
+      "verification": "source-extracted",
+      "displayName": "Krodha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-sanjvalana-maan-pride",
+      "sourceNumber": null,
+      "name": "4.2.1.2. Maan (Pride) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-sanjvalana",
+      "summary": "Creates superiority and ego. ==Obscures Namrata== property of aatma.",
+      "sourceHeading": "4.2.1.2. Maan (Pride) -",
+      "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन) → 4.2.1.2. Maan (Pride) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-2-maan-pride",
+      "aliases": [],
+      "sourceLine": 688,
+      "verification": "source-extracted",
+      "displayName": "Maan",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-sanjvalana-maya-deceit",
+      "sourceNumber": null,
+      "name": "4.2.1.3. Maya (Deceit) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-sanjvalana",
+      "summary": "Creates manipulation and hypocrisy. ==Obscures Saralta== property of aatma.",
+      "sourceHeading": "4.2.1.3. Maya (Deceit) -",
+      "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन) → 4.2.1.3. Maya (Deceit) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-3-maya-deceit",
+      "aliases": [],
+      "sourceLine": 692,
+      "verification": "source-extracted",
+      "displayName": "Maya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
+    },
+    {
+      "id": "kg1-kashaya-sanjvalana-lobha-greed",
+      "sourceNumber": null,
+      "name": "4.2.1.4. Lobha (Greed) -",
+      "kind": "subtype",
+      "parentId": "kg1-kashaya-intensity-sanjvalana",
+      "summary": "Creates endless craving and attachment. ==Obscures Santosh== property of aatma.",
+      "sourceHeading": "4.2.1.4. Lobha (Greed) -",
+      "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन) → 4.2.1.4. Lobha (Greed) -",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-1-4-lobha-greed",
+      "aliases": [],
+      "sourceLine": 696,
+      "verification": "source-extracted",
+      "displayName": "Lobha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
@@ -680,10 +825,13 @@ export const karmaData = {
       "summary": "These are milder emotional disturbances but still sustain bondage.",
       "sourceHeading": "4.2.2 No-Kashaya (Quasi-passions) : {9} -",
       "sourcePath": "KG-1 heading: 4.2.2 No-Kashaya (Quasi-passions) : {9} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-no-kashaya-quasi-passions-9",
       "aliases": [],
       "sourceLine": 778,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "No-Kashaya",
+      "countLabel": "9",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-1-4-2-2-1-hasya-laughter-frivolity",
@@ -691,13 +839,17 @@ export const karmaData = {
       "name": "4.2.2.1 Hasya (Laughter / frivolity)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "",
+      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.1 Hasya (Laughter / frivolity)",
       "sourcePath": "KG-1 heading: 4.2.2.1 Hasya (Laughter / frivolity)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-1-hasya-laughter-frivolity",
       "aliases": [],
       "sourceLine": 780,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Hasya",
+      "countLabel": null,
+      "karmicIndicator": "negative",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-4-2-2-2-4-2-2-2-rati-attachment-liking",
@@ -705,13 +857,17 @@ export const karmaData = {
       "name": "4.2.2.2 Rati (Attachment / liking)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "",
+      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.2 Rati (Attachment / liking)",
       "sourcePath": "KG-1 heading: 4.2.2.2 Rati (Attachment / liking)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-2-rati-attachment-liking",
       "aliases": [],
       "sourceLine": 781,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Rati",
+      "countLabel": null,
+      "karmicIndicator": "negative",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-4-2-2-3-4-2-2-3-arati-aversion-disliking",
@@ -719,13 +875,17 @@ export const karmaData = {
       "name": "4.2.2.3 Arati (Aversion / disliking)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "",
+      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.3 Arati (Aversion / disliking)",
       "sourcePath": "KG-1 heading: 4.2.2.3 Arati (Aversion / disliking)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-3-arati-aversion-disliking",
       "aliases": [],
       "sourceLine": 782,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Arati",
+      "countLabel": null,
+      "karmicIndicator": "negative",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-4-2-2-4-4-2-2-4-shok-sorrow",
@@ -733,13 +893,17 @@ export const karmaData = {
       "name": "4.2.2.4 Shok (Sorrow)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "",
+      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.4 Shok (Sorrow)",
       "sourcePath": "KG-1 heading: 4.2.2.4 Shok (Sorrow)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-4-shok-sorrow",
       "aliases": [],
       "sourceLine": 783,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shok",
+      "countLabel": null,
+      "karmicIndicator": "negative",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-4-2-2-5-4-2-2-5-bhaya-fear",
@@ -750,10 +914,13 @@ export const karmaData = {
       "summary": "1. Ehlok bhay - Fear from other humans 2. Parlok bhay - Fear from other organisms",
       "sourceHeading": "4.2.2.5 Bhaya (Fear)",
       "sourcePath": "KG-1 heading: 4.2.2.5 Bhaya (Fear)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-5-bhaya-fear",
       "aliases": [],
       "sourceLine": 784,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Bhaya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-6-4-2-2-6-jugupsa-disgust",
@@ -764,10 +931,13 @@ export const karmaData = {
       "summary": "Body structure/ dravya ved is defined by Naam karma, No kashay Mohniye karma is responsible for Bhav ved:",
       "sourceHeading": "4.2.2.6 Jugupsa (Disgust)",
       "sourcePath": "KG-1 heading: 4.2.2.6 Jugupsa (Disgust)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-6-jugupsa-disgust",
       "aliases": [],
       "sourceLine": 792,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Jugupsa",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-7-4-2-2-7-stri-veda",
@@ -778,10 +948,13 @@ export const karmaData = {
       "summary": "Attraction towards Men Lust awakening is slow and sustained, compared to burning Angothi(gobar), on how slowly it starts to burn and slowly diminishes.",
       "sourceHeading": "4.2.2.7 Stri Veda",
       "sourcePath": "KG-1 heading: 4.2.2.7 Stri Veda",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-7-stri-veda",
       "aliases": [],
       "sourceLine": 795,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Stri",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-8-4-2-2-8-purusha-veda",
@@ -792,10 +965,13 @@ export const karmaData = {
       "summary": "Attraction towards Women Lust awakening is quick, compared to fire on dry grass.",
       "sourceHeading": "4.2.2.8 Purusha Veda",
       "sourcePath": "KG-1 heading: 4.2.2.8 Purusha Veda",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-8-purusha-veda",
       "aliases": [],
       "sourceLine": 798,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Purusha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-4-2-2-9-4-2-2-9-napunsaka-veda",
@@ -806,10 +982,13 @@ export const karmaData = {
       "summary": "Attraction towards Men and women both Lust awakening takes time and diminishing also takes a lot of time, compared to how long it takes a city to burn and how long it takes to extinguish the fire.",
       "sourceHeading": "4.2.2.9 Napunsaka Veda",
       "sourcePath": "KG-1 heading: 4.2.2.9 Napunsaka Veda",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-9-napunsaka-veda",
       "aliases": [],
       "sourceLine": 801,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Napunsaka",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
@@ -820,150 +999,83 @@ export const karmaData = {
       "summary": "A pure soul is ageless, it is never embodied. The age determining karma determines the age,life span, in a particular realm viz., animal, human, infernal or heavenly mode. Since one of the subtypes is active, it can be considered Punya or paap",
       "sourceHeading": "5. Ayushya karma (Age determining) : {4 or 2} +/-",
       "sourcePath": "KG-1 heading: 5. Ayushya karma (Age determining) : {4 or 2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-ayushya-karma-age-determining-4-or-2",
       "aliases": [],
       "sourceLine": 907,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-1-5-1-based-on-the-life-form-4",
-      "sourceNumber": "5.1",
-      "name": "5.1 Based on the life form : {4} +/-",
-      "kind": "group",
-      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
-      "summary": "",
-      "sourceHeading": "5.1 Based on the life form : {4} +/-",
-      "sourcePath": "KG-1 heading: 5.1 Based on the life form : {4} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 914,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ayushya karma",
+      "countLabel": "4",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-5-1-1-5-1-1-dev-ayushya",
       "sourceNumber": "5.1.1",
       "name": "5.1.1 Dev Ayushya +",
       "kind": "subtype",
-      "parentId": "kg1-5-1-5-1-based-on-the-life-form-4",
-      "summary": "",
+      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
+      "summary": "KG-1 lists this heading under Based on the life form , without a separate explanatory note.",
       "sourceHeading": "5.1.1 Dev Ayushya +",
       "sourcePath": "KG-1 heading: 5.1.1 Dev Ayushya +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-1-dev-ayushya",
       "aliases": [],
       "sourceLine": 915,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Dev",
+      "countLabel": null,
+      "karmicIndicator": "positive",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-5-1-2-5-1-2-manushya-ayushya",
       "sourceNumber": "5.1.2",
       "name": "5.1.2 Manushya Ayushya +",
       "kind": "subtype",
-      "parentId": "kg1-5-1-5-1-based-on-the-life-form-4",
+      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
       "summary": "ranges from Antar muhurt to 3 palyopam",
       "sourceHeading": "5.1.2 Manushya Ayushya +",
       "sourcePath": "KG-1 heading: 5.1.2 Manushya Ayushya +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-2-manushya-ayushya",
       "aliases": [],
       "sourceLine": 917,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Manushya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-5-1-3-5-1-3-tiryanch-ayushya",
       "sourceNumber": "5.1.3",
       "name": "5.1.3 Tiryanch Ayushya -",
       "kind": "subtype",
-      "parentId": "kg1-5-1-5-1-based-on-the-life-form-4",
+      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
       "summary": "ranges from Antar muhurt to 3 palyopam",
       "sourceHeading": "5.1.3 Tiryanch Ayushya -",
       "sourcePath": "KG-1 heading: 5.1.3 Tiryanch Ayushya -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-3-tiryanch-ayushya",
       "aliases": [],
       "sourceLine": 920,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tiryanch",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-5-1-4-5-1-4-naraki-ayushya",
       "sourceNumber": "5.1.4",
       "name": "5.1.4 Naraki Ayushya -",
       "kind": "subtype",
-      "parentId": "kg1-5-1-5-1-based-on-the-life-form-4",
-      "summary": "",
+      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
+      "summary": "KG-1 lists this heading under Based on the life form , without a separate explanatory note.",
       "sourceHeading": "5.1.4 Naraki Ayushya -",
       "sourcePath": "KG-1 heading: 5.1.4 Naraki Ayushya -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-4-naraki-ayushya",
       "aliases": [],
       "sourceLine": 923,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-2-5-2-based-on-shortenablity-2",
-      "sourceNumber": "5.2",
-      "name": "5.2 Based on shortenablity: {2} +/-",
-      "kind": "group",
-      "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
-      "summary": "It can be positive or negative based on current gati.",
-      "sourceHeading": "5.2 Based on shortenablity: {2} +/-",
-      "sourcePath": "KG-1 heading: 5.2 Based on shortenablity: {2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 925,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-2-1-5-2-1-apvartaniye-ayushya",
-      "sourceNumber": "5.2.1",
-      "name": "5.2.1 Apvartaniye Ayushya +/-",
-      "kind": "subtype",
-      "parentId": "kg1-5-2-5-2-based-on-shortenablity-2",
-      "summary": "Ayushya that can be reduced. Not so special Manushya and Tiryanch",
-      "sourceHeading": "5.2.1 Apvartaniye Ayushya +/-",
-      "sourcePath": "KG-1 heading: 5.2.1 Apvartaniye Ayushya +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 927,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-2-2-5-2-2-anapvartaniye-ayushya",
-      "sourceNumber": "5.2.2",
-      "name": "5.2.2 Anapvartaniye Ayushya +/-",
-      "kind": "subtype",
-      "parentId": "kg1-5-2-5-2-based-on-shortenablity-2",
-      "summary": "Ayushya that cannot be reduced. Devta, Narki, Charam shariri, Shalaka purush, Jain Cosmology and Jain Cosmology born Manushya and tiryanch, Jain Cosmology ke yugliks.",
-      "sourceHeading": "5.2.2 Anapvartaniye Ayushya +/-",
-      "sourcePath": "KG-1 heading: 5.2.2 Anapvartaniye Ayushya +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 934,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-2-2-1-5-2-2-1-sopkram-anapvartaniye",
-      "sourceNumber": "5.2.2.1",
-      "name": "5.2.2.1 Sopkram Anapvartaniye",
-      "kind": "subtype",
-      "parentId": "kg1-5-2-2-5-2-2-anapvartaniye-ayushya",
-      "summary": "Coincidences to shorten ayushya can happen but Ayushya won't reduce since it is anapvartaniye.",
-      "sourceHeading": "5.2.2.1 Sopkram Anapvartaniye",
-      "sourcePath": "KG-1 heading: 5.2.2.1 Sopkram Anapvartaniye",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 939,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-5-2-2-2-5-2-2-2-niupkram-anapvartaniye",
-      "sourceNumber": "5.2.2.2",
-      "name": "5.2.2.2 Niupkram Anapvartaniye",
-      "kind": "subtype",
-      "parentId": "kg1-5-2-2-5-2-2-anapvartaniye-ayushya",
-      "summary": "Even coincidences to shorten ayushya cannot happen",
-      "sourceHeading": "5.2.2.2 Niupkram Anapvartaniye",
-      "sourcePath": "KG-1 heading: 5.2.2.2 Niupkram Anapvartaniye",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 941,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Naraki",
+      "countLabel": null,
+      "karmicIndicator": "negative",
+      "summaryStatus": "heading-only"
     },
     {
       "id": "kg1-6-6-naam-karma-form-producing-103",
@@ -974,10 +1086,13 @@ export const karmaData = {
       "summary": "Aatma is arupi, but naam karma defines the form of a jeev's body. This karma decides the form of existence, species, in a particular realm and the structure, detailed structural features, outward appearance etc of the being. The concept is very general and ref",
       "sourceHeading": "6. Naam karma (Form producing) : {103} +/-",
       "sourcePath": "KG-1 heading: 6. Naam karma (Form producing) : {103} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-naam-karma-form-producing-103",
       "aliases": [],
       "sourceLine": 1006,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Naam karma",
+      "countLabel": "103",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-6-1-pind-prakriti-75",
@@ -988,10 +1103,13 @@ export const karmaData = {
       "summary": "Pind Prakriti groups the foundational bodily and embodiment-related characteristics. The chart divides the 65 Prakriti into 14 categories.",
       "sourceHeading": "6.1 Pind Prakriti (पिंड प्रकृति) : {75} +/-",
       "sourcePath": "KG-1 heading: 6.1 Pind Prakriti (पिंड प्रकृति) : {75} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-pind-prakriti-75",
       "aliases": [],
       "sourceLine": 1016,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Pind",
+      "countLabel": "75",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-1-6-1-1-gati-4",
@@ -1002,10 +1120,13 @@ export const karmaData = {
       "summary": "Gati Naam Karma determines the realm of existence into which a soul is born. ==This is different from Ayushya karma, that determines the lifespan, but both are tightly coupled==",
       "sourceHeading": "6.1.1 Gati (गति) : {4} +/-",
       "sourcePath": "KG-1 heading: 6.1.1 Gati (गति) : {4} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-1-gati-4",
       "aliases": [],
       "sourceLine": 1022,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Gati",
+      "countLabel": "4",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-1-1-6-1-1-1-narak-gati",
@@ -1016,10 +1137,13 @@ export const karmaData = {
       "summary": "Effect: Determines birth in a hellish realm.",
       "sourceHeading": "6.1.1.1 Narak Gati (नरक गति) -",
       "sourcePath": "KG-1 heading: 6.1.1.1 Narak Gati (नरक गति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-1-1-narak-gati",
       "aliases": [],
       "sourceLine": 1025,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Narak",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-1-2-6-1-1-2-tiryanch-gati",
@@ -1030,10 +1154,13 @@ export const karmaData = {
       "summary": "Effect: Determines birth in Tiryanch Gati -> Animal, plant, and other non-human existence in the Jain classification. Note: The Jain Tiryanch classification encompasses more than modern biological animal categories.",
       "sourceHeading": "6.1.1.2 Tiryanch Gati (तिर्यंच गति) -",
       "sourcePath": "KG-1 heading: 6.1.1.2 Tiryanch Gati (तिर्यंच गति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-1-2-tiryanch-gati",
       "aliases": [],
       "sourceLine": 1027,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tiryanch",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-1-3-6-1-1-3-manusya-gati",
@@ -1044,10 +1171,13 @@ export const karmaData = {
       "summary": "Effect: Determines birth as a human being.",
       "sourceHeading": "6.1.1.3 Manusya Gati (मनुष्य गति) +",
       "sourcePath": "KG-1 heading: 6.1.1.3 Manusya Gati (मनुष्य गति) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-1-3-manusya-gati",
       "aliases": [],
       "sourceLine": 1030,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Manusya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-1-4-6-1-1-4-deva-gati",
@@ -1058,10 +1188,13 @@ export const karmaData = {
       "summary": "Effect: Determines birth as a celestial being. Note: Deva Gati remains within Samsara (संसार), not Moksha (मोक्ष).",
       "sourceHeading": "6.1.1.4 Deva Gati (देव गति) +",
       "sourcePath": "KG-1 heading: 6.1.1.4 Deva Gati (देव गति) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-1-4-deva-gati",
       "aliases": [],
       "sourceLine": 1032,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Deva",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-2-6-1-2-jati-5",
@@ -1072,10 +1205,13 @@ export const karmaData = {
       "summary": "Jati Naam Karma determines the sensory class of the embodied being. More details on tight coupling in Tattva(तत्त्व)",
       "sourceHeading": "6.1.2 Jati (जाति) : {5} +/-",
       "sourcePath": "KG-1 heading: 6.1.2 Jati (जाति) : {5} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-jati-5",
       "aliases": [],
       "sourceLine": 1035,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Jati",
+      "countLabel": "5",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-2-1-6-1-2-1-ekendriya-jati",
@@ -1086,10 +1222,13 @@ export const karmaData = {
       "summary": "Meaning: One-sensed beings. Senses: Touch.",
       "sourceHeading": "6.1.2.1 Ekendriya Jati (एकेन्द्रिय जाति) -",
       "sourcePath": "KG-1 heading: 6.1.2.1 Ekendriya Jati (एकेन्द्रिय जाति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-1-ekendriya-jati",
       "aliases": [],
       "sourceLine": 1038,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ekendriya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-2-2-6-1-2-2-dvindriya-jati",
@@ -1100,10 +1239,13 @@ export const karmaData = {
       "summary": "Meaning: Two-sensed beings. Senses: Touch and taste.",
       "sourceHeading": "6.1.2.2 Dvindriya Jati (द्विन्द्रिय जाति) -",
       "sourcePath": "KG-1 heading: 6.1.2.2 Dvindriya Jati (द्विन्द्रिय जाति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-2-dvindriya-jati",
       "aliases": [],
       "sourceLine": 1042,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Dvindriya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-2-3-6-1-2-3-trindriya-jati",
@@ -1114,10 +1256,13 @@ export const karmaData = {
       "summary": "Meaning: Three-sensed beings. Senses: Touch, taste, and smell.",
       "sourceHeading": "6.1.2.3 Trindriya Jati (त्रिन्द्रिय जाति) -",
       "sourcePath": "KG-1 heading: 6.1.2.3 Trindriya Jati (त्रिन्द्रिय जाति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-3-trindriya-jati",
       "aliases": [],
       "sourceLine": 1046,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Trindriya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-2-4-6-1-2-4-chaturindriya-jati",
@@ -1128,10 +1273,13 @@ export const karmaData = {
       "summary": "Meaning: Four-sensed beings. Senses: Touch, taste, smell, and sight.",
       "sourceHeading": "6.1.2.4 Chaturindriya Jati (चतुरिन्द्रिय जाति) -",
       "sourcePath": "KG-1 heading: 6.1.2.4 Chaturindriya Jati (चतुरिन्द्रिय जाति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-4-chaturindriya-jati",
       "aliases": [],
       "sourceLine": 1050,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Chaturindriya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-2-5-6-1-2-5-panchendriya-jati",
@@ -1142,10 +1290,13 @@ export const karmaData = {
       "summary": "Meaning: Five-sensed beings. Senses: Touch, taste, smell, sight, and hearing.",
       "sourceHeading": "6.1.2.5 Panchendriya Jati (पंचेन्द्रिय जाति) +",
       "sourcePath": "KG-1 heading: 6.1.2.5 Panchendriya Jati (पंचेन्द्रिय जाति) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-2-5-panchendriya-jati",
       "aliases": [],
       "sourceLine": 1054,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Panchendriya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-6-1-3-sharir-5",
@@ -1156,10 +1307,13 @@ export const karmaData = {
       "summary": "Typically we do not have classification of punya or paap Sharir Naam Karma determines the type of body associated with the soul.",
       "sourceHeading": "6.1.3 Sharir (शरीर) : {5} +",
       "sourcePath": "KG-1 heading: 6.1.3 Sharir (शरीर) : {5} +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-sharir-5",
       "aliases": [],
       "sourceLine": 1059,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sharir",
+      "countLabel": "5",
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-1-6-1-3-1-audarika-sharir",
@@ -1170,10 +1324,13 @@ export const karmaData = {
       "summary": "Gross physical body, able to be pierced and pieced up, can burn as well. Present in human or animal body.",
       "sourceHeading": "6.1.3.1 Audarika Sharir (औदारिक शरीर) +",
       "sourcePath": "KG-1 heading: 6.1.3.1 Audarika Sharir (औदारिक शरीर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-1-audarika-sharir",
       "aliases": [],
       "sourceLine": 1067,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Audarika",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-2-6-1-3-2-vaikriya-sharir",
@@ -1184,10 +1341,13 @@ export const karmaData = {
       "summary": "Transformable and subtle body. ==Naturally and permanently present in devta and naraki beings.",
       "sourceHeading": "6.1.3.2 Vaikriya Sharir (वैक्रिय शरीर) +",
       "sourcePath": "KG-1 heading: 6.1.3.2 Vaikriya Sharir (वैक्रिय शरीर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-2-vaikriya-sharir",
       "aliases": [],
       "sourceLine": 1071,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vaikriya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-3-6-1-3-3-aharaka-sharir",
@@ -1198,10 +1358,13 @@ export const karmaData = {
       "summary": "Meaning: Special conveyance body. Only possible to achieve by highly ascetic Sadhu(not sadhvi)(14 purvadhar and labdhidhar), by using Pudgal pudgals.",
       "sourceHeading": "6.1.3.3 Aharaka Sharir (आहारक शरीर) +",
       "sourcePath": "KG-1 heading: 6.1.3.3 Aharaka Sharir (आहारक शरीर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-3-aharaka-sharir",
       "aliases": [],
       "sourceLine": 1078,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Aharaka",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-4-6-1-3-4-taijasa-sharir",
@@ -1212,10 +1375,13 @@ export const karmaData = {
       "summary": "Meaning: Fiery or energy body. Responsible to process food and assist in making other body.",
       "sourceHeading": "6.1.3.4 Taijasa Sharir (तैजस शरीर) +",
       "sourcePath": "KG-1 heading: 6.1.3.4 Taijasa Sharir (तैजस शरीर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-4-taijasa-sharir",
       "aliases": [],
       "sourceLine": 1085,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Taijasa",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-3-5-6-1-3-5-karmana-sharir",
@@ -1226,10 +1392,13 @@ export const karmaData = {
       "summary": "Meaning: Karmic body. Example: The subtle karmic body associated with the soul.",
       "sourceHeading": "6.1.3.5 Karmana Sharir (कार्मण शरीर) +",
       "sourcePath": "KG-1 heading: 6.1.3.5 Karmana Sharir (कार्मण शरीर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-3-5-karmana-sharir",
       "aliases": [],
       "sourceLine": 1091,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Karmana",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-4-6-1-4-angopang-3",
@@ -1240,10 +1409,13 @@ export const karmaData = {
       "summary": "Typically we do not have classification of punya or paap Angopang Naam Karma determines the major and minor constituent parts of a body.",
       "sourceHeading": "6.1.4 Angopang (अंगोपांग) : {3} +",
       "sourcePath": "KG-1 heading: 6.1.4 Angopang (अंगोपांग) : {3} +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-4-angopang-3",
       "aliases": [],
       "sourceLine": 1095,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Angopang",
+      "countLabel": "3",
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-4-1-6-1-4-1-audarika-angopang",
@@ -1254,10 +1426,13 @@ export const karmaData = {
       "summary": "Meaning: Major and minor parts of the gross physical body. Example: Arms, legs, hands, and other bodily components.",
       "sourceHeading": "6.1.4.1 Audarika Angopang (औदारिक अंगोपांग) +",
       "sourcePath": "KG-1 heading: 6.1.4.1 Audarika Angopang (औदारिक अंगोपांग) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-4-1-audarika-angopang",
       "aliases": [],
       "sourceLine": 1105,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Audarika",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-4-2-6-1-4-2-vaikriya-angopang",
@@ -1268,10 +1443,13 @@ export const karmaData = {
       "summary": "Meaning: Major and minor parts of the Vaikriya body. Example: Constituent body parts of a celestial being.",
       "sourceHeading": "6.1.4.2 Vaikriya Angopang (वैक्रिय अंगोपांग) +",
       "sourcePath": "KG-1 heading: 6.1.4.2 Vaikriya Angopang (वैक्रिय अंगोपांग) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-4-2-vaikriya-angopang",
       "aliases": [],
       "sourceLine": 1109,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vaikriya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-4-3-6-1-4-3-aharaka-angopang",
@@ -1282,10 +1460,13 @@ export const karmaData = {
       "summary": "Meaning: Major and minor parts of the Aharaka body. Example: The constituent parts of an Aharaka body.",
       "sourceHeading": "6.1.4.3 Aharaka Angopang (आहारक अंगोपांग) +",
       "sourcePath": "KG-1 heading: 6.1.4.3 Aharaka Angopang (आहारक अंगोपांग) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-4-3-aharaka-angopang",
       "aliases": [],
       "sourceLine": 1113,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Aharaka",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-6-1-5-bandhan-5-or-15",
@@ -1296,10 +1477,13 @@ export const karmaData = {
       "summary": "Typically we do not have classification of punya or paap Bandhan Naam Karma determines the binding or association of material units involved in body formation.",
       "sourceHeading": "6.1.5 Bandhan (बंधन) : {5} or {15} +",
       "sourcePath": "KG-1 heading: 6.1.5 Bandhan (बंधन) : {5} or {15} +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-bandhan-5-or-15",
       "aliases": [],
       "sourceLine": 1117,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Bandhan",
+      "countLabel": "5",
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-1-6-1-5-1-audarika-bandhan",
@@ -1310,10 +1494,13 @@ export const karmaData = {
       "summary": "Meaning: Binding associated with the gross physical body. Example: Association of material constituents forming a human body.",
       "sourceHeading": "6.1.5.1 Audarika Bandhan (औदारिक बंधन) +",
       "sourcePath": "KG-1 heading: 6.1.5.1 Audarika Bandhan (औदारिक बंधन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-1-audarika-bandhan",
       "aliases": [],
       "sourceLine": 1120,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Audarika",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-2-6-1-5-2-vaikriya-bandhan",
@@ -1324,10 +1511,13 @@ export const karmaData = {
       "summary": "Meaning: Binding associated with the Vaikriya body. Example: Association of material constituents in a transformable body.",
       "sourceHeading": "6.1.5.2 Vaikriya Bandhan (वैक्रिय बंधन) +",
       "sourcePath": "KG-1 heading: 6.1.5.2 Vaikriya Bandhan (वैक्रिय बंधन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-2-vaikriya-bandhan",
       "aliases": [],
       "sourceLine": 1124,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vaikriya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-3-6-1-5-3-aharaka-bandhan",
@@ -1338,10 +1528,13 @@ export const karmaData = {
       "summary": "Meaning: Binding associated with the Aharaka body. Example: Association of material constituents forming the Aharaka body.",
       "sourceHeading": "6.1.5.3 Aharaka Bandhan (आहारक बंधन) +",
       "sourcePath": "KG-1 heading: 6.1.5.3 Aharaka Bandhan (आहारक बंधन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-3-aharaka-bandhan",
       "aliases": [],
       "sourceLine": 1128,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Aharaka",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-4-6-1-5-4-taijasa-bandhan",
@@ -1352,10 +1545,13 @@ export const karmaData = {
       "summary": "Meaning: Binding associated with the Taijasa body. Example: Association of Taijasa material constituents.",
       "sourceHeading": "6.1.5.4 Taijasa Bandhan (तैजस बंधन) +",
       "sourcePath": "KG-1 heading: 6.1.5.4 Taijasa Bandhan (तैजस बंधन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-4-taijasa-bandhan",
       "aliases": [],
       "sourceLine": 1132,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Taijasa",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-5-5-6-1-5-5-karmana-bandhan",
@@ -1366,10 +1562,13 @@ export const karmaData = {
       "summary": "Meaning: Binding associated with the Karmana body. Example: Association of karmic material constituents.",
       "sourceHeading": "6.1.5.5 Karmana Bandhan (कार्मण बंधन) +",
       "sourcePath": "KG-1 heading: 6.1.5.5 Karmana Bandhan (कार्मण बंधन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-5-5-karmana-bandhan",
       "aliases": [],
       "sourceLine": 1136,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Karmana",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-6-1-6-sanghat-5",
@@ -1380,10 +1579,13 @@ export const karmaData = {
       "summary": "Typically we do not have classification of punya or paap Sanghat Naam Karma determines the aggregation or assembly of bodily material constituents.",
       "sourceHeading": "6.1.6 Sanghat (संघात) : {5} +",
       "sourcePath": "KG-1 heading: 6.1.6 Sanghat (संघात) : {5} +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-sanghat-5",
       "aliases": [],
       "sourceLine": 1170,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sanghat",
+      "countLabel": "5",
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-1-6-1-6-1-audarika-sanghat",
@@ -1394,10 +1596,13 @@ export const karmaData = {
       "summary": "Meaning: Aggregation of gross physical body constituents. Example: Assembly of material constituents into a gross body.",
       "sourceHeading": "6.1.6.1 Audarika Sanghat (औदारिक संघात) +",
       "sourcePath": "KG-1 heading: 6.1.6.1 Audarika Sanghat (औदारिक संघात) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-1-audarika-sanghat",
       "aliases": [],
       "sourceLine": 1174,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Audarika",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-2-6-1-6-2-vaikriya-sanghat",
@@ -1408,10 +1613,13 @@ export const karmaData = {
       "summary": "Meaning: Aggregation of Vaikriya body constituents. Example: Assembly of material constituents of a transformable body.",
       "sourceHeading": "6.1.6.2 Vaikriya Sanghat (वैक्रिय संघात) +",
       "sourcePath": "KG-1 heading: 6.1.6.2 Vaikriya Sanghat (वैक्रिय संघात) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-2-vaikriya-sanghat",
       "aliases": [],
       "sourceLine": 1178,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vaikriya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-3-6-1-6-3-aharaka-sanghat",
@@ -1422,10 +1630,13 @@ export const karmaData = {
       "summary": "Meaning: Aggregation of Aharaka body constituents. Example: Assembly of material constituents of an Aharaka body.",
       "sourceHeading": "6.1.6.3 Aharaka Sanghat (आहारक संघात) +",
       "sourcePath": "KG-1 heading: 6.1.6.3 Aharaka Sanghat (आहारक संघात) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-3-aharaka-sanghat",
       "aliases": [],
       "sourceLine": 1182,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Aharaka",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-4-6-1-6-4-taijasa-sanghat",
@@ -1436,10 +1647,13 @@ export const karmaData = {
       "summary": "Meaning: Aggregation of Taijasa body constituents. Example: Assembly of Taijasa material constituents.",
       "sourceHeading": "6.1.6.4 Taijasa Sanghat (तैजस संघात) +",
       "sourcePath": "KG-1 heading: 6.1.6.4 Taijasa Sanghat (तैजस संघात) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-4-taijasa-sanghat",
       "aliases": [],
       "sourceLine": 1186,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Taijasa",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-6-5-6-1-6-5-karmana-sanghat",
@@ -1450,10 +1664,13 @@ export const karmaData = {
       "summary": "Meaning: Aggregation of Karmana body constituents. Example: Assembly of karmic material constituents into the Karmana body.",
       "sourceHeading": "6.1.6.5 Karmana Sanghat (कार्मण संघात) +",
       "sourcePath": "KG-1 heading: 6.1.6.5 Karmana Sanghat (कार्मण संघात) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-6-5-karmana-sanghat",
       "aliases": [],
       "sourceLine": 1190,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Karmana",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-7-6-1-7-sanhanan-6",
@@ -1464,10 +1681,13 @@ export const karmaData = {
       "summary": "Typically we do not have classification of punya or paap but it progressively lowers so can say best is +6 and worst is still + Sanhanan Naam Karma determines the type of skeletal joining and joint firmness.",
       "sourceHeading": "6.1.7 Sanhanan (संहनन) : {6} +/-",
       "sourcePath": "KG-1 heading: 6.1.7 Sanhanan (संहनन) : {6} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-sanhanan-6",
       "aliases": [],
       "sourceLine": 1198,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sanhanan",
+      "countLabel": "6",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-7-1-6-1-7-1-vajra-rishabha-naracha-sanhanan",
@@ -1478,10 +1698,13 @@ export const karmaData = {
       "summary": "Strongest skeletal configuration. Allows the jeev to even go to Moksha.",
       "sourceHeading": "6.1.7.1 Vajra-Rishabha-Naracha Sanhanan (वज्रऋषभनाराच संहनन) +",
       "sourcePath": "KG-1 heading: 6.1.7.1 Vajra-Rishabha-Naracha Sanhanan (वज्रऋषभनाराच संहनन) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-1-vajra-rishabha-naracha-sanhanan",
       "aliases": [],
       "sourceLine": 1206,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vajra",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-7-2-6-1-7-2-rishabha-naracha-sanhanan",
@@ -1492,10 +1715,13 @@ export const karmaData = {
       "summary": "Meaning: Strong skeletal configuration below the first type. The jeev has ability to go to anything ranging from 12th devlok to 6th Narak !",
       "sourceHeading": "6.1.7.2 Rishabha-Naracha Sanhanan (ऋषभनाराच संहनन) -",
       "sourcePath": "KG-1 heading: 6.1.7.2 Rishabha-Naracha Sanhanan (ऋषभनाराच संहनन) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-2-rishabha-naracha-sanhanan",
       "aliases": [],
       "sourceLine": 1216,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Rishabha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-7-3-6-1-7-3-naracha-sanhanan",
@@ -1506,10 +1732,13 @@ export const karmaData = {
       "summary": "Meaning: Naracha-type skeletal configuration. The jeev has ability to go to anything ranging from 10th devlok to 5th Narak !",
       "sourceHeading": "6.1.7.3 Naracha Sanhanan (नाराच संहनन) -",
       "sourcePath": "KG-1 heading: 6.1.7.3 Naracha Sanhanan (नाराच संहनन) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-3-naracha-sanhanan",
       "aliases": [],
       "sourceLine": 1221,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Naracha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-7-4-6-1-7-4-ardha-naracha-sanhanan",
@@ -1520,10 +1749,13 @@ export const karmaData = {
       "summary": "Meaning: Half-Naracha-type configuration. The jeev has ability to go to anything ranging from 8th devlok to 4th Narak !",
       "sourceHeading": "6.1.7.4 Ardha-Naracha Sanhanan (अर्धनाराच संहनन) -",
       "sourcePath": "KG-1 heading: 6.1.7.4 Ardha-Naracha Sanhanan (अर्धनाराच संहनन) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-4-ardha-naracha-sanhanan",
       "aliases": [],
       "sourceLine": 1225,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ardha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-7-5-6-1-7-5-kilika-sanhanan",
@@ -1534,10 +1766,13 @@ export const karmaData = {
       "summary": "Meaning: A relatively weaker skeletal configuration. The jeev has ability to go to anything ranging from 6th devlok to 3rd Narak !",
       "sourceHeading": "6.1.7.5 Kilika Sanhanan (कीलिका संहनन) -",
       "sourcePath": "KG-1 heading: 6.1.7.5 Kilika Sanhanan (कीलिका संहनन) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-5-kilika-sanhanan",
       "aliases": [],
       "sourceLine": 1229,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kilika",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-7-6-6-1-7-6-sevarta-sanhanan",
@@ -1548,10 +1783,13 @@ export const karmaData = {
       "summary": "Meaning: Weakest skeletal configuration. All Manushya In 5th and 6th Ara of Jain Cosmology and Jain Cosmology compulsorily have this sanghanan. Some in 4th Ara of these area and some in Jain Cosmology (irrespective of ara) might have it too.",
       "sourceHeading": "6.1.7.6 Sevarta Sanhanan (सेवार्त संहनन) -",
       "sourcePath": "KG-1 heading: 6.1.7.6 Sevarta Sanhanan (सेवार्त संहनन) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-7-6-sevarta-sanhanan",
       "aliases": [],
       "sourceLine": 1234,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sevarta",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-8-6-1-8-sansthan-6",
@@ -1562,10 +1800,13 @@ export const karmaData = {
       "summary": "Sansthan Naam Karma determines the overall geometric configuration of the body. Jain Cosmology and 4th Ara of Jain Cosmology and Jain Cosmology humans can have all types of Sansthan.",
       "sourceHeading": "6.1.8 Sansthan (संस्थान) : {6} +/-",
       "sourcePath": "KG-1 heading: 6.1.8 Sansthan (संस्थान) : {6} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-sansthan-6",
       "aliases": [],
       "sourceLine": 1240,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sansthan",
+      "countLabel": "6",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-8-1-6-1-8-1-samachaturasra-sansthan",
@@ -1576,10 +1817,13 @@ export const karmaData = {
       "summary": "Body with Symmetrical and balanced proportion. Word origin - Same length in 4 parameters when in padmasan",
       "sourceHeading": "6.1.8.1 Samachaturasra Sansthan (समचतुरस्र संस्थान) +",
       "sourcePath": "KG-1 heading: 6.1.8.1 Samachaturasra Sansthan (समचतुरस्र संस्थान) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-1-samachaturasra-sansthan",
       "aliases": [],
       "sourceLine": 1244,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Samachaturasra",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-8-2-6-1-8-2-nyagrodhaparimandal-sansthan",
@@ -1590,10 +1834,13 @@ export const karmaData = {
       "summary": "Banyan-tree analogy-based configuration. A body whose proportions correspond to the traditional Nyagrodhaparimandal pattern.",
       "sourceHeading": "6.1.8.2 Nyagrodhaparimandal Sansthan (न्यग्रोधपरिमण्डल संस्थान) -",
       "sourcePath": "KG-1 heading: 6.1.8.2 Nyagrodhaparimandal Sansthan (न्यग्रोधपरिमण्डल संस्थान) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-2-nyagrodhaparimandal-sansthan",
       "aliases": [],
       "sourceLine": 1253,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Nyagrodhaparimandal",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-8-3-6-1-8-3-saadi-sansthan",
@@ -1604,10 +1851,13 @@ export const karmaData = {
       "summary": "A body conforming to the described Saadi structure. All good below nabhi, irregular above nabhi.",
       "sourceHeading": "6.1.8.3 Saadi Sansthan (सादि संस्थान) -",
       "sourcePath": "KG-1 heading: 6.1.8.3 Saadi Sansthan (सादि संस्थान) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-3-saadi-sansthan",
       "aliases": [],
       "sourceLine": 1258,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Saadi",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-8-4-6-1-8-4-kubja-sansthan",
@@ -1618,10 +1868,13 @@ export const karmaData = {
       "summary": "A body with a pronounced bent or hunched structure. chest and stomach is out of proportion",
       "sourceHeading": "6.1.8.4 Kubja Sansthan (कुब्ज संस्थान) -",
       "sourcePath": "KG-1 heading: 6.1.8.4 Kubja Sansthan (कुब्ज संस्थान) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-4-kubja-sansthan",
       "aliases": [],
       "sourceLine": 1263,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kubja",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-8-5-6-1-8-5-vamana-sansthan",
@@ -1632,10 +1885,13 @@ export const karmaData = {
       "summary": "Meaning: Dwarf-like or shortened configuration. Stomach and Chest is proportional but limbs are out of proportion",
       "sourceHeading": "6.1.8.5 Vamana Sansthan (वामन संस्थान) -",
       "sourcePath": "KG-1 heading: 6.1.8.5 Vamana Sansthan (वामन संस्थान) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-5-vamana-sansthan",
       "aliases": [],
       "sourceLine": 1268,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vamana",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-8-6-6-1-8-6-hundaka-sansthan",
@@ -1646,10 +1902,13 @@ export const karmaData = {
       "summary": "A body with an irregular or poorly proportioned structure.",
       "sourceHeading": "6.1.8.6 Hundaka Sansthan (हुण्डक संस्थान) -",
       "sourcePath": "KG-1 heading: 6.1.8.6 Hundaka Sansthan (हुण्डक संस्थान) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-8-6-hundaka-sansthan",
       "aliases": [],
       "sourceLine": 1272,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Hundaka",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-9-6-1-9-varna-5",
@@ -1660,10 +1919,13 @@ export const karmaData = {
       "summary": "Varna Naam Karma determines the bodily colour characteristic.",
       "sourceHeading": "6.1.9 Varna (वर्ण) : {5} +/-",
       "sourcePath": "KG-1 heading: 6.1.9 Varna (वर्ण) : {5} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-varna-5",
       "aliases": [],
       "sourceLine": 1276,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Varna",
+      "countLabel": "5",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-9-1-6-1-9-1-krishna-varna",
@@ -1674,10 +1936,13 @@ export const karmaData = {
       "summary": "Meaning: Black.",
       "sourceHeading": "6.1.9.1 Krishna Varna (कृष्ण वर्ण) -",
       "sourcePath": "KG-1 heading: 6.1.9.1 Krishna Varna (कृष्ण वर्ण) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-1-krishna-varna",
       "aliases": [],
       "sourceLine": 1278,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Krishna",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-9-2-6-1-9-2-nila-varna",
@@ -1688,10 +1953,13 @@ export const karmaData = {
       "summary": "Meaning: Blue.",
       "sourceHeading": "6.1.9.2 Nila Varna (नील वर्ण) -",
       "sourcePath": "KG-1 heading: 6.1.9.2 Nila Varna (नील वर्ण) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-2-nila-varna",
       "aliases": [],
       "sourceLine": 1280,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Nila",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-9-3-6-1-9-3-rakta-varna",
@@ -1702,10 +1970,13 @@ export const karmaData = {
       "summary": "Meaning: Red.",
       "sourceHeading": "6.1.9.3 Rakta Varna (रक्त वर्ण) +",
       "sourcePath": "KG-1 heading: 6.1.9.3 Rakta Varna (रक्त वर्ण) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-3-rakta-varna",
       "aliases": [],
       "sourceLine": 1282,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Rakta",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-9-4-6-1-9-4-pita-varna",
@@ -1716,10 +1987,13 @@ export const karmaData = {
       "summary": "Meaning: Yellow.",
       "sourceHeading": "6.1.9.4 Pita Varna (पीत वर्ण) +",
       "sourcePath": "KG-1 heading: 6.1.9.4 Pita Varna (पीत वर्ण) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-4-pita-varna",
       "aliases": [],
       "sourceLine": 1284,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Pita",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-9-5-6-1-9-5-shukla-varna",
@@ -1730,10 +2004,13 @@ export const karmaData = {
       "summary": "Meaning: White.",
       "sourceHeading": "6.1.9.5 Shukla Varna (शुक्ल वर्ण) +",
       "sourcePath": "KG-1 heading: 6.1.9.5 Shukla Varna (शुक्ल वर्ण) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-9-5-shukla-varna",
       "aliases": [],
       "sourceLine": 1286,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shukla",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-10-6-1-10-gandha-2",
@@ -1744,10 +2021,13 @@ export const karmaData = {
       "summary": "Gandha Naam Karma determines the odour characteristic",
       "sourceHeading": "6.1.10 Gandha (गंध) : {2} +/-",
       "sourcePath": "KG-1 heading: 6.1.10 Gandha (गंध) : {2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-10-gandha-2",
       "aliases": [],
       "sourceLine": 1288,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Gandha",
+      "countLabel": "2",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-10-1-6-1-10-1-surabhi-gandha",
@@ -1758,10 +2038,13 @@ export const karmaData = {
       "summary": "Meaning: Fragrant odour.",
       "sourceHeading": "6.1.10.1 Surabhi Gandha (सुरभि गंध) +",
       "sourcePath": "KG-1 heading: 6.1.10.1 Surabhi Gandha (सुरभि गंध) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-10-1-surabhi-gandha",
       "aliases": [],
       "sourceLine": 1290,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Surabhi",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-10-2-6-1-10-2-durabhi-gandha",
@@ -1772,10 +2055,13 @@ export const karmaData = {
       "summary": "Meaning: Unpleasant or foul odour.",
       "sourceHeading": "6.1.10.2 Durabhi Gandha (दुरभि गंध) -",
       "sourcePath": "KG-1 heading: 6.1.10.2 Durabhi Gandha (दुरभि गंध) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-10-2-durabhi-gandha",
       "aliases": [],
       "sourceLine": 1292,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Durabhi",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-11-6-1-11-rasa-5",
@@ -1786,10 +2072,13 @@ export const karmaData = {
       "summary": "Rasa Naam Karma determines the traditional bodily taste characteristic",
       "sourceHeading": "6.1.11 Rasa (रस) : {5} +/-",
       "sourcePath": "KG-1 heading: 6.1.11 Rasa (रस) : {5} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-rasa-5",
       "aliases": [],
       "sourceLine": 1295,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Rasa",
+      "countLabel": "5",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-11-1-6-1-11-1-tikta-rasa",
@@ -1800,10 +2089,13 @@ export const karmaData = {
       "summary": "Meaning: Bitter.",
       "sourceHeading": "6.1.11.1 Tikta Rasa (तिक्त रस)-",
       "sourcePath": "KG-1 heading: 6.1.11.1 Tikta Rasa (तिक्त रस)-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-1-tikta-rasa",
       "aliases": [],
       "sourceLine": 1297,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tikta",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-11-2-6-1-11-2-katu-rasa",
@@ -1814,10 +2106,13 @@ export const karmaData = {
       "summary": "Meaning: Pungent.",
       "sourceHeading": "6.1.11.2 Katu Rasa (कटु रस)-",
       "sourcePath": "KG-1 heading: 6.1.11.2 Katu Rasa (कटु रस)-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-2-katu-rasa",
       "aliases": [],
       "sourceLine": 1299,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Katu",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-11-3-6-1-11-3-kashaya-rasa",
@@ -1828,10 +2123,13 @@ export const karmaData = {
       "summary": "Meaning: Astringent.",
       "sourceHeading": "6.1.11.3 Kashaya Rasa (कषाय रस)-",
       "sourcePath": "KG-1 heading: 6.1.11.3 Kashaya Rasa (कषाय रस)-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-3-kashaya-rasa",
       "aliases": [],
       "sourceLine": 1301,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kashaya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-11-4-6-1-11-4-amla-rasa",
@@ -1842,10 +2140,13 @@ export const karmaData = {
       "summary": "Meaning: Sour.",
       "sourceHeading": "6.1.11.4 Amla Rasa (अम्ल रस)+",
       "sourcePath": "KG-1 heading: 6.1.11.4 Amla Rasa (अम्ल रस)+",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-4-amla-rasa",
       "aliases": [],
       "sourceLine": 1303,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Amla",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-11-5-6-1-11-5-madhura-rasa",
@@ -1856,10 +2157,13 @@ export const karmaData = {
       "summary": "Meaning: Sweet.",
       "sourceHeading": "6.1.11.5 Madhura Rasa (मधुर रस)+",
       "sourcePath": "KG-1 heading: 6.1.11.5 Madhura Rasa (मधुर रस)+",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-11-5-madhura-rasa",
       "aliases": [],
       "sourceLine": 1305,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Madhura",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-12-6-1-12-sparsha-8",
@@ -1870,10 +2174,13 @@ export const karmaData = {
       "summary": "Sparsha Naam Karma determines the traditional bodily touch characteristics",
       "sourceHeading": "6.1.12 Sparsha (स्पर्श) : {8} +/-",
       "sourcePath": "KG-1 heading: 6.1.12 Sparsha (स्पर्श) : {8} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-sparsha-8",
       "aliases": [],
       "sourceLine": 1307,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sparsha",
+      "countLabel": "8",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-12-1-6-1-12-1-guru-sparsha",
@@ -1884,10 +2191,13 @@ export const karmaData = {
       "summary": "Meaning: Heavy.",
       "sourceHeading": "6.1.12.1 Guru Sparsha (गुरु स्पर्श) -",
       "sourcePath": "KG-1 heading: 6.1.12.1 Guru Sparsha (गुरु स्पर्श) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-1-guru-sparsha",
       "aliases": [],
       "sourceLine": 1309,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Guru",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-12-2-6-1-12-2-laghu-sparsha",
@@ -1898,10 +2208,13 @@ export const karmaData = {
       "summary": "Meaning: Light.",
       "sourceHeading": "6.1.12.2 Laghu Sparsha (लघु स्पर्श) +",
       "sourcePath": "KG-1 heading: 6.1.12.2 Laghu Sparsha (लघु स्पर्श) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-2-laghu-sparsha",
       "aliases": [],
       "sourceLine": 1311,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Laghu",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-12-3-6-1-12-3-mridu-sparsha",
@@ -1912,10 +2225,13 @@ export const karmaData = {
       "summary": "Meaning: Soft",
       "sourceHeading": "6.1.12.3 Mridu Sparsha (मृदु स्पर्श) +",
       "sourcePath": "KG-1 heading: 6.1.12.3 Mridu Sparsha (मृदु स्पर्श) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-3-mridu-sparsha",
       "aliases": [],
       "sourceLine": 1313,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Mridu",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-12-4-6-1-12-4-kathina-sparsha",
@@ -1926,10 +2242,13 @@ export const karmaData = {
       "summary": "Meaning: Hard.",
       "sourceHeading": "6.1.12.4 Kathina Sparsha (कठिन स्पर्श) -",
       "sourcePath": "KG-1 heading: 6.1.12.4 Kathina Sparsha (कठिन स्पर्श) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-4-kathina-sparsha",
       "aliases": [],
       "sourceLine": 1315,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Kathina",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-12-5-6-1-12-5-shita-sparsha",
@@ -1940,10 +2259,13 @@ export const karmaData = {
       "summary": "Meaning: Cold.",
       "sourceHeading": "6.1.12.5 Shita Sparsha (शीत स्पर्श) -",
       "sourcePath": "KG-1 heading: 6.1.12.5 Shita Sparsha (शीत स्पर्श) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-5-shita-sparsha",
       "aliases": [],
       "sourceLine": 1317,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shita",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-12-6-6-1-12-6-ushna-sparsha",
@@ -1954,10 +2276,13 @@ export const karmaData = {
       "summary": "Meaning: Hot.",
       "sourceHeading": "6.1.12.6 Ushna Sparsha (उष्ण स्पर्श) +",
       "sourcePath": "KG-1 heading: 6.1.12.6 Ushna Sparsha (उष्ण स्पर्श) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-6-ushna-sparsha",
       "aliases": [],
       "sourceLine": 1319,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ushna",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-12-7-6-1-12-7-snigdha-sparsha",
@@ -1968,10 +2293,13 @@ export const karmaData = {
       "summary": "Meaning: Smooth or unctuous.",
       "sourceHeading": "6.1.12.7 Snigdha Sparsha (स्निग्ध स्पर्श) +",
       "sourcePath": "KG-1 heading: 6.1.12.7 Snigdha Sparsha (स्निग्ध स्पर्श) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-7-snigdha-sparsha",
       "aliases": [],
       "sourceLine": 1321,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Snigdha",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-12-8-6-1-12-8-ruksha-sparsha",
@@ -1982,10 +2310,13 @@ export const karmaData = {
       "summary": "Meaning: Rough.",
       "sourceHeading": "6.1.12.8 Ruksha Sparsha (रूक्ष स्पर्श) -",
       "sourcePath": "KG-1 heading: 6.1.12.8 Ruksha Sparsha (रूक्ष स्पर्श) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-12-8-ruksha-sparsha",
       "aliases": [],
       "sourceLine": 1323,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ruksha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-13-6-1-13-anupurvi-4",
@@ -1996,10 +2327,13 @@ export const karmaData = {
       "summary": "Anupurvi Naam Karma determines the transitional form associated with the soul's movement from one existence to another. By default soul moves in straight line(east, west, north, south, top and bottom) from one life form to another via the energy propelled by l",
       "sourceHeading": "6.1.13 Anupurvi (आनुपूर्वी) : {4} +/-",
       "sourcePath": "KG-1 heading: 6.1.13 Anupurvi (आनुपूर्वी) : {4} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-13-anupurvi-4",
       "aliases": [],
       "sourceLine": 1327,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Anupurvi",
+      "countLabel": "4",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-13-1-6-1-13-1-naraka-anupurvi",
@@ -2010,10 +2344,13 @@ export const karmaData = {
       "summary": "Meaning: Infernal transitional form. Example: The traditional transitional form associated with movement toward Narak Gati.",
       "sourceHeading": "6.1.13.1 Naraka Anupurvi (नरक आनुपूर्वी) -",
       "sourcePath": "KG-1 heading: 6.1.13.1 Naraka Anupurvi (नरक आनुपूर्वी) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-13-1-naraka-anupurvi",
       "aliases": [],
       "sourceLine": 1338,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Naraka",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-13-2-6-1-13-2-tiryanch-anupurvi",
@@ -2024,10 +2361,13 @@ export const karmaData = {
       "summary": "Meaning: Tiryanch transitional form. Example: The transitional form associated with movement toward Tiryanch existence.",
       "sourceHeading": "6.1.13.2 Tiryanch Anupurvi (तिर्यंच आनुपूर्वी) -",
       "sourcePath": "KG-1 heading: 6.1.13.2 Tiryanch Anupurvi (तिर्यंच आनुपूर्वी) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-13-2-tiryanch-anupurvi",
       "aliases": [],
       "sourceLine": 1342,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tiryanch",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-1-13-3-6-1-13-3-manusya-anupurvi",
@@ -2038,10 +2378,13 @@ export const karmaData = {
       "summary": "Meaning: Human transitional form. Example: The transitional form associated with movement toward human existence.",
       "sourceHeading": "6.1.13.3 Manusya Anupurvi (मनुष्य आनुपूर्वी) +",
       "sourcePath": "KG-1 heading: 6.1.13.3 Manusya Anupurvi (मनुष्य आनुपूर्वी) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-13-3-manusya-anupurvi",
       "aliases": [],
       "sourceLine": 1346,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Manusya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-13-4-6-1-13-4-deva-anupurvi",
@@ -2052,10 +2395,13 @@ export const karmaData = {
       "summary": "Meaning: Celestial transitional form. Example: The transitional form associated with movement toward celestial existence.",
       "sourceHeading": "6.1.13.4 Deva Anupurvi (देव आनुपूर्वी) +",
       "sourcePath": "KG-1 heading: 6.1.13.4 Deva Anupurvi (देव आनुपूर्वी) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-13-4-deva-anupurvi",
       "aliases": [],
       "sourceLine": 1350,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Deva",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-14-6-1-14-vihayogati-2",
@@ -2066,10 +2412,13 @@ export const karmaData = {
       "summary": "Vihayogati Naam Karma determines the quality of bodily movement.",
       "sourceHeading": "6.1.14 Vihayogati (विहायोगति) :{2} +/-",
       "sourcePath": "KG-1 heading: 6.1.14 Vihayogati (विहायोगति) :{2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-14-vihayogati-2",
       "aliases": [],
       "sourceLine": 1355,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Vihayogati",
+      "countLabel": "2",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-1-14-1-6-1-14-1-shubha-vihayogati",
@@ -2080,10 +2429,13 @@ export const karmaData = {
       "summary": "Meaning: Favourable or graceful bodily movement. Example: A being whose movements are traditionally described as graceful, like movement from naraki to manushya",
       "sourceHeading": "6.1.14.1 Shubha Vihayogati (शुभ विहायोगति) +",
       "sourcePath": "KG-1 heading: 6.1.14.1 Shubha Vihayogati (शुभ विहायोगति) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-14-1-shubha-vihayogati",
       "aliases": [],
       "sourceLine": 1357,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shubha",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-1-14-2-6-1-14-2-ashubha-vihayogati",
@@ -2094,10 +2446,13 @@ export const karmaData = {
       "summary": "Meaning: Unfavourable or ungainly bodily movement. Example: A being whose movements are traditionally described as ungainly.",
       "sourceHeading": "6.1.14.2 Ashubha Vihayogati (अशुभ विहायोगति) -",
       "sourcePath": "KG-1 heading: 6.1.14.2 Ashubha Vihayogati (अशुभ विहायोगति) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-14-2-ashubha-vihayogati",
       "aliases": [],
       "sourceLine": 1361,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ashubha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-2-6-2-pratyek-prakriti-8",
@@ -2108,10 +2463,13 @@ export const karmaData = {
       "summary": "Pratyek Prakriti contains eight individual Naam Karma subtypes that determine particular bodily capacities and special characteristics.",
       "sourceHeading": "6.2 Pratyek Prakriti (प्रत्येक प्रकृति) : {8} +/-",
       "sourcePath": "KG-1 heading: 6.2 Pratyek Prakriti (प्रत्येक प्रकृति) : {8} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-pratyek-prakriti-8",
       "aliases": [],
       "sourceLine": 1366,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Pratyek",
+      "countLabel": "8",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-6-2-1-6-2-1-paraghata-prabhavshali",
@@ -2122,10 +2480,13 @@ export const karmaData = {
       "summary": "Capacity to affect others through bodily characteristics. Can influence or impress or make the the jeev appear Ajay even in front of powerful and most intelligent.",
       "sourceHeading": "6.2.1 Paraghata (परघात) - Prabhavshali +",
       "sourcePath": "KG-1 heading: 6.2.1 Paraghata (परघात) - Prabhavshali +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-1-paraghata-prabhavshali",
       "aliases": [],
       "sourceLine": 1368,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Paraghata - Prabhavshali",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-2-6-2-2-shvasochchhavasa",
@@ -2136,10 +2497,13 @@ export const karmaData = {
       "summary": "Paryapti is different, having organs is different, this is about ease of breathing Karma that enables easy breathing.",
       "sourceHeading": "6.2.2 Shvasochchhavasa (श्वासोच्छ्वास) +",
       "sourcePath": "KG-1 heading: 6.2.2 Shvasochchhavasa (श्वासोच्छ्वास) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-2-shvasochchhavasa",
       "aliases": [],
       "sourceLine": 1371,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shvasochchhavasa",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-3-6-2-3-atapa",
@@ -2150,10 +2514,13 @@ export const karmaData = {
       "summary": "Warm radiance despite having a cold body. Like all prithvikaay jeev present in Sun's body, they are cool but radiate heat.",
       "sourceHeading": "6.2.3 Atapa (आतप) +",
       "sourcePath": "KG-1 heading: 6.2.3 Atapa (आतप) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-3-atapa",
       "aliases": [],
       "sourceLine": 1375,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Atapa",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-4-6-2-4-udyota",
@@ -2164,10 +2531,13 @@ export const karmaData = {
       "summary": "Luminous or cool radiance. Present in all non sun Jyotishi viman ke prithvikaay jeev, some vanaspati jeev has it, some oceanic animals also have it, jugnuu, vaikriye/aharak sharir of sadhak manushya has this too.",
       "sourceHeading": "6.2.4 Udyota (उद्योत) +",
       "sourcePath": "KG-1 heading: 6.2.4 Udyota (उद्योत) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-4-udyota",
       "aliases": [],
       "sourceLine": 1381,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Udyota",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-5-6-2-5-agurulaghu",
@@ -2178,10 +2548,13 @@ export const karmaData = {
       "summary": "Neither heavy nor light. If this is low then your body can feel heavy or light.",
       "sourceHeading": "6.2.5 Agurulaghu (अगुरुलघु) +",
       "sourcePath": "KG-1 heading: 6.2.5 Agurulaghu (अगुरुलघु) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-5-agurulaghu",
       "aliases": [],
       "sourceLine": 1386,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Agurulaghu",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-6-6-2-6-tirthankara",
@@ -2192,10 +2565,13 @@ export const karmaData = {
       "summary": "Triggers the special embodiment and status associated with a Tirthankara. This can happen only in tirthankars and comes into uday with kevalgyan.",
       "sourceHeading": "6.2.6 Tirthankara (तीर्थंकर) +",
       "sourcePath": "KG-1 heading: 6.2.6 Tirthankara (तीर्थंकर) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-6-tirthankara",
       "aliases": [],
       "sourceLine": 1389,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tirthankara",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-7-6-2-7-nirmana",
@@ -2206,10 +2582,13 @@ export const karmaData = {
       "summary": "Arrangement of body parts. Example: Arrangement of limbs and constituent bodily parts.",
       "sourceHeading": "6.2.7 Nirmana (निर्माण) +",
       "sourcePath": "KG-1 heading: 6.2.7 Nirmana (निर्माण) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-7-nirmana",
       "aliases": [],
       "sourceLine": 1393,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Nirmana",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-2-8-6-2-8-upaghata",
@@ -2220,10 +2599,13 @@ export const karmaData = {
       "summary": "Uday of this leads to creation of a bodily structure that can cause harm to its own bearer",
       "sourceHeading": "6.2.8 Upaghata (उपघात) -",
       "sourcePath": "KG-1 heading: 6.2.8 Upaghata (उपघात) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-2-8-upaghata",
       "aliases": [],
       "sourceLine": 1398,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Upaghata",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-3-6-3-tras-dashak-prakriti-10",
@@ -2234,10 +2616,13 @@ export const karmaData = {
       "summary": "Tras Dashak is a tenfold group of Naam Karma subtypes associated with mobile beings and the corresponding favourable bodily and social qualities.",
       "sourceHeading": "6.3 Tras Dashak Prakriti (त्रस दशक प्रकृति) : {10} +",
       "sourcePath": "KG-1 heading: 6.3 Tras Dashak Prakriti (त्रस दशक प्रकृति) : {10} +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-tras-dashak-prakriti-10",
       "aliases": [],
       "sourceLine": 1401,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tras",
+      "countLabel": "10",
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-1-6-3-1-tras",
@@ -2248,10 +2633,13 @@ export const karmaData = {
       "summary": "Mobile being. only Ekendriye does not have it, all else has it.",
       "sourceHeading": "6.3.1 Tras (त्रस)",
       "sourcePath": "KG-1 heading: 6.3.1 Tras (त्रस)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-1-tras",
       "aliases": [],
       "sourceLine": 1403,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Tras",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-2-6-3-2-badara",
@@ -2262,10 +2650,13 @@ export const karmaData = {
       "summary": "Gross or substantial body, which can be detected by indriye. Only sukshm ekendriye does not have it.",
       "sourceHeading": "6.3.2 Badara (बादर)",
       "sourcePath": "KG-1 heading: 6.3.2 Badara (बादर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-2-badara",
       "aliases": [],
       "sourceLine": 1408,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Badara",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-3-6-3-3-paryapt",
@@ -2276,38 +2667,13 @@ export const karmaData = {
       "summary": "Definition: A Jīva whose applicable Paryaptis have been completed. Paryapti: The capacity/process through which a Jīva assimilates Pudgal Vargana to build bodily and functional systems after rebirth.",
       "sourceHeading": "6.3.3 Paryapt (पर्याप्त)",
       "sourcePath": "KG-1 heading: 6.3.3 Paryapt (पर्याप्त)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-3-paryapt",
       "aliases": [],
       "sourceLine": 1412,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-6-3-3-1-6-3-3-1-labdhi-paryapta",
-      "sourceNumber": "6.3.3.1",
-      "name": "6.3.3.1 Labdhi Paryapta (लब्धि पर्याप्त)",
-      "kind": "subtype",
-      "parentId": "kg1-6-3-3-6-3-3-paryapt",
-      "summary": "Labdhi Paryapta means the acquired capacity/qualification to complete one's own applicable Paryaptis. A Jeev is called Labdhi Paryapta when, although its applicable Paryaptis have not yet been completed, it has the capacity that they will necessarily be comple",
-      "sourceHeading": "6.3.3.1 Labdhi Paryapta (लब्धि पर्याप्त)",
-      "sourcePath": "KG-1 heading: 6.3.3.1 Labdhi Paryapta (लब्धि पर्याप्त)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 1416,
-      "verification": "source-extracted"
-    },
-    {
-      "id": "kg1-6-3-3-2-6-3-3-2-karan-paryapta",
-      "sourceNumber": "6.3.3.2",
-      "name": "6.3.3.2 Karan Paryapta (करण पर्याप्त)",
-      "kind": "subtype",
-      "parentId": "kg1-6-3-3-6-3-3-paryapt",
-      "summary": "Karan (करण) refers to the actual accomplishment/formation of the applicable Paryaptis. A Jīva is called Karan Paryapta when its applicable Paryaptis have actually been completed.",
-      "sourceHeading": "6.3.3.2 Karan Paryapta (करण पर्याप्त)",
-      "sourcePath": "KG-1 heading: 6.3.3.2 Karan Paryapta (करण पर्याप्त)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
-      "aliases": [],
-      "sourceLine": 1425,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Paryapt",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-4-6-3-4-pratyeka",
@@ -2318,10 +2684,13 @@ export const karmaData = {
       "summary": "Meaning: Individual body. Example: A human being possessing an individual body.",
       "sourceHeading": "6.3.4 Pratyeka (प्रत्येक)",
       "sourcePath": "KG-1 heading: 6.3.4 Pratyeka (प्रत्येक)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-4-pratyeka",
       "aliases": [],
       "sourceLine": 1433,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Pratyeka",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-5-6-3-5-sthira",
@@ -2332,10 +2701,13 @@ export const karmaData = {
       "summary": "Meaning: Firm or stable bodily parts. Example: Firmness of teeth, bones, and similar bodily structures in traditional descriptions.",
       "sourceHeading": "6.3.5 Sthira (स्थिर)",
       "sourcePath": "KG-1 heading: 6.3.5 Sthira (स्थिर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-5-sthira",
       "aliases": [],
       "sourceLine": 1439,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sthira",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-6-6-3-6-shubha",
@@ -2346,10 +2718,13 @@ export const karmaData = {
       "summary": "All body parts above nabhi, is denoted via shudh naam karma.",
       "sourceHeading": "6.3.6 Shubha (शुभ)",
       "sourcePath": "KG-1 heading: 6.3.6 Shubha (शुभ)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-6-shubha",
       "aliases": [],
       "sourceLine": 1444,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Shubha",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-7-6-3-7-saubhagya-subhaga",
@@ -2360,10 +2735,13 @@ export const karmaData = {
       "summary": "Likeability or attractiveness to others. Example: A person whom others naturally like or feel drawn toward.",
       "sourceHeading": "6.3.7 Saubhagya / Subhaga (सौभाग्य / सुभग)",
       "sourcePath": "KG-1 heading: 6.3.7 Saubhagya / Subhaga (सौभाग्य / सुभग)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-7-saubhagya-subhaga",
       "aliases": [],
       "sourceLine": 1446,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Saubhagya / Subhaga",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-8-6-3-8-susvara",
@@ -2374,10 +2752,13 @@ export const karmaData = {
       "summary": "Meaning: Pleasant or melodious voice. Example: A person whose voice is pleasing to hear.",
       "sourceHeading": "6.3.8 Susvara (सुस्वर)",
       "sourcePath": "KG-1 heading: 6.3.8 Susvara (सुस्वर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-8-susvara",
       "aliases": [],
       "sourceLine": 1451,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Susvara",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-9-6-3-9-adeya",
@@ -2388,10 +2769,13 @@ export const karmaData = {
       "summary": "Meaning: Speech or personal quality that is readily accepted or respected by others. Example: A person whose words are readily received or believed.",
       "sourceHeading": "6.3.9 Adeya (आदेय)",
       "sourcePath": "KG-1 heading: 6.3.9 Adeya (आदेय)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-9-adeya",
       "aliases": [],
       "sourceLine": 1455,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Adeya",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-3-10-6-3-10-yasha",
@@ -2402,10 +2786,13 @@ export const karmaData = {
       "summary": "Meaning: Fame, honour, or reputation due to actions Example: A person who receives recognition or honour from others.",
       "sourceHeading": "6.3.10 Yasha (यशः)",
       "sourcePath": "KG-1 heading: 6.3.10 Yasha (यशः)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-3-10-yasha",
       "aliases": [],
       "sourceLine": 1460,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Yasha",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-6-4-6-4-sthavar-dashak-prakriti-10",
@@ -2416,10 +2803,13 @@ export const karmaData = {
       "summary": "Sthavar Dashak is the corresponding tenfold group associated with immobile beings and the contrasting bodily and social qualities.",
       "sourceHeading": "6.4 Sthavar Dashak Prakriti (स्थावर दशक प्रकृति) : {10} -",
       "sourcePath": "KG-1 heading: 6.4 Sthavar Dashak Prakriti (स्थावर दशक प्रकृति) : {10} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-sthavar-dashak-prakriti-10",
       "aliases": [],
       "sourceLine": 1463,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sthavar",
+      "countLabel": "10",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-1-6-4-1-sthavar",
@@ -2430,10 +2820,13 @@ export const karmaData = {
       "summary": "Meaning: Immobile being. Example: One-sensed immobile beings in the Jain classification.",
       "sourceHeading": "6.4.1 Sthavar (स्थावर)",
       "sourcePath": "KG-1 heading: 6.4.1 Sthavar (स्थावर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-1-sthavar",
       "aliases": [],
       "sourceLine": 1465,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sthavar",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-2-6-4-2-sukshma",
@@ -2444,10 +2837,13 @@ export const karmaData = {
       "summary": "Meaning: Subtle body. Example: A subtle-bodied one-sensed being in the Jain classification.",
       "sourceHeading": "6.4.2 Sukshma (सूक्ष्म)",
       "sourcePath": "KG-1 heading: 6.4.2 Sukshma (सूक्ष्म)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-2-sukshma",
       "aliases": [],
       "sourceLine": 1469,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sukshma",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-3-6-4-3-aparyapta",
@@ -2458,10 +2854,13 @@ export const karmaData = {
       "summary": "Meaning: Incomplete development. Example: A being that does not complete the relevant bodily capacities.",
       "sourceHeading": "6.4.3 Aparyapta (अपर्याप्त)",
       "sourcePath": "KG-1 heading: 6.4.3 Aparyapta (अपर्याप्त)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-3-aparyapta",
       "aliases": [],
       "sourceLine": 1474,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Aparyapta",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-4-6-4-4-sadharana",
@@ -2472,10 +2871,13 @@ export const karmaData = {
       "summary": "Meaning: Common body. Example: A common-bodied plant classification in which multiple souls are associated with a shared body.",
       "sourceHeading": "6.4.4 Sadharana (साधारण)",
       "sourcePath": "KG-1 heading: 6.4.4 Sadharana (साधारण)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-4-sadharana",
       "aliases": [],
       "sourceLine": 1479,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Sadharana",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-5-6-4-5-asthira",
@@ -2486,10 +2888,13 @@ export const karmaData = {
       "summary": "Meaning: Non-firm or unstable bodily parts. Example: Traditional descriptions of flexible body parts such as the tongue or ears.",
       "sourceHeading": "6.4.5 Asthira (अस्थिर)",
       "sourcePath": "KG-1 heading: 6.4.5 Asthira (अस्थिर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-5-asthira",
       "aliases": [],
       "sourceLine": 1484,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Asthira",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-6-6-4-6-ashubha",
@@ -2500,10 +2905,13 @@ export const karmaData = {
       "summary": "Meaning: Inauspicious bodily appearance. Example: A body whose relevant parts possess an unfavourable appearance.",
       "sourceHeading": "6.4.6 Ashubha (अशुभ)",
       "sourcePath": "KG-1 heading: 6.4.6 Ashubha (अशुभ)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-6-ashubha",
       "aliases": [],
       "sourceLine": 1489,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ashubha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-7-6-4-7-durbhagya-durbhaga",
@@ -2514,10 +2922,13 @@ export const karmaData = {
       "summary": "Meaning: Unfavourable likeability or reception. Example: A person whom others do not naturally like or feel drawn toward.",
       "sourceHeading": "6.4.7 Durbhagya / Durbhaga (दुर्भाग्य / दुर्भग)",
       "sourcePath": "KG-1 heading: 6.4.7 Durbhagya / Durbhaga (दुर्भाग्य / दुर्भग)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-7-durbhagya-durbhaga",
       "aliases": [],
       "sourceLine": 1494,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Durbhagya / Durbhaga",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-8-6-4-8-duhsvara",
@@ -2528,10 +2939,13 @@ export const karmaData = {
       "summary": "Meaning: Unpleasant or harsh voice. Example: A voice that is unpleasant for others to hear.",
       "sourceHeading": "6.4.8 Duhsvara (दुःस्वर)",
       "sourcePath": "KG-1 heading: 6.4.8 Duhsvara (दुःस्वर)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-8-duhsvara",
       "aliases": [],
       "sourceLine": 1499,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Duhsvara",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-9-6-4-9-anadeya",
@@ -2542,10 +2956,13 @@ export const karmaData = {
       "summary": "Meaning: Speech or personal quality that is not readily accepted. Example: A person's words are not easily received or believed by others.",
       "sourceHeading": "6.4.9 Anadeya (अनादेय)",
       "sourcePath": "KG-1 heading: 6.4.9 Anadeya (अनादेय)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-9-anadeya",
       "aliases": [],
       "sourceLine": 1504,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Anadeya",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-6-4-10-6-4-10-ayasha",
@@ -2556,10 +2973,13 @@ export const karmaData = {
       "summary": "Meaning: Dishonour or disrepute. Example: A person who receives dishonour or lacks recognition.",
       "sourceHeading": "6.4.10 Ayasha (अयशः)",
       "sourcePath": "KG-1 heading: 6.4.10 Ayasha (अयशः)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-4-10-ayasha",
       "aliases": [],
       "sourceLine": 1509,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Ayasha",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-7-7-gotra-karma-status-quality-determining-2",
@@ -2570,10 +2990,13 @@ export const karmaData = {
       "summary": "It determines a Jeev's social status, lineage, family environment, and the degree of respect naturally accorded by society at birth. - Obscured Soul Quality: Aguru-Laghu (Equimindedness / state of being neither high nor low).",
       "sourceHeading": "7. Gotra Karma (Status / quality determining) : {2} +/-",
       "sourcePath": "KG-1 heading: 7. Gotra Karma (Status / quality determining) : {2} +/-",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#7-gotra-karma-status-quality-determining-2",
       "aliases": [],
       "sourceLine": 1565,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Gotra Karma",
+      "countLabel": "2",
+      "karmicIndicator": "mixed"
     },
     {
       "id": "kg1-7-1-7-1-uchcha-gotra-karma",
@@ -2584,10 +3007,13 @@ export const karmaData = {
       "summary": "Effect: Birth into respected, noble, cultured families/lineages; natural social reverence. Causes (Asrava for uchh gotra karm):",
       "sourceHeading": "7.1 Uchcha Gotra Karma (उच्च गोत्र) +",
       "sourcePath": "KG-1 heading: 7.1 Uchcha Gotra Karma (उच्च गोत्र) +",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#7-1-uchcha-gotra-karma",
       "aliases": [],
       "sourceLine": 1569,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Uchcha",
+      "countLabel": null,
+      "karmicIndicator": "positive"
     },
     {
       "id": "kg1-7-2-7-2-neech-gotra-karma",
@@ -2598,10 +3024,13 @@ export const karmaData = {
       "summary": "Effect: Birth into humble, marginalized, or socially disregarded backgrounds/lineages. Causes (Asrava for uchh gotra karm):",
       "sourceHeading": "7.2 Neech Gotra Karma (नीच गोत्र) -",
       "sourcePath": "KG-1 heading: 7.2 Neech Gotra Karma (नीच गोत्र) -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#7-2-neech-gotra-karma",
       "aliases": [],
       "sourceLine": 1577,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Neech",
+      "countLabel": null,
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-8-antaraya-karma-vitality-or-will-power-obstructing-5",
@@ -2612,10 +3041,13 @@ export const karmaData = {
       "summary": "The soul, in its pure state, possesses Ananta Virya—infinite energy, power, and willpower. Antaraya Karma directly obstructs this innate quality. It is the karmic force responsible for creating hindrances. These obstructions manifest in five distinct ways:",
       "sourceHeading": "8. Antaraya karma (Vitality (or Will Power) obstructing) : {5} -",
       "sourcePath": "KG-1 heading: 8. Antaraya karma (Vitality (or Will Power) obstructing) : {5} -",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-antaraya-karma-vitality-or-will-power-obstructing-5",
       "aliases": [],
       "sourceLine": 1612,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Antaraya karma",
+      "countLabel": "5",
+      "karmicIndicator": "negative"
     },
     {
       "id": "kg1-8-1-8-1-dana-antaraya-obstruction-to-charity-giving",
@@ -2626,10 +3058,13 @@ export const karmaData = {
       "summary": "%%Need to confirm what this means as per Terapanth%% This karma prevents a person from giving (something that they have), even when they have the desire.",
       "sourceHeading": "8.1. Dana-Antaraya (Obstruction to Charity/Giving):",
       "sourcePath": "KG-1 heading: 8.1. Dana-Antaraya (Obstruction to Charity/Giving):",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-1-strong-dana-antaraya-obstruction-to-charity-giving-strong",
       "aliases": [],
       "sourceLine": 1615,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Dana",
+      "countLabel": null,
+      "karmicIndicator": null
     },
     {
       "id": "kg1-8-2-8-2-labha-antaraya-obstruction-to-gain",
@@ -2640,10 +3075,13 @@ export const karmaData = {
       "summary": "This prevents a person from receiving something they want. This is the classic \"so close, yet so far\" scenario. For example, a merchant has finalized a profitable deal, and the customer is about to pay, but at the last second, the customer changes their mind f",
       "sourceHeading": "8.2. Labha-Antaraya (Obstruction to Gain):",
       "sourcePath": "KG-1 heading: 8.2. Labha-Antaraya (Obstruction to Gain):",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-2-strong-labha-antaraya-obstruction-to-gain-strong",
       "aliases": [],
       "sourceLine": 1621,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Labha",
+      "countLabel": null,
+      "karmicIndicator": null
     },
     {
       "id": "kg1-8-3-8-3-bhoga-antaraya-obstruction-to-enjoyment-of-consumables",
@@ -2654,10 +3092,13 @@ export const karmaData = {
       "summary": "This karma obstructs the enjoyment of things that are used only once, such as food, water, or fragrances. You might have a magnificent feast prepared for you, but just as you are about to eat, you fall ill, lose your appetite due to bad news, or the food is ac",
       "sourceHeading": "8.3. Bhoga-Antaraya (Obstruction to Enjoyment of Consumables):",
       "sourcePath": "KG-1 heading: 8.3. Bhoga-Antaraya (Obstruction to Enjoyment of Consumables):",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-3-strong-bhoga-antaraya-obstruction-to-enjoyment-of-consumables-strong",
       "aliases": [],
       "sourceLine": 1626,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Bhoga",
+      "countLabel": null,
+      "karmicIndicator": null
     },
     {
       "id": "kg1-8-4-8-4-upabhoga-antaraya-obstruction-to-enjoyment-of-reusables",
@@ -2668,10 +3109,13 @@ export const karmaData = {
       "summary": "This obstructs the enjoyment of things that can be used multiple times, like a house, a car, clothing, or furniture. You might buy a brand-new car but get into an accident on the way home from the dealership. You might build a beautiful house but be unable to",
       "sourceHeading": "8.4. Upabhoga-Antaraya (Obstruction to Enjoyment of Reusables):",
       "sourcePath": "KG-1 heading: 8.4. Upabhoga-Antaraya (Obstruction to Enjoyment of Reusables):",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-4-strong-upabhoga-antaraya-obstruction-to-enjoyment-of-reusables-strong",
       "aliases": [],
       "sourceLine": 1629,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Upabhoga",
+      "countLabel": null,
+      "karmicIndicator": null
     },
     {
       "id": "kg1-8-5-8-5-virya-antaraya-obstruction-to-willpower-energy",
@@ -2682,10 +3126,13 @@ export const karmaData = {
       "summary": "This is the most fundamental and pervasive of the five. It directly obstructs the soul's own energy, manifesting as a feeling of lethargy, helplessness, or lack of motivation, especially concerning spiritual practices. You might know that meditating is good fo",
       "sourceHeading": "8.5. Virya-Antaraya (Obstruction to Willpower/Energy):",
       "sourcePath": "KG-1 heading: 8.5. Virya-Antaraya (Obstruction to Willpower/Energy):",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#8-5-strong-virya-antaraya-obstruction-to-willpower-energy-strong",
       "aliases": [],
       "sourceLine": 1632,
-      "verification": "source-extracted"
+      "verification": "source-extracted",
+      "displayName": "Virya",
+      "countLabel": null,
+      "karmicIndicator": null
     }
   ],
   "gunasthans": [
@@ -2817,7 +3264,7 @@ export const karmaData = {
       "statement": "Tirthankar Naam karma is listed under “Abandh” at Mithyatva (122-0-5 = 117).",
       "qualification": "3",
       "sourceHeading": "Bandh > Mithyatva (122-0-5 = 117) > Abandh(3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2835,7 +3282,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Abandh” at Mithyatva (122-0-5 = 117).",
       "qualification": "3",
       "sourceHeading": "Bandh > Mithyatva (122-0-5 = 117) > Abandh(3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2853,7 +3300,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Abandh” at Mithyatva (122-0-5 = 117).",
       "qualification": "3",
       "sourceHeading": "Bandh > Mithyatva (122-0-5 = 117) > Abandh(3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2871,7 +3318,7 @@ export const karmaData = {
       "statement": "Napunsak Ved is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2889,7 +3336,7 @@ export const karmaData = {
       "statement": "Mithyatva is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2907,7 +3354,7 @@ export const karmaData = {
       "statement": "Hundak Sansthan is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2925,7 +3372,7 @@ export const karmaData = {
       "statement": "Sevarta Sanhanan is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2943,7 +3390,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2961,7 +3408,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2979,7 +3426,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -2997,7 +3444,7 @@ export const karmaData = {
       "statement": "Jati is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3015,7 +3462,7 @@ export const karmaData = {
       "statement": "Sthavar is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3033,7 +3480,7 @@ export const karmaData = {
       "statement": "Sukshma is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3051,7 +3498,7 @@ export const karmaData = {
       "statement": "Aparyapt is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3069,7 +3516,7 @@ export const karmaData = {
       "statement": "Sadharan is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3087,7 +3534,7 @@ export const karmaData = {
       "statement": "Atap is listed under “Bandh Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+16 = 16",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Bandh Vichhed(0+16 = 16)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3105,7 +3552,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Anantanubandhi Kasay” under “Bandh Vichhed” at Misra (111-9-2 = 100); subtype mapping needs review.",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -3123,7 +3570,7 @@ export const karmaData = {
       "statement": "Nidra-Nidra is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3141,7 +3588,7 @@ export const karmaData = {
       "statement": "Prachala-Prachala is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3159,7 +3606,7 @@ export const karmaData = {
       "statement": "Thinaddhi is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3177,7 +3624,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3195,7 +3642,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3213,7 +3660,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3231,7 +3678,7 @@ export const karmaData = {
       "statement": "Durbhagya is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3249,7 +3696,7 @@ export const karmaData = {
       "statement": "Duhsvara is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3267,7 +3714,7 @@ export const karmaData = {
       "statement": "Anadeya is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3285,7 +3732,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Anantanubandhi” under “Bandh Vichhed” at Misra (111-9-2 = 100); subtype mapping needs review.",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -3303,7 +3750,7 @@ export const karmaData = {
       "statement": "Sanhanan is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3321,7 +3768,7 @@ export const karmaData = {
       "statement": "Sansthan is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3339,7 +3786,7 @@ export const karmaData = {
       "statement": "Stri Ved is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3357,7 +3804,7 @@ export const karmaData = {
       "statement": "Ashubh Vihayogati is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3375,7 +3822,7 @@ export const karmaData = {
       "statement": "Udyot is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3393,7 +3840,7 @@ export const karmaData = {
       "statement": "Neech Gotra is listed under “Bandh Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "16 +25 = 41",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Bandh Vichhed(16 +25 = 41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3411,7 +3858,7 @@ export const karmaData = {
       "statement": "Dev Ayushya is listed under “Abandh” at Misra (111-9-2 = 100).",
       "qualification": "3+2 =5",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Abandh(3+2 =5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3429,7 +3876,7 @@ export const karmaData = {
       "statement": "Manushya Ayushya is listed under “Abandh” at Misra (111-9-2 = 100).",
       "qualification": "3+2 =5",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Abandh(3+2 =5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3447,7 +3894,7 @@ export const karmaData = {
       "statement": "Tirthankar Naam karma is listed under “Abandh” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "5-3 = 2",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Abandh(5-3 = 2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3465,7 +3912,7 @@ export const karmaData = {
       "statement": "Dev Ayushya is listed under “Abandh” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "5-3 = 2",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Abandh(5-3 = 2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3483,7 +3930,7 @@ export const karmaData = {
       "statement": "Manushya Ayushya is listed under “Abandh” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "5-3 = 2",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Abandh(5-3 = 2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3501,7 +3948,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Abandh” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "5-3 = 2",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Abandh(5-3 = 2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3519,7 +3966,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Abandh” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "5-3 = 2",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Abandh(5-3 = 2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3537,7 +3984,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Apratyakhani” under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ); subtype mapping needs review.",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -3555,7 +4002,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3573,7 +4020,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3591,7 +4038,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3609,7 +4056,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3627,7 +4074,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3645,7 +4092,7 @@ export const karmaData = {
       "statement": "1st Sanhanan - Vajra Rishabh Narach is listed under “Bandh Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "41+10=51",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3663,7 +4110,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Abandh” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "2",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Abandh(2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3681,7 +4128,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Abandh” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "2",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Abandh(2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3699,7 +4146,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Pratyakhani” under “Bandh Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ); subtype mapping needs review.",
       "qualification": "51+ 4=55",
       "sourceHeading": "Bandh > Pramatt Sarvavirti (87-8+2 = 81 ) > Bandh Vichhed(51+ 4=55)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -3717,7 +4164,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Abandh” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "2",
       "sourceHeading": "Bandh > Pramatt Sarvavirti (87-8+2 = 81 ) > Abandh(2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3735,7 +4182,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Abandh” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "2",
       "sourceHeading": "Bandh > Pramatt Sarvavirti (87-8+2 = 81 ) > Abandh(2)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3753,7 +4200,7 @@ export const karmaData = {
       "statement": "Asata vedniye is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3771,7 +4218,7 @@ export const karmaData = {
       "statement": "Shok is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3789,7 +4236,7 @@ export const karmaData = {
       "statement": "Arati is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3807,7 +4254,7 @@ export const karmaData = {
       "statement": "Asthir is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3825,7 +4272,7 @@ export const karmaData = {
       "statement": "Ayash is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3843,7 +4290,7 @@ export const karmaData = {
       "statement": "Ashubh is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3861,7 +4308,7 @@ export const karmaData = {
       "statement": "Dev Ayushya is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3879,7 +4326,7 @@ export const karmaData = {
       "statement": "Dev Ayushya is listed under “Bandh Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "55+(6 +1)=62",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3897,7 +4344,7 @@ export const karmaData = {
       "statement": "Dev Ayushya is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "62+0 = 62",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(62+0 = 62 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3915,7 +4362,7 @@ export const karmaData = {
       "statement": "Nidra is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "62+2 = 64",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(62+2 = 64 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3933,7 +4380,7 @@ export const karmaData = {
       "statement": "Prachala is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "62+2 = 64",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(62+2 = 64 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3951,7 +4398,7 @@ export const karmaData = {
       "statement": "Panchendriye Jati is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3969,7 +4416,7 @@ export const karmaData = {
       "statement": "Samchatusra Sansthan is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -3987,7 +4434,7 @@ export const karmaData = {
       "statement": "Vaikriye is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4005,7 +4452,7 @@ export const karmaData = {
       "statement": "Aharak is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4023,7 +4470,7 @@ export const karmaData = {
       "statement": "Tejas is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4041,7 +4488,7 @@ export const karmaData = {
       "statement": "Karman is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4059,7 +4506,7 @@ export const karmaData = {
       "statement": "Varn is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4077,7 +4524,7 @@ export const karmaData = {
       "statement": "Gandh is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4095,7 +4542,7 @@ export const karmaData = {
       "statement": "Ras is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4113,7 +4560,7 @@ export const karmaData = {
       "statement": "Sparsh is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4131,7 +4578,7 @@ export const karmaData = {
       "statement": "Vaikriye is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4149,7 +4596,7 @@ export const karmaData = {
       "statement": "Aharak is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4167,7 +4614,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4185,7 +4632,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4203,7 +4650,7 @@ export const karmaData = {
       "statement": "Shubh Vihayogati is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4221,7 +4668,7 @@ export const karmaData = {
       "statement": "Pratyek is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4239,7 +4686,7 @@ export const karmaData = {
       "statement": "Atap is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4257,7 +4704,7 @@ export const karmaData = {
       "statement": "Udyot is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4275,7 +4722,7 @@ export const karmaData = {
       "statement": "Tras is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4293,7 +4740,7 @@ export const karmaData = {
       "statement": "Yash is listed under “Bandh Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "64+30 = 94",
       "sourceHeading": "Bandh > Apurvakaran (76-(4)+0 = 72) > Bandh Vichhed(64+30 = 94 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4311,7 +4758,7 @@ export const karmaData = {
       "statement": "Hasya is listed under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "94+4 = 98",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(94+4 = 98 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4329,7 +4776,7 @@ export const karmaData = {
       "statement": "Rati is listed under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "94+4 = 98",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(94+4 = 98 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4347,7 +4794,7 @@ export const karmaData = {
       "statement": "Bhay is listed under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "94+4 = 98",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(94+4 = 98 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4365,7 +4812,7 @@ export const karmaData = {
       "statement": "Jugupsa is listed under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "94+4 = 98",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(94+4 = 98 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4383,7 +4830,7 @@ export const karmaData = {
       "statement": "PurushVed is listed under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "98+1 = 99",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(98+1 = 99 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4401,7 +4848,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjwalan Krodh” under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66); subtype mapping needs review.",
       "qualification": "99+1 = 100",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(99+1 = 100 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -4419,7 +4866,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjwalan Maan” under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66); subtype mapping needs review.",
       "qualification": "100+1 = 101",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(100+1 = 101 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -4437,7 +4884,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjwalan Maaya” under “Bandh Vichhed” at AnivrittiKaran (72-(6)+0 = 66); subtype mapping needs review.",
       "qualification": "101+1 = 102",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(101+1 = 102 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -4455,7 +4902,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjwalan Lobh” under “Bandh Vichhed” at Sukshm Sampray (66-6+0= 60); subtype mapping needs review.",
       "qualification": "102+1=103",
       "sourceHeading": "Bandh > Sukshm Sampray (66-6+0= 60) > Bandh Vichhed(102+1=103)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "needs-review"
     },
     {
@@ -4473,7 +4920,7 @@ export const karmaData = {
       "statement": "Gyanavarniye is listed under “Bandh Vichhed” at Upshant Moh (60-1+0= 59).",
       "qualification": "103+16=119",
       "sourceHeading": "Bandh > Upshant Moh (60-1+0= 59) > Bandh Vichhed(103+16=119)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4491,7 +4938,7 @@ export const karmaData = {
       "statement": "Darshanavarniye is listed under “Bandh Vichhed” at Upshant Moh (60-1+0= 59).",
       "qualification": "103+16=119",
       "sourceHeading": "Bandh > Upshant Moh (60-1+0= 59) > Bandh Vichhed(103+16=119)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4509,7 +4956,7 @@ export const karmaData = {
       "statement": "Antaray is listed under “Bandh Vichhed” at Upshant Moh (60-1+0= 59).",
       "qualification": "103+16=119",
       "sourceHeading": "Bandh > Upshant Moh (60-1+0= 59) > Bandh Vichhed(103+16=119)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4527,7 +4974,7 @@ export const karmaData = {
       "statement": "Yash is listed under “Bandh Vichhed” at Upshant Moh (60-1+0= 59).",
       "qualification": "103+16=119",
       "sourceHeading": "Bandh > Upshant Moh (60-1+0= 59) > Bandh Vichhed(103+16=119)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4545,7 +4992,7 @@ export const karmaData = {
       "statement": "Uchh Gotra is listed under “Bandh Vichhed” at Upshant Moh (60-1+0= 59).",
       "qualification": "103+16=119",
       "sourceHeading": "Bandh > Upshant Moh (60-1+0= 59) > Bandh Vichhed(103+16=119)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4563,7 +5010,7 @@ export const karmaData = {
       "statement": "Sata vedniye is listed under “Bandh Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "119+1=120",
       "sourceHeading": "Bandh > Ayog Kevali (42-30+0= 12) > Bandh Vichhed(119+1=120)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -4581,7 +5028,7 @@ export const karmaData = {
       "statement": "Misra is listed under “Anuday” at Mithyatva (122-0-5 = 117).",
       "qualification": "5",
       "sourceHeading": "Uday > Mithyatva (122-0-5 = 117) > Anuday(5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4599,7 +5046,7 @@ export const karmaData = {
       "statement": "Samyaktva mohniye karma is listed under “Anuday” at Mithyatva (122-0-5 = 117).",
       "qualification": "5",
       "sourceHeading": "Uday > Mithyatva (122-0-5 = 117) > Anuday(5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4617,7 +5064,7 @@ export const karmaData = {
       "statement": "Tirthankar Naam karma is listed under “Anuday” at Mithyatva (122-0-5 = 117).",
       "qualification": "5",
       "sourceHeading": "Uday > Mithyatva (122-0-5 = 117) > Anuday(5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4635,7 +5082,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Anuday” at Mithyatva (122-0-5 = 117).",
       "qualification": "5",
       "sourceHeading": "Uday > Mithyatva (122-0-5 = 117) > Anuday(5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4653,7 +5100,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Anuday” at Mithyatva (122-0-5 = 117).",
       "qualification": "5",
       "sourceHeading": "Uday > Mithyatva (122-0-5 = 117) > Anuday(5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4671,7 +5118,7 @@ export const karmaData = {
       "statement": "Mithyatva is listed under “Uday Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+5 = 5",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Uday Vichhed(0+5 = 5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4689,7 +5136,7 @@ export const karmaData = {
       "statement": "Atap is listed under “Uday Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+5 = 5",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Uday Vichhed(0+5 = 5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4707,7 +5154,7 @@ export const karmaData = {
       "statement": "Sukshma is listed under “Uday Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+5 = 5",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Uday Vichhed(0+5 = 5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4725,7 +5172,7 @@ export const karmaData = {
       "statement": "Aparyapt is listed under “Uday Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+5 = 5",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Uday Vichhed(0+5 = 5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4743,7 +5190,7 @@ export const karmaData = {
       "statement": "Sadharan is listed under “Uday Vichhed” at Saswadan (117-5-1= 111).",
       "qualification": "0+5 = 5",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Uday Vichhed(0+5 = 5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4761,7 +5208,7 @@ export const karmaData = {
       "statement": "Narak Anupurvi is listed under “Anuday” at Saswadan (117-5-1= 111).",
       "qualification": "5+1 =6",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Anuday(5+1 =6)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4779,7 +5226,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Anantanubandhi” under “Uday Vichhed” at Misra (111-9-2 = 100); subtype mapping needs review.",
       "qualification": "5 +9 = 14",
       "sourceHeading": "Uday > Misra (111-9-2 = 100) > Uday Vichhed(5 +9 = 14)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -4797,7 +5244,7 @@ export const karmaData = {
       "statement": "Jati is listed under “Uday Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "5 +9 = 14",
       "sourceHeading": "Uday > Misra (111-9-2 = 100) > Uday Vichhed(5 +9 = 14)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4815,7 +5262,7 @@ export const karmaData = {
       "statement": "Sthavar is listed under “Uday Vichhed” at Misra (111-9-2 = 100).",
       "qualification": "5 +9 = 14",
       "sourceHeading": "Uday > Misra (111-9-2 = 100) > Uday Vichhed(5 +9 = 14)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4833,7 +5280,7 @@ export const karmaData = {
       "statement": "Misra Mohniye is listed under “Anuday” at Misra (111-9-2 = 100).",
       "qualification": "6+3 -1 =8",
       "sourceHeading": "Uday > Misra (111-9-2 = 100) > Anuday(6+3 -1 =8)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4851,7 +5298,7 @@ export const karmaData = {
       "statement": "Remaining 3 Anupurvi is listed under “Anuday” at Misra (111-9-2 = 100).",
       "qualification": "6+3 -1 =8",
       "sourceHeading": "Uday > Misra (111-9-2 = 100) > Anuday(6+3 -1 =8)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4869,7 +5316,7 @@ export const karmaData = {
       "statement": "Misra Mohniye is listed under “Uday Vichhed” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "14+1=15",
       "sourceHeading": "Uday > Avirati Samyagdrishti (100-1+5 = 104) > Uday Vichhed(14+1=15)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4887,7 +5334,7 @@ export const karmaData = {
       "statement": "Samyaktva mohniye karma is listed under “Anuday” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "8-5 = 3",
       "sourceHeading": "Uday > Avirati Samyagdrishti (100-1+5 = 104) > Anuday(8-5 = 3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4905,7 +5352,7 @@ export const karmaData = {
       "statement": "4 Anupurvi is listed under “Anuday” at Avirati Samyagdrishti (100-1+5 = 104).",
       "qualification": "8-5 = 3",
       "sourceHeading": "Uday > Avirati Samyagdrishti (100-1+5 = 104) > Anuday(8-5 = 3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4923,7 +5370,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Apratyakhani” under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ); subtype mapping needs review.",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -4941,7 +5388,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4959,7 +5406,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4977,7 +5424,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -4995,7 +5442,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5013,7 +5460,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5031,7 +5478,7 @@ export const karmaData = {
       "statement": "Anupurvi is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5049,7 +5496,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5067,7 +5514,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5085,7 +5532,7 @@ export const karmaData = {
       "statement": "Manushya anupurvi is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5103,7 +5550,7 @@ export const karmaData = {
       "statement": "Tiryanch Anupurvi is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5121,7 +5568,7 @@ export const karmaData = {
       "statement": "Durbhagya is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5139,7 +5586,7 @@ export const karmaData = {
       "statement": "Anadeya is listed under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ).",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5157,7 +5604,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Ayash/Apyash” under “Uday Vichhed” at Deshvirti Samyagdrishti (104-17+0 = 87 ); subtype mapping needs review.",
       "qualification": "15+17=32",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5175,7 +5622,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Pratyakhani” under “Uday Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ); subtype mapping needs review.",
       "qualification": "32+8=40",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5193,7 +5640,7 @@ export const karmaData = {
       "statement": "Tiryanch Ayushya is listed under “Uday Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "32+8=40",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5211,7 +5658,7 @@ export const karmaData = {
       "statement": "Tiryanch Gati is listed under “Uday Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "32+8=40",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5229,7 +5676,7 @@ export const karmaData = {
       "statement": "Udyot is listed under “Uday Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "32+8=40",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5247,7 +5694,7 @@ export const karmaData = {
       "statement": "Neech Gotra is listed under “Uday Vichhed” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "32+8=40",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5265,7 +5712,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Anuday” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "3-2=1",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Anuday(3-2=1)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5283,7 +5730,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Anuday” at Pramatt Sarvavirti (87-8+2 = 81 ).",
       "qualification": "3-2=1",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Anuday(3-2=1)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5301,7 +5748,7 @@ export const karmaData = {
       "statement": "Nidra-Nidra is listed under “Uday Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "40+5=45",
       "sourceHeading": "Uday > Apramatt Sarvavirti (81-(5)+0 = 76) > Uday Vichhed(40+5=45)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5319,7 +5766,7 @@ export const karmaData = {
       "statement": "Prachala-Prachala is listed under “Uday Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "40+5=45",
       "sourceHeading": "Uday > Apramatt Sarvavirti (81-(5)+0 = 76) > Uday Vichhed(40+5=45)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5337,7 +5784,7 @@ export const karmaData = {
       "statement": "Thinaddhi is listed under “Uday Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "40+5=45",
       "sourceHeading": "Uday > Apramatt Sarvavirti (81-(5)+0 = 76) > Uday Vichhed(40+5=45)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5355,7 +5802,7 @@ export const karmaData = {
       "statement": "Sharir is listed under “Uday Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "40+5=45",
       "sourceHeading": "Uday > Apramatt Sarvavirti (81-(5)+0 = 76) > Uday Vichhed(40+5=45)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5373,7 +5820,7 @@ export const karmaData = {
       "statement": "Angopang is listed under “Uday Vichhed” at Apramatt Sarvavirti (81-(5)+0 = 76).",
       "qualification": "40+5=45",
       "sourceHeading": "Uday > Apramatt Sarvavirti (81-(5)+0 = 76) > Uday Vichhed(40+5=45)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5391,7 +5838,7 @@ export const karmaData = {
       "statement": "Samyaktva Mohniye is listed under “Uday Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "45+4 = 49",
       "sourceHeading": "Uday > Apurvakaran (76-(4)+0 = 72) > Uday Vichhed(45+4 = 49 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5409,7 +5856,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Upsham Shreni” under “Uday Vichhed” at Apurvakaran (76-(4)+0 = 72); subtype mapping needs review.",
       "qualification": "45+4 = 49",
       "sourceHeading": "Uday > Apurvakaran (76-(4)+0 = 72) > Uday Vichhed(45+4 = 49 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5427,7 +5874,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Kshapak Shreni” under “Uday Vichhed” at Apurvakaran (76-(4)+0 = 72); subtype mapping needs review.",
       "qualification": "45+4 = 49",
       "sourceHeading": "Uday > Apurvakaran (76-(4)+0 = 72) > Uday Vichhed(45+4 = 49 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5445,7 +5892,7 @@ export const karmaData = {
       "statement": "Sanhanan is listed under “Uday Vichhed” at Apurvakaran (76-(4)+0 = 72).",
       "qualification": "45+4 = 49",
       "sourceHeading": "Uday > Apurvakaran (76-(4)+0 = 72) > Uday Vichhed(45+4 = 49 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5463,7 +5910,7 @@ export const karmaData = {
       "statement": "Hasya is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5481,7 +5928,7 @@ export const karmaData = {
       "statement": "Rati is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5499,7 +5946,7 @@ export const karmaData = {
       "statement": "Arati is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5517,7 +5964,7 @@ export const karmaData = {
       "statement": "Shok is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5535,7 +5982,7 @@ export const karmaData = {
       "statement": "Bhay is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5553,7 +6000,7 @@ export const karmaData = {
       "statement": "Jugupsa is listed under “Uday Vichhed” at AnivrittiKaran (72-(6)+0 = 66).",
       "qualification": "49+6 = 55",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5571,7 +6018,7 @@ export const karmaData = {
       "statement": "Stri is listed under “Uday Vichhed” at Sukshm Sampray (66-6+0= 60).",
       "qualification": "55+6=61",
       "sourceHeading": "Uday > Sukshm Sampray (66-6+0= 60) > Uday Vichhed(55+6=61)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5589,7 +6036,7 @@ export const karmaData = {
       "statement": "Purush is listed under “Uday Vichhed” at Sukshm Sampray (66-6+0= 60).",
       "qualification": "55+6=61",
       "sourceHeading": "Uday > Sukshm Sampray (66-6+0= 60) > Uday Vichhed(55+6=61)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5607,7 +6054,7 @@ export const karmaData = {
       "statement": "Napunsak is listed under “Uday Vichhed” at Sukshm Sampray (66-6+0= 60).",
       "qualification": "55+6=61",
       "sourceHeading": "Uday > Sukshm Sampray (66-6+0= 60) > Uday Vichhed(55+6=61)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5625,7 +6072,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjwalan” under “Uday Vichhed” at Sukshm Sampray (66-6+0= 60); subtype mapping needs review.",
       "qualification": "55+6=61",
       "sourceHeading": "Uday > Sukshm Sampray (66-6+0= 60) > Uday Vichhed(55+6=61)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5643,7 +6090,7 @@ export const karmaData = {
       "statement": "KG-2 lists “Sanjvalan Lobh” under “Uday Vichhed” at Upshant Moh (60-1+0= 59); subtype mapping needs review.",
       "qualification": "61+1=62",
       "sourceHeading": "Uday > Upshant Moh (60-1+0= 59) > Uday Vichhed(61+1=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review"
     },
     {
@@ -5661,7 +6108,7 @@ export const karmaData = {
       "statement": "Sanhanan is listed under “Uday Vichhed” at Kshin Moh Vitrag (59-(2+2)= 55).",
       "qualification": "62+2=64",
       "sourceHeading": "Uday > Kshin Moh Vitrag (59-(2+2)= 55) > Uday Vichhed(62+2=64)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5679,7 +6126,7 @@ export const karmaData = {
       "statement": "Nidra is listed under “Uday Vichhed” at Kshin Moh Vitrag (59-(2+2)= 55).",
       "qualification": "64+2=66",
       "sourceHeading": "Uday > Kshin Moh Vitrag (59-(2+2)= 55) > Uday Vichhed(64+2=66)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5697,7 +6144,7 @@ export const karmaData = {
       "statement": "Prachala is listed under “Uday Vichhed” at Kshin Moh Vitrag (59-(2+2)= 55).",
       "qualification": "64+2=66",
       "sourceHeading": "Uday > Kshin Moh Vitrag (59-(2+2)= 55) > Uday Vichhed(64+2=66)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5715,7 +6162,7 @@ export const karmaData = {
       "statement": "Gyanavarniye is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5733,7 +6180,7 @@ export const karmaData = {
       "statement": "Chakshu is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5751,7 +6198,7 @@ export const karmaData = {
       "statement": "Achakshu is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5769,7 +6216,7 @@ export const karmaData = {
       "statement": "Awadhi is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5787,7 +6234,7 @@ export const karmaData = {
       "statement": "Keval Darshan is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5805,7 +6252,7 @@ export const karmaData = {
       "statement": "Antaray is listed under “Uday Vichhed” at Sayog Kevali (55-14+1= 42).",
       "qualification": "66+14=80",
       "sourceHeading": "Uday > Sayog Kevali (55-14+1= 42) > Uday Vichhed(66+14=80)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5823,7 +6270,7 @@ export const karmaData = {
       "statement": "Sata Or Asata Vedniye Karm is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5841,7 +6288,7 @@ export const karmaData = {
       "statement": "Audarik is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5859,7 +6306,7 @@ export const karmaData = {
       "statement": "Taijas is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5877,7 +6324,7 @@ export const karmaData = {
       "statement": "Karman is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5895,7 +6342,7 @@ export const karmaData = {
       "statement": "Audarik Angopang is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5913,7 +6360,7 @@ export const karmaData = {
       "statement": "First Sanhanan - Vajr Rishabh Narach sanhanan is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5931,7 +6378,7 @@ export const karmaData = {
       "statement": "Sansthan (6) is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5949,7 +6396,7 @@ export const karmaData = {
       "statement": "Varna is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5967,7 +6414,7 @@ export const karmaData = {
       "statement": "Gandh is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -5985,7 +6432,7 @@ export const karmaData = {
       "statement": "Ras is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6003,7 +6450,7 @@ export const karmaData = {
       "statement": "Sparsh is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6021,7 +6468,7 @@ export const karmaData = {
       "statement": "Vihayogati (2) is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6039,7 +6486,7 @@ export const karmaData = {
       "statement": "Parghaat is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6057,7 +6504,7 @@ export const karmaData = {
       "statement": "Shvasochchavasa is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6075,7 +6522,7 @@ export const karmaData = {
       "statement": "AguruLaghu is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6093,7 +6540,7 @@ export const karmaData = {
       "statement": "Upghat is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6111,7 +6558,7 @@ export const karmaData = {
       "statement": "Nirman is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6129,7 +6576,7 @@ export const karmaData = {
       "statement": "Pratyek is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6147,7 +6594,7 @@ export const karmaData = {
       "statement": "Sthir is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6165,7 +6612,7 @@ export const karmaData = {
       "statement": "Asthir is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6183,7 +6630,7 @@ export const karmaData = {
       "statement": "Shubh is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6201,7 +6648,7 @@ export const karmaData = {
       "statement": "Ashubh is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6219,7 +6666,7 @@ export const karmaData = {
       "statement": "Susvar is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6237,7 +6684,7 @@ export const karmaData = {
       "statement": "Duhsvar is listed under “Uday Vichhed” at Ayog Kevali (42-30+0= 12).",
       "qualification": "80+30=110",
       "sourceHeading": "Uday > Ayog Kevali (42-30+0= 12) > Uday Vichhed(80+30=110)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6255,7 +6702,7 @@ export const karmaData = {
       "statement": "Sata Or Asata Vedniye Karm is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6273,7 +6720,7 @@ export const karmaData = {
       "statement": "Ayushya is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6291,7 +6738,7 @@ export const karmaData = {
       "statement": "Gati is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6309,7 +6756,7 @@ export const karmaData = {
       "statement": "Panchendriye Jati is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6327,7 +6774,7 @@ export const karmaData = {
       "statement": "Jin naam / Tirthankar Naam is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6345,7 +6792,7 @@ export const karmaData = {
       "statement": "Tras is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6363,7 +6810,7 @@ export const karmaData = {
       "statement": "Badar is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6381,7 +6828,7 @@ export const karmaData = {
       "statement": "Paryapt is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6399,7 +6846,7 @@ export const karmaData = {
       "statement": "Subhagya is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6417,7 +6864,7 @@ export const karmaData = {
       "statement": "Adeya is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6435,7 +6882,7 @@ export const karmaData = {
       "statement": "Yash is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6453,7 +6900,7 @@ export const karmaData = {
       "statement": "Uchh Gotra is listed under “Uday Vichhed” at Sidhh Awastha (after Gunasthan 14).",
       "qualification": "110+12=122",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Uday Vichhed(110+12=122)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     }
   ],
@@ -6467,7 +6914,7 @@ export const karmaData = {
       "sourceTerm": "Abandh",
       "text": "Same as Level 1",
       "sourceHeading": "Bandh > Saswadan (117-5-1= 111) > Abandh(3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6479,7 +6926,7 @@ export const karmaData = {
       "sourceTerm": "Abandh",
       "text": "Same as Level 1",
       "sourceHeading": "Bandh > Misra (111-9-2 = 100) > Abandh(3+2 =5)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6491,7 +6938,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "Same as level above",
       "sourceHeading": "Bandh > Avirati Samyagdrishti (100-1+5 = 104) > Bandh Vichhed(41)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6503,7 +6950,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "Same as level above and 10 more",
       "sourceHeading": "Bandh > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Bandh Vichhed(41+10=51)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6515,7 +6962,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "Same as level above and 4 more",
       "sourceHeading": "Bandh > Pramatt Sarvavirti (87-8+2 = 81 ) > Bandh Vichhed(51+ 4=55)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6527,7 +6974,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "Same as level above and 6 more",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed(55+(6 +1)=62)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6539,7 +6986,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "About Dev Ayushya - Jeev cannot start binding Dev Ayushya in level 7, but if a jeev started it in level 6 and switches to 7 then in order to complete the accumulation of dev Ayushys, which happens in antarmuhurt, the jeev will continue to bind Dev Ayushya.",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6551,7 +6998,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "So, in a way Dev Ayushya bandh also stops in and beyond level 7",
       "sourceHeading": "Bandh > Apramatt Sarvavirti (81-(5)+0 = 76) > Bandh Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6563,7 +7010,7 @@ export const karmaData = {
       "sourceTerm": "Bandh Vichhed",
       "text": "Same as level 8 final stage and 4 more",
       "sourceHeading": "Bandh > AnivrittiKaran (72-(6)+0 = 66) > Bandh Vichhed(94+4 = 98 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted"
     },
     {
@@ -6575,7 +7022,7 @@ export const karmaData = {
       "sourceTerm": "Anuday",
       "text": "Same as Level 1 and :",
       "sourceHeading": "Uday > Saswadan (117-5-1= 111) > Anuday(5+1 =6)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6587,7 +7034,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "Same as level above and 17 more",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6599,7 +7046,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- About Anupurvi:",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6611,7 +7058,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- This means all anupurvi becomes vichhed during and after level 5.",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6623,7 +7070,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- ie. Jeev can use Anupurvi after death only in 1,2 or 4th level.",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6635,7 +7082,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- Jeev can still die in any level (except 3, 12 and 13 {in 14 they die but goes to moksha}) but if jeev dies in any level beyond 4 then just after death, they come down to 4 and then take ANupurvi for next bhav transfer.",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6647,7 +7094,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- About Durbhagya, Anadeya and Apyash:",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6659,7 +7106,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- It does not mean that jeevs in and beyond level 5 won't be disliked or their advices will not be rejected or won't be insulted. Other jeevs who have strong kashay, can still do those to them.",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6671,7 +7118,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "- It means Jeev in and beyond lvl 5 do not do things that lead to these karma coming in uday in general terms via non high kashay people.",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6683,7 +7130,7 @@ export const karmaData = {
       "sourceTerm": "Anuday",
       "text": "Same as prev one",
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Anuday(3)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6695,7 +7142,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "Same as level above and 4 more",
       "sourceHeading": "Uday > Pramatt Sarvavirti (87-8+2 = 81 ) > Uday Vichhed(32+8=40)",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6707,7 +7154,7 @@ export const karmaData = {
       "sourceTerm": "Uday Vichhed",
       "text": "Same as level 8 final stage and 4 more",
       "sourceHeading": "Uday > AnivrittiKaran (72-(6)+0 = 66) > Uday Vichhed(49+6 = 55 )",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     },
     {
@@ -6719,7 +7166,7 @@ export const karmaData = {
       "sourceTerm": "Context",
       "text": "Bandh stops at level 14 but uday happens in 14th level also, it is only when jeev leaves 14th level when uday vicched of last 12 karmas (which were active in level 14) happens",
       "sourceHeading": "Uday > Sidhh Awastha (after Gunasthan 14) > Context",
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted"
     }
   ],
