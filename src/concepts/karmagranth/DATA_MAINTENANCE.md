@@ -10,12 +10,14 @@ Only add a child node when it represents a karma subtype included in the source'
 
 ## Add a KG-2 relationship
 
-Add one record to `relationships` for each explicit source statement. Set `subtypeId` only when the source reference maps unambiguously to a `nodes[].id`; otherwise keep it `null` and set `verification: "needs-review"`, preserving the displayed source label and anchor. Include `gunasthanId` (or a separate `stageContext` for a source context outside the 14 Gunasthans), optional `subStage`, `relationType` (`bandh`, `uday`, `udirna`, or `satta`), the exact `sourceTerm`, source wording, any concise `statement`/`qualification`, and a KG-2 source URL. Current category URLs point to verified KG-2 section anchors. Keep `sourceTerm` separate from `state`, and do not infer a relationship at later stages from “same as previous” wording; retain that wording in `annotations` instead.
+Add one record to `relationships` for each source-defined subtype transition or state. Set `subtypeId` only when the source reference maps unambiguously to a `nodes[].id`; otherwise keep it `null` and set `verification: "needs-review"`. Include `gunasthanId` (or a separate `stageContext` for a context outside the 14 Gunasthans), optional `subStage`, `relationType` (`bandh`, `uday`, `udirna`, or `satta`), the exact `sourceTerm`, and the source URL. Keep `sourceTerm` separate from normalized `state`. Use `throughGunasthanId` only when the note documents a continuous stage range, and use `displayNote` for a concise source-qualified exception. Keep counts and formulas in provenance fields; the views use simple display descriptions.
+
+When a note says “same as previous,” carry records forward only when the included subtypes and end stage are clear; encode the range rather than copying the classification into each view. Keep a stop point distinct from a stage-specific non-occurrence range and from a later unlock. Preserve documented sub-stages as `subStage` values.
 
 Update `coverage` independently from relationship semantics. `not-yet-populated` means the lab has no structured subtype records for the category; it is not a doctrinal state. Udirna and Satta can be populated by adding relationship records and changing their coverage metadata; the views discover categories from this shared data model.
 
 After editing, run `npm run build` and inspect the affected hierarchy branches and Gunasthan/category view. Do not mark a record doctrinally verified because it builds; `source-extracted` describes transcription provenance only.
 
-## Current source gaps
+## Current source coverage
 
-The notes contain embedded summary/count images that have not been transcribed. Sixteen KG-2 link references do not resolve to a numbered KG-1 hierarchy node (including Anantanubandhi, Apratyakhyana, Sanjvalana and related stages/concepts); these stay visible as mapping-review items. Some explanatory statements such as “Same as level above” are not expanded into later subtype records.
+The current Bandh and Uday entries have been mapped to the named subtype nodes, with documented stage ranges, sub-stages, exceptions, and the after-Gunasthan-14 context represented separately. The embedded summary images are retained as cross-checks; they do not replace the detailed source lists. This transcription has not been doctrinally verified. Keep ambiguous future references marked for review instead of guessing a subtype mapping.

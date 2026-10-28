@@ -540,8 +540,11 @@ body.pivot-locked {
 .kg-muted { color: #a8a29e !important; font-size: .75rem !important; }
 .kg-status { display: inline-flex; border: 1px solid #d6d3d1; border-radius: 999px; background: #fafaf9; padding: .15rem .45rem; color: #57534e; font-size: .68rem; font-weight: 700; }
 .kg-record-row { display: grid; width: 100%; gap: .25rem; margin: .25rem 0; border: 1px solid #e7e5e4; border-radius: .55rem; background: #fff; padding: .5rem; text-align: left; cursor: pointer; }
-.kg-record-row.is-active { border-color: #d97706; background: #fffbeb; }
-.kg-record-row > span:nth-child(2) { color: #57534e; font-size: .72rem; }
+.kg-record-row:hover { border-color: #d6d3d1; background: #fafaf9; }
+.kg-record-main { display: flex; align-items: baseline; gap: .45rem; }
+.kg-record-meta-label { color: #78716c; font-size: .64rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.kg-record-main strong { color: #292524; font-size: .76rem; }
+.kg-record-stage { color: #57534e; font-size: .72rem; }
 .kg-record-row small { color: #78716c; font-size: .66rem; }
 .kg-relation-badge { display: inline-flex; align-self: start; border: 1px solid #d6d3d1; border-radius: 999px; background: #fafaf9; padding: .15rem .45rem; color: #44403c; font-size: .68rem; font-weight: 700; }
 .kg-current-record { border-left: 3px solid #d97706; background: #fffbeb; padding: .7rem; }
@@ -571,6 +574,13 @@ body.pivot-locked {
 .kg-result-name { color: #292524; font-size: .88rem; font-weight: 700; }
 .kg-result-copy { color: #57534e; font-size: .77rem; line-height: 1.45; }
 .kg-result-card small { color: #78716c; font-size: .68rem; }
+.kg-result-item { margin: .35rem 0; }
+.kg-result-item .kg-result-card { margin: 0; }
+.kg-record-link { display: inline-flex; margin: .3rem .15rem .2rem; color: #0f766e; font-size: .75rem; font-weight: 650; text-decoration: none; }
+.kg-record-link:hover { text-decoration: underline; }
+.kg-record-link:focus-visible { outline: 3px solid #fbbf24; outline-offset: 2px; }
+.kg-after-stage { margin-top: 1.2rem; border-top: 1px solid #e7e5e4; padding-top: .8rem; }
+.kg-after-stage > p { color: #57534e; font-size: .82rem; }
 .kg-needs-review { color: #9a3412 !important; font-weight: 700; }
 .kg-coverage-empty, .kg-empty-results { margin-top: .85rem; border: 1px dashed #d6d3d1; border-radius: .7rem; background: #fafaf9; padding: .9rem; color: #57534e; font-size: .82rem; line-height: 1.55; }
 .kg-coverage-empty p { margin: .45rem 0 0; }

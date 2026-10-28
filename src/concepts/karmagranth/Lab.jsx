@@ -34,6 +34,27 @@ function nodeLabel(node) {
   return node?.displayName || node?.name || '';
 }
 
+function stageLabel(id) {
+  const stage = karmaData.gunasthans.find((item) => item.id === id);
+  return stage ? `Gunasthan ${stage.number} · ${stage.displayName || stage.name}` : 'After Gunasthan 14';
+}
+
+function relationshipDescription(record) {
+  if (record.state === 'unlocked') {
+    return record.relationType === 'bandh'
+      ? 'Binding becomes possible from this Gunasthan.'
+      : 'This karma can enter uday from this Gunasthan.';
+  }
+  if (record.state === 'non-occurrence') {
+    const action = record.relationType === 'bandh' ? 'Not bindable' : 'Not in uday';
+    return `${action}${record.displayPeriod ? ` during ${record.displayPeriod}` : ' at this Gunasthan'}.`;
+  }
+  if (record.relationType === 'bandh') return 'Bandh stops from this Gunasthan onward.';
+  if (record.stageContext?.includes('after Gunasthan 14')) return 'Uday stops upon leaving Gunasthan 14.';
+  const stageNumber = Number(record.gunasthanId?.slice(1));
+  return `Uday stops from this Gunasthan onward${stageNumber < 14 ? '; descent to a lower Gunasthan may allow it again' : ''}.`;
+}
+
 function sourceLinks() {
   return Object.values(karmaData.sources);
 }
@@ -55,6 +76,7 @@ function RelationBadge({ record }) {
     <span className="kg-relation-badge">
       {record.sourceTerm}
       {record.subStage ? ` · ${record.subStage}` : ''}
+      {record.state === 'unlocked' ? ' · unlocked' : ''}
     </span>
   );
 }
@@ -67,7 +89,7 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
     <li className="kg-tree-item" role="treeitem" aria-expanded={children.length ? expanded.has(node.id) : undefined} aria-selected={selected}>
       <div className={`kg-tree-row${selected ? ' is-selected' : ''}${selectedAncestors.has(node.id) ? ' is-ancestor' : ''}`} style={{ '--kg-depth': depth }}>
         {children.length ? <button type="button" className="kg-expand" onClick={() => { onToggle(node.id); onSelect(node.id); }} aria-label={`${expanded.has(node.id) ? 'Collapse' : 'Expand'} ${nodeLabel(node)}`} aria-expanded={expanded.has(node.id)}>{expanded.has(node.id) ? '▾' : '▸'}</button> : <span className="kg-expand-spacer" />}
-        <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={node.name}>
+        <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={nodeLabel(node)}>
           <span>{nodeLabel(node)}</span>
           {children.length > 0 && node.countLabel ? <small><span className="kg-node-count">{node.countLabel} subtypes</span></small> : null}
         </button>
@@ -89,11 +111,11 @@ function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, o
   );
 }
 
-function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, showClose = true }) {
+function Inspector({ selectedNode, onGoToRelation, onClose, showClose = true }) {
   if (!selectedNode) {
     return (
       <aside className="kg-inspector" aria-label="Karma detail inspector">
-        <div className="kg-empty-inspector">{showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}<span className="kg-kicker">Inspector</span>{selectedRecord ? <><h3>{selectedRecord.sourceLabel}</h3><p><RelationBadge record={selectedRecord} /> · {selectedRecord.stageContext || `Gunasthan ${selectedRecord.gunasthanId?.slice(1) || 'unspecified'}`}</p><p>{selectedRecord.statement}</p><p className="kg-needs-review">This reference has no confident subtype mapping yet.</p><p>{selectedRecord.sourceHeading}</p></> : <><h3>Select a karma node</h3><p>Choose a node in Karma View or a result in Gunsthan View to see its source-derived details.</p></>}<ExternalNoteLinks /></div>
+        <div className="kg-empty-inspector">{showClose && <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>}<span className="kg-kicker">Inspector</span><h3>Select a karma node</h3><p>Choose a node in Karma View or a result in Gunsthan View to see its source-derived details.</p><ExternalNoteLinks /></div>
       </aside>
     );
   }
@@ -115,19 +137,21 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
       </div>
       <div className="kg-inspector-body">
         <section><h4>Overview</h4><p>{selectedNode.summary || 'The notes do not provide a separate explanatory summary for this heading.'}</p><a className="kg-topic-link" href={selectedNode.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a></section>
-        {selectedRecord && <section className="kg-current-record"><h4>Selected relationship</h4><RelationBadge record={selectedRecord} /><p>{selectedRecord.statement}</p>{selectedRecord.sourceExcerpt && <p className="kg-source-excerpt">Source wording: {selectedRecord.sourceExcerpt}</p>}{selectedRecord.qualification && <p className="kg-muted">Source count/qualification: {selectedRecord.qualification}</p>}<small>{selectedRecord.sourceHeading} · {selectedRecord.verification}</small><a className="kg-topic-link" href={selectedRecord.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a></section>}
         <section>
           <h4>Documented relationships</h4>
           {grouped.map((group) => (
             <div className="kg-relation-group" key={group.id}>
-              <h5>{group.label} <span>{group.records.length}</span></h5>
-              {group.records.length ? group.records.map((record) => (
-                <button key={record.id} className={`kg-record-row${selectedRecord?.id === record.id ? ' is-active' : ''}`} type="button" onClick={() => onSelectRelation(record)}>
-                  <RelationBadge record={record} />
-                  <span>{record.stageContext || `Gun. ${record.gunasthanId?.slice(1) || '—'}`}{record.subStage ? ` · ${record.subStage}` : ''}</span>
-                  <small>{record.sourceHeading}</small>
-                </button>
-              )) : <p className="kg-muted">{group.coverage?.status === 'not-yet-populated' ? 'Not yet populated in this lab. This is source coverage, not a doctrinal absence.' : 'No mapped subtype records in the current transcription.'}</p>}
+              <h5>{group.label}</h5>
+              {group.records.length ? group.records.map((record) => {
+                const stage = record.gunasthanId || 'g14';
+                const metaLabel = record.state === 'non-occurrence' ? 'Pause Stage' : record.state === 'cessation' ? 'Stop Stage' : 'Available Stage';
+                const stageDescription = record.displayPeriod || record.stageContext || stageLabel(stage);
+                return <button key={record.id} className="kg-record-row" type="button" onClick={() => onGoToRelation(record)} aria-label={`Open ${group.label} view at ${stageDescription} for ${nodeLabel(selectedNode)}`}>
+                  <span className="kg-record-main"><span className="kg-record-meta-label">{metaLabel}</span><strong>{record.sourceTerm}{record.state === 'unlocked' ? ' · unlocked' : ''}</strong></span>
+                  <span className="kg-record-stage">{stageDescription}{record.subStage ? ` · ${record.subStage}` : ''}</span>
+                  {record.displayNote && <small>{record.displayNote}</small>}
+                </button>;
+              }) : <p className="kg-muted">{group.coverage?.status === 'not-yet-populated' ? 'Not yet documented in this lab. This is source coverage, not a doctrinal absence.' : 'No separate entry for this relationship is documented here.'}</p>}
             </div>
           ))}
         </section>
@@ -136,19 +160,25 @@ function Inspector({ selectedNode, selectedRecord, onSelectRelation, onClose, sh
   );
 }
 
-function Matrix({ stage, setStage, category, onSelectCategory, search, familyFilter, onSelectNode, onSelectRecord }) {
+function Matrix({ stage, setStage, category, onSelectCategory, search, familyFilter, onSelectNode }) {
   const coverage = karmaData.coverage.find((item) => item.relationType === category);
   const stageData = karmaData.gunasthans.find((item) => item.id === stage);
-  const records = karmaData.relationships.filter((record) => (record.gunasthanId === stage || (stage === 'g14' && record.stageContext)) && record.relationType === category);
-  const annotations = karmaData.annotations.filter((item) => (item.gunasthanId === stage || (stage === 'g14' && item.stageContext)) && item.relationType === category);
+  const records = karmaData.relationships.filter((record) => record.relationType === category && (
+    record.gunasthanId === stage
+    || (record.state === 'non-occurrence' && record.throughGunasthanId && Number(stage.slice(1)) >= Number(record.gunasthanId.slice(1)) && Number(stage.slice(1)) <= Number(record.throughGunasthanId.slice(1)))
+  ));
+  const afterStageRecords = stage === 'g14' ? karmaData.relationships.filter((record) => record.relationType === category && record.stageContext?.includes('after Gunasthan 14')) : [];
+  const annotations = karmaData.annotations.filter((item) => item.displayText && item.gunasthanId === stage && item.relationType === category);
   const needle = search.trim().toLowerCase();
-  const filtered = records.filter((record) => {
+  const filterRecords = (source) => source.filter((record) => {
     const node = record.subtypeId ? nodeById[record.subtypeId] : null;
     const family = familyOf(node);
     const matchesFamily = !familyFilter || family?.id === familyFilter;
     const text = `${nodeLabel(node) || record.sourceLabel} ${node?.aliases?.join(' ') || ''} ${node?.summary || ''} ${record.sourceLabel} ${record.sourceTerm}`.toLowerCase();
     return matchesFamily && (!needle || text.includes(needle));
   });
+  const filtered = filterRecords(records);
+  const afterFiltered = filterRecords(afterStageRecords);
   const groups = new Map();
   for (const record of filtered) {
     const node = record.subtypeId ? nodeById[record.subtypeId] : null;
@@ -164,18 +194,19 @@ function Matrix({ stage, setStage, category, onSelectCategory, search, familyFil
         <label>Relationship category<select value={category} onChange={(event) => onSelectCategory(event.target.value)}>{RELATIONS.map((item) => <option key={item.id} value={item.id}>{item.label}{karmaData.coverage.find((c) => c.relationType === item.id)?.status === 'not-yet-populated' ? ' · not yet populated' : ''}</option>)}</select></label>
       </div>
       <div className="kg-stage-strip" role="group" aria-label="Choose a Gunasthan">
-        {karmaData.gunasthans.map((item) => <button key={item.id} type="button" className={stage === item.id ? 'is-active' : ''} aria-pressed={stage === item.id} onClick={() => setStage(item.id)}><strong>{item.number}</strong><span>{item.name.replace(/^\d+\.?\s*/, '')}</span></button>)}
+        {karmaData.gunasthans.map((item) => <button key={item.id} type="button" className={stage === item.id ? 'is-active' : ''} aria-pressed={stage === item.id} onClick={() => setStage(item.id)}><strong>{item.number}</strong><span>{item.displayName || item.name.replace(/^\d+\.?\s*/, '')}</span></button>)}
       </div>
-      <div className="kg-matrix-heading"><div><span className="kg-kicker">Gunasthan {stageData.number}</span><h3>{stageData.name}</h3></div><span className="kg-count">{filtered.length} source entries</span></div>
-      <div className="kg-legend"><span><b>Vichhed</b> source term for cessation</span><span><b>Abandh / Anuday</b> source terms kept distinct</span><span><b>Mapping review</b> source reference not confidently mapped</span></div>
-      {annotations.length > 0 && <section className="kg-source-annotations"><h4>Notes carry-forward wording</h4>{annotations.map((item) => <p key={item.id}><RelationBadge record={item} /> <span>{item.stageContext || stageData.name}</span><br />{item.text}</p>)}</section>}
+      <div className="kg-matrix-heading"><div><span className="kg-kicker">Gunasthan {stageData.number}</span><h3>{stageData.displayName || stageData.name.replace(/\s*\([^)]*\)/, '')}</h3></div></div>
+      <div className="kg-legend"><span><b>Vichhed</b> stops from this stage onward</span><span><b>Abandh / Anuday</b> not active for the shown stage or range</span><span><b>Unlocked</b> becomes available here</span></div>
+      {annotations.length > 0 && <section className="kg-source-annotations"><h4>Notes</h4>{annotations.map((item) => <p key={item.id}>{item.displayText}</p>)}</section>}
       {coverage.status === 'not-yet-populated' ? (
-        <div className="kg-coverage-empty"><span className="kg-status">Not yet populated in lab</span><p>{coverage.message}</p><p>Empty lab coverage does not mean doctrinal absence. No relationship entries are inferred here.</p></div>
+        <div className="kg-coverage-empty"><span className="kg-status">Not yet documented in this lab</span><p>{coverage.message}</p><p>This is a source coverage gap, not a claim that the relationship is absent.</p></div>
       ) : filtered.length ? (
         <div className="kg-matrix-results">
-      {[...groups.entries()].map(([key, group]) => <section className="kg-family-group" key={key}><h4>{group.name}</h4>{group.records.map((record) => <button key={record.id} type="button" className="kg-result-card" onClick={() => { if (record.subtypeId) onSelectNode(record.subtypeId); else onSelectNode(''); onSelectRecord(record); }}><span className="kg-result-name">{record.subtypeId ? nodeLabel(nodeById[record.subtypeId]) : record.sourceLabel}</span><RelationBadge record={record} /><span className="kg-result-copy">{record.statement}</span>{record.sourceExcerpt && <small>Source wording: {record.sourceExcerpt}</small>}{record.stageContext && <small>{record.stageContext}</small>}{record.qualification && <small>{record.qualification}</small>}<small className="kg-record-source">Source note: {record.sourceHeading}</small>{!record.subtypeId && <small className="kg-needs-review">Needs subtype mapping review</small>}</button>)}</section>)}
+      {[...groups.entries()].map(([key, group]) => <section className="kg-family-group" key={key}><h4>{group.name}</h4>{group.records.map((record) => <article className="kg-result-item" key={record.id}><button type="button" className="kg-result-card" onClick={() => onSelectNode(record.subtypeId)}><span className="kg-result-name">{nodeLabel(nodeById[record.subtypeId])}</span><RelationBadge record={record} /><span className="kg-result-copy">{relationshipDescription(record)}</span>{record.displayNote && <small>{record.displayNote}</small>}{record.displayPeriod && <small>{record.displayPeriod}</small>}</button><a className="kg-record-link" href={record.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here ↗</a></article>)}</section>)}
         </div>
       ) : <p className="kg-empty-results">No {category} records for this Gunasthan match the current search and family filters.</p>}
+      {afterFiltered.length > 0 && <section className="kg-after-stage"><h3>After leaving Gunasthan 14</h3><p>These uday events stop only after the soul leaves Gunasthan 14. Sata or Asata remains through Gunasthan 14; whichever is present stops afterward.</p>{afterFiltered.map((record) => <article className="kg-result-item" key={record.id}><button type="button" className="kg-result-card" onClick={() => onSelectNode(record.subtypeId)}><span className="kg-result-name">{nodeLabel(nodeById[record.subtypeId])}</span><RelationBadge record={record} /><span className="kg-result-copy">{relationshipDescription(record)}</span>{record.displayNote && <small>{record.displayNote}</small>}</button><a className="kg-record-link" href={record.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here ↗</a></article>)}</section>}
     </section>
   );
 }
@@ -187,7 +218,6 @@ export default function KarmaGranthLab() {
   const [category, setCategory] = useState('bandh');
   const [stage, setStage] = useState('g1');
   const [selectedId, setSelectedId] = useState('');
-  const [selectedRecord, setSelectedRecord] = useState(null);
   const [expanded, setExpanded] = useState(() => new Set());
 
   const roots = karmaData.nodes.filter((node) => !node.parentId);
@@ -207,7 +237,12 @@ export default function KarmaGranthLab() {
 
   function selectNode(id) {
     setSelectedId(id);
-    setSelectedRecord(null);
+  }
+
+  function goToRelation(record) {
+    setCategory(record.relationType);
+    setStage(record.gunasthanId || 'g14');
+    setView('gunasthan');
   }
 
   function toggleNode(id) {
@@ -224,7 +259,6 @@ export default function KarmaGranthLab() {
     setCategory('bandh');
     setStage('g1');
     setView('karma');
-    setSelectedRecord(null);
     setSelectedId('');
     setExpanded(new Set());
   }
@@ -235,7 +269,6 @@ export default function KarmaGranthLab() {
 
   function closeInspector() {
     setSelectedId('');
-    setSelectedRecord(null);
   }
 
   return (
@@ -248,13 +281,13 @@ export default function KarmaGranthLab() {
           <nav className="kg-view-switch" aria-label="Karma lab views"><button type="button" aria-pressed={view === 'karma'} className={view === 'karma' ? 'is-active' : ''} onClick={() => setView('karma')}>Karma View</button><button type="button" aria-pressed={view === 'gunasthan'} className={view === 'gunasthan' ? 'is-active' : ''} onClick={() => setView('gunasthan')}>Gunsthan View</button></nav>
         </header>
 
-        <div className={`kg-workspace${view === 'karma' || selectedNode || selectedRecord ? ' has-inspector' : ''}`}>
+        <div className={`kg-workspace${view === 'karma' || selectedNode ? ' has-inspector' : ''}`}>
           <main className="kg-main-view">
-            {view === 'karma' ? <KarmaTree roots={roots.filter((node) => !familyFilter || node.id === familyFilter)} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} /> : <Matrix stage={stage} setStage={setStage} category={category} onSelectCategory={setCategory} search={search} familyFilter={familyFilter} onSelectNode={selectNode} onSelectRecord={setSelectedRecord} />}
+            {view === 'karma' ? <KarmaTree roots={roots.filter((node) => !familyFilter || node.id === familyFilter)} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} /> : <Matrix stage={stage} setStage={setStage} category={category} onSelectCategory={setCategory} search={search} familyFilter={familyFilter} onSelectNode={selectNode} />}
           </main>
-          {(view === 'karma' || selectedNode || selectedRecord) && <Inspector selectedNode={selectedNode} selectedRecord={selectedRecord} onSelectRelation={setSelectedRecord} onClose={closeInspector} showClose={view !== 'karma'} />}
+          {(view === 'karma' || selectedNode) && <Inspector selectedNode={selectedNode} onGoToRelation={goToRelation} onClose={closeInspector} showClose={view !== 'karma'} />}
         </div>
-        <footer className="kg-footnote"><span>{karmaData.nodes.length} hierarchy entries</span><span>{karmaData.relationships.length} documented relationships · {karmaData.unresolvedReferences.length} mapping reviews</span><span>Source-extracted; not doctrinally verified</span></footer>
+        <footer className="kg-footnote"><span>Bandh and Uday details are transcribed from the linked notes.</span><span>Udirna and Satta are not yet documented in this lab.</span><span>Source-derived; not doctrinally verified.</span></footer>
       </div>
     </LabEmbedded>
   );
