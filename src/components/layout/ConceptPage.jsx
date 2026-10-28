@@ -20,7 +20,7 @@ export default function ConceptPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 pb-16 pt-8">
+    <div className={`${conceptId === 'karmagranth' ? 'max-w-[1480px]' : 'max-w-3xl'} mx-auto px-4 pb-16 pt-8`}>
       <header className="mb-6">
         <Link
           to="/"
