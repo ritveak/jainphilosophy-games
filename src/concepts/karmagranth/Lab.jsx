@@ -136,11 +136,15 @@ function countSummaryForFilter(filter) {
 function collectFilteredNodeIds(roots, filter) {
   if (!filter) return new Set(karmaData.nodes.map((node) => node.id));
   const visible = new Set();
+  const countRule = karmaData.relationshipCounting?.[filter.relationType] || {};
+  const excludedNodeIds = new Set(countRule.excludedNodeIds || []);
+  const aggregateNodeIds = new Set(countRule.aggregateNodeIds || []);
   function visit(node) {
+    if (excludedNodeIds.has(node.id)) return false;
     if (!isActiveForFilter(node.id, filter.relationType, filter.gunasthanId, filter.subStage)) return false;
     const children = childrenById[node.id] || [];
     const visibleChildren = children.map(visit).some(Boolean);
-    const keep = children.length ? visibleChildren : node.kind !== 'type';
+    const keep = children.length ? visibleChildren || aggregateNodeIds.has(node.id) : node.kind !== 'type';
     if (keep) visible.add(node.id);
     return keep;
   }
@@ -148,13 +152,32 @@ function collectFilteredNodeIds(roots, filter) {
   return visible;
 }
 
+function collectCountableNodeIds(roots, relationType) {
+  const countRule = karmaData.relationshipCounting?.[relationType] || {};
+  const excludedNodeIds = new Set(countRule.excludedNodeIds || []);
+  const aggregateNodeIds = new Set(countRule.aggregateNodeIds || []);
+  const countable = new Set();
+  function visit(node) {
+    if (excludedNodeIds.has(node.id)) return false;
+    const children = childrenById[node.id] || [];
+    const hasCountableChildren = children.map(visit).some(Boolean);
+    const keep = children.length ? hasCountableChildren || aggregateNodeIds.has(node.id) : node.kind !== 'type';
+    if (keep) countable.add(node.id);
+    return keep;
+  }
+  roots.forEach(visit);
+  return countable;
+}
+
 function collectStateNodeIds(roots, filter, state) {
   if (!filter || state === 'active') return collectFilteredNodeIds(roots, filter);
   const targetState = state === 'paused' ? 'non-occurrence' : 'cessation';
   const selected = new Set();
-  const notApplicableNodeIds = karmaData.relationshipCounting?.[filter.relationType]?.notApplicableNodeIds || [];
+  const countRule = karmaData.relationshipCounting?.[filter.relationType] || {};
+  const notApplicableNodeIds = countRule.notApplicableNodeIds || [];
+  const excludedNodeIds = new Set(countRule.excludedNodeIds || []);
   karmaData.nodes.filter((node) => node.kind !== 'type').forEach((node) => {
-    if (notApplicableNodeIds.includes(node.id)) return;
+    if (notApplicableNodeIds.includes(node.id) || excludedNodeIds.has(node.id)) return;
     const matches = relationshipsForSubtype(node.id).some((record) => (state === 'total' || !record.derivation)
       && (state === 'total' ? ['non-occurrence', 'cessation'].includes(record.state) : record.state === targetState)
       && relationshipAppliesAt(record, filter.relationType, filter.gunasthanId, filter.subStage));
@@ -163,23 +186,24 @@ function collectStateNodeIds(roots, filter, state) {
       ancestorsOf(node.id).forEach((ancestorId) => selected.add(ancestorId));
     }
   });
+  if (state === 'stopped') {
+    (countRule.mutuallyExclusiveActiveGroups || [])
+      .filter((group) => group.stageId === filter.gunasthanId && group.aggregateNodeId)
+      .forEach((group) => selected.add(group.aggregateNodeId));
+  }
   if (state === 'total') {
     collectFilteredNodeIds(roots, filter).forEach((id) => selected.add(id));
   }
   return selected;
 }
 
-function countFamilySubtypeEntries(nodeIds, familyId) {
-  return karmaData.nodes.filter((node) => node.kind === 'subtype'
-    && nodeIds.has(node.id)
-    && familyOf(node)?.id === familyId).length;
-}
-
 function familyScopedCountSummary(roots, filter, familyId, summary) {
   if (!summary || !familyId) return summary;
-  const active = countFamilySubtypeEntries(collectFilteredNodeIds(roots, filter), familyId);
-  const paused = countFamilySubtypeEntries(collectStateNodeIds(roots, filter, 'paused'), familyId);
-  const stopped = countFamilySubtypeEntries(collectStateNodeIds(roots, filter, 'stopped'), familyId);
+  const countRule = karmaData.relationshipCounting?.[filter.relationType];
+  const family = nodeById[familyId];
+  const active = visibleSubtypeCount(family, collectFilteredNodeIds(roots, filter), countRule, filter.gunasthanId, 'active');
+  const paused = visibleSubtypeCount(family, collectStateNodeIds(roots, filter, 'paused'), countRule, filter.gunasthanId, 'paused');
+  const stopped = visibleSubtypeCount(family, collectStateNodeIds(roots, filter, 'stopped'), countRule, filter.gunasthanId, 'stopped');
   const sum = active + paused + stopped;
   return {
     ...summary,
@@ -195,15 +219,29 @@ function familyScopedCountSummary(roots, filter, familyId, summary) {
   };
 }
 
-function visibleSubtypeCount(node, visibleNodeIds) {
+function visibleSubtypeCount(node, visibleNodeIds, countRule = null, stageId = null, state = 'active') {
   function countLeaves(current) {
     const children = (childrenById[current.id] || []).filter((child) => visibleNodeIds.has(child.id));
     if (!children.length) return current.kind === 'type' ? 0 : 1;
     return children.reduce((total, child) => total + countLeaves(child), 0);
   }
-  return (childrenById[node.id] || [])
+  let count = (childrenById[node.id] || [])
     .filter((child) => visibleNodeIds.has(child.id))
     .reduce((total, child) => total + countLeaves(child), 0);
+  for (const group of countRule?.mutuallyExclusiveActiveGroups || []) {
+    if (group.stageId !== stageId) continue;
+    const inSubtree = (id) => id === node.id || ancestorsOf(id).includes(node.id);
+    const groupUnits = group.nodeIds.filter(inSubtree);
+    if (state === 'active') {
+      const visibleAlternatives = groupUnits.filter((id) => visibleNodeIds.has(id)).length;
+      count -= Math.max(0, visibleAlternatives - 1);
+    } else if (state === 'stopped' && groupUnits.length > 1) {
+      // The aggregate row represents the alternative that is not in uday.
+      if (group.aggregateNodeId === node.id && visibleNodeIds.has(node.id)) count += 1;
+      else if (!group.aggregateNodeId) count += groupUnits.length - 1;
+    }
+  }
+  return count;
 }
 
 function sourceLinks() {
@@ -222,9 +260,12 @@ function ExternalNoteLinks() {
   );
 }
 
-function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect, visibleNodeIds, dynamicCounts }) {
+function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect, visibleNodeIds, totalPossibleNodeIds, filter, displayMode }) {
   const children = (childrenById[node.id] || []).filter((child) => visibleNodeIds.has(child.id));
-  const filteredCount = visibleSubtypeCount(node, visibleNodeIds);
+  const countRule = filter ? karmaData.relationshipCounting?.[filter.relationType] : null;
+  const filteredCount = visibleSubtypeCount(node, visibleNodeIds, countRule, filter?.gunasthanId, displayMode);
+  const totalPossibleCount = totalPossibleNodeIds ? visibleSubtypeCount(node, totalPossibleNodeIds) : null;
+  const dynamicCounts = Boolean(totalPossibleNodeIds);
   const selected = selectedId === node.id;
   const indicatorLabel = node.karmicIndicator === 'positive' ? 'perceived as punya' : node.karmicIndicator === 'negative' ? 'perceived as paap' : node.karmicIndicator === 'mixed' ? 'mixed subtypes' : '';
   return (
@@ -233,15 +274,17 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
         {children.length ? <button type="button" className="kg-expand" onClick={() => { onToggle(node.id); onSelect(node.id); }} aria-label={`${expanded.has(node.id) ? 'Collapse' : 'Expand'} ${nodeLabel(node)}`} aria-expanded={expanded.has(node.id)}>{expanded.has(node.id) ? '▾' : '▸'}</button> : <span className="kg-expand-spacer" />}
         <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={nodeLabel(node)}>
           <span>{nodeLabel(node)}</span>
-          {children.length > 0 && (dynamicCounts ? filteredCount > 0 : node.countLabel) ? <small><span className="kg-node-count">{dynamicCounts ? filteredCount : node.countLabel} subtypes</span></small> : null}
+          {dynamicCounts
+            ? totalPossibleCount > 1 && children.length > 0 && <small><span className="kg-node-count">{filteredCount} / {totalPossibleCount}</span></small>
+            : children.length > 0 && node.countLabel ? <small><span className="kg-node-count">{node.countLabel} subtypes</span></small> : null}
         </button>
       </div>
-      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} dynamicCounts={dynamicCounts} />)}</ul>}
+      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} totalPossibleNodeIds={totalPossibleNodeIds} filter={filter} displayMode={displayMode} />)}</ul>}
     </li>
   );
 }
 
-function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, countSummary, displayMode, onChangeDisplayMode }) {
+function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, totalPossibleNodeIds, countSummary, displayMode, onChangeDisplayMode }) {
   const countSum = countSummary?.sum || 0;
   const familyScoped = countSummary?.familyScoped;
   const pausedLabel = familyScoped ? 'Paused entries' : filter?.relationType === 'bandh' ? 'Paused · Abandh' : 'Paused · Anuday';
@@ -263,7 +306,7 @@ function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, o
       </section>}
       <div className="kg-indicator-legend" aria-label="Color marker legend"><span><i className="is-positive" />Green: perceived as punya</span><span><i className="is-negative" />Red: perceived as paap</span><span><i className="is-mixed" />Grey: mixed subtypes</span></div>
       {roots.length ? <ul className="kg-tree" role="tree" aria-label="Karma types and subtypes">
-        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} dynamicCounts={Boolean(filter)} />)}
+        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} totalPossibleNodeIds={totalPossibleNodeIds} filter={filter} displayMode={displayMode} />)}
       </ul> : <p className="kg-empty-results">No karma entries remain visible for this relationship and Gunasthan.</p>}
     </section>
   );
@@ -380,6 +423,7 @@ export default function KarmaGranthLab() {
   const selectedStage = karmaData.gunasthans.find((item) => item.id === filterStage);
   const stageOptions = [...karmaData.gunasthans, ...(karmaData.terminalStages || [])];
   const countSummary = familyScopedCountSummary(roots, activeFilter, familyFilter, countSummaryForFilter(activeFilter));
+  const totalPossibleNodeIds = useMemo(() => activeFilter ? collectCountableNodeIds(roots, activeFilter.relationType) : null, [activeFilter?.relationType, filterStage]);
   return (
     <LabEmbedded title="Karma Granth explorer">
       <div className="kg-lab">
@@ -403,7 +447,7 @@ export default function KarmaGranthLab() {
 
         <div className="kg-workspace has-inspector">
           <main className="kg-main-view">
-            <KarmaTree roots={visibleRoots} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} visibleNodeIds={visibleNodeIds} filter={activeFilter} countSummary={countSummary} displayMode={displayMode} onChangeDisplayMode={setDisplayMode} />
+            <KarmaTree roots={visibleRoots} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} visibleNodeIds={visibleNodeIds} filter={activeFilter} totalPossibleNodeIds={totalPossibleNodeIds} countSummary={countSummary} displayMode={displayMode} onChangeDisplayMode={setDisplayMode} />
           </main>
           <Inspector selectedNode={selectedNode} onSelectFilter={selectFilter} onClose={() => setSelectedId('')} />
         </div>
