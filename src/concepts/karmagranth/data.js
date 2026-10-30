@@ -3224,7 +3224,22 @@ export const karmaData = {
       "number": 7,
       "name": "Apramatt Sarvavirti (81-(5)+0 = 76)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/",
-      "subStages": [],
+      "subStages": [
+        "Stage 1",
+        "Stage 2"
+      ],
+      "subStageDetails": {
+        "bandh": [
+          {
+            "label": "Stage 1",
+            "note": "Dev Ayushya binding carried over from Gunasthan 6 remains active briefly during this stage. The chart's Gunasthan 7 count is 59 active."
+          },
+          {
+            "label": "Stage 2",
+            "note": "The carry-over period ends and Dev Ayushya enters Bandh Vichhed. The active count falls to 58, matching the detailed level 7 formula in the note."
+          }
+        ]
+      },
       "displayName": "Apramatt Sarvavirti"
     },
     {
@@ -3237,6 +3252,22 @@ export const karmaData = {
         "Stage 2 to 6",
         "Stage 7"
       ],
+      "subStageDetails": {
+        "bandh": [
+          {
+            "label": "Stage 1",
+            "note": "Dev Ayushya binding carried over from Gunasthan 6 ends here; the other eligibility remains as in Gunasthan 7. The supplied chart lists 58 active units at this stage."
+          },
+          {
+            "label": "Stage 2 to 6",
+            "note": "Nidra and Prachala cease to be bindable, reducing the active Bandh count by 2."
+          },
+          {
+            "label": "Stage 7",
+            "note": "Thirty more count units cease: Panchendriya Jati, Samachaturasra Sansthan, four Sharir, two Angopang, the four Varna/Gandha/Rasa/Sparsha groups, Deva Gati and Anupurvi, Shubha Vihayogati, six Pratyek types, and nine Tras Dashak types."
+          }
+        ]
+      },
       "displayName": "Apurvakaran"
     },
     {
@@ -3251,6 +3282,30 @@ export const karmaData = {
         "Stage 4",
         "Stage 5"
       ],
+      "subStageDetails": {
+        "bandh": [
+          {
+            "label": "Stage 1",
+            "note": "Four additional karmas cease: Hasya, Rati, Bhaya, and Jugupsa. This stage carries forward the Gunasthan 8 final-stage set."
+          },
+          {
+            "label": "Stage 2",
+            "note": "Purusha Veda ceases to be bindable."
+          },
+          {
+            "label": "Stage 3",
+            "note": "Sanjvalana Krodha ceases to be bindable."
+          },
+          {
+            "label": "Stage 4",
+            "note": "Sanjvalana Mana ceases to be bindable."
+          },
+          {
+            "label": "Stage 5",
+            "note": "Sanjvalana Maya ceases to be bindable."
+          }
+        ]
+      },
       "displayName": "Anivritti Karan"
     },
     {
@@ -3278,6 +3333,18 @@ export const karmaData = {
         "Stage 1",
         "Stage 2"
       ],
+      "subStageDetails": {
+        "uday": [
+          {
+            "label": "Stage 1",
+            "note": "Uday ceases for Sanhanan types 2 and 3: Rishabha-Naracha and Naracha. The active count falls from 59 to 57."
+          },
+          {
+            "label": "Stage 2",
+            "note": "Uday ceases for Nidra and Prachala. The active count falls from 57 to 55."
+          }
+        ]
+      },
       "displayName": "Kshin Moh Vitrag"
     },
     {
@@ -4209,6 +4276,25 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti"
+    },
+    {
+      "id": "kg2-bandh-g7-stage-2-dev-ayushya-vichhed",
+      "subtypeId": "kg1-5-1-1-5-1-1-dev-ayushya",
+      "sourceLabel": "Dev Ayushya",
+      "sourceAnchor": "5.1.1 Dev Ayushya +",
+      "sourceExcerpt": "A soul cannot start binding Dev Ayushya in Gunasthan 7, but binding begun at Gunasthan 6 may continue briefly after transition; it completes within antarmuhurt.",
+      "gunasthanId": "g7",
+      "stageContext": null,
+      "subStage": "Stage 2",
+      "relationType": "bandh",
+      "sourceTerm": "Bandh Vichhed",
+      "state": "cessation",
+      "statement": "Binding of Dev Ayushya stops from Stage 2 onward.",
+      "sourceHeading": "Bandh > Apramatt Sarvavirti > Bandh Vichhed",
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "verification": "source-extracted",
+      "displayNote": "Dev Ayushya begun at Gunasthan 6 can continue briefly through Stage 1; its carry-over ends in Stage 2.",
+      "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti · Stage 2"
     },
     {
       "id": "kg2-bandh-g8-61",
@@ -9112,10 +9198,10 @@ export const karmaData = {
       "verification": "source-image-transcribed"
     },
     {
-      "id": "bandh-count-g7",
+      "id": "bandh-count-g7-stage-1",
       "relationType": "bandh",
       "stageId": "g7",
-      "subStage": "all",
+      "subStage": "Stage 1",
       "active": 59,
       "paused": 0,
       "stopped": 61,
@@ -9123,8 +9209,21 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "sourceSection": "Bandh (120) count table",
       "verification": "source-image-transcribed",
-      "sourceNote": "The supplied chart shows Dev Ayushya active at Gunasthan 7 (59 active, 61 stopped); the note arithmetic elsewhere gives 58 active, 62 stopped.",
-      "reviewNote": "The chart count is used here. Binding begun at Gunasthan 6 may continue briefly through Gunasthan 7, with cessation in Gunasthan 8 Stage 1."
+      "sourceNote": "The supplied chart reports 59 active at Gunasthan 7; the detailed note explains that Dev Ayushya begun at Gunasthan 6 may continue briefly after entry into Gunasthan 7."
+    },
+    {
+      "id": "bandh-count-g7-stage-2",
+      "relationType": "bandh",
+      "stageId": "g7",
+      "subStage": "Stage 2",
+      "active": 58,
+      "paused": 0,
+      "stopped": 62,
+      "sourceCount": 120,
+      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
+      "sourceSection": "Bandh (120) count table",
+      "verification": "source-extracted",
+      "sourceNote": "After the brief continuation ends, Dev Ayushya is in Bandh Vichhed; the detailed Gunasthan 7 formula reports 58 active and 62 stopped."
     },
     {
       "id": "bandh-count-g8-stage-1",
@@ -9257,23 +9356,10 @@ export const karmaData = {
       "verification": "source-image-transcribed"
     },
     {
-      "id": "bandh-count-g12-stage-1",
+      "id": "bandh-count-g12",
       "relationType": "bandh",
       "stageId": "g12",
-      "subStage": "Stage 1",
-      "active": 1,
-      "paused": 0,
-      "stopped": 119,
-      "sourceCount": 120,
-      "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
-      "sourceSection": "Bandh (120) count table",
-      "verification": "source-image-transcribed"
-    },
-    {
-      "id": "bandh-count-g12-stage-2",
-      "relationType": "bandh",
-      "stageId": "g12",
-      "subStage": "Stage 2",
+      "subStage": "all",
       "active": 1,
       "paused": 0,
       "stopped": 119,

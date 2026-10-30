@@ -85,11 +85,20 @@ function subStageRange(value) {
   return match ? [Number(match[1]), Number(match[2] || match[1])] : null;
 }
 
-function selectedSubStageRange(stageId, subStage) {
+function subStageDetailsFor(stageId, relationType) {
   const stage = karmaData.gunasthans.find((item) => item.id === stageId);
-  if (!stage?.subStages?.length) return [1, Number.POSITIVE_INFINITY];
+  return stage?.subStageDetails?.[relationType] || [];
+}
+
+function defaultSubStage(stageId, relationType) {
+  return subStageDetailsFor(stageId, relationType).at(-1)?.label || 'all';
+}
+
+function selectedSubStageRange(stageId, subStage, relationType) {
+  const subStages = subStageDetailsFor(stageId, relationType).map((detail) => detail.label);
+  if (!subStages.length) return [1, Number.POSITIVE_INFINITY];
   if (subStage === 'all') {
-    const ranges = stage.subStages.map(subStageRange).filter(Boolean);
+    const ranges = subStages.map(subStageRange).filter(Boolean);
     return [1, Math.max(...ranges.map((range) => range[1]))];
   }
   return subStageRange(subStage) || [1, Number.POSITIVE_INFINITY];
@@ -100,7 +109,7 @@ function relationshipAppliesAt(record, relationType, stageId, subStage) {
   const currentStage = stageOrder(stageId);
   const recordStage = recordStageOrder(record);
   if (currentStage == null || recordStage == null) return false;
-  const [selectedStart, selectedEnd] = selectedSubStageRange(stageId, subStage);
+  const [selectedStart, selectedEnd] = selectedSubStageRange(stageId, subStage, relationType);
   if (record.state === 'cessation') {
     if (recordStage < currentStage) return true;
     if (recordStage > currentStage) return false;
@@ -125,12 +134,13 @@ function isActiveForFilter(nodeId, relationType, stageId, subStage) {
 
 function countSummaryForFilter(filter) {
   if (!filter) return null;
-  const stage = karmaData.gunasthans.find((item) => item.id === filter.gunasthanId);
-  const subStage = filter.subStage === 'all' && stage?.subStages?.length
-    ? stage.subStages.at(-1)
+  const stageDetails = subStageDetailsFor(filter.gunasthanId, filter.relationType);
+  const subStage = filter.subStage === 'all' && stageDetails.length
+    ? stageDetails.at(-1).label
     : filter.subStage || 'all';
   const row = (karmaData.sourceCountRows || []).find((item) => item.relationType === filter.relationType && item.stageId === filter.gunasthanId && item.subStage === subStage);
-  return row ? { ...row, sum: row.active + row.paused + row.stopped } : null;
+  const stageNote = stageDetails.find((detail) => detail.label === subStage)?.note;
+  return row ? { ...row, stageNote, sum: row.active + row.paused + row.stopped } : null;
 }
 
 function collectFilteredNodeIds(roots, filter) {
@@ -284,16 +294,20 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
   );
 }
 
-function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, totalPossibleNodeIds, countSummary, displayMode, onChangeDisplayMode }) {
+function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, totalPossibleNodeIds, countSummary, displayMode, onChangeDisplayMode, onChangeSubStage }) {
   const countSum = countSummary?.sum || 0;
   const familyScoped = countSummary?.familyScoped;
   const pausedLabel = familyScoped ? 'Paused entries' : filter?.relationType === 'bandh' ? 'Paused · Abandh' : 'Paused · Anuday';
   const stoppedLabel = familyScoped ? 'Stopped entries' : filter?.relationType === 'bandh' ? 'Stopped · Bandh Vichhed' : 'Stopped · Uday Vichhed';
+  const stageDetails = subStageDetailsFor(filter?.gunasthanId, filter?.relationType);
+  const selectedSubStage = filter?.subStage === 'all' ? stageDetails.at(-1)?.label : filter?.subStage;
   return (
     <section className="kg-canvas-graph" aria-label="Karma hierarchy">
-      <div className="kg-canvas-head"><div><span className="kg-kicker">Karma hierarchy</span><h3>Karma View</h3></div><div className="kg-canvas-actions"><button type="button" onClick={onCollapseToLevelOne}>Collapse to level 1</button><button type="button" onClick={onExpandAll}>Full expansion</button></div></div>
+      <div className="kg-canvas-head"><div><span className="kg-kicker">Karma hierarchy</span><h3>Karma View</h3></div><div className="kg-canvas-actions"><button type="button" onClick={onCollapseToLevelOne}>Collapse</button><button type="button" onClick={onExpandAll}>Expand</button></div></div>
+      {countSummary && stageDetails.length > 0 && <div className="kg-stage-tabs" role="group" aria-label={`Stages within ${stageLabel(filter.gunasthanId)}`}>{stageDetails.map((detail) => <button key={detail.label} type="button" className={selectedSubStage === detail.label ? 'is-active' : ''} aria-pressed={selectedSubStage === detail.label} onClick={() => onChangeSubStage(detail.label)}>{detail.label}</button>)}</div>}
       {countSummary && <section className="kg-count-summary" aria-label={`${filter.relationLabel} count summary for ${stageLabel(filter.gunasthanId)}${familyScoped ? `, ${countSummary.familyLabel} family` : ''}`}>
         <div className="kg-count-heading"><div><span className="kg-kicker">{familyScoped ? 'Family-scoped entries' : 'Source row-count'}</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}{familyScoped ? ` · ${countSummary.familyLabel}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">{familyScoped ? 'Source count method' : 'How this count is calculated'} <span aria-hidden="true">↗</span></a></div></div>
+        {countSummary.stageNote && <p className="kg-stage-note" role="note">{countSummary.stageNote}</p>}
         <div className="kg-count-grid">
           <button type="button" className={`kg-count-tile is-active${displayMode === 'active' ? ' is-current' : ''}`} title={familyScoped ? `Show active ${countSummary.familyLabel} entries` : 'Show active karma'} onClick={() => onChangeDisplayMode('active')} aria-pressed={displayMode === 'active'}><strong>{countSummary.active}</strong><span>{familyScoped ? 'Active entries' : 'Active karma'}</span></button>
           <button type="button" className={`kg-count-tile is-paused${displayMode === 'paused' ? ' is-current' : ''}`} title={`Show subtype entries paused at ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('paused')} aria-label={`Show subtype entries for ${pausedLabel}: ${countSummary.paused}`} aria-pressed={displayMode === 'paused'}><strong>{countSummary.paused}</strong><span>{pausedLabel}</span></button>
@@ -391,9 +405,8 @@ export default function KarmaGranthLab() {
     if (!selectedId || !visibleNodeIds.has(selectedId) || (familyFilter && familyOf(nodeById[selectedId])?.id !== familyFilter)) setSelectedId((current) => current && (!visibleNodeIds.has(current) || (familyFilter && familyOf(nodeById[current])?.id !== familyFilter)) ? '' : current);
   }, [selectedId, visibleNodeIds, familyFilter]);
   useEffect(() => {
-    if (!filterKey) return;
-    setExpanded(new Set(karmaData.nodes.filter((node) => visibleNodeIds.has(node.id) && childrenById[node.id]?.some((child) => visibleNodeIds.has(child.id))).map((node) => node.id)));
-  }, [filterKey, displayMode]);
+    setExpanded(new Set());
+  }, [filterKey]);
   useEffect(() => {
     setDisplayMode('active');
   }, [filterKey]);
@@ -406,8 +419,9 @@ export default function KarmaGranthLab() {
   function selectFilter(record) {
     setFilterCategory(record.relationType);
     const terminal = (karmaData.terminalStages || []).find((stage) => stage.relationTypes.includes(record.relationType) && record.stageContext?.toLowerCase().includes('after gunasthan 14'));
-    setFilterStage(record.gunasthanId || terminal?.id || 'g14');
-    setFilterSubStage(record.subStage || 'all');
+    const stageId = record.gunasthanId || terminal?.id || 'g14';
+    setFilterStage(stageId);
+    setFilterSubStage(record.subStage || defaultSubStage(stageId, record.relationType));
     setFilterOpen(true);
   }
   function toggleNode(id) {
@@ -420,7 +434,6 @@ export default function KarmaGranthLab() {
     setExpanded(new Set(karmaData.nodes.filter((node) => visibleNodeIds.has(node.id) && childrenById[node.id]?.some((child) => visibleNodeIds.has(child.id))).map((node) => node.id)));
   }
 
-  const selectedStage = karmaData.gunasthans.find((item) => item.id === filterStage);
   const stageOptions = [...karmaData.gunasthans, ...(karmaData.terminalStages || [])];
   const countSummary = familyScopedCountSummary(roots, activeFilter, familyFilter, countSummaryForFilter(activeFilter));
   const totalPossibleNodeIds = useMemo(() => activeFilter ? collectCountableNodeIds(roots, activeFilter.relationType) : null, [activeFilter?.relationType, filterStage]);
@@ -435,9 +448,8 @@ export default function KarmaGranthLab() {
             <button type="button" className="kg-reset" onClick={reset}>Reset view</button>
           </div>
           {filterOpen && <div className="kg-filter-panel">
-            <label>Relationship<select value={filterCategory} onChange={(event) => { const next = event.target.value; setFilterCategory(next); if (!next) setFilterStage(''); else if ((karmaData.terminalStages || []).some((stage) => stage.id === filterStage && !stage.relationTypes.includes(next))) setFilterStage('g14'); }}><option value="">Choose relationship</option><option value="bandh">Bandh</option><option value="uday">Uday</option><option value="udirna" disabled>Udirna · not yet documented</option><option value="satta" disabled>Satta · not yet documented</option></select></label>
-            <label>Gunasthan / final stage<select value={filterStage} onChange={(event) => { setFilterStage(event.target.value); setFilterSubStage('all'); }} disabled={!filterCategory}>{filterStage ? null : <option value="">Choose a stage</option>}{stageOptions.map((stage) => <option key={stage.id} value={stage.id} disabled={stage.relationTypes ? !stage.relationTypes.includes(filterCategory) : false}>{stage.number ? `${stage.number} · ` : ''}{stage.displayName || stage.name.replace(/^\d+\.?\s*/, '')}{stage.sourceContext ? ` · ${stage.sourceContext}` : ''}</option>)}</select></label>
-            {selectedStage?.subStages?.length > 0 && <label>Sub-stage<select value={filterSubStage} onChange={(event) => setFilterSubStage(event.target.value)}><option value="all">Active throughout this Gunasthan</option>{selectedStage.subStages.map((subStage) => <option key={subStage} value={subStage}>{subStage}</option>)}</select></label>}
+            <label>Relationship<select value={filterCategory} onChange={(event) => { const next = event.target.value; setFilterCategory(next); if (!next) setFilterStage(''); else if ((karmaData.terminalStages || []).some((stage) => stage.id === filterStage && !stage.relationTypes.includes(next))) setFilterStage('g14'); setFilterSubStage(defaultSubStage(filterStage, next)); }}><option value="">Choose relationship</option><option value="bandh">Bandh</option><option value="uday">Uday</option><option value="udirna" disabled>Udirna · not yet documented</option><option value="satta" disabled>Satta · not yet documented</option></select></label>
+            <label>Gunasthan / final stage<select value={filterStage} onChange={(event) => { const stageId = event.target.value; setFilterStage(stageId); setFilterSubStage(defaultSubStage(stageId, filterCategory)); }} disabled={!filterCategory}>{filterStage ? null : <option value="">Choose a stage</option>}{stageOptions.map((stage) => <option key={stage.id} value={stage.id} disabled={stage.relationTypes ? !stage.relationTypes.includes(filterCategory) : false}>{stage.number ? `${stage.number} · ` : ''}{stage.displayName || stage.name.replace(/^\d+\.?\s*/, '')}{stage.sourceContext ? ` · ${stage.sourceContext}` : ''}</option>)}</select></label>
             {activeFilter && <button type="button" className="kg-clear-filter" onClick={() => { setFilterCategory(''); setFilterStage(''); setFilterSubStage('all'); }}>Clear filter</button>}
             <p>Use the count cards to show Active, Paused, Stopped, or Total entries below. Empty source coverage does not indicate doctrinal absence.</p>
           </div>}
@@ -447,7 +459,7 @@ export default function KarmaGranthLab() {
 
         <div className="kg-workspace has-inspector">
           <main className="kg-main-view">
-            <KarmaTree roots={visibleRoots} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} visibleNodeIds={visibleNodeIds} filter={activeFilter} totalPossibleNodeIds={totalPossibleNodeIds} countSummary={countSummary} displayMode={displayMode} onChangeDisplayMode={setDisplayMode} />
+            <KarmaTree roots={visibleRoots} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={toggleNode} onSelect={selectNode} onCollapseToLevelOne={() => setExpanded(new Set())} onExpandAll={expandAll} visibleNodeIds={visibleNodeIds} filter={activeFilter} totalPossibleNodeIds={totalPossibleNodeIds} countSummary={countSummary} displayMode={displayMode} onChangeDisplayMode={setDisplayMode} onChangeSubStage={setFilterSubStage} />
           </main>
           <Inspector selectedNode={selectedNode} onSelectFilter={selectFilter} onClose={() => setSelectedId('')} />
         </div>
