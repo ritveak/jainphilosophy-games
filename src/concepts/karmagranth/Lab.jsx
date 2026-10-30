@@ -169,6 +169,43 @@ function collectStateNodeIds(roots, filter, state) {
   return selected;
 }
 
+function countFamilySubtypeEntries(nodeIds, familyId) {
+  return karmaData.nodes.filter((node) => node.kind === 'subtype'
+    && nodeIds.has(node.id)
+    && familyOf(node)?.id === familyId).length;
+}
+
+function familyScopedCountSummary(roots, filter, familyId, summary) {
+  if (!summary || !familyId) return summary;
+  const active = countFamilySubtypeEntries(collectFilteredNodeIds(roots, filter), familyId);
+  const paused = countFamilySubtypeEntries(collectStateNodeIds(roots, filter, 'paused'), familyId);
+  const stopped = countFamilySubtypeEntries(collectStateNodeIds(roots, filter, 'stopped'), familyId);
+  const sum = active + paused + stopped;
+  return {
+    ...summary,
+    active,
+    paused,
+    stopped,
+    sum,
+    sourceCount: sum,
+    familyLabel: nodeLabel(nodeById[familyId]),
+    familyScoped: true,
+    sourceNote: null,
+    reviewNote: null,
+  };
+}
+
+function visibleSubtypeCount(node, visibleNodeIds) {
+  function countLeaves(current) {
+    const children = (childrenById[current.id] || []).filter((child) => visibleNodeIds.has(child.id));
+    if (!children.length) return current.kind === 'type' ? 0 : 1;
+    return children.reduce((total, child) => total + countLeaves(child), 0);
+  }
+  return (childrenById[node.id] || [])
+    .filter((child) => visibleNodeIds.has(child.id))
+    .reduce((total, child) => total + countLeaves(child), 0);
+}
+
 function sourceLinks() {
   return Object.values(karmaData.sources);
 }
@@ -185,8 +222,9 @@ function ExternalNoteLinks() {
   );
 }
 
-function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect, visibleNodeIds }) {
+function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, onToggle, onSelect, visibleNodeIds, dynamicCounts }) {
   const children = (childrenById[node.id] || []).filter((child) => visibleNodeIds.has(child.id));
+  const filteredCount = visibleSubtypeCount(node, visibleNodeIds);
   const selected = selectedId === node.id;
   const indicatorLabel = node.karmicIndicator === 'positive' ? 'perceived as punya' : node.karmicIndicator === 'negative' ? 'perceived as paap' : node.karmicIndicator === 'mixed' ? 'mixed subtypes' : '';
   return (
@@ -195,35 +233,37 @@ function KarmaTreeNode({ node, depth, selectedId, selectedAncestors, expanded, o
         {children.length ? <button type="button" className="kg-expand" onClick={() => { onToggle(node.id); onSelect(node.id); }} aria-label={`${expanded.has(node.id) ? 'Collapse' : 'Expand'} ${nodeLabel(node)}`} aria-expanded={expanded.has(node.id)}>{expanded.has(node.id) ? '▾' : '▸'}</button> : <span className="kg-expand-spacer" />}
         <button type="button" className={`kg-tree-label${node.karmicIndicator ? ` is-${node.karmicIndicator}` : ''}`} onClick={() => onSelect(node.id)} aria-pressed={selected} aria-label={`${nodeLabel(node)}${indicatorLabel ? `, ${indicatorLabel} marker` : ''}`} title={nodeLabel(node)}>
           <span>{nodeLabel(node)}</span>
-          {children.length > 0 && node.countLabel ? <small><span className="kg-node-count">{node.countLabel} subtypes</span></small> : null}
+          {children.length > 0 && (dynamicCounts ? filteredCount > 0 : node.countLabel) ? <small><span className="kg-node-count">{dynamicCounts ? filteredCount : node.countLabel} subtypes</span></small> : null}
         </button>
       </div>
-      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} />)}</ul>}
+      {children.length > 0 && expanded.has(node.id) && <ul role="group">{children.map((child) => <KarmaTreeNode key={child.id} node={child} depth={depth + 1} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} dynamicCounts={dynamicCounts} />)}</ul>}
     </li>
   );
 }
 
 function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, onSelect, onCollapseToLevelOne, onExpandAll, visibleNodeIds, filter, countSummary, displayMode, onChangeDisplayMode }) {
   const countSum = countSummary?.sum || 0;
-  const pausedLabel = filter?.relationType === 'bandh' ? 'Paused · Abandh' : 'Paused · Anuday';
-  const stoppedLabel = filter?.relationType === 'bandh' ? 'Stopped · Bandh Vichhed' : 'Stopped · Uday Vichhed';
+  const familyScoped = countSummary?.familyScoped;
+  const pausedLabel = familyScoped ? 'Paused entries' : filter?.relationType === 'bandh' ? 'Paused · Abandh' : 'Paused · Anuday';
+  const stoppedLabel = familyScoped ? 'Stopped entries' : filter?.relationType === 'bandh' ? 'Stopped · Bandh Vichhed' : 'Stopped · Uday Vichhed';
   return (
     <section className="kg-canvas-graph" aria-label="Karma hierarchy">
       <div className="kg-canvas-head"><div><span className="kg-kicker">Karma hierarchy</span><h3>Karma View</h3></div><div className="kg-canvas-actions"><button type="button" onClick={onCollapseToLevelOne}>Collapse to level 1</button><button type="button" onClick={onExpandAll}>Full expansion</button></div></div>
-      {countSummary && <section className="kg-count-summary" aria-label={`${filter.relationLabel} count summary for ${stageLabel(filter.gunasthanId)}`}>
-        <div className="kg-count-heading"><div><span className="kg-kicker">Source row-count</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">How this count is calculated <span aria-hidden="true">↗</span></a></div></div>
+      {countSummary && <section className="kg-count-summary" aria-label={`${filter.relationLabel} count summary for ${stageLabel(filter.gunasthanId)}${familyScoped ? `, ${countSummary.familyLabel} family` : ''}`}>
+        <div className="kg-count-heading"><div><span className="kg-kicker">{familyScoped ? 'Family-scoped entries' : 'Source row-count'}</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}{familyScoped ? ` · ${countSummary.familyLabel}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">{familyScoped ? 'Source count method' : 'How this count is calculated'} <span aria-hidden="true">↗</span></a></div></div>
         <div className="kg-count-grid">
-          <button type="button" className={`kg-count-tile is-active${displayMode === 'active' ? ' is-current' : ''}`} title="Show active karma" onClick={() => onChangeDisplayMode('active')} aria-pressed={displayMode === 'active'}><strong>{countSummary.active}</strong><span>Active karma</span></button>
+          <button type="button" className={`kg-count-tile is-active${displayMode === 'active' ? ' is-current' : ''}`} title={familyScoped ? `Show active ${countSummary.familyLabel} entries` : 'Show active karma'} onClick={() => onChangeDisplayMode('active')} aria-pressed={displayMode === 'active'}><strong>{countSummary.active}</strong><span>{familyScoped ? 'Active entries' : 'Active karma'}</span></button>
           <button type="button" className={`kg-count-tile is-paused${displayMode === 'paused' ? ' is-current' : ''}`} title={`Show subtype entries paused at ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('paused')} aria-label={`Show subtype entries for ${pausedLabel}: ${countSummary.paused}`} aria-pressed={displayMode === 'paused'}><strong>{countSummary.paused}</strong><span>{pausedLabel}</span></button>
           <button type="button" className={`kg-count-tile is-stopped${displayMode === 'stopped' ? ' is-current' : ''}`} title={`Show subtype entries stopped by ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('stopped')} aria-label={`Show subtype entries for ${stoppedLabel}: ${countSummary.stopped}`} aria-pressed={displayMode === 'stopped'}><strong>{countSummary.stopped}</strong><span>{stoppedLabel}</span></button>
-          <button type="button" className={`kg-count-tile is-total${displayMode === 'total' ? ' is-current' : ''}`} title="Show all active, paused, and stopped karma" onClick={() => onChangeDisplayMode('total')} aria-pressed={displayMode === 'total'}><strong>{countSum}</strong><span>Sum · {countSummary.sourceCount} source units</span></button>
+          <button type="button" className={`kg-count-tile is-total${displayMode === 'total' ? ' is-current' : ''}`} title={familyScoped ? `Show all ${countSummary.familyLabel} entries` : 'Show all active, paused, and stopped karma'} onClick={() => onChangeDisplayMode('total')} aria-pressed={displayMode === 'total'}><strong>{countSum}</strong><span>{familyScoped ? `Sum · ${countSummary.sourceCount} family entries` : `Sum · ${countSummary.sourceCount} source units`}</span></button>
         </div>
-        {countSummary.sourceNote && <p className="kg-count-note" role="note">Source qualification: {countSummary.sourceNote}</p>}
+        {familyScoped && <p className="kg-count-note" role="note">Counts are scoped to mapped subtype entries in this family. The source table reports overall count units, not family-specific totals.</p>}
+        {!familyScoped && countSummary.sourceNote && <p className="kg-count-note" role="note">Source qualification: {countSummary.sourceNote}</p>}
         {countSummary.reviewNote && <p className="kg-count-review" role="note">Count detail to review: {countSummary.reviewNote}</p>}
       </section>}
       <div className="kg-indicator-legend" aria-label="Color marker legend"><span><i className="is-positive" />Green: perceived as punya</span><span><i className="is-negative" />Red: perceived as paap</span><span><i className="is-mixed" />Grey: mixed subtypes</span></div>
       {roots.length ? <ul className="kg-tree" role="tree" aria-label="Karma types and subtypes">
-        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} />)}
+        {roots.map((node) => <KarmaTreeNode key={node.id} node={node} depth={0} selectedId={selectedId} selectedAncestors={selectedAncestors} expanded={expanded} onToggle={onToggle} onSelect={onSelect} visibleNodeIds={visibleNodeIds} dynamicCounts={Boolean(filter)} />)}
       </ul> : <p className="kg-empty-results">No karma entries remain visible for this relationship and Gunasthan.</p>}
     </section>
   );
@@ -339,7 +379,7 @@ export default function KarmaGranthLab() {
 
   const selectedStage = karmaData.gunasthans.find((item) => item.id === filterStage);
   const stageOptions = [...karmaData.gunasthans, ...(karmaData.terminalStages || [])];
-  const countSummary = countSummaryForFilter(activeFilter);
+  const countSummary = familyScopedCountSummary(roots, activeFilter, familyFilter, countSummaryForFilter(activeFilter));
   return (
     <LabEmbedded title="Karma Granth explorer">
       <div className="kg-lab">
