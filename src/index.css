@@ -86,7 +86,14 @@ body.pivot-locked {
 
 /* Concept hub cards */
 .concept-card {
+  height: 100%;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.concept-grid {
+  grid-auto-rows: 1fr;
+}
+.concept-grid > article {
+  height: 100%;
 }
 .concept-card:hover {
   border-color: #fcd34d;

@@ -28,7 +28,7 @@ export default function ConceptHub() {
         </p>
       </header>
 
-      <main className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade">
+      <main className="concept-grid grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade">
         {CONCEPTS.map((concept) => {
           const isLocked = Boolean(concept.password) && !isConceptUnlocked(concept.id);
           const cardClassName = 'concept-card block rounded-3xl border border-stone-200 p-6 bg-stone-100/90 card-shadow no-underline text-inherit';
