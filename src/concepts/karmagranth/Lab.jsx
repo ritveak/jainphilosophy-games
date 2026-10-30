@@ -37,7 +37,6 @@ function relationshipsForSubtype(subtypeId) {
     .flatMap((dependency) => karmaData.relationships
       .filter((record) => record.subtypeId === dependency.derivedFromSubtypeId && dependency.relationTypes.includes(record.relationType))
       .map((record) => {
-        const sourceNode = nodeById[dependency.derivedFromSubtypeId];
         return {
           ...record,
           id: `${record.id}--${dependency.id}`,
@@ -45,7 +44,6 @@ function relationshipsForSubtype(subtypeId) {
           derivedFromSubtypeId: dependency.derivedFromSubtypeId,
           derivation: dependency.derivation,
           verification: dependency.verification,
-          displayNote: `The notes group this ${nodeLabel(nodeById[subtypeId])} subtype with ${nodeLabel(sourceNode)} for row-count logic; this stage mapping follows the corresponding ${nodeLabel(sourceNode)} entry.`
         };
       }));
   return [...direct, ...inherited];
@@ -224,8 +222,6 @@ function familyScopedCountSummary(roots, filter, familyId, summary) {
     sourceCount: sum,
     familyLabel: nodeLabel(nodeById[familyId]),
     familyScoped: true,
-    sourceNote: null,
-    reviewNote: null,
   };
 }
 
@@ -262,8 +258,8 @@ function ExternalNoteLinks() {
   return (
     <div className="kg-source-links">
       {sourceLinks().map((source) => (
-        <a key={source.url} href={source.url} target="_blank" rel="noreferrer" aria-label={`View detailed notes here: ${source.label}`}>
-          View detailed notes here <span aria-hidden="true">↗</span>
+        <a key={source.url} href={source.url} target="_blank" rel="noreferrer" aria-label={`Explore full notes: ${source.label}`}>
+          Explore full notes <span aria-hidden="true">↗</span>
         </a>
       ))}
     </div>
@@ -306,17 +302,16 @@ function KarmaTree({ roots, selectedId, selectedAncestors, expanded, onToggle, o
       <div className="kg-canvas-head"><div><span className="kg-kicker">Karma hierarchy</span><h3>Karma View</h3></div><div className="kg-canvas-actions"><button type="button" onClick={onCollapseToLevelOne}>Collapse</button><button type="button" onClick={onExpandAll}>Expand</button></div></div>
       {countSummary && stageDetails.length > 0 && <div className="kg-stage-tabs" role="group" aria-label={`Stages within ${stageLabel(filter.gunasthanId)}`}>{stageDetails.map((detail) => <button key={detail.label} type="button" className={selectedSubStage === detail.label ? 'is-active' : ''} aria-pressed={selectedSubStage === detail.label} onClick={() => onChangeSubStage(detail.label)}>{detail.label}</button>)}</div>}
       {countSummary && <section className="kg-count-summary" aria-label={`${filter.relationLabel} count summary for ${stageLabel(filter.gunasthanId)}${familyScoped ? `, ${countSummary.familyLabel} family` : ''}`}>
-        <div className="kg-count-heading"><div><span className="kg-kicker">{familyScoped ? 'Family-scoped entries' : 'Source row-count'}</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}{familyScoped ? ` · ${countSummary.familyLabel}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">{familyScoped ? 'Source count method' : 'How this count is calculated'} <span aria-hidden="true">↗</span></a></div></div>
+        <div className="kg-count-heading"><div><span className="kg-kicker">{familyScoped ? 'Family count' : 'Stage count'}</span><h4>{filter.relationLabel} at {stageLabel(filter.gunasthanId)}{filter.subStage && filter.subStage !== 'all' ? ` · ${filter.subStage}` : ''}{familyScoped ? ` · ${countSummary.familyLabel}` : ''}</h4></div><div className="kg-count-heading-links"><a href={stageNoteUrl(filter.relationType, filter.gunasthanId)} target="_blank" rel="noreferrer">Explore stage details <span aria-hidden="true">↗</span></a><a href={countSummary.sourceUrl} target="_blank" rel="noreferrer">Count details <span aria-hidden="true">↗</span></a></div></div>
         {countSummary.stageNote && <p className="kg-stage-note" role="note">{countSummary.stageNote}</p>}
         <div className="kg-count-grid">
           <button type="button" className={`kg-count-tile is-active${displayMode === 'active' ? ' is-current' : ''}`} title={familyScoped ? `Show active ${countSummary.familyLabel} entries` : 'Show active karma'} onClick={() => onChangeDisplayMode('active')} aria-pressed={displayMode === 'active'}><strong>{countSummary.active}</strong><span>{familyScoped ? 'Active entries' : 'Active karma'}</span></button>
           <button type="button" className={`kg-count-tile is-paused${displayMode === 'paused' ? ' is-current' : ''}`} title={`Show subtype entries paused at ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('paused')} aria-label={`Show subtype entries for ${pausedLabel}: ${countSummary.paused}`} aria-pressed={displayMode === 'paused'}><strong>{countSummary.paused}</strong><span>{pausedLabel}</span></button>
           <button type="button" className={`kg-count-tile is-stopped${displayMode === 'stopped' ? ' is-current' : ''}`} title={`Show subtype entries stopped by ${stageLabel(filter.gunasthanId)}`} onClick={() => onChangeDisplayMode('stopped')} aria-label={`Show subtype entries for ${stoppedLabel}: ${countSummary.stopped}`} aria-pressed={displayMode === 'stopped'}><strong>{countSummary.stopped}</strong><span>{stoppedLabel}</span></button>
-          <button type="button" className={`kg-count-tile is-total${displayMode === 'total' ? ' is-current' : ''}`} title={familyScoped ? `Show all ${countSummary.familyLabel} entries` : 'Show all active, paused, and stopped karma'} onClick={() => onChangeDisplayMode('total')} aria-pressed={displayMode === 'total'}><strong>{countSum}</strong><span>{familyScoped ? `Sum · ${countSummary.sourceCount} family entries` : `Sum · ${countSummary.sourceCount} source units`}</span></button>
+          <button type="button" className={`kg-count-tile is-total${displayMode === 'total' ? ' is-current' : ''}`} title={familyScoped ? `Show all ${countSummary.familyLabel} entries` : 'Show all active, paused, and stopped karma'} onClick={() => onChangeDisplayMode('total')} aria-pressed={displayMode === 'total'}><strong>{countSum}</strong><span>{familyScoped ? `Total · ${countSummary.sourceCount} entries` : `Total · ${countSummary.sourceCount} units`}</span></button>
         </div>
-        {familyScoped && <p className="kg-count-note" role="note">Counts are scoped to mapped subtype entries in this family. The source table reports overall count units, not family-specific totals.</p>}
-        {!familyScoped && countSummary.sourceNote && <p className="kg-count-note" role="note">Source qualification: {countSummary.sourceNote}</p>}
-        {countSummary.reviewNote && <p className="kg-count-review" role="note">Count detail to review: {countSummary.reviewNote}</p>}
+        {familyScoped && <p className="kg-count-note" role="note">Counts show this family's contribution to the selected stage.</p>}
+        {countSummary.countNote && <p className="kg-count-note" role="note">{countSummary.countNote}</p>}
       </section>}
       <div className="kg-indicator-legend" aria-label="Color marker legend"><span><i className="is-positive" />Green: perceived as punya</span><span><i className="is-negative" />Red: perceived as paap</span><span><i className="is-mixed" />Grey: mixed subtypes</span></div>
       {roots.length ? <ul className="kg-tree" role="tree" aria-label="Karma types and subtypes">
@@ -330,7 +325,7 @@ function Inspector({ selectedNode, onSelectFilter, onClose }) {
   if (!selectedNode) {
     return (
       <aside className="kg-inspector" aria-label="Karma detail inspector">
-        <div className="kg-empty-inspector"><button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button><span className="kg-kicker">Inspector</span><h3>Select a karma node</h3><p>Choose a node in Karma View to see its source-derived details.</p><ExternalNoteLinks /></div>
+        <div className="kg-empty-inspector"><button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button><span className="kg-kicker">Details</span><h3>Select a karma node</h3><p>Choose a node in Karma View to see its stages and relationships.</p><ExternalNoteLinks /></div>
       </aside>
     );
   }
@@ -340,20 +335,18 @@ function Inspector({ selectedNode, onSelectFilter, onClose }) {
   const grouped = RELATIONS.map((relation) => ({
     ...relation,
     records: records.filter((record) => record.relationType === relation.id),
-    coverage: karmaData.coverage.find((item) => item.relationType === relation.id),
   }));
   return (
     <aside className="kg-inspector" aria-label="Karma detail inspector" aria-live="polite">
       <div className="kg-inspector-head">
         <button type="button" className="kg-inspector-close" onClick={onClose} aria-label="Close detail panel">×</button>
-        <span className="kg-kicker">Source extracted</span>
         <h3>{nodeLabel(selectedNode)}</h3>
         <p className="kg-path">{path.join(' / ')}</p>
       </div>
       <div className="kg-inspector-body">
-        <section><h4>Overview</h4><p>{selectedNode.summary || 'The notes do not provide a separate explanatory summary for this heading.'}</p><a className="kg-topic-link" href={selectedNode.sourceUrl} target="_blank" rel="noreferrer">View detailed notes here <span aria-hidden="true">↗</span></a></section>
+        {selectedNode.summary && <section><h4>Overview</h4><p>{selectedNode.summary}</p><a className="kg-topic-link" href={selectedNode.sourceUrl} target="_blank" rel="noreferrer">Explore full notes <span aria-hidden="true">↗</span></a></section>}
         <section>
-          <h4>Documented relationships</h4>
+          <h4>Relationships</h4>
           {grouped.map((group) => (
             <div className="kg-relation-group" key={group.id}>
               <h5>{group.label}</h5>
@@ -366,7 +359,7 @@ function Inspector({ selectedNode, onSelectFilter, onClose }) {
                   <span className="kg-record-stage">{stageDescription}{record.subStage ? ` · ${record.subStage}` : ''}</span>
                   {record.displayNote && <small>{record.displayNote}</small>}
                 </button>;
-              }) : <p className="kg-muted">{group.coverage?.status === 'not-yet-populated' ? 'Not yet documented in this lab. This is source coverage, not a doctrinal absence.' : 'No separate entry for this relationship is documented here.'}</p>}
+              }) : <p className="kg-muted">No entries.</p>}
             </div>
           ))}
         </section>
@@ -448,10 +441,10 @@ export default function KarmaGranthLab() {
             <button type="button" className="kg-reset" onClick={reset}>Reset view</button>
           </div>
           {filterOpen && <div className="kg-filter-panel">
-            <label>Relationship<select value={filterCategory} onChange={(event) => { const next = event.target.value; setFilterCategory(next); if (!next) setFilterStage(''); else if ((karmaData.terminalStages || []).some((stage) => stage.id === filterStage && !stage.relationTypes.includes(next))) setFilterStage('g14'); setFilterSubStage(defaultSubStage(filterStage, next)); }}><option value="">Choose relationship</option><option value="bandh">Bandh</option><option value="uday">Uday</option><option value="udirna" disabled>Udirna · not yet documented</option><option value="satta" disabled>Satta · not yet documented</option></select></label>
+            <label>Relationship<select value={filterCategory} onChange={(event) => { const next = event.target.value; setFilterCategory(next); if (!next) setFilterStage(''); else if ((karmaData.terminalStages || []).some((stage) => stage.id === filterStage && !stage.relationTypes.includes(next))) setFilterStage('g14'); setFilterSubStage(defaultSubStage(filterStage, next)); }}><option value="">Choose relationship</option><option value="bandh">Bandh</option><option value="uday">Uday</option></select></label>
             <label>Gunasthan / final stage<select value={filterStage} onChange={(event) => { const stageId = event.target.value; setFilterStage(stageId); setFilterSubStage(defaultSubStage(stageId, filterCategory)); }} disabled={!filterCategory}>{filterStage ? null : <option value="">Choose a stage</option>}{stageOptions.map((stage) => <option key={stage.id} value={stage.id} disabled={stage.relationTypes ? !stage.relationTypes.includes(filterCategory) : false}>{stage.number ? `${stage.number} · ` : ''}{stage.displayName || stage.name.replace(/^\d+\.?\s*/, '')}{stage.sourceContext ? ` · ${stage.sourceContext}` : ''}</option>)}</select></label>
             {activeFilter && <button type="button" className="kg-clear-filter" onClick={() => { setFilterCategory(''); setFilterStage(''); setFilterSubStage('all'); }}>Clear filter</button>}
-            <p>Use the count cards to show Active, Paused, Stopped, or Total entries below. Empty source coverage does not indicate doctrinal absence.</p>
+            <p>Choose a count card to view Active, Paused, Stopped, or Total entries.</p>
           </div>}
           {searchResults.length > 0 && <div className="kg-search-results" role="list" aria-label="Search results"><span>Search results · {searchResults.length}{searchResults.length === 12 ? '+' : ''}</span>{searchResults.map((node) => <button key={node.id} type="button" role="listitem" onClick={() => selectNode(node.id)}>{nodeLabel(node)}<small>{nodeLabel(familyOf(node))}</small></button>)}</div>}
           {query && searchResults.length === 0 && <p className="kg-search-none">No visible hierarchy entries match “{search}”.</p>}
@@ -463,7 +456,6 @@ export default function KarmaGranthLab() {
           </main>
           <Inspector selectedNode={selectedNode} onSelectFilter={selectFilter} onClose={() => setSelectedId('')} />
         </div>
-        <footer className="kg-footnote"><span>Bandh and Uday details are transcribed from the linked notes.</span><span>Udirna and Satta are not yet documented in this lab.</span><span>Source-derived; not doctrinally verified.</span></footer>
       </div>
     </LabEmbedded>
   );

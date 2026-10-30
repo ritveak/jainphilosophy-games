@@ -95,7 +95,7 @@ export const karmaData = {
       "name": "1.2. Shruta-Gyanavaraniya Karm: {14 or 20} -",
       "kind": "group",
       "parentId": "kg1-1-1-gyanavarniya-karma-knowledge-obscuring-5",
-      "summary": "Obscures symbolic and scriptural knowledge. The note explains that Shrut gyaan is communicated or explained by others and that Mati gyaan is its prerequisite.",
+      "summary": "Obscures symbolic and scriptural knowledge. Shrut gyaan is communicated or explained by others and depends on Mati gyaan.",
       "sourceHeading": "1.2.**Shruta-Gyanavaraniya Karm: {14 or 20} -**",
       "sourcePath": "KG-1 heading: 1.2. Shruta-Gyanavaraniya Karm: {14 or 20} -",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-2-strong-shruta-gyanavaraniya-karm-14-or-20-strong",
@@ -505,7 +505,7 @@ export const karmaData = {
       "name": "1. Anantanubandhi (अनन्तानुबन्धी)",
       "kind": "group",
       "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
-      "summary": "Strongest form of Kashaya. The note says it may last up to a lifetime, prevents Samyak Darshan, and can lead to Narak Gati.",
+      "summary": "The strongest form of Kashaya. It may last a lifetime, prevents Samyak Darshan, and can lead to Narak Gati.",
       "sourceHeading": "1. Anantanubandhi (अनन्तानुबन्धी)",
       "sourcePath": "KG-1 heading: 1. Anantanubandhi (अनन्तानुबन्धी)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#1-anantanubandhi",
@@ -593,7 +593,7 @@ export const karmaData = {
       "name": "2. Apratyakhyana (अप्रत्याख्यान)",
       "kind": "group",
       "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
-      "summary": "The note says this intensity may last up to one year and prevents Deshvirati.",
+      "summary": "This intensity may last up to one year and prevents Deshvirati.",
       "sourceHeading": "2. Apratyakhyana (अप्रत्याख्यान)",
       "sourcePath": "KG-1 heading: 2. Apratyakhyana (अप्रत्याख्यान)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#2-apratyakhyana",
@@ -681,7 +681,7 @@ export const karmaData = {
       "name": "3. Pratyakhyana (प्रत्याख्यान)",
       "kind": "group",
       "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
-      "summary": "The note says this intensity may last up to four months and prevents Sarvavirati.",
+      "summary": "This intensity may last up to four months and prevents Sarvavirati.",
       "sourceHeading": "3. Pratyakhyana (प्रत्याख्यान)",
       "sourcePath": "KG-1 heading: 3. Pratyakhyana (प्रत्याख्यान)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#3-pratyakhyana",
@@ -769,7 +769,7 @@ export const karmaData = {
       "name": "4. Sanjvalana (संज्वलन)",
       "kind": "group",
       "parentId": "kg1-4-2-1-4-2-1-kashaya-mohaniya-passions-4x4-16",
-      "summary": "Subtlest remaining passion. The note says this intensity may last up to 15 days and prevents perfect conduct.",
+      "summary": "The subtlest remaining passion. It may last up to 15 days and prevents perfect conduct.",
       "sourceHeading": "4. Sanjvalana (संज्वलन)",
       "sourcePath": "KG-1 heading: 4. Sanjvalana (संज्वलन)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-sanjvalana",
@@ -874,7 +874,6 @@ export const karmaData = {
       "name": "4.2.2.1 Hasya (Laughter / frivolity)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.1 Hasya (Laughter / frivolity)",
       "sourcePath": "KG-1 heading: 4.2.2.1 Hasya (Laughter / frivolity)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-1-hasya-laughter-frivolity",
@@ -892,7 +891,6 @@ export const karmaData = {
       "name": "4.2.2.2 Rati (Attachment / liking)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.2 Rati (Attachment / liking)",
       "sourcePath": "KG-1 heading: 4.2.2.2 Rati (Attachment / liking)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-2-rati-attachment-liking",
@@ -910,7 +908,6 @@ export const karmaData = {
       "name": "4.2.2.3 Arati (Aversion / disliking)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.3 Arati (Aversion / disliking)",
       "sourcePath": "KG-1 heading: 4.2.2.3 Arati (Aversion / disliking)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-3-arati-aversion-disliking",
@@ -928,7 +925,6 @@ export const karmaData = {
       "name": "4.2.2.4 Shok (Sorrow)",
       "kind": "subtype",
       "parentId": "kg1-4-2-2-4-2-2-no-kashaya-quasi-passions-9",
-      "summary": "KG-1 lists this heading under No-Kashaya (Quasi-passions) , without a separate explanatory note.",
       "sourceHeading": "4.2.2.4 Shok (Sorrow)",
       "sourcePath": "KG-1 heading: 4.2.2.4 Shok (Sorrow)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#4-2-2-4-shok-sorrow",
@@ -1048,7 +1044,6 @@ export const karmaData = {
       "name": "5.1.1 Dev Ayushya +",
       "kind": "subtype",
       "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
-      "summary": "KG-1 lists this heading under Based on the life form , without a separate explanatory note.",
       "sourceHeading": "5.1.1 Dev Ayushya +",
       "sourcePath": "KG-1 heading: 5.1.1 Dev Ayushya +",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-1-dev-ayushya",
@@ -1100,7 +1095,6 @@ export const karmaData = {
       "name": "5.1.4 Naraki Ayushya -",
       "kind": "subtype",
       "parentId": "kg1-5-5-ayushya-karma-age-determining-4-or-2",
-      "summary": "KG-1 lists this heading under Based on the life form , without a separate explanatory note.",
       "sourceHeading": "5.1.4 Naraki Ayushya -",
       "sourcePath": "KG-1 heading: 5.1.4 Naraki Ayushya -",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#5-1-4-naraki-ayushya",
@@ -1135,7 +1129,7 @@ export const karmaData = {
       "name": "6.1 Pind Prakriti (पिंड प्रकृति) : {75} +/-",
       "kind": "group",
       "parentId": "kg1-6-6-naam-karma-form-producing-103",
-      "summary": "Pind Prakriti groups the foundational bodily and embodiment-related characteristics. The chart divides the 65 Prakriti into 14 categories.",
+      "summary": "Pind Prakriti groups foundational bodily and embodiment-related characteristics into 14 categories.",
       "sourceHeading": "6.1 Pind Prakriti (पिंड प्रकृति) : {75} +/-",
       "sourcePath": "KG-1 heading: 6.1 Pind Prakriti (पिंड प्रकृति) : {75} +/-",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/#6-1-pind-prakriti-75",
@@ -3232,11 +3226,11 @@ export const karmaData = {
         "bandh": [
           {
             "label": "Stage 1",
-            "note": "Dev Ayushya binding carried over from Gunasthan 6 remains active briefly during this stage. The chart's Gunasthan 7 count is 59 active."
+            "note": "Dev Ayushya binding carried over from Gunasthan 6 remains active briefly during this stage, for a total of 59 active units."
           },
           {
             "label": "Stage 2",
-            "note": "The carry-over period ends and Dev Ayushya enters Bandh Vichhed. The active count falls to 58, matching the detailed level 7 formula in the note."
+            "note": "The carry-over period ends and Dev Ayushya enters Bandh Vichhed, bringing the active count to 58."
           }
         ]
       },
@@ -3256,7 +3250,7 @@ export const karmaData = {
         "bandh": [
           {
             "label": "Stage 1",
-            "note": "Dev Ayushya binding carried over from Gunasthan 6 ends here; the other eligibility remains as in Gunasthan 7. The supplied chart lists 58 active units at this stage."
+            "note": "Dev Ayushya binding carried over from Gunasthan 6 ends here, leaving 58 active units."
           },
           {
             "label": "Stage 2 to 6",
@@ -3382,7 +3376,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted",
       "throughGunasthanId": "g3",
-      "displayNote": "The note says Tirthankar Naam is possible only with Samyaktva.",
+      "displayNote": "Tirthankara Naam can bind only when Samyaktva is present.",
       "displayLocation": "Gunasthan 1 · Mithyatva",
       "displayPeriod": "Gunasthans 1–3"
     },
@@ -3969,7 +3963,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 4 · Avirati Samyagdrishti",
-      "displayNote": "The note says Dev and Naraki beings may bind this; a human being beyond Gunasthan 2 does not bind Manushya Ayushya."
+      "displayNote": "At this stage, Dev and Naraki beings can bind Manushya Ayushya; humans beyond Gunasthan 2 cannot."
     },
     {
       "id": "kg2-bandh-g4-39",
@@ -4853,7 +4847,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "throughGunasthanId": "g2",
-      "displayNote": "Misra is in uday only at Gunasthan 3; it becomes available there.",
+      "displayNote": "Misra enters uday at Gunasthan 3.",
       "displayLocation": "Gunasthan 1 · Mithyatva",
       "displayPeriod": "Gunasthans 1–2"
     },
@@ -4895,7 +4889,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "throughGunasthanId": "g12",
-      "displayNote": "The notes say this remains in Anuday through Gunasthan 12 and can enter uday at Gunasthan 13. The note says Tirthankar Naam comes into uday at Gunasthan 13 only.",
+      "displayNote": "Tirthankara Naam remains in Anuday through Gunasthan 12 and enters uday only at Gunasthan 13.",
       "displayLocation": "Gunasthan 1 · Mithyatva",
       "displayPeriod": "Gunasthans 1–12"
     },
@@ -4916,7 +4910,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "throughGunasthanId": "g5",
-      "displayNote": "The note says Aharak Sharir and Angopang can be in uday from Gunasthan 6 onward.",
+      "displayNote": "Aharak Sharir and Angopang can enter uday from Gunasthan 6 onward.",
       "displayLocation": "Gunasthan 1 · Mithyatva",
       "displayPeriod": "Gunasthans 1–5"
     },
@@ -4937,7 +4931,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "throughGunasthanId": "g5",
-      "displayNote": "The note says Aharak Sharir and Angopang can be in uday from Gunasthan 6 onward.",
+      "displayNote": "Aharak Sharir and Angopang can enter uday from Gunasthan 6 onward.",
       "displayLocation": "Gunasthan 1 · Mithyatva",
       "displayPeriod": "Gunasthans 1–5"
     },
@@ -4958,7 +4952,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 2 · Saswadan",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g2-105",
@@ -4977,7 +4970,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 2 · Saswadan",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g2-106",
@@ -4996,7 +4988,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 2 · Saswadan",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g2-107",
@@ -5015,7 +5006,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 2 · Saswadan",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g2-108",
@@ -5034,7 +5024,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 2 · Saswadan",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g2-109",
@@ -5073,7 +5062,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-113",
@@ -5128,7 +5116,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 4 · Avirati Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g4-116",
@@ -5165,7 +5152,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-120",
@@ -5184,7 +5170,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-121",
@@ -5202,7 +5187,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Anupurvi is used for a change of birth. After Gunasthan 5, the note says the soul may descend to Gunasthan 4 after death to use Anupurvi.",
+      "displayNote": "Anupurvi accompanies a change of birth. After Gunasthan 5, a soul may descend to Gunasthan 4 after death and experience Anupurvi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5222,7 +5207,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-123",
@@ -5241,7 +5225,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-124",
@@ -5259,7 +5242,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Anupurvi is used for a change of birth. After Gunasthan 5, the note says the soul may descend to Gunasthan 4 after death to use Anupurvi.",
+      "displayNote": "Anupurvi accompanies a change of birth. After Gunasthan 5, a soul may descend to Gunasthan 4 after death and experience Anupurvi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5278,7 +5261,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "From the birth-form perspective this uday ends here; the note says Manushya and Tiryanch may still attain it through labdhi.",
+      "displayNote": "This uday ends for the current birth-form here; Manushya and Tiryanch can still attain it through labdhi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5297,7 +5280,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "From the birth-form perspective this uday ends here; the note says Manushya and Tiryanch may still attain it through labdhi.",
+      "displayNote": "This uday ends for the current birth-form here; Manushya and Tiryanch can still attain it through labdhi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5316,7 +5299,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Anupurvi is used for a change of birth. After Gunasthan 5, the note says the soul may descend to Gunasthan 4 after death to use Anupurvi.",
+      "displayNote": "Anupurvi accompanies a change of birth. After Gunasthan 5, a soul may descend to Gunasthan 4 after death and experience Anupurvi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5335,7 +5318,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Anupurvi is used for a change of birth. After Gunasthan 5, the note says the soul may descend to Gunasthan 4 after death to use Anupurvi.",
+      "displayNote": "Anupurvi accompanies a change of birth. After Gunasthan 5, a soul may descend to Gunasthan 4 after death and experience Anupurvi.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5354,7 +5337,6 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "This concerns the karma arising through ordinary activity; it does not mean others cannot dislike, reject, or insult the soul.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5373,7 +5355,6 @@ export const karmaData = {
       "sourceHeading": "Uday > Deshvirti Samyagdrishti (104-17+0 = 87 ) > Uday Vichhed(15+17=32)",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "This concerns the karma arising through ordinary activity; it does not mean others cannot dislike, reject, or insult the soul.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -5393,7 +5374,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-134",
@@ -5412,7 +5392,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-135",
@@ -5431,7 +5410,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-136",
@@ -5450,7 +5428,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-137",
@@ -5469,7 +5446,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "Aharaka may be used from here. If the process began at Gunasthan 6, it may continue briefly after moving to Gunasthan 7."
+      "displayNote": "Aharaka can be used from Gunasthan 6; a process begun there may continue briefly into Gunasthan 7."
     },
     {
       "id": "kg2-uday-g6-138",
@@ -5488,7 +5465,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "Aharaka may be used from here. If the process began at Gunasthan 6, it may continue briefly after moving to Gunasthan 7."
+      "displayNote": "Aharaka can be used from Gunasthan 6; a process begun there may continue briefly into Gunasthan 7."
     },
     {
       "id": "kg2-uday-g7-139",
@@ -5507,7 +5484,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g7-140",
@@ -5526,7 +5502,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g7-141",
@@ -5545,7 +5520,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g7-142",
@@ -5564,7 +5538,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g7-143",
@@ -5583,7 +5556,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 7 · Apramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g8-144",
@@ -5601,7 +5573,7 @@ export const karmaData = {
       "sourceHeading": "Uday > Apurvakaran (76-(4)+0 = 72) > Uday Vichhed(45+4 = 49 )",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "In Upsham Shreni, this karma may remain in satta. The soul may descend to a lower Gunasthan and try kshay or upsham again.",
+      "displayNote": "In Upsham Shreni, this karma may remain in satta. The soul may descend to a lower Gunasthan and attempt kshay or upsham again.",
       "displayLocation": "Gunasthan 8 · Apurvakaran"
     },
     {
@@ -5621,7 +5593,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g9-149",
@@ -5640,7 +5611,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g9-150",
@@ -5659,7 +5629,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g9-151",
@@ -5678,7 +5647,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g9-152",
@@ -5697,7 +5665,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g9-153",
@@ -5716,7 +5683,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 9 · AnivrittiKaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-154",
@@ -5735,7 +5701,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-155",
@@ -5754,7 +5719,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-156",
@@ -5773,7 +5737,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g11-158",
@@ -5792,7 +5755,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "needs-review",
       "displayLocation": "Gunasthan 11 · Upshant Moh",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g12-160",
@@ -5811,7 +5773,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 12 · Kshin Moh Vitrag · Stage 2",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g12-161",
@@ -5830,7 +5791,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 12 · Kshin Moh Vitrag · Stage 2",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-163",
@@ -5849,7 +5809,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-164",
@@ -5868,7 +5827,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-165",
@@ -5887,7 +5845,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-166",
@@ -5906,7 +5863,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g14-169",
@@ -6303,7 +6259,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-194",
@@ -6322,7 +6277,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-195",
@@ -6341,7 +6295,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-196",
@@ -6360,7 +6313,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-197",
@@ -6379,7 +6331,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-198",
@@ -6398,7 +6349,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-199",
@@ -6417,7 +6367,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-200",
@@ -6436,7 +6385,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-201",
@@ -6455,7 +6403,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-202",
@@ -6474,7 +6421,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-uday-siddh-awastha-203",
@@ -6493,7 +6439,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "After Gunasthan 14",
-      "displayNote": "Uday stops after leaving Gunasthan 14."
     },
     {
       "id": "kg2-bandh-g2-kg1-6-1-2-1-6-1-2-1-ekendriya-jati-bandh-vichhed",
@@ -7466,7 +7411,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-kashaya-anantanubandhi-maan-pride-uday-vichhed",
@@ -7485,7 +7429,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-kashaya-anantanubandhi-maya-deceit-uday-vichhed",
@@ -7504,7 +7447,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-kashaya-anantanubandhi-lobha-greed-uday-vichhed",
@@ -7523,7 +7465,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-6-1-2-1-6-1-2-1-ekendriya-jati-uday-vichhed",
@@ -7542,7 +7483,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-6-1-2-2-6-1-2-2-dvindriya-jati-uday-vichhed",
@@ -7561,7 +7501,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-6-1-2-3-6-1-2-3-trindriya-jati-uday-vichhed",
@@ -7580,7 +7519,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-6-1-2-4-6-1-2-4-chaturindriya-jati-uday-vichhed",
@@ -7599,7 +7537,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 3 · Misra",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g3-kg1-6-1-13-2-6-1-13-2-tiryanch-anupurvi-anuday",
@@ -7750,7 +7687,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-kg1-kashaya-apratyakhyana-maan-pride-uday-vichhed",
@@ -7769,7 +7705,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-kg1-kashaya-apratyakhyana-maya-deceit-uday-vichhed",
@@ -7788,7 +7723,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-kg1-kashaya-apratyakhyana-lobha-greed-uday-vichhed",
@@ -7807,7 +7741,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g5-kg1-6-4-10-6-4-10-ayasha-uday-vichhed",
@@ -7825,7 +7758,6 @@ export const karmaData = {
       "sourceHeading": "Uday > Gunasthan 5 · Deshvirti Samyagdrishti > Uday Vichhed",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "This concerns the karma arising through ordinary activity; it does not mean others cannot dislike, reject, or insult the soul.",
       "displayLocation": "Gunasthan 5 · Deshvirti Samyagdrishti"
     },
     {
@@ -7845,7 +7777,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-kg1-kashaya-pratyakhyana-maan-pride-uday-vichhed",
@@ -7864,7 +7795,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-kg1-kashaya-pratyakhyana-maya-deceit-uday-vichhed",
@@ -7883,7 +7813,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g6-kg1-kashaya-pratyakhyana-lobha-greed-uday-vichhed",
@@ -7902,7 +7831,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 6 · Pramatt Sarvavirti",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g8-kg1-6-1-7-4-6-1-7-4-ardha-naracha-sanhanan-uday-vichhed",
@@ -7921,7 +7849,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 8 · Apurvakaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g8-kg1-6-1-7-5-6-1-7-5-kilika-sanhanan-uday-vichhed",
@@ -7940,7 +7867,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 8 · Apurvakaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g8-kg1-6-1-7-6-6-1-7-6-sevarta-sanhanan-uday-vichhed",
@@ -7959,7 +7885,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 8 · Apurvakaran",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-kg1-kashaya-sanjvalana-krodha-anger-uday-vichhed",
@@ -7978,7 +7903,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-kg1-kashaya-sanjvalana-maan-pride-uday-vichhed",
@@ -7997,7 +7921,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g10-kg1-kashaya-sanjvalana-maya-deceit-uday-vichhed",
@@ -8016,7 +7939,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 10 · Sukshm Sampray",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g11-kg1-kashaya-sanjvalana-lobha-greed-uday-vichhed",
@@ -8035,7 +7957,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 11 · Upshant Moh",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g12-stage-1-kg1-6-1-7-2-6-1-7-2-rishabha-naracha-sanhanan-uday-vichhed",
@@ -8054,7 +7975,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 12 · Kshin Moh Vitrag · Stage 1",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g12-stage-1-kg1-6-1-7-3-6-1-7-3-naracha-sanhanan-uday-vichhed",
@@ -8073,7 +7993,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 12 · Kshin Moh Vitrag · Stage 1",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-1-1-1-1-mati-gyanavaraniya-karm-340-uday-vichhed",
@@ -8092,7 +8011,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-1-2-shruta-gyanavaraniya-karm-uday-vichhed",
@@ -8111,7 +8029,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-1-3-1-3-avadhi-gyanavaraniya-karm-1-or-6-uday-vichhed",
@@ -8130,7 +8047,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-1-4-1-4-manahparyaya-gyanavaraniya-karm-2-uday-vichhed",
@@ -8149,7 +8065,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-1-5-1-5-kevala-gyanavaraniya-karm-1-uday-vichhed",
@@ -8168,7 +8083,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-8-1-8-1-dana-antaraya-obstruction-to-charity-giving-uday-vichhed",
@@ -8187,7 +8101,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-8-2-8-2-labha-antaraya-obstruction-to-gain-uday-vichhed",
@@ -8206,7 +8119,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-8-3-8-3-bhoga-antaraya-obstruction-to-enjoyment-of-consumables-uday-vichhed",
@@ -8225,7 +8137,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-8-4-8-4-upabhoga-antaraya-obstruction-to-enjoyment-of-reusables-uday-vichhed",
@@ -8244,7 +8155,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-g13-kg1-8-5-8-5-virya-antaraya-obstruction-to-willpower-energy-uday-vichhed",
@@ -8263,7 +8173,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
       "displayLocation": "Gunasthan 13 · Sayog Kevali",
-      "displayNote": "The note says uday may return if the soul descends to a lower Gunasthan."
     },
     {
       "id": "kg2-uday-after14-kg1-3-1-3-1-sata-vedniye-karma-uday-vichhed",
@@ -8281,7 +8190,6 @@ export const karmaData = {
       "sourceHeading": "Uday > Gunasthan 14 · Ayog Kevali > Uday Vichhed",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Either Sata or Asata remains in uday throughout Gunasthan 14; whichever is present stops only after leaving Gunasthan 14.",
       "displayLocation": "After Gunasthan 14"
     },
     {
@@ -8300,7 +8208,6 @@ export const karmaData = {
       "sourceHeading": "Uday > Gunasthan 14 · Ayog Kevali > Uday Vichhed",
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "verification": "source-extracted",
-      "displayNote": "Either Sata or Asata remains in uday throughout Gunasthan 14; whichever is present stops only after leaving Gunasthan 14.",
       "displayLocation": "After Gunasthan 14"
     },
     {
@@ -8519,7 +8426,6 @@ export const karmaData = {
       "verification": "source-derived-mapping",
       "derivedFromSourceGroupId": "kg1-6-3-6-3-tras-dashak-prakriti-10",
       "displayLocation": "Gunasthan 8 · Apurvakaran · Stage 7",
-      "displayNote": "Mapped from the named Tras Dashak group in the source row; the subtype is listed among its nine remaining members."
     }
   ],
   "annotations": [
@@ -9106,7 +9012,6 @@ export const karmaData = {
             "kg1-3-1-3-1-sata-vedniye-karma",
             "kg1-3-2-3-2-asata-vedniye-karma"
           ],
-          "sourceNote": "Either Sata or Asata is in uday at Gunasthan 14; only one is counted as active."
         }
       ],
       "aggregateNodeIds": [
@@ -9209,7 +9114,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "sourceSection": "Bandh (120) count table",
       "verification": "source-image-transcribed",
-      "sourceNote": "The supplied chart reports 59 active at Gunasthan 7; the detailed note explains that Dev Ayushya begun at Gunasthan 6 may continue briefly after entry into Gunasthan 7."
     },
     {
       "id": "bandh-count-g7-stage-2",
@@ -9223,7 +9127,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#bandh-120",
       "sourceSection": "Bandh (120) count table",
       "verification": "source-extracted",
-      "sourceNote": "After the brief continuation ends, Dev Ayushya is in Bandh Vichhed; the detailed Gunasthan 7 formula reports 58 active and 62 stopped."
     },
     {
       "id": "bandh-count-g8-stage-1",
@@ -9419,7 +9322,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "sourceSection": "Uday (122) count table",
       "verification": "source-image-transcribed",
-      "reviewNote": "The image count table reports 5 stopped here; the detailed text subsection lists 16 Uday Vichhed entries. Both source values are preserved; this summary follows the count table."
     },
     {
       "id": "uday-count-g3",
@@ -9589,7 +9491,7 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "sourceSection": "Uday (122) count table",
       "verification": "source-image-transcribed",
-      "sourceNote": "The note says either Sata or Asata remains in uday throughout Gunasthan 14; only the one present is counted as active."
+      "countNote": "Sata and Asata are alternatives at Gunasthan 14; exactly one contributes to the active count."
     },
     {
       "id": "uday-count-siddhashila",
@@ -9603,7 +9505,6 @@ export const karmaData = {
       "sourceUrl": "https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan/#uday-122",
       "sourceSection": "Uday (122) count table",
       "verification": "source-image-transcribed",
-      "sourceNote": "Whichever of Sata or Asata remains through Gunasthan 14 has its Uday Vichhed after leaving that stage."
     }
   ]
 };

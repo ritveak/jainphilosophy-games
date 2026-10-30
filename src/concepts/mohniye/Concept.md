@@ -5,7 +5,8 @@ subtitle: How Delusion Quietly Hijacks Awareness — and How to Regain It
 summary: Discover why Mohaniya Karma is called the king of all karmas, how it silently transforms a tiny moment of pride into a cascade of suffering, and learn a practical framework to retrain your instincts through awareness.
 icon: "🪞"
 tagline: Freedom doesn't begin by suppressing your first impulse. It begins by seeing it before it becomes you.
-index: 3
+index: 2
+password: "inprogress"
 ---
 
 Have you ever looked back at a situation and wondered...

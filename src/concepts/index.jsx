@@ -47,7 +47,6 @@ const conceptEntries = Object.entries(markdownFiles)
       : rawIndex != null
       ? Number(rawIndex)
       : undefined;
-
     return [
       id,
       {
@@ -61,6 +60,7 @@ const conceptEntries = Object.entries(markdownFiles)
           icon: data.icon ?? '🧠',
           tagline: data.tagline ?? '',
           index: Number.isFinite(index) ? index : 0,
+          password: typeof data.password === 'string' ? data.password : '',
         },
         markdown: content,
       },
@@ -77,6 +77,7 @@ const CONCEPTS = [...conceptEntries]
   })
   .map(([, concept]) => concept.meta);
 const conceptById = Object.fromEntries(conceptEntries);
+const UNLOCKED_CONCEPTS_KEY = 'concept-lab-unlocked';
 
 const labById = Object.fromEntries(
   Object.entries(labFiles)
@@ -112,6 +113,28 @@ export { CONCEPTS };
 
 export function getConcept(id) {
   return conceptById[id]?.meta;
+}
+
+function readUnlockedConcepts() {
+  try {
+    return JSON.parse(sessionStorage.getItem(UNLOCKED_CONCEPTS_KEY) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+export function isConceptUnlocked(id) {
+  return !conceptById[id]?.meta.password || readUnlockedConcepts().includes(id);
+}
+
+export function unlockConcept(id, password) {
+  const concept = conceptById[id]?.meta;
+  if (!concept?.password || password !== concept.password) return false;
+
+  const unlockedConcepts = new Set(readUnlockedConcepts());
+  unlockedConcepts.add(id);
+  sessionStorage.setItem(UNLOCKED_CONCEPTS_KEY, JSON.stringify([...unlockedConcepts]));
+  return true;
 }
 
 export function getConcepts() {

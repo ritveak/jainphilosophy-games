@@ -2,16 +2,20 @@
 id: karmagranth
 title: Karma Granth Lab
 subtitle: Explore the karma hierarchy and its Gunasthan relationships
-summary: Browse the karma hierarchy and currently documented Bandh and Uday relationships.
+summary: Karma Granth Lab is built on the basis of Karmagranth which is a 6 granth Series written by Pujya Devendra Suri Ji Maharaja. Browse the karma hierarchy and Bandh and Uday relationships across Gunasthan stages.
 icon: "🪷"
-tagline: One source-based map for the karma hierarchy and its documented Gunasthan relationships.
-index: 4
+tagline: Explore karma families, subtypes, and stage transitions.
+index: 1
 ---
 
-This laboratory is an exploration layer over two study notes. **Karma View** follows the numbered hierarchy in *Karma Types and Subtypes*. **Gunsthan View** looks up the currently documented *Bandh* and *Uday* entries from *Karma Bandh, Uday, Udirna and Satta based on Gunsthan*.
+Karma Granth Lab is built on the basis of Karmagranth which is a 6 granth Series written by Pujya Devendra Suri Ji Maharaja.
 
-The counts and classifications retain the conventions written in the notes. The notes record several counting conventions, including 158, 148, 120 and 122. Those counts describe different representations and are not combined here. Relationship records preserve source terms such as **Bandh Vichhed**, **Abandh**, **Uday Vichhed** and **Anuday**. “Not yet populated” describes the lab’s source coverage; it does not state a doctrinal absence.
+I studied it via Tapovan E Pathshala.
 
-This is a study aid based on the local notes, not a doctrinal verification. Embedded source images are not transcribed. Some references point to umbrella concepts or headings that remain flagged for mapping review.
+This lab can help in quick overview, but detailed notes for each karmagranth can be referred below : 
+1. [Karma Granth 1 - Types and Subtypes of Karma](https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/1-karma-types-and-subtypes/)
+2. [Karma Granth 2 - Karma Bandh, Uday, Udirna and Satta per gunsthan](https://unchainednotes.vercel.app/1-learning-list/1-jainism-core-concepts/2-karnanuyog/karma/2-karma-bandh-uday-udirna-and-satta-based-on-gunsthan)
 
-Open the Laboratory tab to browse the hierarchy, search across collapsed branches, and inspect a Gunasthan/category combination. The source links in the inspector lead to the full hosted notes.
+Browse the numbered karma hierarchy, its subtypes, and Bandh and Uday transitions across Gunasthan stages. Filter by karma family, relationship, and stage to explore the entries and counts.
+
+The links in Karma View and the count window open further explanations and references.
